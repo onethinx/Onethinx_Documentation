@@ -1,0 +1,68 @@
+.TH "LoRaWAN_keys_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LoRaWAN_keys_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBkeyType_e\fP \fBKeyType\fP: 8"
+.br
+.ti -1c
+.RI "uint8_t \fBreserved\fP: 7"
+.br
+.ti -1c
+.RI "bool \fBPublicNetwork\fP: 1"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   uint8_t \fBtotalbytes\fP [64]"
+.br
+.ti -1c
+.RI "   \fBStoredKeys_t\fP \fBStoredKeys\fP"
+.br
+.ti -1c
+.RI "   \fBOTAA_10x_t\fP \fBOTAA_10x\fP"
+.br
+.ti -1c
+.RI "   \fBOTAA_11x_t\fP \fBOTAA_11x\fP"
+.br
+.ti -1c
+.RI "   \fBABP_10x_t\fP \fBABP_10x\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "union { \&.\&.\&. } "
+
+.SS "\fBABP_10x_t\fP ABP_10x"
+
+.SS "\fBkeyType_e\fP KeyType"
+
+.SS "\fBOTAA_10x_t\fP OTAA_10x"
+
+.SS "\fBOTAA_11x_t\fP OTAA_11x"
+
+.SS "bool PublicNetwork"
+
+.SS "uint8_t reserved"
+
+.SS "\fBStoredKeys_t\fP StoredKeys"
+
+.SS "uint8_t totalbytes[64]"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

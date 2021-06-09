@@ -1,0 +1,54 @@
+.TH "macros_lorawan" 3 "Mon Jun 7 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+macros_lorawan \- Macros
+.PP
+ \- Onethinx LoRaWAN API Macros\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+
+.in +1c
+.ti -1c
+.RI "#define \fBwakeUpPinHigh\fP(pullDown)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = true, \&.internalPullUpDown =  pullDown})"
+.br
+.ti -1c
+.RI "#define \fBwakeUpPinLow\fP(pullUp)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = false, \&.internalPullUpDown =  pullUp})"
+.br
+.ti -1c
+.RI "#define \fBwakeUpPinOff\fP   ((\fBwakeUpPin_t\fP) { \&.enabled = false })"
+.br
+.ti -1c
+.RI "#define \fBwakeUpTimestamp\fP(_timestamp)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isTimestamp = true, \&.timestamp = _timestamp })"
+.br
+.ti -1c
+.RI "#define \fBwakeUpDelay\fP(_days,  _hours,  _minutes,  _seconds)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isTimestamp = false, \&.days = _days, \&.hours = _hours, \&.minutes = _minutes, \&.seconds = _seconds })"
+.br
+.ti -1c
+.RI "#define \fBwakeUpTimeOff\fP   ((\fBwakeUpTime_t\fP) { \&.enabled = false })"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Onethinx LoRaWAN API Macros\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define wakeUpDelay(_days, _hours, _minutes, _seconds)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isTimestamp = false, \&.days = _days, \&.hours = _hours, \&.minutes = _minutes, \&.seconds = _seconds })"
+
+.SS "#define wakeUpPinHigh(pullDown)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = true, \&.internalPullUpDown =  pullDown})"
+
+.SS "#define wakeUpPinLow(pullUp)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = false, \&.internalPullUpDown =  pullUp})"
+
+.SS "#define wakeUpPinOff   ((\fBwakeUpPin_t\fP) { \&.enabled = false })"
+
+.SS "#define wakeUpTimeOff   ((\fBwakeUpTime_t\fP) { \&.enabled = false })"
+
+.SS "#define wakeUpTimestamp(_timestamp)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isTimestamp = true, \&.timestamp = _timestamp })"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structcore_status__t" kind="struct" language="C++" prot="public">
+    <compoundname>coreStatus_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_status__t_1a4cc49d5c2f5d30ea2683428d9c986aa0" prot="public" static="no" mutable="no">
+        <type><ref refid="unionparameter_status__t" kindref="compound">parameterStatus_t</ref></type>
+        <definition>parameterStatus_t parameters</definition>
+        <argsstring></argsstring>
+        <name>parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="458" column="18" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_status__t_1a971d947e6442a87ff73bfc109887da5c" prot="public" static="no" mutable="no">
+        <type><ref refid="unionradio_status__t" kindref="compound">radioStatus_t</ref></type>
+        <definition>radioStatus_t radio</definition>
+        <argsstring></argsstring>
+        <name>radio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="459" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_status__t_1a7d6c0ceda41dea8d4bc5a3d390536052" prot="public" static="no" mutable="no">
+        <type><ref refid="unionmac_status__t" kindref="compound">macStatus_t</ref></type>
+        <definition>macStatus_t mac</definition>
+        <argsstring></argsstring>
+        <name>mac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="460" column="12" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_status__t_1a58ab7512c9cde9cb327961612ea49a47" prot="public" static="no" mutable="no">
+        <type><ref refid="unionsystem_status__t" kindref="compound">systemStatus_t</ref></type>
+        <definition>systemStatus_t system</definition>
+        <argsstring></argsstring>
+        <name>system</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="461" column="15" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System status structure returned by LoRaWAN functions, found in <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>parameterStatus_t</label>
+        <link refid="unionparameter_status__t"/>
+      </node>
+      <node id="5">
+        <label>radioStatus_t</label>
+        <link refid="unionradio_status__t"/>
+      </node>
+      <node id="2">
+        <label>macStatus_t</label>
+        <link refid="unionmac_status__t"/>
+      </node>
+      <node id="3">
+        <label>systemStatus_t</label>
+        <link refid="unionsystem_status__t"/>
+      </node>
+      <node id="1">
+        <label>coreStatus_t</label>
+        <link refid="structcore_status__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mac</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>system</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>parameters</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>radio</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="457" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="457" bodyend="462"/>
+    <listofallmembers>
+      <member refid="structcore_status__t_1a7d6c0ceda41dea8d4bc5a3d390536052" prot="public" virt="non-virtual"><scope>coreStatus_t</scope><name>mac</name></member>
+      <member refid="structcore_status__t_1a4cc49d5c2f5d30ea2683428d9c986aa0" prot="public" virt="non-virtual"><scope>coreStatus_t</scope><name>parameters</name></member>
+      <member refid="structcore_status__t_1a971d947e6442a87ff73bfc109887da5c" prot="public" virt="non-virtual"><scope>coreStatus_t</scope><name>radio</name></member>
+      <member refid="structcore_status__t_1a58ab7512c9cde9cb327961612ea49a47" prot="public" virt="non-virtual"><scope>coreStatus_t</scope><name>system</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

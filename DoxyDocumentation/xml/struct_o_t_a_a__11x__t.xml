@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_o_t_a_a__11x__t" kind="struct" language="C++" prot="public">
+    <compoundname>OTAA_11x_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_o_t_a_a__11x__t_1ac1539901553f3b3913de55b7d9d1c42b" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr8b__t" kindref="compound">arr8b_t</ref></type>
+        <definition>arr8b_t DevEui</definition>
+        <argsstring></argsstring>
+        <name>DevEui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="158" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_o_t_a_a__11x__t_1a67c2df4f8f2e6a225a2eb1b8e590702e" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr8b__t" kindref="compound">arr8b_t</ref></type>
+        <definition>arr8b_t JoinEui</definition>
+        <argsstring></argsstring>
+        <name>JoinEui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="159" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_o_t_a_a__11x__t_1ac49db846c1220a6ba18a76de333f7247" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr16b__t" kindref="compound">arr16b_t</ref></type>
+        <definition>arr16b_t AppKey</definition>
+        <argsstring></argsstring>
+        <name>AppKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="160" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_o_t_a_a__11x__t_1a6d61c8e8c07503e3eaa45ed251d4aac1" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr16b__t" kindref="compound">arr16b_t</ref></type>
+        <definition>arr16b_t NwkKey</definition>
+        <argsstring></argsstring>
+        <name>NwkKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="161" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>arr8b_t</label>
+        <link refid="structarr8b__t"/>
+      </node>
+      <node id="3">
+        <label>arr16b_t</label>
+        <link refid="structarr16b__t"/>
+      </node>
+      <node id="1">
+        <label>OTAA_11x_t</label>
+        <link refid="struct_o_t_a_a__11x__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>DevEui</edgelabel>
+          <edgelabel>JoinEui</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AppKey</edgelabel>
+          <edgelabel>NwkKey</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="157" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="157" bodyend="162"/>
+    <listofallmembers>
+      <member refid="struct_o_t_a_a__11x__t_1ac49db846c1220a6ba18a76de333f7247" prot="public" virt="non-virtual"><scope>OTAA_11x_t</scope><name>AppKey</name></member>
+      <member refid="struct_o_t_a_a__11x__t_1ac1539901553f3b3913de55b7d9d1c42b" prot="public" virt="non-virtual"><scope>OTAA_11x_t</scope><name>DevEui</name></member>
+      <member refid="struct_o_t_a_a__11x__t_1a67c2df4f8f2e6a225a2eb1b8e590702e" prot="public" virt="non-virtual"><scope>OTAA_11x_t</scope><name>JoinEui</name></member>
+      <member refid="struct_o_t_a_a__11x__t_1a6d61c8e8c07503e3eaa45ed251d4aac1" prot="public" virt="non-virtual"><scope>OTAA_11x_t</scope><name>NwkKey</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

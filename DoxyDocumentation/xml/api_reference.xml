@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="api_reference" kind="page">
+    <compoundname>apiReference</compoundname>
+    <title>API Reference</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="api_reference_1lorawan_api_page">
+<title>LoRaWAN</title>
+<para><ref refid="group__lorawan__api__group" kindref="compound">LoRaWAN</ref></para>
+</sect1>
+<sect1 id="api_reference_1loraapi">
+<title>LoRa API</title>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

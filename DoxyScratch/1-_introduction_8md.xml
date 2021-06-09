@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="1-_introduction_8md" kind="file" language="Markdown">
+    <compoundname>1-Introduction.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">\page<sp/>intro<sp/>Introduction</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Onethinx<sp/>LoRaWAN<sp/>module<sp/>is<sp/>a<sp/>purpose-built<sp/>module<sp/>for<sp/>engineers<sp/>and<sp/>companies<sp/>that<sp/>do<sp/>not<sp/>want<sp/>to<sp/>spend<sp/>their<sp/>pretious<sp/>time<sp/>and<sp/>money<sp/></highlight></codeline>
+<codeline><highlight class="normal">for<sp/>development<sp/>of<sp/>the<sp/>LoRa<sp/>and/or<sp/>LoRaWAN<sp/>stacks,<sp/>RF<sp/>hardware<sp/>design,<sp/>lenghty<sp/>certifications,<sp/>security<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">Datasheet</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">Cad<sp/>libs</highlight></codeline>
+    </programlisting>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/1-Introduction.md"/>
+  </compounddef>
+</doxygen>

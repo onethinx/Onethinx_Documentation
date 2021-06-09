@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structipc__msgs__t" kind="struct" language="C++" prot="public">
+    <compoundname>ipc_msgs_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structipc__msgs__t_1a778a1a278f5700516ad79102ca5b92dc" prot="public" static="no" mutable="no">
+        <type><ref refid="structipc__msg__t" kindref="compound">ipc_msg_t</ref></type>
+        <definition>ipc_msg_t forCM0</definition>
+        <argsstring></argsstring>
+        <name>forCM0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="120" column="11" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structipc__msgs__t_1a1d68132f4930e477ebce6dcb4dbe31b8" prot="public" static="no" mutable="no">
+        <type><ref refid="structipc__msg__t" kindref="compound">ipc_msg_t</ref></type>
+        <definition>ipc_msg_t fromCM0</definition>
+        <argsstring></argsstring>
+        <name>fromCM0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="121" column="11" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ipc_msg_t</label>
+        <link refid="structipc__msg__t"/>
+      </node>
+      <node id="1">
+        <label>ipc_msgs_t</label>
+        <link refid="structipc__msgs__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>forCM0</edgelabel>
+          <edgelabel>fromCM0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="118" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="119" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structipc__msgs__t_1a778a1a278f5700516ad79102ca5b92dc" prot="public" virt="non-virtual"><scope>ipc_msgs_t</scope><name>forCM0</name></member>
+      <member refid="structipc__msgs__t_1a1d68132f4930e477ebce6dcb4dbe31b8" prot="public" virt="non-virtual"><scope>ipc_msgs_t</scope><name>fromCM0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

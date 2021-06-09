@@ -1,0 +1,56 @@
+.TH "LoRaPacketParams_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LoRaPacketParams_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxExt01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBPreambleLength\fP"
+.br
+.ti -1c
+.RI "\fBRadioLoRaHeaderType_e\fP \fBHeaderType\fP: 8"
+.br
+.ti -1c
+.RI "uint8_t \fBPayloadSize\fP"
+.br
+.RI "Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept\&. "
+.ti -1c
+.RI "\fBRadioLoRaCrcMode_e\fP \fBCRCmode\fP: 8"
+.br
+.ti -1c
+.RI "\fBRadioLoRaIQMode_e\fP \fBIQmode\fP: 8"
+.br
+.ti -1c
+.RI "uint16_t \fBSyncWord\fP"
+.br
+.RI "The SX126x LoRa syncword setting\&. "
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "\fBRadioLoRaCrcMode_e\fP CRCmode"
+
+.SS "\fBRadioLoRaHeaderType_e\fP HeaderType"
+
+.SS "\fBRadioLoRaIQMode_e\fP IQmode"
+
+.SS "uint8_t PayloadSize"
+
+.PP
+Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept\&. 
+.SS "uint16_t PreambleLength"
+
+.SS "uint16_t SyncWord"
+
+.PP
+The SX126x LoRa syncword setting\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

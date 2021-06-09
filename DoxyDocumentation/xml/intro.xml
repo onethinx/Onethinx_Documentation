@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="intro" kind="page">
+    <compoundname>intro</compoundname>
+    <title>Introduction</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Onethinx LoRaWAN module is a purpose-built module for engineers and companies that do not want to spend their pretious time and money for development of the LoRa and/or LoRaWAN stacks, RF hardware design, lenghty certifications, security</para>
+<para>Datasheet</para>
+<para>Cad libs </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,125 @@
+.TH "IRQstatus_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRQstatus_t \- Represents the possible IRQ states\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxExt01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBValue\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint8_t \fBIRQ_TX_DONE\fP: 1"
+.br
+.RI "Radio received TX DONE IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_RX_DONE\fP: 1"
+.br
+.RI "Radio received RX DONE IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_PREAMBLE_DETECTED\fP: 1"
+.br
+.RI "Radio received PREAMBLE DETECTED IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_SYNCWORD_VALID\fP: 1"
+.br
+.RI "Radio received SYNCWORD VALID IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_HEADER_VALID\fP: 1"
+.br
+.RI "Radio received HEADER VALID IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_HEADER_ERROR\fP: 1"
+.br
+.RI "Radio received HEADER ERROR IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_CRC_ERROR\fP: 1"
+.br
+.RI "Radio received CRC ERROR IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_CAD_DONE\fP: 1"
+.br
+.RI "Radio received CAD DONE IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_CAD_ACTIVITY_DETECTED\fP: 1"
+.br
+.RI "Radio received CAD ACTIVITY DETECTED IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fBIRQ_RX_TX_TIMEOUT\fP: 1"
+.br
+.RI "Radio received RX TX TIMEOUT IRQ\&. "
+.ti -1c
+.RI "   uint8_t \fB__pad0__\fP: 6"
+.br
+.RI "Reserved\&. "
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents the possible IRQ states\&. 
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.PP
+Reserved\&. 
+.SS "uint8_t IRQ_CAD_ACTIVITY_DETECTED"
+
+.PP
+Radio received CAD ACTIVITY DETECTED IRQ\&. 
+.SS "uint8_t IRQ_CAD_DONE"
+
+.PP
+Radio received CAD DONE IRQ\&. 
+.SS "uint8_t IRQ_CRC_ERROR"
+
+.PP
+Radio received CRC ERROR IRQ\&. 
+.SS "uint8_t IRQ_HEADER_ERROR"
+
+.PP
+Radio received HEADER ERROR IRQ\&. 
+.SS "uint8_t IRQ_HEADER_VALID"
+
+.PP
+Radio received HEADER VALID IRQ\&. 
+.SS "uint8_t IRQ_PREAMBLE_DETECTED"
+
+.PP
+Radio received PREAMBLE DETECTED IRQ\&. 
+.SS "uint8_t IRQ_RX_DONE"
+
+.PP
+Radio received RX DONE IRQ\&. 
+.SS "uint8_t IRQ_RX_TX_TIMEOUT"
+
+.PP
+Radio received RX TX TIMEOUT IRQ\&. 
+.SS "uint8_t IRQ_SYNCWORD_VALID"
+
+.PP
+Radio received SYNCWORD VALID IRQ\&. 
+.SS "uint8_t IRQ_TX_DONE"
+
+.PP
+Radio received TX DONE IRQ\&. 
+.SS "uint16_t Value"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

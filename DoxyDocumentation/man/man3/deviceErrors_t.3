@@ -1,0 +1,117 @@
+.TH "deviceErrors_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+deviceErrors_t \- Represents the possible device error states\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxExt01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBValue\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint8_t \fBRc64kCalib\fP: 1"
+.br
+.RI "RC 64kHz oscillator calibration failed\&. "
+.ti -1c
+.RI "   uint8_t \fBRc13mCalib\fP: 1"
+.br
+.RI "RC 13MHz oscillator calibration failed\&. "
+.ti -1c
+.RI "   uint8_t \fBPllCalib\fP: 1"
+.br
+.RI "PLL calibration failed\&. "
+.ti -1c
+.RI "   uint8_t \fBAdcCalib\fP: 1"
+.br
+.RI "ADC calibration failed\&. "
+.ti -1c
+.RI "   uint8_t \fBImgCalib\fP: 1"
+.br
+.RI "Image calibration failed\&. "
+.ti -1c
+.RI "   uint8_t \fBXoscStart\fP: 1"
+.br
+.RI "XOSC oscillator failed to start\&. "
+.ti -1c
+.RI "   uint8_t \fBPllLock\fP: 1"
+.br
+.RI "PLL lock failed\&. "
+.ti -1c
+.RI "   uint8_t \fBBuckStart\fP: 1"
+.br
+.RI "Buck converter failed to start\&. "
+.ti -1c
+.RI "   uint8_t \fBPaRamp\fP: 1"
+.br
+.RI "PA ramp failed\&. "
+.ti -1c
+.RI "   uint8_t \fB__pad0__\fP: 7"
+.br
+.RI "Reserved\&. "
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents the possible device error states\&. 
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.PP
+Reserved\&. 
+.SS "uint8_t AdcCalib"
+
+.PP
+ADC calibration failed\&. 
+.SS "uint8_t BuckStart"
+
+.PP
+Buck converter failed to start\&. 
+.SS "uint8_t ImgCalib"
+
+.PP
+Image calibration failed\&. 
+.SS "uint8_t PaRamp"
+
+.PP
+PA ramp failed\&. 
+.SS "uint8_t PllCalib"
+
+.PP
+PLL calibration failed\&. 
+.SS "uint8_t PllLock"
+
+.PP
+PLL lock failed\&. 
+.SS "uint8_t Rc13mCalib"
+
+.PP
+RC 13MHz oscillator calibration failed\&. 
+.SS "uint8_t Rc64kCalib"
+
+.PP
+RC 64kHz oscillator calibration failed\&. 
+.SS "uint16_t Value"
+
+.SS "uint8_t XoscStart"
+
+.PP
+XOSC oscillator failed to start\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="getstart" kind="page">
+    <compoundname>getstart</compoundname>
+    <title>Getting Started</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="getstart_1ide">
+<title>Installing the IDE</title>
+<para>This guide will show you how to setup Visual Studio Code with the Onethinx Core dependencies pack. </para>
+<sect2 id="getstart_1idewindows">
+<title>Windows</title>
+<para><orderedlist>
+<listitem><para><bold>Download prerequisites</bold><itemizedlist>
+<listitem><para><ulink url="https://code.visualstudio.com/download">Download Visual Studio Code</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/onethinx/VSCode_OnethinxPack_Windows/archive/master.zip">Download the Onethinx dependencies pack for Windows</ulink></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Install VS Code &amp; extensions</bold><itemizedlist>
+<listitem><para>Install VS Code.</para>
+</listitem><listitem><para>Install extensions:<itemizedlist>
+<listitem><para>ARM Support For Visual Studio Code (dan-c-underwood)</para>
+</listitem><listitem><para>C/C++ IntelliSense, debugging (microsoft)</para>
+</listitem><listitem><para>CMake language support (twxs)</para>
+</listitem><listitem><para>CMake Tools (microsoft)</para>
+</listitem><listitem><para>Cortex-Debug GDB support (marus25)</para>
+</listitem><listitem><para>LinkerScript support for GNU (Zixuan Wang)</para>
+</listitem><listitem><para>Open in Application (Fabio Spampinato)</para>
+</listitem><listitem><para>Output Colorizer (IBM)</para>
+</listitem><listitem><para>Tasks (actboy168)</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Install the Onethinx Dependencies Pack</bold><itemizedlist>
+<listitem><para>Unzip the pack archive to your local harddisk (eg: C:\VSCode_OnethinxPack_Windows).</para>
+</listitem><listitem><para>Open your command prompt (cmd).</para>
+</listitem><listitem><para>Drag and drop the file setVariables.bat to your command prompt (or type C:\VSCode_OnethinxPack_Windows\setVariables.bat).</para>
+</listitem><listitem><para>Press enter, you&apos;ll see the environment variables and the path being set.</para>
+</listitem><listitem><para>Restart your machine.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Check</bold><itemizedlist>
+<listitem><para>If CMake, Make and the compiler is correctly installed by typing the following into your command prompt or terminal window of VS Code.<itemizedlist>
+<listitem><para><computeroutput>cmake -version</computeroutput></para>
+</listitem><listitem><para><computeroutput>mingw32-make -v</computeroutput></para>
+</listitem><listitem><para><computeroutput>arm-none-eabi-gcc -v</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Remind</bold><itemizedlist>
+<listitem><para>After changing the device configuration (or project file structure) to use<itemizedlist>
+<listitem><para>Clean Reconfigure</para>
+</listitem><listitem><para>Clean Rebuild in order to build the image properly</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>To delete the contents of the build folder<itemizedlist>
+<listitem><para>if you copied the project including build folder from another location / machine</para>
+</listitem><listitem><para>when build fails.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>This pack contains the 64bit version of CMake. Replace with the 32bit version if you run on a 32bit machine.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para>Windows<hruler/>
+ </para>
+</sect2>
+<sect2 id="getstart_1idemacos">
+<title>MacOS</title>
+<para><orderedlist>
+<listitem><para><bold>Download prerequisites</bold><itemizedlist>
+<listitem><para><ulink url="https://code.visualstudio.com/download">Download Visual Studio Code</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/onethinx/VSCode_OnethinxPack_macOS/archive/master.zip">Download the Onethinx dependencies pack for Mac OS</ulink></para>
+</listitem><listitem><para><ulink url="https://cmake.org/download/">Download CMake</ulink></para>
+</listitem><listitem><para>Install homebrew GNU by: make brew install homebrew/core/make as <ulink url="https://apple.stackexchange.com/questions/261918/how-to-upgrade-gnu-make-in-os-x-el-capitan">explained here</ulink></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Install VS Code &amp; extensions</bold><itemizedlist>
+<listitem><para>Install CMake.</para>
+</listitem><listitem><para>Install VS Code.</para>
+</listitem><listitem><para>Install extensions:<itemizedlist>
+<listitem><para>ARM Support For Visual Studio Code (dan-c-underwood)</para>
+</listitem><listitem><para>C/C++ IntelliSense, debugging (microsoft)</para>
+</listitem><listitem><para>CMake language support (twxs)</para>
+</listitem><listitem><para>CMake Tools (microsoft)</para>
+</listitem><listitem><para>Cortex-Debug GDB support (marus25)</para>
+</listitem><listitem><para>LinkerScript support for GNU (Zixuan Wang)</para>
+</listitem><listitem><para>Open in Application (Fabio Spampinato)</para>
+</listitem><listitem><para>Output Colorizer (IBM)</para>
+</listitem><listitem><para>Tasks (actboy168)</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Apply the CMake path to VS Settings: &quot;cmake.cmakePath&quot;: &quot;/Applications/CMake.app/Contents/bin/cmake&quot;,</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Install the Onethinx Dependencies Pack</bold><itemizedlist>
+<listitem><para>Unzip the pack archive to your local harddisk (eg: /Applications/VSCode_OnethinxPack_macOS).</para>
+</listitem><listitem><para>If the file ~.bash_profile doesn&apos;t exist, create it: Terminal &gt;&gt; cd ~ &amp;&amp; touch .bash_profile</para>
+</listitem><listitem><para>Open ~.bash_profile: Terminal &gt;&gt; cd ~ &amp;&amp; open -e .bash_profile</para>
+</listitem><listitem><para>Add this to the end of the file (make sure you enter the correct path) and save:</para>
+</listitem><listitem><para># Loading environment variables for the Onethinx Pack</para>
+</listitem><listitem><para>source /locationOfYour/VSCode_OnethinxPack_macOS/variables.env</para>
+</listitem><listitem><para>Set the correct path in this pack&apos;s variables.env file.</para>
+</listitem><listitem><para>Restart your machine (or log-out and log-in) to reload the environment variables.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Check</bold><itemizedlist>
+<listitem><para>If CMake, Make and the compiler is correctly installed by typing the following into your command prompt or terminal window of VS Code.<itemizedlist>
+<listitem><para><computeroutput>cmake -version</computeroutput></para>
+</listitem><listitem><para><computeroutput>mingw32-make -v</computeroutput></para>
+</listitem><listitem><para><computeroutput>arm-none-eabi-gcc -v</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Remind</bold><itemizedlist>
+<listitem><para>After changing the device configuration (or project file structure) to use<itemizedlist>
+<listitem><para>Clean Reconfigure</para>
+</listitem><listitem><para>Clean Rebuild in order to build the image properly</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>To delete the contents of the build folder<itemizedlist>
+<listitem><para>if you copied the project including build folder from another location / machine</para>
+</listitem><listitem><para>when build fails.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>This pack contains the 64bit version of CMake. Replace with the 32bit version if you run on a 32bit machine.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para>MacOS<hruler/>
+ </para>
+</sect2>
+<sect2 id="getstart_1idelinux">
+<title>Linux</title>
+<para><orderedlist>
+<listitem><para><bold>Download prerequisites</bold><itemizedlist>
+<listitem><para><ulink url="https://code.visualstudio.com/download">Download Visual Studio Code</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/onethinx/VSCode_OnethinxPack_Linux/archive/master.zip">Download Onethinx Dependencies Pack</ulink></para>
+</listitem><listitem><para>Install CMake: <computeroutput>sudo apt install cmake</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>Install VS Code &amp; extensions</bold><itemizedlist>
+<listitem><para>Install VS Code.</para>
+</listitem><listitem><para>Install extensions:<itemizedlist>
+<listitem><para>ARM Support For Visual Studio Code (dan-c-underwood)</para>
+</listitem><listitem><para>C/C++ IntelliSense, debugging (microsoft)</para>
+</listitem><listitem><para>CMake language support (twxs)</para>
+</listitem><listitem><para>CMake Tools (microsoft)</para>
+</listitem><listitem><para>Cortex-Debug GDB support (marus25)</para>
+</listitem><listitem><para>LinkerScript support for GNU (Zixuan Wang)</para>
+</listitem><listitem><para>Open in Application (Fabio Spampinato)</para>
+</listitem><listitem><para>Output Colorizer (IBM)</para>
+</listitem><listitem><para>Tasks (actboy168)</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Apply the OpenOCD USB rules by running <computeroutput>yourpath\VSCode_OnethinxPack_Linux/tools_2.0/linux/openocd/udev_rules/install_rules.sh</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Install the Onethinx Dependencies Pack<itemizedlist>
+<listitem><para>Unzip the pack archive to your local harddisk (eg: /Applications/VSCode_OnethinxPack_Linux).</para>
+</listitem><listitem><para>Open ~.profile: Terminal &gt;&gt; <computeroutput>cd ~ &amp;&amp; sudo nano .profile</computeroutput></para>
+</listitem><listitem><para>Add this to the end of the file (make sure you enter the correct path) and save:<linebreak/>
+ # Loading environment variables for the Onethinx Pack<linebreak/>
+ source /locationOfYour/VSCode_OnethinxPack_macOS/variables.env<linebreak/>
+</para>
+</listitem><listitem><para>Set the correct path in this pack&apos;s variables.env file.</para>
+</listitem><listitem><para>Restart your machine (or log-out and log-in) to reload the environment variables.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Check<itemizedlist>
+<listitem><para>If CMake, Make and the compiler is correctly installed by typing the following into your terminal or terminal window of VS Code.<itemizedlist>
+<listitem><para><computeroutput>cmake -version</computeroutput></para>
+</listitem><listitem><para><computeroutput>make -v</computeroutput></para>
+</listitem><listitem><para><computeroutput>arm-none-eabi-gcc -v</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Remind<itemizedlist>
+<listitem><para>After changing the device configuration (or project file structure) to use<itemizedlist>
+<listitem><para>Clean Reconfigure</para>
+</listitem><listitem><para>Clean Rebuild in order to build the image properly</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>To delete the contents of the build folder<itemizedlist>
+<listitem><para>if you copied the project including build folder from another location / machine</para>
+</listitem><listitem><para>when build fails.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+<para>Linux<hruler/>
+</para>
+</sect2>
+</sect1>
+<sect1 id="getstart_1programmer">
+<title>Programmer/Debugger</title>
+<para>In order to program a Onethinx LoRaWAN module, you need a programmer. You can also find our recomendations on our <ulink url="https://forum.onethinx.com/t/which-programmers-debuggers-are-compatible/216"><bold>forum</bold></ulink>.</para>
+<para><emoji name="white_check_mark" unicode="&amp;#x2705;"/> MiniProg 4 &lt; recommended<itemizedlist>
+<listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/cy8ckit-005-miniprog4-program-and-debug-kit">CY8CKIT-005 - $99.00</ulink> For our dev.kit, use an extension header, eg. <ulink url="https://www.samtec.com/products/ssq-105-03-f-s">Samtec SSQ-105-03-F-S</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><emoji name="white_check_mark" unicode="&amp;#x2705;"/> KitProg 2 (<ulink url="https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376">fter voltage upgrade</ulink>!! and <ulink url="https://community.cypress.com/t5/ModusToolbox-General/KitProg-firmware-out-of-date-message/td-p/72805">upgrading to KitProg 3</ulink>)<itemizedlist>
+<listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/cy8ckit-147-psoc-4100ps-prototyping-kit">CY8CKIT-147 - $10.00</ulink> (needs <ulink url="https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376">upgrade</ulink>!!) &lt; budgetary recommended</para>
+</listitem><listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/cy8ckit-145-40xx-psoc-4000s-capsense-prototyping-kit">CY8CKIT-145 - $15.00</ulink> (needs <ulink url="https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376">upgrade</ulink>!!)</para>
+</listitem><listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-146-4xxx-prototyping-kits">CY8CKIT-146 - $15.00</ulink> (needs <ulink url="https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376">upgrade</ulink>!!)</para>
+</listitem><listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/psoc-6-ble-prototyping-kit-cy8cproto-063-ble">CY8CPROTO-063-BLE - $20.00</ulink> (needs <ulink url="https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376">upgrade</ulink>!!)</para>
+</listitem></itemizedlist>
+</para>
+<para><emoji name="grey_question" unicode="&amp;#x2754;"/> KitProg 3<itemizedlist>
+<listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w">CY8CPROTO-062-4343W - $30.00</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><emoji name="white_check_mark" unicode="&amp;#x2705;"/> Segger J-Link<itemizedlist>
+<listitem><para><ulink url="https://www.segger.com/products/debug-probes/j-link/models/j-link-edu/">J-Link EDU - $60.00</ulink></para>
+</listitem><listitem><para><ulink url="https://www.segger.com/products/debug-probes/j-link/models/j-link-pro/">J-Link PRO - $800.00</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><emoji name="x" unicode="&amp;#x274c;"/> KitProg 1 Doesn’t work! (<strike>should work according to <ulink url="https://forum.onethinx.com/t/error-on-uploading-the-code-solved/118/5">this topic</ulink></strike>, however not advised)<itemizedlist>
+<listitem><para><strike><ulink url="https://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit">CY8CKIT-043 - $10.00</ulink></strike></para>
+</listitem><listitem><para><strike><ulink url="https://www.cypress.com/documentation/development-kitsboards/cy8ckit-059-psoc-5lp-prototyping-kit-onboard-programmer-and">CY8CKIT-059 - $10.00</ulink></strike></para>
+</listitem></itemizedlist>
+</para>
+<para><emoji name="grey_question" unicode="&amp;#x2754;"/> ST Link (after <ulink url="https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/">converting to J-Link?</ulink>)<itemizedlist>
+<listitem><para><ulink url="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-nucleo-boards/nucleo-f030r8.html">NUCLEO-F030R8</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><emoji name="x" unicode="&amp;#x274c;"/> MiniProg 3 (Not working)<itemizedlist>
+<listitem><para><ulink url="https://www.cypress.com/documentation/development-kitsboards/cy8ckit-002-psoc-miniprog3-program-and-debug-kit">CY8CKIT-002</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><bold>NOTE</bold>: If you find that a programmer that is not listed here either works or does not work with our module, please let us know on the <ulink url="https://forum.onethinx.com/t/which-programmers-debuggers-are-compatible/216"><bold>forum</bold></ulink>.<hruler/>
+</para>
+</sect1>
+<sect1 id="getstart_1examples">
+<title>Downloading the examples</title>
+<para>Onethinx examples can be found on our <ulink url="https://github.com/onethinx/Onethinx_Creator_Examples"><bold>Github</bold></ulink> page. For detailed explanation of the examples please see the <ref refid="ex_examples" kindref="compound">Examples</ref> page of this document. <hruler/>
+</para>
+</sect1>
+<sect1 id="getstart_1apiLibs">
+<title>Using the correct API libraries</title>
+<para>As we update our Onethinx module, newer versions of the Onethinx API and stack come out. Onethinx stack is programmed on the modules ARM Cortex M0+ core, while your application, which you will program on the ARM Cortex M4 core uses the Onethinx API to communicate with the stack. Not all stack versions support the same API version (there are versions of the stack that do support same API). Although we strive to have one single API version for all future stacks, updates are inevitable. Examples found on our Github, are usually updated to the latest API version. Onethinx API can be found on our <ulink url="https://github.com/onethinx">Github</ulink> page:<itemizedlist>
+<listitem><para><ulink url="https://github.com/onethinx/OnethinxCoreAPI"><bold>LoRaWAN API</bold></ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/onethinx/OnethinxCoreAPI_Extended"><bold>LoRa API</bold></ulink></para>
+</listitem></itemizedlist>
+</para>
+<para>The API version you are using should always match the Stack version that is on the module according to this table: <table rows="21" cols="3"><caption>Onethinx API Versions</caption>
+<row>
+<entry thead="yes"><para>Stack Version </para>
+</entry><entry thead="yes"><para>LoRaWAN API Version </para>
+</entry><entry thead="yes"><para>LoRa API Version </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xAD </para>
+</entry><entry thead="no"><para>0xAD </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xAE </para>
+</entry><entry thead="no"><para>0xAD </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB0 </para>
+</entry><entry thead="no"><para>0xB0 </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB1 </para>
+</entry><entry thead="no"><para>0xB1 </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB2 </para>
+</entry><entry thead="no"><para>0xB2 </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB3 </para>
+</entry><entry thead="no"><para>0xB2 </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB4 </para>
+</entry><entry thead="no"><para>0xB2 </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB5 </para>
+</entry><entry thead="no"><para>0xB2 </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB6 </para>
+</entry><entry thead="no"><para>not public </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB7 </para>
+</entry><entry thead="no"><para>not public </para>
+</entry><entry thead="no"><para>not available </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB8 </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xB9 </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xBA </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xBB </para>
+</entry><entry thead="no"><para>0xBB </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xBC </para>
+</entry><entry thead="no"><para>0xBB </para>
+</entry><entry thead="no"><para>0xB8 </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xBD </para>
+</entry><entry thead="no"><para>not public </para>
+</entry><entry thead="no"><para>not public </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xBE </para>
+</entry><entry thead="no"><para>0xBE </para>
+</entry><entry thead="no"><para>0xBE </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xBF </para>
+</entry><entry thead="no"><para>0xBE </para>
+</entry><entry thead="no"><para>0xBE </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xC0 </para>
+</entry><entry thead="no"><para>not public </para>
+</entry><entry thead="no"><para>not public </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0xC1 </para>
+</entry><entry thead="no"><para>0xC1 </para>
+</entry><entry thead="no"><para>0xC1 </para>
+</entry></row>
+</table>
+If the tables in this document are not up to date, please consult the tables found in the <ulink url="https://github.com/onethinx/OnethinxCoreAPI">LoRaWAN API</ulink> and <ulink url="https://github.com/onethinx/OnethinxCoreAPI_Extended">LoRa API</ulink> pages on our Github.</para>
+<para><bold>Dont know which stack version your module has?</bold> In order to find out which version of the stack your module has, you can copy and run a piece of code found here: <ref refid="ex_examples_1ex_deveui" kindref="member">Stack Version Code</ref>. Similar code can also be found on the bottom of this <ulink url="https://github.com/onethinx/OnethinxCoreAPI">Github page</ulink>.</para>
+<para><bold>NOTE</bold>: Once you find a stable version that suits you, you tested your device with it and you plan to go to mass production, we recommend to stick to that version when ordering modules. <hruler/>
+</para>
+</sect1>
+<sect1 id="getstart_1lwkeys">
+<title>LoRaWAN Keys and Connection</title>
+<para>In order to connect to a LoRaWAN network, you need a LoRaWAN gateway and LoRaWAN keys. Keys are</para>
+<para>If you are using The Things Network (or some other public network), you may not need a gateway to test your LoRaWAN device because there may already be coverage in your area by a gateway somebody else has placed. Although this saves you some money not needing to put up your own gateway, we still recommend that you get your own gateway as this will save you a lot of time during development of your product as there are many things that can influence the connection. It is acceptable to use public gateways for prototyping. The public gateway may be far and the network conditions may be poor on a certain day, limiting your development. Also, the person that owns the public gateway, may decide they will unplug the gateway for a day, which will disable your connection to the Network Server. This is why, for serious development, we recommend having your own gateway.</para>
+<para>Onethinx LoRaWAN module supports 1.0.2 LoRaWAN specification and is LoRa Alliance Certified for this version. In order to connect to any LoRaWAN network, the LoRaWAN stack needs to know these 3 parameters (keys):<itemizedlist>
+<listitem><para><bold>DevEUI</bold> is a unique ID in the IEEE EUI64 address space used to identify a device. There must not be 2 same DevEUIs on different devices! DevEUI is supplied by the device manufacturer, in this case, each Onethinx module has its own unique DevEUI which can be used.</para>
+</listitem><listitem><para><bold>AppEUI</bold> is a global application ID in the IEEE EUI64 address space identifying the join server during the over the air activation. For non-private networks it corresponds to a subdomain of joineuis.lora-alliance.org. This server name is used to find the IP address of the join server via DNS. The AppEUI can be different for each device or it can also be same for all device. It also depends on what kind of application server you are using. AppEUI identifies the join server and it can only be provided by the owner of the join server.</para>
+</listitem><listitem><para><bold>AppKey</bold> is an encryption key used for messages during every Over The Air Activation (OTAA). After the activation the AppSKey is used. A listener knowing the AppKey can derive the AppSKey. So you want to keep the AppKey secret. Which side of the communication channel creates it, is not important. You simply want to be sure that it is random and unique for each device.</para>
+</listitem></itemizedlist>
+</para>
+<para>In Onethinx project, the LoRaWAN keys are usually saved in LoRaWAN_keys.h header file. This header file is located in the project source folder: Project -&gt; source -&gt; OnethinxCore -&gt; LoRaWAN_keys.h</para>
+<para>In LoRaWAN_keys.h you will find an initalization structure, where you need to fill in the DevEUI (or use internal), AppEUI and AppKey. You can replace the zero (0x00) values in the structure with your keys.</para>
+<para>You can use a different DevEUI: <programlisting><codeline><highlight class="normal">LoRaWAN_keys_t<sp/>TTN_OTAAkeys<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.KeyType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>OTAA_10x_key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.PublicNetwork<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.DevEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.AppEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.AppKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+<para>Or use the internal unique DevEUI that is provided with every module: <programlisting><codeline><highlight class="normal">LoRaWAN_keys_t<sp/>TTN_OTAAkeys<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.KeyType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>OTAA_10x_key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.PublicNetwork<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.DevEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>thisDevEUI,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.AppEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.AppKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+<para>There are several ways to read out or to extract <bold>Onethinx DevEUI</bold> from a Onethinx module:<orderedlist>
+<listitem><para><ulink url="OTX-18-Programmer"><bold>OTX-18-Programmer</bold></ulink> - This program (made by Onethinx) allows you to read our a DevEUI, but also, if needed, to program a hex file to the module using OpenOCD. This program is written in C# (Visual Studio) and the code is available so you can make your own program with it if you wish, for example to create a factory tester that reads out the internal DevEUI and writes the AppEUI and AppKey in.</para>
+</listitem><listitem><para>Directly from code by using this code <ref refid="ex_examples_1ex_deveui" kindref="member">DevEUI extraction</ref></para>
+</listitem></orderedlist>
+</para>
+<para>LoRaWAN Keys and Connection<hruler/>
+ </para>
+</sect1>
+<sect1 id="getstart_1builddebug">
+<title>Building and Debugging</title>
+<para>Now that you have installed Visual Studio Code, gotten a programmer/debugger, downloaded the examples (matched the API if needed), you can get started with the examples.</para>
+<para>If you have access to a LoRaWAN gateway, we suggest to start with the &quot;Hello World&quot; example. If you do not have access to a LoRaWAN gateway or a LoRaWAN network in you vicinity, you can get started with the Lora2LoRa example. In order to use LoRaWAN you need access to a LoRaWAN gateway and/or network, however in order to use LoRa, you do not need these because you can achieve LoRa communication between 2 modules (at least). To get details and differences between LoRa and LoRaWAN I suggest that you go to the <ref refid="_f_a_q_1faq_loralorawan" kindref="member">LoRa vs LoRaWAN</ref> page.</para>
+<para>To run the example, please open VSCode. A wellcome page will open where you can start. Start by pressing &quot;Open Folder&quot; (Or go to: File-&gt;Open Folder) and select the folder with the example you wish to run.</para>
+<para><image type="html" name="openFolderExample.png" width="600px"></image>
+</para>
+<para>When opening the example for the first time (or when you move the project to a different folder), you will be asked to select the compiler. Select the latest GCC compiler you have installed.</para>
+<para><image type="html" name="vscodeCopilerSelect.png" width="600px"></image>
+</para>
+<para>In order to build the code, you can press the &quot;Build&quot; button on the bottom, or press &quot;Build and Launch&quot; to Build and Launch debugging.</para>
+<para><image type="html" name="vscodeBuild.png" width="600px"></image>
+</para>
+<para>In the Debug mode, you can use the buttons on the top to:<itemizedlist>
+<listitem><para>Continue/Pause</para>
+</listitem><listitem><para>Step Over</para>
+</listitem><listitem><para>Step Into</para>
+</listitem><listitem><para>Step Out</para>
+</listitem><listitem><para>Restart</para>
+</listitem><listitem><para>Stop Debugging Session</para>
+</listitem></itemizedlist>
+</para>
+<para><image type="html" name="debugButtons.png" width="400px"></image>
+</para>
+<para>Building and Debugging<hruler/>
+</para>
+</sect1>
+<sect1 id="getstart_1gs_psoccreator">
+<title>PSoC Creator</title>
+<para>TODO <ulink url="web">text</ulink> </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

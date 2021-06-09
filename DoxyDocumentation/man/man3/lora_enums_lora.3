@@ -1,0 +1,145 @@
+.TH "lora_enums_lora" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lora_enums_lora \- LoRa
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBRadioLoRaSpreadingFactors_e\fP { \fBLORA_SF5\fP = 0x05, \fBLORA_SF6\fP = 0x06, \fBLORA_SF7\fP = 0x07, \fBLORA_SF8\fP = 0x08, \fBLORA_SF9\fP = 0x09, \fBLORA_SF10\fP = 0x0A, \fBLORA_SF11\fP = 0x0B, \fBLORA_SF12\fP = 0x0C }"
+.br
+.RI "Represents the possible spreading factor values in LoRa packet types\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaCodingRates_e\fP { \fBLORA_CR_4_5\fP = 0x01, \fBLORA_CR_4_6\fP = 0x02, \fBLORA_CR_4_7\fP = 0x03, \fBLORA_CR_4_8\fP = 0x04 }"
+.br
+.RI "Represents the coding rate values for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoraLowDataRateOptimize_e\fP { \fBLORA_LOWDATARATEOPTIMIZE_OFF\fP = 0x00, \fBLORA_LOWDATARATEOPTIMIZE_ON\fP = 0x01 }"
+.br
+.ti -1c
+.RI "enum \fBRadioLoRaHeaderType_e\fP { \fBLORA_PACKET_VARIABLE_LENGTH\fP = 0x00, \fBLORA_PACKET_FIXED_LENGTH\fP = 0x01, \fBLORA_PACKET_EXPLICIT\fP = LORA_PACKET_VARIABLE_LENGTH, \fBLORA_PACKET_IMPLICIT\fP = LORA_PACKET_FIXED_LENGTH }"
+.br
+.RI "Holds the Radio lengths mode for the LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaCrcMode_e\fP { \fBLORA_CRC_ON\fP = 0x01, \fBLORA_CRC_OFF\fP = 0x00 }"
+.br
+.RI "Represents the CRC mode for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaIQMode_e\fP { \fBLORA_IQ_NORMAL\fP = 0x00, \fBLORA_IQ_INVERTED\fP = 0x01 }"
+.br
+.RI "Represents the IQ mode for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBLoRaSyncWord_e\fP { \fBLORA_MAC_PRIVATE_SYNCWORD\fP = 0x1424, \fBLORA_MAC_PUBLIC_SYNCWORD\fP = 0x3444 }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBLoRaSyncWord_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_MAC_PRIVATE_SYNCWORD \fP\fP
+.TP
+\fB\fILORA_MAC_PUBLIC_SYNCWORD \fP\fP
+.SS "enum \fBRadioLoRaCodingRates_e\fP"
+
+.PP
+Represents the coding rate values for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_CR_4_5 \fP\fP
+.TP
+\fB\fILORA_CR_4_6 \fP\fP
+.TP
+\fB\fILORA_CR_4_7 \fP\fP
+.TP
+\fB\fILORA_CR_4_8 \fP\fP
+.SS "enum \fBRadioLoRaCrcMode_e\fP"
+
+.PP
+Represents the CRC mode for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_CRC_ON \fP\fP
+CRC activated\&. 
+.TP
+\fB\fILORA_CRC_OFF \fP\fP
+CRC not used\&. 
+.SS "enum \fBRadioLoRaHeaderType_e\fP"
+
+.PP
+Holds the Radio lengths mode for the LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_PACKET_VARIABLE_LENGTH \fP\fP
+The packet is on variable size, header included\&. 
+.TP
+\fB\fILORA_PACKET_FIXED_LENGTH \fP\fP
+The packet is known on both sides, no header included in the packet\&. 
+.TP
+\fB\fILORA_PACKET_EXPLICIT \fP\fP
+The packet is on variable size, header included\&. 
+.TP
+\fB\fILORA_PACKET_IMPLICIT \fP\fP
+The packet is on variable size, header included\&. 
+.SS "enum \fBRadioLoRaIQMode_e\fP"
+
+.PP
+Represents the IQ mode for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_IQ_NORMAL \fP\fP
+.TP
+\fB\fILORA_IQ_INVERTED \fP\fP
+.SS "enum \fBRadioLoraLowDataRateOptimize_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_LOWDATARATEOPTIMIZE_OFF \fP\fP
+.TP
+\fB\fILORA_LOWDATARATEOPTIMIZE_ON \fP\fP
+.SS "enum \fBRadioLoRaSpreadingFactors_e\fP"
+
+.PP
+Represents the possible spreading factor values in LoRa packet types\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_SF5 \fP\fP
+.TP
+\fB\fILORA_SF6 \fP\fP
+.TP
+\fB\fILORA_SF7 \fP\fP
+.TP
+\fB\fILORA_SF8 \fP\fP
+.TP
+\fB\fILORA_SF9 \fP\fP
+.TP
+\fB\fILORA_SF10 \fP\fP
+.TP
+\fB\fILORA_SF11 \fP\fP
+.TP
+\fB\fILORA_SF12 \fP\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

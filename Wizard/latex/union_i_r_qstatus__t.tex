@@ -1,0 +1,54 @@
+\hypertarget{union_i_r_qstatus__t}{}\doxysection{IRQstatus\+\_\+t Union Reference}
+\label{union_i_r_qstatus__t}\index{IRQstatus\_t@{IRQstatus\_t}}
+
+
+Represents the possible IRQ states.  
+
+
+
+
+{\ttfamily \#include $<$Onethinx\+Ext01.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{union_i_r_qstatus__t_ae146e1cb53a07be35bae3d371a893d89}\label{union_i_r_qstatus__t_ae146e1cb53a07be35bae3d371a893d89}} 
+uint16\+\_\+t {\bfseries Value}
+\item 
+\mbox{\Hypertarget{union_i_r_qstatus__t_acbe9156158b5b95fb1235ae2bf7d611c}\label{union_i_r_qstatus__t_acbe9156158b5b95fb1235ae2bf7d611c}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a91dad775d5cca9b5573dcb2fe7e40e11}{IRQ\_TX\_DONE}}: 1\\
+\>\>{\em Radio received TX DONE IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a9b8b2775cb92091340894260a1dbf271}{IRQ\_RX\_DONE}}: 1\\
+\>\>{\em Radio received RX DONE IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_af82377af242044c5d52539bf105552c4}{IRQ\_PREAMBLE\_DETECTED}}: 1\\
+\>\>{\em Radio received PREAMBLE DETECTED IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a0f67c014fbf88305d58031a6ef50d9c5}{IRQ\_SYNCWORD\_VALID}}: 1\\
+\>\>{\em Radio received SYNCWORD VALID IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a921e7e1b75c4907bb6afbb2d6cfbfd0c}{IRQ\_HEADER\_VALID}}: 1\\
+\>\>{\em Radio received HEADER VALID IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_ab0368895d7303079b45983f26b1a90ff}{IRQ\_HEADER\_ERROR}}: 1\\
+\>\>{\em Radio received HEADER ERROR IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a87506f26427a9c401a94f5ababfec23d}{IRQ\_CRC\_ERROR}}: 1\\
+\>\>{\em Radio received CRC ERROR IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a9b9ac73f652917cb1237239f3178c3be}{IRQ\_CAD\_DONE}}: 1\\
+\>\>{\em Radio received CAD DONE IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a7267985ce216751bc3f216ac300ef65d}{IRQ\_CAD\_ACTIVITY\_DETECTED}}: 1\\
+\>\>{\em Radio received CAD ACTIVITY DETECTED IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_aaf3f32b733ad28bb2f84249cac0dfa1a}{IRQ\_RX\_TX\_TIMEOUT}}: 1\\
+\>\>{\em Radio received RX TX TIMEOUT IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a605c728542340c76252ceddc62004fb1}{\_\_pad0\_\_}}: 6\\
+\>\>{\em Reserved. }\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the possible IRQ states. 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+C1\+\_\+\+API/Onethinx\+Ext01.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{struct_f_s_k_packet_params__t}{}\doxysection{FSKPacket\+Params\+\_\+t Struct Reference}
+\label{struct_f_s_k_packet_params__t}\index{FSKPacketParams\_t@{FSKPacketParams\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Ext01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_f_s_k_packet_params__t_a0974d7904c44677f00b6ecd4619de9f4}{Preamble\+Length}}
+\item 
+\mbox{\hyperlink{group__lora__enums__fsk_gaac75549a1c04810216f4a1b52a08a076}{Radio\+FSKPreamble\+Detection\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_a5cae8953e11283c2cf894eeda35ee5d9}{Preamble\+Detector\+Length}}\+: 8
+\item 
+\mbox{\hyperlink{structarr8b__t}{arr8b\+\_\+t}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_a9c58b187957901d6bde3e44fca619683}{Sync\+Word}}
+\begin{DoxyCompactList}\small\item\em The SX126x FSK syncword setting. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_f_s_k_packet_params__t_a667f084a35638b852fb42803ddda582b}{Sync\+Word\+Length}}\+: 8
+\begin{DoxyCompactList}\small\item\em Size of the Sync\+Word in bits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__lora__enums__fsk_gad49ee94d689e9f2aa8db66bea5f613f4}{Radio\+FSKAddress\+Comp\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_a2c29912eb3efdd8aac6e48dd2b2e3349}{Addr\+Comp}}\+: 8
+\item 
+\mbox{\hyperlink{group__lora__enums__fsk_ga59623091bbba00d9dc60b7a7eacf7d8f}{Radio\+FSKPacket\+Length\+Modes\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_a2486e197eb477b42156e1ff38cd44475}{Packet\+Type}}\+: 8
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_f_s_k_packet_params__t_a9bdce80c748e82363f45671eb6528500}{Payload\+Length}}
+\begin{DoxyCompactList}\small\item\em Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__lora__enums__fsk_gadc3ded6ecf370fa91fae7bddea9893ce}{Radio\+FSKCrc\+Types\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_a2ae026c5e53d4820dbff531abc523404}{CRCType}}\+: 8
+\item 
+\mbox{\hyperlink{group__lora__enums__fsk_ga26510fbdaa5ca896b33b1be89193cbf5}{Radio\+FSKCrc\+Seed\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_afbc033562e2e8965dfb2caa5ef8effe1}{Crc\+Seed}}\+: 16
+\begin{DoxyCompactList}\small\item\em LFSR initial value to compute the FSK CRC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__lora__enums__fsk_ga6f7985e1ec3a7b28a9d610eaccbdc133}{Radio\+FSKCrc\+Polynomial\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_af01eb3903fb398d0e7797f36c6ba54ad}{Crc\+Polynomial}}\+: 16
+\begin{DoxyCompactList}\small\item\em Polynomial used to compute the FSK CRC. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__lora__enums__fsk_gaa1330983f33479746092e7f7c7ba7dbd}{Radio\+FSKDc\+Free\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_acfd6c43a5180bbeafb07879f0c5cfb6e}{Whitening}}\+: 8
+\item 
+\mbox{\hyperlink{group__lora__enums__fsk_ga4407ecfe61476c956b059f33de1637d2}{Radio\+FSKWhitening\+Seed\+\_\+e}} \mbox{\hyperlink{struct_f_s_k_packet_params__t_afbc6fcb2c9622d8bc929f81bfb2c1a7f}{Whitening\+Seed}}\+: 16
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a2c29912eb3efdd8aac6e48dd2b2e3349}\label{struct_f_s_k_packet_params__t_a2c29912eb3efdd8aac6e48dd2b2e3349}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!AddrComp@{AddrComp}}
+\index{AddrComp@{AddrComp}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{AddrComp}{AddrComp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_gad49ee94d689e9f2aa8db66bea5f613f4}{Radio\+FSKAddress\+Comp\+\_\+e}} Addr\+Comp}
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_af01eb3903fb398d0e7797f36c6ba54ad}\label{struct_f_s_k_packet_params__t_af01eb3903fb398d0e7797f36c6ba54ad}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!CrcPolynomial@{CrcPolynomial}}
+\index{CrcPolynomial@{CrcPolynomial}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{CrcPolynomial}{CrcPolynomial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_ga6f7985e1ec3a7b28a9d610eaccbdc133}{Radio\+FSKCrc\+Polynomial\+\_\+e}} Crc\+Polynomial}
+
+
+
+Polynomial used to compute the FSK CRC. 
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_afbc033562e2e8965dfb2caa5ef8effe1}\label{struct_f_s_k_packet_params__t_afbc033562e2e8965dfb2caa5ef8effe1}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!CrcSeed@{CrcSeed}}
+\index{CrcSeed@{CrcSeed}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{CrcSeed}{CrcSeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_ga26510fbdaa5ca896b33b1be89193cbf5}{Radio\+FSKCrc\+Seed\+\_\+e}} Crc\+Seed}
+
+
+
+LFSR initial value to compute the FSK CRC. 
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a2ae026c5e53d4820dbff531abc523404}\label{struct_f_s_k_packet_params__t_a2ae026c5e53d4820dbff531abc523404}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!CRCType@{CRCType}}
+\index{CRCType@{CRCType}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{CRCType}{CRCType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_gadc3ded6ecf370fa91fae7bddea9893ce}{Radio\+FSKCrc\+Types\+\_\+e}} CRCType}
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a2486e197eb477b42156e1ff38cd44475}\label{struct_f_s_k_packet_params__t_a2486e197eb477b42156e1ff38cd44475}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!PacketType@{PacketType}}
+\index{PacketType@{PacketType}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{PacketType}{PacketType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_ga59623091bbba00d9dc60b7a7eacf7d8f}{Radio\+FSKPacket\+Length\+Modes\+\_\+e}} Packet\+Type}
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a9bdce80c748e82363f45671eb6528500}\label{struct_f_s_k_packet_params__t_a9bdce80c748e82363f45671eb6528500}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!PayloadLength@{PayloadLength}}
+\index{PayloadLength@{PayloadLength}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{PayloadLength}{PayloadLength}}
+{\footnotesize\ttfamily uint8\+\_\+t Payload\+Length}
+
+
+
+Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept. 
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a5cae8953e11283c2cf894eeda35ee5d9}\label{struct_f_s_k_packet_params__t_a5cae8953e11283c2cf894eeda35ee5d9}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!PreambleDetectorLength@{PreambleDetectorLength}}
+\index{PreambleDetectorLength@{PreambleDetectorLength}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{PreambleDetectorLength}{PreambleDetectorLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_gaac75549a1c04810216f4a1b52a08a076}{Radio\+FSKPreamble\+Detection\+\_\+e}} Preamble\+Detector\+Length}
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a0974d7904c44677f00b6ecd4619de9f4}\label{struct_f_s_k_packet_params__t_a0974d7904c44677f00b6ecd4619de9f4}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!PreambleLength@{PreambleLength}}
+\index{PreambleLength@{PreambleLength}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{PreambleLength}{PreambleLength}}
+{\footnotesize\ttfamily uint16\+\_\+t Preamble\+Length}
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a9c58b187957901d6bde3e44fca619683}\label{struct_f_s_k_packet_params__t_a9c58b187957901d6bde3e44fca619683}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!SyncWord@{SyncWord}}
+\index{SyncWord@{SyncWord}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{SyncWord}{SyncWord}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarr8b__t}{arr8b\+\_\+t}} Sync\+Word}
+
+
+
+The SX126x FSK syncword setting. 
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_a667f084a35638b852fb42803ddda582b}\label{struct_f_s_k_packet_params__t_a667f084a35638b852fb42803ddda582b}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!SyncWordLength@{SyncWordLength}}
+\index{SyncWordLength@{SyncWordLength}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{SyncWordLength}{SyncWordLength}}
+{\footnotesize\ttfamily uint8\+\_\+t Sync\+Word\+Length}
+
+
+
+Size of the Sync\+Word in bits. 
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_acfd6c43a5180bbeafb07879f0c5cfb6e}\label{struct_f_s_k_packet_params__t_acfd6c43a5180bbeafb07879f0c5cfb6e}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!Whitening@{Whitening}}
+\index{Whitening@{Whitening}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{Whitening}{Whitening}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_gaa1330983f33479746092e7f7c7ba7dbd}{Radio\+FSKDc\+Free\+\_\+e}} Whitening}
+
+\mbox{\Hypertarget{struct_f_s_k_packet_params__t_afbc6fcb2c9622d8bc929f81bfb2c1a7f}\label{struct_f_s_k_packet_params__t_afbc6fcb2c9622d8bc929f81bfb2c1a7f}} 
+\index{FSKPacketParams\_t@{FSKPacketParams\_t}!WhiteningSeed@{WhiteningSeed}}
+\index{WhiteningSeed@{WhiteningSeed}!FSKPacketParams\_t@{FSKPacketParams\_t}}
+\doxysubsubsection{\texorpdfstring{WhiteningSeed}{WhiteningSeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__fsk_ga4407ecfe61476c956b059f33de1637d2}{Radio\+FSKWhitening\+Seed\+\_\+e}} Whitening\+Seed}
+

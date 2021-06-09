@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unionradio_status__t" kind="union" language="C++" prot="public">
+    <compoundname>radioStatus_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionradio_status__t_1a6b6b78765a55d7c55354c524565ce1b5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lorawan__enums_1ga059c8ad521b77e896ea7a264b98f3aca" kindref="member">radioErrors_e</ref></type>
+        <definition>radioErrors_e errorStatus</definition>
+        <argsstring></argsstring>
+        <name>errorStatus</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Radio Errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="421" column="15" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionradio_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+<para>reserved </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="422" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionradio_status__t_1a2e813ffcb6defeae2490eb1cf6c0418a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isConfigured</definition>
+        <argsstring></argsstring>
+        <name>isConfigured</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>The Radio is configured? (implemented since Stack version 0x000000B5) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="423" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionradio_status__t_1a099f725f22a344e190121634f53328d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isBusy</definition>
+        <argsstring></argsstring>
+        <name>isBusy</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio is busy? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="424" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionradio_status__t_1ac2ec294ff0e8af767698739c9adeb119" prot="public" static="no" mutable="no">
+        <type>struct radioStatus_t::@11</type>
+        <definition>struct radioStatus_t::@11 @12</definition>
+        <argsstring></argsstring>
+        <name>@12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionradio_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reserved[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="426" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="418" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="418" bodyend="427"/>
+    <listofallmembers>
+      <member refid="unionradio_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>radioStatus_t</scope><name>__pad0__</name></member>
+      <member refid="unionradio_status__t_1a6b6b78765a55d7c55354c524565ce1b5" prot="public" virt="non-virtual"><scope>radioStatus_t</scope><name>errorStatus</name></member>
+      <member refid="unionradio_status__t_1a099f725f22a344e190121634f53328d8" prot="public" virt="non-virtual"><scope>radioStatus_t</scope><name>isBusy</name></member>
+      <member refid="unionradio_status__t_1a2e813ffcb6defeae2490eb1cf6c0418a" prot="public" virt="non-virtual"><scope>radioStatus_t</scope><name>isConfigured</name></member>
+      <member refid="unionradio_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" virt="non-virtual"><scope>radioStatus_t</scope><name>reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

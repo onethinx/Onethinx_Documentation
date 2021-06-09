@@ -1,0 +1,108 @@
+\hypertarget{structsleep_config__t}{}\doxysection{sleep\+Config\+\_\+t Struct Reference}
+\label{structsleep_config__t}\index{sleepConfig\_t@{sleepConfig\_t}}
+
+
+Sleep configuration ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}} \mbox{\hyperlink{structsleep_config__t_a9b9bcd82f65cb41b66b6b988538b1fc2}{wake\+Up\+Pin}}
+\begin{DoxyCompactList}\small\item\em S24 bits ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}} \mbox{\hyperlink{structsleep_config__t_a3fc707dd920ffcfe69460f9c08bfcb64}{wake\+Up\+Time}}
+\begin{DoxyCompactList}\small\item\em S40 bits ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__lorawan__enums_gab6b0609d5e1bb7369e244aad6c5de87d}{sleep\+Mode\+\_\+e}} \mbox{\hyperlink{structsleep_config__t_a6af23566a00c74b360907334afbe68fa}{sleep\+Mode}}\+: 3
+\begin{DoxyCompactList}\small\item\em Set sleepmode to Sleep, Deep\+Sleep or Hibernate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsleep_config__t_a2849078572f8ab876e22ee4d3b8b543a}{Ble\+Eco\+ON}}\+: 1
+\begin{DoxyCompactList}\small\item\em Leaves BLE ECO ON during sleep. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsleep_config__t_a6d7194467f50d7eca9bedbd4b91fba43}{Debug\+ON}}\+: 1
+\begin{DoxyCompactList}\small\item\em Leaves Debug Port active during idle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__lorawan__enums_gaff762a336d05a5043b3199da3d5f53c9}{sleep\+Cores\+\_\+e}} \mbox{\hyperlink{structsleep_config__t_aaeb404909bd430c6ee64e6fd5e7c70cc}{sleep\+Cores}}\+: 3
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structsleep_config__t_a3e57c2ef1c3ffb36722f000cc1156824}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}\+: 32
+\begin{DoxyCompactList}\small\item\em Reserved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sleep configuration ~\newline
+ 
+
+Make sure to initialize all members, best practise is to use examples 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structsleep_config__t_a3e57c2ef1c3ffb36722f000cc1156824}\label{structsleep_config__t_a3e57c2ef1c3ffb36722f000cc1156824}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+Reserved. 
+
+\mbox{\Hypertarget{structsleep_config__t_a2849078572f8ab876e22ee4d3b8b543a}\label{structsleep_config__t_a2849078572f8ab876e22ee4d3b8b543a}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!BleEcoON@{BleEcoON}}
+\index{BleEcoON@{BleEcoON}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{BleEcoON}{BleEcoON}}
+{\footnotesize\ttfamily bool Ble\+Eco\+ON}
+
+
+
+Leaves BLE ECO ON during sleep. 
+
+Consumes additional power, enable only when ECO/\+BLE functionality is needed during sleep \mbox{\Hypertarget{structsleep_config__t_a6d7194467f50d7eca9bedbd4b91fba43}\label{structsleep_config__t_a6d7194467f50d7eca9bedbd4b91fba43}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!DebugON@{DebugON}}
+\index{DebugON@{DebugON}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{DebugON}{DebugON}}
+{\footnotesize\ttfamily bool Debug\+ON}
+
+
+
+Leaves Debug Port active during idle. 
+
+Consumes additional power, enable only for debugging purposes \mbox{\Hypertarget{structsleep_config__t_aaeb404909bd430c6ee64e6fd5e7c70cc}\label{structsleep_config__t_aaeb404909bd430c6ee64e6fd5e7c70cc}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!sleepCores@{sleepCores}}
+\index{sleepCores@{sleepCores}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{sleepCores}{sleepCores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_gaff762a336d05a5043b3199da3d5f53c9}{sleep\+Cores\+\_\+e}} sleep\+Cores}
+
+\mbox{\Hypertarget{structsleep_config__t_a6af23566a00c74b360907334afbe68fa}\label{structsleep_config__t_a6af23566a00c74b360907334afbe68fa}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!sleepMode@{sleepMode}}
+\index{sleepMode@{sleepMode}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{sleepMode}{sleepMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_gab6b0609d5e1bb7369e244aad6c5de87d}{sleep\+Mode\+\_\+e}} sleep\+Mode}
+
+
+
+Set sleepmode to Sleep, Deep\+Sleep or Hibernate. 
+
+\mbox{\Hypertarget{structsleep_config__t_a9b9bcd82f65cb41b66b6b988538b1fc2}\label{structsleep_config__t_a9b9bcd82f65cb41b66b6b988538b1fc2}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!wakeUpPin@{wakeUpPin}}
+\index{wakeUpPin@{wakeUpPin}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{wakeUpPin}{wakeUpPin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}} wake\+Up\+Pin}
+
+
+
+S24 bits ~\newline
+ 
+
+\mbox{\Hypertarget{structsleep_config__t_a3fc707dd920ffcfe69460f9c08bfcb64}\label{structsleep_config__t_a3fc707dd920ffcfe69460f9c08bfcb64}} 
+\index{sleepConfig\_t@{sleepConfig\_t}!wakeUpTime@{wakeUpTime}}
+\index{wakeUpTime@{wakeUpTime}!sleepConfig\_t@{sleepConfig\_t}}
+\doxysubsubsection{\texorpdfstring{wakeUpTime}{wakeUpTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}} wake\+Up\+Time}
+
+
+
+S40 bits ~\newline
+ 
+

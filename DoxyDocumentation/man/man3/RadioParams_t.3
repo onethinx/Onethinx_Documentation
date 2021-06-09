@@ -1,0 +1,98 @@
+.TH "RadioParams_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RadioParams_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxExt01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBFrequency\fP"
+.br
+.ti -1c
+.RI "\fBRadio_TXpower_e\fP \fBTXpower\fP"
+.br
+.RI "TXpower (PWR = MAX - (2 * value)), not used in receive mode\&. "
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      \fBLoRaModulationParams_t\fP \fBModulation\fP"
+.br
+.ti -1c
+.RI "      \fBLoRaPacketParams_t\fP \fBPacket\fP"
+.br
+.ti -1c
+.RI "   } \fBLoRa\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      \fBFSKModulationParams_t\fP \fBModulation\fP"
+.br
+.ti -1c
+.RI "      \fBFSKPacketParams_t\fP \fBPacket\fP"
+.br
+.ti -1c
+.RI "   } \fBFSK\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "\fBRadioPacketTypes_e\fP \fBPacketType\fP"
+.br
+.ti -1c
+.RI "uint8_t \fBRXboost\fP: 1"
+.br
+.RI "RX Boost mode\&. "
+.ti -1c
+.RI "uint8_t \fB__pad0__\fP: 7"
+.br
+.RI "Reserved\&. "
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "union { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.PP
+Reserved\&. 
+.SS "uint32_t Frequency"
+
+.SS "struct { \&.\&.\&. }  FSK"
+
+.SS "struct { \&.\&.\&. }  LoRa"
+
+.SS "\fBLoRaModulationParams_t\fP Modulation"
+
+.SS "\fBFSKModulationParams_t\fP Modulation"
+
+.SS "\fBLoRaPacketParams_t\fP Packet"
+
+.SS "\fBFSKPacketParams_t\fP Packet"
+
+.SS "\fBRadioPacketTypes_e\fP PacketType"
+
+.SS "uint8_t RXboost"
+
+.PP
+RX Boost mode\&. 
+.SS "\fBRadio_TXpower_e\fP TXpower"
+
+.PP
+TXpower (PWR = MAX - (2 * value)), not used in receive mode\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

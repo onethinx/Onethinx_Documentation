@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structcore_arguments__t" kind="struct" language="C++" prot="public">
+    <compoundname>coreArguments_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_arguments__t_1aae1fe1909c9f8ea37ed941961062780a" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_core01_8h_1afe59dcb2aa2a33b6e6c17a5cfefd8a1b" kindref="member">coreFunctions_e</ref></type>
+        <definition>coreFunctions_e function</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="500" column="16" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_arguments__t_1ac74eb6356d9b1c038df1d80cfcb8cac6" prot="public" static="no" mutable="no">
+        <type><ref refid="unioncore_configuration__t" kindref="compound">coreConfiguration_t</ref> *</type>
+        <definition>coreConfiguration_t* configurationPtr</definition>
+        <argsstring></argsstring>
+        <name>configurationPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="501" column="21" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_arguments__t_1a5e9cb8d0ff9d1ab2465518905c1d1d0d" prot="public" static="no" mutable="no">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="502" column="13" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_arguments__t_1abf6eb60d03aaa44a8b4fc2ecd836c37c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arg1</definition>
+        <argsstring></argsstring>
+        <name>arg1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="503" column="11" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_arguments__t_1a32a243fb696b59d4133221869e08059d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arg2</definition>
+        <argsstring></argsstring>
+        <name>arg2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="504" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_arguments__t_1ab82f741e3cf53dbb762790246ef0ae75" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arg3</definition>
+        <argsstring></argsstring>
+        <name>arg3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="505" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_arguments__t_1a1406c7a913281ece3c14280b9c73a32d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t arg4</definition>
+        <argsstring></argsstring>
+        <name>arg4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="506" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coreArguments_t</label>
+        <link refid="structcore_arguments__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>configurationPtr</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>parameterStatus_t</label>
+        <link refid="unionparameter_status__t"/>
+      </node>
+      <node id="8">
+        <label>OTAA_10x_t</label>
+        <link refid="struct_o_t_a_a__10x__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>AppEui</edgelabel>
+          <edgelabel>DevEui</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>AppKey</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ABP_10x_t</label>
+        <link refid="struct_a_b_p__10x__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>DevEui</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>AppSkey</edgelabel>
+          <edgelabel>NwkSkey</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>arr8b_t</label>
+        <link refid="structarr8b__t"/>
+      </node>
+      <node id="6">
+        <label>arr16b_t</label>
+        <link refid="structarr16b__t"/>
+      </node>
+      <node id="7">
+        <label>OTAA_11x_t</label>
+        <link refid="struct_o_t_a_a__11x__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>DevEui</edgelabel>
+          <edgelabel>JoinEui</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>AppKey</edgelabel>
+          <edgelabel>NwkKey</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>radioStatus_t</label>
+        <link refid="unionradio_status__t"/>
+      </node>
+      <node id="11">
+        <label>macStatus_t</label>
+        <link refid="unionmac_status__t"/>
+      </node>
+      <node id="12">
+        <label>systemStatus_t</label>
+        <link refid="unionsystem_status__t"/>
+      </node>
+      <node id="10">
+        <label>coreStatus_t</label>
+        <link refid="structcore_status__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mac</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>system</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>parameters</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>radio</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coreConfiguration_t</label>
+        <link refid="unioncore_configuration__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>KeysPtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>StoredKeys_t</label>
+        <link refid="struct_stored_keys__t"/>
+      </node>
+      <node id="3">
+        <label>LoRaWAN_keys_t</label>
+        <link refid="struct_lo_ra_w_a_n__keys__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ABP_10x</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>OTAA_11x</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>OTAA_10x</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>StoredKeys</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="499" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="499" bodyend="507"/>
+    <listofallmembers>
+      <member refid="structcore_arguments__t_1abf6eb60d03aaa44a8b4fc2ecd836c37c" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>arg1</name></member>
+      <member refid="structcore_arguments__t_1a32a243fb696b59d4133221869e08059d" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>arg2</name></member>
+      <member refid="structcore_arguments__t_1ab82f741e3cf53dbb762790246ef0ae75" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>arg3</name></member>
+      <member refid="structcore_arguments__t_1a1406c7a913281ece3c14280b9c73a32d" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>arg4</name></member>
+      <member refid="structcore_arguments__t_1ac74eb6356d9b1c038df1d80cfcb8cac6" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>configurationPtr</name></member>
+      <member refid="structcore_arguments__t_1aae1fe1909c9f8ea37ed941961062780a" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>function</name></member>
+      <member refid="structcore_arguments__t_1a5e9cb8d0ff9d1ab2465518905c1d1d0d" prot="public" virt="non-virtual"><scope>coreArguments_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group___lo_ra_w_a_n" kind="group">
+    <compoundname>LoRaWAN</compoundname>
+    <title>LoRaWAN</title>
+    <innergroup refid="group__macros__lorawan">Macros</innergroup>
+    <innergroup refid="group__structs__lorawan">Data Structures</innergroup>
+    <innergroup refid="group__enums__lorawan">Enumerated Types</innergroup>
+    <innergroup refid="group__functions__lorawan">Functions</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

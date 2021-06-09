@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_f_s_k_packet_params__t" kind="struct" language="C++" prot="public">
+    <compoundname>FSKPacketParams_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a0974d7904c44677f00b6ecd4619de9f4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t PreambleLength</definition>
+        <argsstring></argsstring>
+        <name>PreambleLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="421" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a5cae8953e11283c2cf894eeda35ee5d9" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1gaac75549a1c04810216f4a1b52a08a076" kindref="member">RadioFSKPreambleDetection_e</ref></type>
+        <definition>RadioFSKPreambleDetection_e PreambleDetectorLength</definition>
+        <argsstring></argsstring>
+        <name>PreambleDetectorLength</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="422" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a9c58b187957901d6bde3e44fca619683" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr8b__t" kindref="compound">arr8b_t</ref></type>
+        <definition>arr8b_t SyncWord</definition>
+        <argsstring></argsstring>
+        <name>SyncWord</name>
+        <briefdescription>
+<para>The SX126x FSK syncword setting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="423" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a667f084a35638b852fb42803ddda582b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SyncWordLength</definition>
+        <argsstring></argsstring>
+        <name>SyncWordLength</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Size of the SyncWord in bits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="424" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a2c29912eb3efdd8aac6e48dd2b2e3349" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1gad49ee94d689e9f2aa8db66bea5f613f4" kindref="member">RadioFSKAddressComp_e</ref></type>
+        <definition>RadioFSKAddressComp_e AddrComp</definition>
+        <argsstring></argsstring>
+        <name>AddrComp</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="425" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a2486e197eb477b42156e1ff38cd44475" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1ga59623091bbba00d9dc60b7a7eacf7d8f" kindref="member">RadioFSKPacketLengthModes_e</ref></type>
+        <definition>RadioFSKPacketLengthModes_e PacketType</definition>
+        <argsstring></argsstring>
+        <name>PacketType</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="426" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a9bdce80c748e82363f45671eb6528500" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t PayloadLength</definition>
+        <argsstring></argsstring>
+        <name>PayloadLength</name>
+        <briefdescription>
+<para>Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="427" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1a2ae026c5e53d4820dbff531abc523404" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1gadc3ded6ecf370fa91fae7bddea9893ce" kindref="member">RadioFSKCrcTypes_e</ref></type>
+        <definition>RadioFSKCrcTypes_e CRCType</definition>
+        <argsstring></argsstring>
+        <name>CRCType</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="428" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1afbc033562e2e8965dfb2caa5ef8effe1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1ga26510fbdaa5ca896b33b1be89193cbf5" kindref="member">RadioFSKCrcSeed_e</ref></type>
+        <definition>RadioFSKCrcSeed_e CrcSeed</definition>
+        <argsstring></argsstring>
+        <name>CrcSeed</name>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+<para>LFSR initial value to compute the FSK CRC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="429" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1af01eb3903fb398d0e7797f36c6ba54ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1ga6f7985e1ec3a7b28a9d610eaccbdc133" kindref="member">RadioFSKCrcPolynomial_e</ref></type>
+        <definition>RadioFSKCrcPolynomial_e CrcPolynomial</definition>
+        <argsstring></argsstring>
+        <name>CrcPolynomial</name>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+<para>Polynomial used to compute the FSK CRC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="430" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1acfd6c43a5180bbeafb07879f0c5cfb6e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1gaa1330983f33479746092e7f7c7ba7dbd" kindref="member">RadioFSKDcFree_e</ref></type>
+        <definition>RadioFSKDcFree_e Whitening</definition>
+        <argsstring></argsstring>
+        <name>Whitening</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="431" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_packet_params__t_1afbc6fcb2c9622d8bc929f81bfb2c1a7f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lora__enums__fsk_1ga4407ecfe61476c956b059f33de1637d2" kindref="member">RadioFSKWhiteningSeed_e</ref></type>
+        <definition>RadioFSKWhiteningSeed_e WhiteningSeed</definition>
+        <argsstring></argsstring>
+        <name>WhiteningSeed</name>
+        <bitfield> 16</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="432" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>arr8b_t</label>
+        <link refid="structarr8b__t"/>
+      </node>
+      <node id="1">
+        <label>FSKPacketParams_t</label>
+        <link refid="struct_f_s_k_packet_params__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>SyncWord</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="420" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="420" bodyend="433"/>
+    <listofallmembers>
+      <member refid="struct_f_s_k_packet_params__t_1a2c29912eb3efdd8aac6e48dd2b2e3349" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>AddrComp</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1af01eb3903fb398d0e7797f36c6ba54ad" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>CrcPolynomial</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1afbc033562e2e8965dfb2caa5ef8effe1" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>CrcSeed</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a2ae026c5e53d4820dbff531abc523404" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>CRCType</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a2486e197eb477b42156e1ff38cd44475" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>PacketType</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a9bdce80c748e82363f45671eb6528500" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>PayloadLength</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a5cae8953e11283c2cf894eeda35ee5d9" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>PreambleDetectorLength</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a0974d7904c44677f00b6ecd4619de9f4" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>PreambleLength</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a9c58b187957901d6bde3e44fca619683" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>SyncWord</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1a667f084a35638b852fb42803ddda582b" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>SyncWordLength</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1acfd6c43a5180bbeafb07879f0c5cfb6e" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>Whitening</name></member>
+      <member refid="struct_f_s_k_packet_params__t_1afbc6fcb2c9622d8bc929f81bfb2c1a7f" prot="public" virt="non-virtual"><scope>FSKPacketParams_t</scope><name>WhiteningSeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

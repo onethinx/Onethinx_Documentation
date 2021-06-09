@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unionparameter_status__t" kind="union" language="C++" prot="public">
+    <compoundname>parameterStatus_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionparameter_status__t_1a580e94d26408fd650e482b7a3523b53e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1gae580edc7d795c978aeb9344494604bbf" kindref="member">paramErrors_e</ref></type>
+        <definition>paramErrors_e errorStatus</definition>
+        <argsstring></argsstring>
+        <name>errorStatus</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Parameter Errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="400" column="15" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionparameter_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>reserved </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="401" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionparameter_status__t_1a923592624017c47805f5828e43593dcc" prot="public" static="no" mutable="no">
+        <type>struct parameterStatus_t::@8</type>
+        <definition>struct parameterStatus_t::@8 @9</definition>
+        <argsstring></argsstring>
+        <name>@9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="402" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionparameter_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reserved[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="403" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameter status structure returned by LoRaWAN functions, found in <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="397" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="397" bodyend="404"/>
+    <listofallmembers>
+      <member refid="unionparameter_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>parameterStatus_t</scope><name>__pad0__</name></member>
+      <member refid="unionparameter_status__t_1a580e94d26408fd650e482b7a3523b53e" prot="public" virt="non-virtual"><scope>parameterStatus_t</scope><name>errorStatus</name></member>
+      <member refid="unionparameter_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" virt="non-virtual"><scope>parameterStatus_t</scope><name>reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__structs__lora" kind="group">
+    <compoundname>lora_structs_lora</compoundname>
+    <title>LoRa</title>
+    <innerclass refid="union_lo_ra_packet_status__t" prot="public">LoRaPacketStatus_t</innerclass>
+    <innerclass refid="struct_lo_ra_stats__t" prot="public">LoRaStats_t</innerclass>
+    <innerclass refid="struct_lo_ra_modulation_params__t" prot="public">LoRaModulationParams_t</innerclass>
+    <innerclass refid="struct_lo_ra_packet_params__t" prot="public">LoRaPacketParams_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

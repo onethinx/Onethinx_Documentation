@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="getstart" kind="page">
+    <compoundname>getstart</compoundname>
+    <title>Getting Started</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="getstart_1ide">
+<title>Installing the IDE</title>
+<para>To get started with Onethinx LoRaWAN module, you need an IDE. We have developed our own IDE based around Visual Studio Code.</para>
+<sect2 id="getstart_1idewindows">
+<title>Windows</title>
+<para><ulink url="https://github.com/onethinx/VSCode_OnethinxPack_Windows">Windows</ulink></para>
+</sect2>
+<sect2 id="getstart_1idemacos">
+<title>MacOS</title>
+</sect2>
+<sect2 id="getstart_1idelinux">
+<title>Linux</title>
+</sect2>
+</sect1>
+<sect1 id="getstart_1examples">
+<title>Downloading the examples</title>
+<para><itemizedlist>
+<listitem><para>Text 1234567890</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="getstart_1apiLibs">
+<title>Using the correct API libraries</title>
+<para><itemizedlist>
+<listitem><para>Text 1234567890</para>
+</listitem></itemizedlist>
+</para>
+<para>etc... </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

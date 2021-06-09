@@ -1,0 +1,124 @@
+.TH "coreInfo_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+coreInfo_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBbuildYear\fP: 6"
+.br
+.RI "core firmware Year of build "
+.ti -1c
+.RI "uint32_t \fBbuildMonth\fP: 4"
+.br
+.RI "core firmware Month of build "
+.ti -1c
+.RI "uint32_t \fBbuildDayOfMonth\fP: 5"
+.br
+.RI "core firmware Day of build "
+.ti -1c
+.RI "uint32_t \fBbuildHour\fP: 5"
+.br
+.RI "core firmware Hour of build (24h mode) "
+.ti -1c
+.RI "uint32_t \fBbuildMinute\fP: 6"
+.br
+.RI "core firmware Minute of build "
+.ti -1c
+.RI "uint32_t \fBbuildSecond\fP: 6"
+.br
+.RI "core firmware Second of build "
+.ti -1c
+.RI "uint32_t \fBbuildNumber\fP"
+.br
+.RI "core firmware incremental build number "
+.ti -1c
+.RI "uint8_t \fBdevEUI\fP [8]"
+.br
+.RI "core devEUI "
+.ti -1c
+.RI "char \fBbuildType\fP"
+.br
+.RI "core firmware build type "
+.ti -1c
+.RI "\fBstackRegion_e\fP \fBstackRegion\fP:8"
+.br
+.RI "core firmware stack region "
+.ti -1c
+.RI "char \fBstackOption\fP"
+.br
+.RI "core firmware stack option: 'S'ecure, 'P'SA, 'C'onfigurable "
+.ti -1c
+.RI "char \fBstackStage\fP"
+.br
+.RI "core firmware lifecycle stage: 'a' pre-alpha, 'A' Alpha, 'b' perpetual beta, 'B' Beta, 'r' release candidate, 'R' Release "
+.ti -1c
+.RI "char \fBcodeName\fP [16]"
+.br
+.RI "core firmware code name "
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "uint32_t buildDayOfMonth"
+
+.PP
+core firmware Day of build 
+.SS "uint32_t buildHour"
+
+.PP
+core firmware Hour of build (24h mode) 
+.SS "uint32_t buildMinute"
+
+.PP
+core firmware Minute of build 
+.SS "uint32_t buildMonth"
+
+.PP
+core firmware Month of build 
+.SS "uint32_t buildNumber"
+
+.PP
+core firmware incremental build number 
+.SS "uint32_t buildSecond"
+
+.PP
+core firmware Second of build 
+.SS "char buildType"
+
+.PP
+core firmware build type 
+.SS "uint32_t buildYear"
+
+.PP
+core firmware Year of build 
+.SS "char codeName[16]"
+
+.PP
+core firmware code name 
+.SS "uint8_t devEUI[8]"
+
+.PP
+core devEUI 
+.SS "char stackOption"
+
+.PP
+core firmware stack option: 'S'ecure, 'P'SA, 'C'onfigurable 
+.SS "\fBstackRegion_e\fP stackRegion"
+
+.PP
+core firmware stack region 
+.SS "char stackStage"
+
+.PP
+core firmware lifecycle stage: 'a' pre-alpha, 'A' Alpha, 'b' perpetual beta, 'B' Beta, 'r' release candidate, 'R' Release 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

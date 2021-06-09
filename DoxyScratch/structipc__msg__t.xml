@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structipc__msg__t" kind="struct" language="C++" prot="public">
+    <compoundname>ipc_msg_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structipc__msg__t_1aa3208c8407334706468914f78c1ad221" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t clientId</definition>
+        <argsstring></argsstring>
+        <name>clientId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="130" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structipc__msg__t_1ae7649a399b6a588a837f13186b26ee7a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t userCode</definition>
+        <argsstring></argsstring>
+        <name>userCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="131" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structipc__msg__t_1ae4c13a0e022144209547c74bbd7a781b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t intrMask</definition>
+        <argsstring></argsstring>
+        <name>intrMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="132" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structipc__msg__t_1a4e3f7560336549f3643084fbdccfc869" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>volatile void* coreArgumentsPtr</definition>
+        <argsstring></argsstring>
+        <name>coreArgumentsPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="133" column="15" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="128" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="129" bodyend="134"/>
+    <listofallmembers>
+      <member refid="structipc__msg__t_1aa3208c8407334706468914f78c1ad221" prot="public" virt="non-virtual"><scope>ipc_msg_t</scope><name>clientId</name></member>
+      <member refid="structipc__msg__t_1a4e3f7560336549f3643084fbdccfc869" prot="public" virt="non-virtual"><scope>ipc_msg_t</scope><name>coreArgumentsPtr</name></member>
+      <member refid="structipc__msg__t_1ae4c13a0e022144209547c74bbd7a781b" prot="public" virt="non-virtual"><scope>ipc_msg_t</scope><name>intrMask</name></member>
+      <member refid="structipc__msg__t_1ae7649a399b6a588a837f13186b26ee7a" prot="public" virt="non-virtual"><scope>ipc_msg_t</scope><name>userCode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

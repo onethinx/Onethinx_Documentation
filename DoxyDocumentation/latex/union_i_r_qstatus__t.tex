@@ -1,0 +1,170 @@
+\hypertarget{union_i_r_qstatus__t}{}\doxysection{IRQstatus\+\_\+t Union Reference}
+\label{union_i_r_qstatus__t}\index{IRQstatus\_t@{IRQstatus\_t}}
+
+
+Represents the possible IRQ states.  
+
+
+
+
+{\ttfamily \#include $<$Onethinx\+Ext01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{union_i_r_qstatus__t_ab9f8b6cc437a49de5fa39ca0d3bc3a59}{Value}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_aeaf7fc2eb33ae137ac5cf58176781929}{IRQ\_TX\_DONE}}: 1\\
+\>\>{\em Radio received TX DONE IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_ab11c23b695935db7a0b768f08f212907}{IRQ\_RX\_DONE}}: 1\\
+\>\>{\em Radio received RX DONE IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a0810af42300d17184f81c51c3957c19f}{IRQ\_PREAMBLE\_DETECTED}}: 1\\
+\>\>{\em Radio received PREAMBLE DETECTED IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a3b47a91820a2843082dc7afb4be2f60b}{IRQ\_SYNCWORD\_VALID}}: 1\\
+\>\>{\em Radio received SYNCWORD VALID IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a884ae7ca92c1285b15a4f265b4db2174}{IRQ\_HEADER\_VALID}}: 1\\
+\>\>{\em Radio received HEADER VALID IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a2f4ee3ff946a57a76877ca4863c61525}{IRQ\_HEADER\_ERROR}}: 1\\
+\>\>{\em Radio received HEADER ERROR IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_aa70a49d3743fb51ee384277f01532801}{IRQ\_CRC\_ERROR}}: 1\\
+\>\>{\em Radio received CRC ERROR IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_aad4ccaef80e0f4652800d5d16f1ad2fb}{IRQ\_CAD\_DONE}}: 1\\
+\>\>{\em Radio received CAD DONE IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a026e0c7958dc4b9e58f64d7e4da960de}{IRQ\_CAD\_ACTIVITY\_DETECTED}}: 1\\
+\>\>{\em Radio received CAD ACTIVITY DETECTED IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a8eb4ddbf935df0a91fffc3fd449de14d}{IRQ\_RX\_TX\_TIMEOUT}}: 1\\
+\>\>{\em Radio received RX TX TIMEOUT IRQ. }\\
+\>uint8\_t \mbox{\hyperlink{union_i_r_qstatus__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 6\\
+\>\>{\em Reserved. }\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the possible IRQ states. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{union_i_r_qstatus__t_a2454a30a3f190b76d8978c30cae070c0}\label{union_i_r_qstatus__t_a2454a30a3f190b76d8978c30cae070c0}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \} }
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a8b4eebe79ded0459acec2f4950102ba3}\label{union_i_r_qstatus__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+Reserved. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a026e0c7958dc4b9e58f64d7e4da960de}\label{union_i_r_qstatus__t_a026e0c7958dc4b9e58f64d7e4da960de}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_CAD\_ACTIVITY\_DETECTED@{IRQ\_CAD\_ACTIVITY\_DETECTED}}
+\index{IRQ\_CAD\_ACTIVITY\_DETECTED@{IRQ\_CAD\_ACTIVITY\_DETECTED}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_CAD\_ACTIVITY\_DETECTED}{IRQ\_CAD\_ACTIVITY\_DETECTED}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+CAD\+\_\+\+ACTIVITY\+\_\+\+DETECTED}
+
+
+
+Radio received CAD ACTIVITY DETECTED IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_aad4ccaef80e0f4652800d5d16f1ad2fb}\label{union_i_r_qstatus__t_aad4ccaef80e0f4652800d5d16f1ad2fb}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_CAD\_DONE@{IRQ\_CAD\_DONE}}
+\index{IRQ\_CAD\_DONE@{IRQ\_CAD\_DONE}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_CAD\_DONE}{IRQ\_CAD\_DONE}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+CAD\+\_\+\+DONE}
+
+
+
+Radio received CAD DONE IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_aa70a49d3743fb51ee384277f01532801}\label{union_i_r_qstatus__t_aa70a49d3743fb51ee384277f01532801}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_CRC\_ERROR@{IRQ\_CRC\_ERROR}}
+\index{IRQ\_CRC\_ERROR@{IRQ\_CRC\_ERROR}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_CRC\_ERROR}{IRQ\_CRC\_ERROR}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+CRC\+\_\+\+ERROR}
+
+
+
+Radio received CRC ERROR IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a2f4ee3ff946a57a76877ca4863c61525}\label{union_i_r_qstatus__t_a2f4ee3ff946a57a76877ca4863c61525}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_HEADER\_ERROR@{IRQ\_HEADER\_ERROR}}
+\index{IRQ\_HEADER\_ERROR@{IRQ\_HEADER\_ERROR}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_HEADER\_ERROR}{IRQ\_HEADER\_ERROR}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+HEADER\+\_\+\+ERROR}
+
+
+
+Radio received HEADER ERROR IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a884ae7ca92c1285b15a4f265b4db2174}\label{union_i_r_qstatus__t_a884ae7ca92c1285b15a4f265b4db2174}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_HEADER\_VALID@{IRQ\_HEADER\_VALID}}
+\index{IRQ\_HEADER\_VALID@{IRQ\_HEADER\_VALID}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_HEADER\_VALID}{IRQ\_HEADER\_VALID}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+HEADER\+\_\+\+VALID}
+
+
+
+Radio received HEADER VALID IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a0810af42300d17184f81c51c3957c19f}\label{union_i_r_qstatus__t_a0810af42300d17184f81c51c3957c19f}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_PREAMBLE\_DETECTED@{IRQ\_PREAMBLE\_DETECTED}}
+\index{IRQ\_PREAMBLE\_DETECTED@{IRQ\_PREAMBLE\_DETECTED}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_PREAMBLE\_DETECTED}{IRQ\_PREAMBLE\_DETECTED}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+PREAMBLE\+\_\+\+DETECTED}
+
+
+
+Radio received PREAMBLE DETECTED IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_ab11c23b695935db7a0b768f08f212907}\label{union_i_r_qstatus__t_ab11c23b695935db7a0b768f08f212907}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_RX\_DONE@{IRQ\_RX\_DONE}}
+\index{IRQ\_RX\_DONE@{IRQ\_RX\_DONE}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_RX\_DONE}{IRQ\_RX\_DONE}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+RX\+\_\+\+DONE}
+
+
+
+Radio received RX DONE IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a8eb4ddbf935df0a91fffc3fd449de14d}\label{union_i_r_qstatus__t_a8eb4ddbf935df0a91fffc3fd449de14d}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_RX\_TX\_TIMEOUT@{IRQ\_RX\_TX\_TIMEOUT}}
+\index{IRQ\_RX\_TX\_TIMEOUT@{IRQ\_RX\_TX\_TIMEOUT}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_RX\_TX\_TIMEOUT}{IRQ\_RX\_TX\_TIMEOUT}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+RX\+\_\+\+TX\+\_\+\+TIMEOUT}
+
+
+
+Radio received RX TX TIMEOUT IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_a3b47a91820a2843082dc7afb4be2f60b}\label{union_i_r_qstatus__t_a3b47a91820a2843082dc7afb4be2f60b}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_SYNCWORD\_VALID@{IRQ\_SYNCWORD\_VALID}}
+\index{IRQ\_SYNCWORD\_VALID@{IRQ\_SYNCWORD\_VALID}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_SYNCWORD\_VALID}{IRQ\_SYNCWORD\_VALID}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+SYNCWORD\+\_\+\+VALID}
+
+
+
+Radio received SYNCWORD VALID IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_aeaf7fc2eb33ae137ac5cf58176781929}\label{union_i_r_qstatus__t_aeaf7fc2eb33ae137ac5cf58176781929}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!IRQ\_TX\_DONE@{IRQ\_TX\_DONE}}
+\index{IRQ\_TX\_DONE@{IRQ\_TX\_DONE}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{IRQ\_TX\_DONE}{IRQ\_TX\_DONE}}
+{\footnotesize\ttfamily uint8\+\_\+t IRQ\+\_\+\+TX\+\_\+\+DONE}
+
+
+
+Radio received TX DONE IRQ. 
+
+\mbox{\Hypertarget{union_i_r_qstatus__t_ab9f8b6cc437a49de5fa39ca0d3bc3a59}\label{union_i_r_qstatus__t_ab9f8b6cc437a49de5fa39ca0d3bc3a59}} 
+\index{IRQstatus\_t@{IRQstatus\_t}!Value@{Value}}
+\index{Value@{Value}!IRQstatus\_t@{IRQstatus\_t}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily uint16\+\_\+t Value}
+

@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unionmac_status__t" kind="union" language="C++" prot="public">
+    <compoundname>macStatus_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionmac_status__t_1a236adb083f822153f46d25c870562cff" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lorawan__enums_1gaabb9d4b1e41b33a28ad84076f7776013" kindref="member">macErrors_e</ref></type>
+        <definition>macErrors_e errorStatus</definition>
+        <argsstring></argsstring>
+        <name>errorStatus</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>MAC Errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="432" column="13" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1ad30b29159bf1a264a8075970afd72010" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t bytesToRead</definition>
+        <argsstring></argsstring>
+        <name>bytesToRead</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Total bytes in Receive buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="433" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>reserved </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="434" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a00c5de6ee9627149efbe7d21a60bd4ac" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MACcmdReceived</definition>
+        <argsstring></argsstring>
+        <name>MACcmdReceived</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>The MAC received a MAC command (implemented since Stack version 0x000000BC) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="435" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a3cb3248c1af514c037c7ce283949f883" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool confDown</definition>
+        <argsstring></argsstring>
+        <name>confDown</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Is a confirmed downlink received? (implemented since Stack version 0x000000B5) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="436" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a2e813ffcb6defeae2490eb1cf6c0418a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isConfigured</definition>
+        <argsstring></argsstring>
+        <name>isConfigured</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>The MAC is configured? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="437" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a109a5b4a978e1cfc92ebc8094456f8a7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool messageReceived</definition>
+        <argsstring></argsstring>
+        <name>messageReceived</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>The MAC received a message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="438" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a206513b47da6c346ebda7a5f06cce87e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isJoined</definition>
+        <argsstring></argsstring>
+        <name>isJoined</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Is Device Joined? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="439" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a099f725f22a344e190121634f53328d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isBusy</definition>
+        <argsstring></argsstring>
+        <name>isBusy</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Is the MAC busy? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="440" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a90ae81c58017da5ecf4ca6c7fb0e9c51" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isPublicNetwork</definition>
+        <argsstring></argsstring>
+        <name>isPublicNetwork</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>True for LoRaWAN Public Network. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="441" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1ac51020cf74fc68b40d713ebcc11942ca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t devAddr</definition>
+        <argsstring></argsstring>
+        <name>devAddr</name>
+        <briefdescription>
+<para>The Device address received when joining the network. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="442" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1afeaf136987efbe05e2eea813c00d13d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Margin</definition>
+        <argsstring></argsstring>
+        <name>Margin</name>
+        <briefdescription>
+<para>The Demodulation Margin (in dB above the demodulation floor) for last LinkCheckReq command (implemented since Stack version 0x000000BC) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="443" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1ae85a7bfb65c731f336057c9604640a98" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t GwCnt</definition>
+        <argsstring></argsstring>
+        <name>GwCnt</name>
+        <briefdescription>
+<para>The number of gateways that successfully received the last LinkCheckReq command (implemented since Stack version 0x000000BC) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="444" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a2973de9ac0ab5e876b80362bc4c6a88b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t fPort</definition>
+        <argsstring></argsstring>
+        <name>fPort</name>
+        <briefdescription>
+<para>The port number of the last received packet (implemented since Stack version 0x000000BC) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="445" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a26df07b6d5a76098a45817bc0067cdbc" prot="public" static="no" mutable="no">
+        <type>struct macStatus_t::@13</type>
+        <definition>struct macStatus_t::@13 @14</definition>
+        <argsstring></argsstring>
+        <name>@14</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionmac_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reserved[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="447" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="429" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="429" bodyend="448"/>
+    <listofallmembers>
+      <member refid="unionmac_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>__pad0__</name></member>
+      <member refid="unionmac_status__t_1ad30b29159bf1a264a8075970afd72010" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>bytesToRead</name></member>
+      <member refid="unionmac_status__t_1a3cb3248c1af514c037c7ce283949f883" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>confDown</name></member>
+      <member refid="unionmac_status__t_1ac51020cf74fc68b40d713ebcc11942ca" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>devAddr</name></member>
+      <member refid="unionmac_status__t_1a236adb083f822153f46d25c870562cff" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>errorStatus</name></member>
+      <member refid="unionmac_status__t_1a2973de9ac0ab5e876b80362bc4c6a88b" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>fPort</name></member>
+      <member refid="unionmac_status__t_1ae85a7bfb65c731f336057c9604640a98" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>GwCnt</name></member>
+      <member refid="unionmac_status__t_1a099f725f22a344e190121634f53328d8" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>isBusy</name></member>
+      <member refid="unionmac_status__t_1a2e813ffcb6defeae2490eb1cf6c0418a" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>isConfigured</name></member>
+      <member refid="unionmac_status__t_1a206513b47da6c346ebda7a5f06cce87e" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>isJoined</name></member>
+      <member refid="unionmac_status__t_1a90ae81c58017da5ecf4ca6c7fb0e9c51" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>isPublicNetwork</name></member>
+      <member refid="unionmac_status__t_1a00c5de6ee9627149efbe7d21a60bd4ac" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>MACcmdReceived</name></member>
+      <member refid="unionmac_status__t_1afeaf136987efbe05e2eea813c00d13d8" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>Margin</name></member>
+      <member refid="unionmac_status__t_1a109a5b4a978e1cfc92ebc8094456f8a7" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>messageReceived</name></member>
+      <member refid="unionmac_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" virt="non-virtual"><scope>macStatus_t</scope><name>reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

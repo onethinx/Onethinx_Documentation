@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="2-_getting___started_8md" kind="file" language="Markdown">
+    <compoundname>2-Getting_Started.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">\page<sp/>getstart<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline><highlight class="normal">\section<sp/>ide<sp/>Installing<sp/>the<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>get<sp/>started<sp/>with<sp/>Onethinx<sp/>LoRaWAN<sp/>module,<sp/>you<sp/>need<sp/>an<sp/>IDE.<sp/>We<sp/>have<sp/>developed<sp/>our<sp/>own<sp/>IDE<sp/>based<sp/>around<sp/>Visual<sp/>Studio<sp/>Code.<sp/></highlight></codeline>
+<codeline><highlight class="normal">\subsection<sp/>idewindows<sp/>Windows</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://github.com/onethinx/VSCode_OnethinxPack_Windows&quot;&gt;Windows&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal">\subsection<sp/>idemacos<sp/>MacOS</highlight></codeline>
+<codeline><highlight class="normal">\subsection<sp/>idelinux<sp/>Linux</highlight></codeline>
+<codeline><highlight class="normal">\section<sp/>examples<sp/>Downloading<sp/>the<sp/>examples</highlight></codeline>
+<codeline><highlight class="normal">Text<sp/>1234567890</highlight></codeline>
+<codeline><highlight class="normal">\section<sp/>apiLibs<sp/>Using<sp/>the<sp/>correct<sp/>API<sp/>libraries</highlight></codeline>
+<codeline><highlight class="normal">Text<sp/>1234567890</highlight></codeline>
+<codeline><highlight class="normal">etc...</highlight></codeline>
+    </programlisting>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/2-Getting_Started.md"/>
+  </compounddef>
+</doxygen>

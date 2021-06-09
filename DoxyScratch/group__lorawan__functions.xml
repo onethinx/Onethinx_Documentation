@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lorawan__functions" kind="group">
+    <compoundname>lorawan_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__lorawan__functions_1gad8b399309ffabdefa97ae9be0e3a9757" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_Reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>LoRaWAN_Reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function forces the current non-blocking function to stop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Functions which receive waitMode_t can be set at both blocking and non-blocking.</para>
+<para><simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="579" column="13" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="579" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga106680a253a673c3061e790b90656a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_Init</definition>
+        <argsstring>(coreConfiguration_t *coreConfigurationPtr)</argsstring>
+        <name>LoRaWAN_Init</name>
+        <param>
+          <type><ref refid="unioncore_configuration__t" kindref="compound">coreConfiguration_t</ref> *</type>
+          <declname>coreConfigurationPtr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the LoRaWAN stack and points the stack to the location of the settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coreConfigurationPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the structure where Join, TXwhich sets the LoRaWAN parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="590" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="590" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga74bf789aec2952e900743a988850c1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_GetInfo</definition>
+        <argsstring>(coreInfo_t *coreInfo)</argsstring>
+        <name>LoRaWAN_GetInfo</name>
+        <param>
+          <type><ref refid="structcore_info__t" kindref="compound">coreInfo_t</ref> *</type>
+          <declname>coreInfo</declname>
+        </param>
+        <briefdescription>
+<para>This function gives the stack information which were saved at the time of the programming. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coreInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the location where info will be saved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="601" column="13" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="601" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1gab2e567785485d16be2642f04e6e7b276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_Join</definition>
+        <argsstring>(WaitMode_e waitMode)</argsstring>
+        <name>LoRaWAN_Join</name>
+        <param>
+          <type><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref></type>
+          <declname>waitMode</declname>
+        </param>
+        <briefdescription>
+<para>Joins the LoRaWAN network, taking the parameters from the coreConfiguration structure which was passed to LoRaWAN_Init. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>waitMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of wait mode that the microcontroller core should wait in.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<table rows="5" cols="2"><row>
+<entry thead="yes"><para>Mode   </para>
+</entry><entry thead="yes"><para>Description    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>M4_NoWait   </para>
+</entry><entry thead="no"><para>Non-blocking. Do not wait untill stack is finished, M4 continues with operation.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>M4_WaitActive   </para>
+</entry><entry thead="no"><para>Blocking. Wait while stack busy, M4 stays in Active mode.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>M4_WaitSleep   </para>
+</entry><entry thead="no"><para>Blocking. Wait while stack busy, M4 goes into Sleep while is stack busy.    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>M4_WaitDeepSleep   </para>
+</entry><entry thead="no"><para>Blocking. Wait while stack busy, M4 goes into DeepSleep while is stack busy.   </para>
+</entry></row>
+</table>
+</para>
+<para><simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="622" column="13" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="622" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1gaf8e70d4aee605bc13b477dbf60bfca49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_FlashRead</definition>
+        <argsstring>(uint8_t *buffer, uint8_t block, uint8_t length)</argsstring>
+        <name>LoRaWAN_FlashRead</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>This function reads the buffer that was previously saved to flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows user to access the buffer even if reset or power off occures.</para>
+<para><table rows="9" cols="2"><row>
+<entry thead="yes"><para>Block   </para>
+</entry><entry thead="yes"><para>Data    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>1   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>2   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>3   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>4   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>6   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>7   </para>
+</entry><entry thead="no"><para>Max 256 bytes   </para>
+</entry></row>
+</table>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer where the data read from flash will be saved to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Block from which the data is read from. Available blocks: 0 to 7 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data which you wish to read. Maximum 255 bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lorawan__functions_1gaa5dc29f3cae973c71c19c2b3935a02e0" kindref="member">LoRaWAN_FlashWrite</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="648" column="13" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="648" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1gaa5dc29f3cae973c71c19c2b3935a02e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_FlashWrite</definition>
+        <argsstring>(uint8_t *buffer, uint8_t block, uint8_t length)</argsstring>
+        <name>LoRaWAN_FlashWrite</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>This function saves a buffer to flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows user to access the buffer even if reset or power off occures.</para>
+<para><table rows="9" cols="2"><row>
+<entry thead="yes"><para>Block   </para>
+</entry><entry thead="yes"><para>Data    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>0   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>1   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>2   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>3   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>4   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>5   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>6   </para>
+</entry><entry thead="no"><para>Max 256 bytes    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>7   </para>
+</entry><entry thead="no"><para>Max 256 bytes   </para>
+</entry></row>
+</table>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data which needs to be saved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Block to which the data should be saved to. Available blocks: 0 to 7 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data which you wish saved. Maximum 255 bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lorawan__functions_1gaf8e70d4aee605bc13b477dbf60bfca49" kindref="member">LoRaWAN_FlashRead</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="673" column="13" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="673" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga5e04cecde87fd5a5f142c74e1cabaa3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_SetDateTime</definition>
+        <argsstring>(dateTime_t *dt)</argsstring>
+        <name>LoRaWAN_SetDateTime</name>
+        <param>
+          <type><ref refid="uniondate_time__t" kindref="compound">dateTime_t</ref> *</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>This function allows the user to set the current date and time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to the location where date and time data is saved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="uniondate_time__t" kindref="compound">dateTime_t</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="684" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="684" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga2c61c5b91dbf1d6cdb4cead610ac1bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_GetDateTime</definition>
+        <argsstring>(dateTime_t *dt)</argsstring>
+        <name>LoRaWAN_GetDateTime</name>
+        <param>
+          <type><ref refid="uniondate_time__t" kindref="compound">dateTime_t</ref> *</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>This function allows the user to get the current date and time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Point to the location where date and time data is saved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="uniondate_time__t" kindref="compound">dateTime_t</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="695" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="695" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga6fcb4e6817783f5cdf155aa22f1e361c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_GetRXdata</definition>
+        <argsstring>(uint8_t *RXdata, uint8_t length)</argsstring>
+        <name>LoRaWAN_GetRXdata</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>RXdata</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>This function retrieves the specified length of data reveived via downlink from a gateway and saves it to a buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The lenght of data can be retrieved after a succesful LoRaWAN_Send, through the status structure it returns</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RXdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the byte buffer to which the data is retrieved to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data which you wish saved. The length of data received can be seen after LoRaWAN_Send in coreStatus.mac.bytesToRead </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lorawan__functions_1gab5f7f2b6551fe084bb63ab24dbdaf19f" kindref="member">LoRaWAN_Send</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="710" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="710" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1gab5f7f2b6551fe084bb63ab24dbdaf19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_Send</definition>
+        <argsstring>(uint8_t *buffer, uint8_t length, WaitMode_e waitMode)</argsstring>
+        <name>LoRaWAN_Send</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref></type>
+          <declname>waitMode</declname>
+        </param>
+        <briefdescription>
+<para>This function sends your buffer of data to the LoRaWAN network. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data which needs to be sent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data which you wish to send. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of wait mode that the microcontroller core should wait in. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="723" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="723" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga5dce371feddd58cfe5eb70789e00bf61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_SendMac</definition>
+        <argsstring>(uint8_t *buffer, uint8_t length, WaitMode_e waitMode, MACcmd_e MACcmd)</argsstring>
+        <name>LoRaWAN_SendMac</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref></type>
+          <declname>waitMode</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lorawan__enums_1ga6393fcb2900b24fa2a580ebfc66fc569" kindref="member">MACcmd_e</ref></type>
+          <declname>MACcmd</declname>
+        </param>
+        <briefdescription>
+<para>This function sends your buffer of data and a MAC command to the LoRaWAN network. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is similar to LoRaWAN_Send, but this also sends a MAC command.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the data which needs to be sent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of data which you wish to send. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of wait mode that the microcontroller core should wait in. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MACcmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MAC command to be sent to the LoRaWAN network. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref>, <ref refid="group__lorawan__enums_1ga6393fcb2900b24fa2a580ebfc66fc569" kindref="member">MACcmd_e</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="737" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="737" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1gaf0a38454913b6186fc45c1e16d4610cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_Sleep</definition>
+        <argsstring>(sleepConfig_t *sleepConfig)</argsstring>
+        <name>LoRaWAN_Sleep</name>
+        <param>
+          <type><ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref> *</type>
+          <declname>sleepConfig</declname>
+        </param>
+        <briefdescription>
+<para>This function allows you to enter a sleep mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sleepConfig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the sleep configuration structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref> and <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="748" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="748" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1ga50e698f432ec47ae93f3901b0534dcd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRaWAN_GetStatus</definition>
+        <argsstring>()</argsstring>
+        <name>LoRaWAN_GetStatus</name>
+        <briefdescription>
+<para>This function returns the current error /status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="757" column="14" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="757" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lorawan__functions_1gab888acd59c2be2c5e41dff4c398aa375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionerror_status__t" kindref="compound">errorStatus_t</ref></type>
+        <definition>errorStatus_t LoRaWAN_GetError</definition>
+        <argsstring>()</argsstring>
+        <name>LoRaWAN_GetError</name>
+        <briefdescription>
+<para>This function returns the current error /status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns error codes. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="unionerror_status__t" kindref="compound">errorStatus_t</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="767" column="15" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" declline="767" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Onethinx LoRaWAN Functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__structs__fsk" kind="group">
+    <compoundname>lora_structs_fsk</compoundname>
+    <title>FSK</title>
+    <innerclass refid="struct_f_s_k_modulation_params__t" prot="public">FSKModulationParams_t</innerclass>
+    <innerclass refid="struct_f_s_k_packet_params__t" prot="public">FSKPacketParams_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

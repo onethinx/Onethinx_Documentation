@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="3-_a_p_i___reference_8md" kind="file" language="Markdown">
+    <compoundname>3-API_Reference.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">@page<sp/>onethinx_api<sp/>Onethinx<sp/>API</highlight></codeline>
+<codeline><highlight class="normal">@defgroup<sp/>lorawan_api_group<sp/>LoRaWAN</highlight></codeline>
+<codeline><highlight class="normal">@ref<sp/>lorawan_api_group</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/3-API_Reference.md"/>
+  </compounddef>
+</doxygen>

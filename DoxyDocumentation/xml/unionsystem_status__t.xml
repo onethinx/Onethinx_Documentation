@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unionsystem_status__t" kind="union" language="C++" prot="public">
+    <compoundname>systemStatus_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionsystem_status__t_1acd99bb05ca015e7d74448acb1deba7ca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>The version of the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="444" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a1edf480c617ff15b5f27f3ba54b030fe" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga9660163b15da218c7be89c824c39b356" kindref="member">systemErrors_e</ref></type>
+        <definition>systemErrors_e errorStatus</definition>
+        <argsstring></argsstring>
+        <name>errorStatus</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>System Errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="445" column="16" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1aae94655bc5288ef5ba6bb913fc78f00c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t batteryLevel</definition>
+        <argsstring></argsstring>
+        <name>batteryLevel</name>
+        <briefdescription>
+<para>The battery level for the DevStatusAns command (network check on battery level) to be set optionally by the user (0 = external, 1 = minimum battery, 254 = maximum battery, 255 = not implemented) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="446" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+<para>reserved </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="447" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1ac9e1d776f4ccbcc0673e1cfeb67f7cd6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool breakCurrentFunction</definition>
+        <argsstring></argsstring>
+        <name>breakCurrentFunction</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Break current execution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="448" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a969b5d5c8b20e5076bc0a885f1152dd8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isStarted</definition>
+        <argsstring></argsstring>
+        <name>isStarted</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>System is started? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="449" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a099f725f22a344e190121634f53328d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isBusy</definition>
+        <argsstring></argsstring>
+        <name>isBusy</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>System is busy? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="450" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a0107cad432bc7adb4365aae01585ec08" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isSleeping</definition>
+        <argsstring></argsstring>
+        <name>isSleeping</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>System is sleeping? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="451" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a58aee6b525ae39e61c25b1622f9b5a1a" prot="public" static="no" mutable="no">
+        <type>struct systemStatus_t::@14</type>
+        <definition>struct systemStatus_t::@14 @15</definition>
+        <argsstring></argsstring>
+        <name>@15</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="452" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsystem_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reserved[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="453" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System status structure returned by LoRaWAN functions, found in <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="441" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="441" bodyend="454"/>
+    <listofallmembers>
+      <member refid="unionsystem_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>__pad0__</name></member>
+      <member refid="unionsystem_status__t_1aae94655bc5288ef5ba6bb913fc78f00c" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>batteryLevel</name></member>
+      <member refid="unionsystem_status__t_1ac9e1d776f4ccbcc0673e1cfeb67f7cd6" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>breakCurrentFunction</name></member>
+      <member refid="unionsystem_status__t_1a1edf480c617ff15b5f27f3ba54b030fe" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>errorStatus</name></member>
+      <member refid="unionsystem_status__t_1a099f725f22a344e190121634f53328d8" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>isBusy</name></member>
+      <member refid="unionsystem_status__t_1a0107cad432bc7adb4365aae01585ec08" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>isSleeping</name></member>
+      <member refid="unionsystem_status__t_1a969b5d5c8b20e5076bc0a885f1152dd8" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>isStarted</name></member>
+      <member refid="unionsystem_status__t_1a92a6167e64e6a8206286aa6423a17140" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>reserved</name></member>
+      <member refid="unionsystem_status__t_1acd99bb05ca015e7d74448acb1deba7ca" prot="public" virt="non-virtual"><scope>systemStatus_t</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

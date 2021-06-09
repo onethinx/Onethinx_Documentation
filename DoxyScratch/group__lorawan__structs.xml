@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lorawan__structs" kind="group">
+    <compoundname>lorawan_structs</compoundname>
+    <title>Data Structures</title>
+    <innerclass refid="struct_stored_keys__t" prot="public">StoredKeys_t</innerclass>
+    <innerclass refid="struct_o_t_a_a__10x__t" prot="public">OTAA_10x_t</innerclass>
+    <innerclass refid="struct_o_t_a_a__11x__t" prot="public">OTAA_11x_t</innerclass>
+    <innerclass refid="struct_a_b_p__10x__t" prot="public">ABP_10x_t</innerclass>
+    <innerclass refid="struct_lo_ra_w_a_n__keys__t" prot="public">LoRaWAN_keys_t</innerclass>
+    <innerclass refid="unioncore_configuration__t" prot="public">coreConfiguration_t</innerclass>
+    <innerclass refid="unionparameter_status__t" prot="public">parameterStatus_t</innerclass>
+    <innerclass refid="unionradio_status__t" prot="public">radioStatus_t</innerclass>
+    <innerclass refid="unionmac_status__t" prot="public">macStatus_t</innerclass>
+    <innerclass refid="unionsystem_status__t" prot="public">systemStatus_t</innerclass>
+    <innerclass refid="structcore_status__t" prot="public">coreStatus_t</innerclass>
+    <innerclass refid="unionerror_status__t" prot="public">errorStatus_t</innerclass>
+    <innerclass refid="uniondate_time__t" prot="public">dateTime_t</innerclass>
+    <innerclass refid="structwake_up_pin__t" prot="public">wakeUpPin_t</innerclass>
+    <innerclass refid="structwake_up_time__t" prot="public">wakeUpTime_t</innerclass>
+    <innerclass refid="structsleep_config__t" prot="public">sleepConfig_t</innerclass>
+    <innerclass refid="structcore_info__t" prot="public">coreInfo_t</innerclass>
+    <briefdescription>
+<para>Onethinx LoRaWAN API Data Structures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

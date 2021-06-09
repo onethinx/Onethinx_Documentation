@@ -1,0 +1,97 @@
+.TH "systemStatus_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+systemStatus_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBversion\fP"
+.br
+.RI "The version of the stack\&. "
+.ti -1c
+.RI "   \fBsystemErrors_e\fP \fBerrorStatus\fP: 8"
+.br
+.RI "System Errors\&. "
+.ti -1c
+.RI "   uint8_t \fBbatteryLevel\fP"
+.br
+.RI "The battery level for the DevStatusAns command (network check on battery level) to be set optionally by the user (0 = external, 1 = minimum battery, 254 = maximum battery, 255 = not implemented) "
+.ti -1c
+.RI "   uint8_t \fB__pad0__\fP: 5"
+.br
+.RI "reserved "
+.ti -1c
+.RI "   bool \fBbreakCurrentFunction\fP: 1"
+.br
+.RI "Break current execution\&. "
+.ti -1c
+.RI "   bool \fBisStarted\fP: 1"
+.br
+.RI "System is started? "
+.ti -1c
+.RI "   bool \fBisBusy\fP: 1"
+.br
+.RI "System is busy? "
+.ti -1c
+.RI "   bool \fBisSleeping\fP: 1"
+.br
+.RI "System is sleeping? "
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "uint8_t \fBreserved\fP [16]"
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.PP
+reserved 
+.SS "uint8_t batteryLevel"
+
+.PP
+The battery level for the DevStatusAns command (network check on battery level) to be set optionally by the user (0 = external, 1 = minimum battery, 254 = maximum battery, 255 = not implemented) 
+.SS "bool breakCurrentFunction"
+
+.PP
+Break current execution\&. 
+.SS "\fBsystemErrors_e\fP errorStatus"
+
+.PP
+System Errors\&. 
+.SS "bool isBusy"
+
+.PP
+System is busy? 
+.SS "bool isSleeping"
+
+.PP
+System is sleeping? 
+.SS "bool isStarted"
+
+.PP
+System is started? 
+.SS "uint8_t reserved[16]"
+
+.SS "uint32_t version"
+
+.PP
+The version of the stack\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

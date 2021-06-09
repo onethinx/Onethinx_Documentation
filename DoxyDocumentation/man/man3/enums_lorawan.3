@@ -1,0 +1,279 @@
+.TH "enums_lorawan" 3 "Mon Jun 7 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+enums_lorawan \- Enumerated Types
+.PP
+ \- Onethinx LoRaWAN API Enumerated Types\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+
+.in +1c
+.ti -1c
+.RI "enum \fBkeyType_e\fP { \fBABP_10x_key\fP = 0x01, \fBOTAA_10x_key\fP = 0x02, \fBOTAA_11x_key\fP = 0x03, \fBPreStored_key\fP = 0xF0, \fBUserStored_key\fP = 0xF1 }"
+.br
+.RI "LoRaWAN Activation Type\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "enum \fBRadio_DataRate_e\fP { \fBDR_0\fP = 0x00, \fBDR_1\fP = 0x01, \fBDR_2\fP = 0x02, \fBDR_3\fP = 0x03, \fBDR_4\fP = 0x04, \fBDR_5\fP = 0x05, \fBDR_6\fP = 0x06, \fBDR_7\fP = 0x07, \fBDR_8\fP = 0x08, \fBDR_9\fP = 0x09, \fBDR_10\fP = 0x0A, \fBDR_11\fP = 0x0B, \fBDR_12\fP = 0x0C, \fBDR_13\fP = 0x0D, \fBDR_ADR\fP = 0xF0, \fBDR_AUTO\fP = 0xF1 }"
+.br
+.RI "LoRaWAN Data Rates\&. "
+.ti -1c
+.RI "enum \fBRadio_TXpower_e\fP { \fBPWR_ADR\fP = 0xF0, \fBPWR_MAX\fP = 0x00, \fBPWR_ATT_2dB\fP = 0x01, \fBPWR_ATT_4dB\fP = 0x02, \fBPWR_ATT_6dB\fP = 0x03, \fBPWR_ATT_8dB\fP = 0x04, \fBPWR_ATT_10dB\fP = 0x05, \fBPWR_ATT_12dB\fP = 0x06, \fBPWR_ATT_14dB\fP = 0x07, \fBPWR_ATT_16dB\fP = 0x08, \fBPWR_ATT_18dB\fP = 0x09, \fBPWR_ATT_20dB\fP = 0x0A, \fBPWR_ATT_22dB\fP = 0x0B, \fBPWR_ATT_24dB\fP = 0x0C, \fBPWR_ATT_26dB\fP = 0x0D, \fBPWR_ATT_28dB\fP = 0x0E, \fBPWR_ATT_30dB\fP = 0x0F, \fBPWR_ATT_32dB\fP = 0x10, \fBPWR_MIN\fP = 0x11 }"
+.br
+.RI "LoRaWAN Output Power Settings\&. "
+.ti -1c
+.RI "enum \fBRadio_SubBands_e\fP { \fBUS_SUB_BAND_1\fP = 0, \fBUS_SUB_BAND_2\fP = 1, \fBUS_SUB_BAND_3\fP = 2, \fBUS_SUB_BAND_4\fP = 3, \fBUS_SUB_BAND_5\fP = 4, \fBUS_SUB_BAND_6\fP = 5, \fBUS_SUB_BAND_7\fP = 6, \fBUS_SUB_BAND_8\fP = 7, \fBUS_SUB_BAND_NONE\fP = 14, \fBUS_SUB_BANDS_ALL\fP = 15, \fBEU_SUB_BANDS_DEFAULT\fP = 0, \fBEU_SUB_BAND1_ON\fP = 1, \fBEU_SUB_BAND1_OFF\fP = 2, \fBEU_SUB_BAND2_ON\fP = 3, \fBEU_SUB_BAND2_OFF\fP = 4 }"
+.br
+.RI "LoRaWAN Subbands\&. "
+.ti -1c
+.RI "enum \fBIdleMode_e\fP { \fBM0_Active\fP = 0x0, \fBM0_Sleep\fP = 0x1, \fBM0_DeepSleep\fP = 0x2 }"
+.br
+.RI "Idle Modes\&. "
+.ti -1c
+.RI "enum \fBWaitMode_e\fP { \fBM4_NoWait\fP = 0x0, \fBM4_WaitActive\fP = 0x1, \fBM4_WaitSleep\fP = 0x2, \fBM4_WaitDeepSleep\fP = 0x3 }"
+.br
+.RI "Wait Modes\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "enum \fBparamErrors_e\fP { \fBparam_OK\fP = 0x00, \fBparam_Invalid\fP = 0x01, \fBparam_OutOfRange\fP = 0x02, \fBparam_UndefinedError\fP = 0xFA }"
+.br
+.RI "Type of parameter error returned by the Onethinx stack\&. "
+.ti -1c
+.RI "enum \fBradioErrors_e\fP { \fBradio_OK\fP = 0x00, \fBradio_BusyError\fP = 0x01, \fBradio_BuckStartError\fP = 0x02, \fBradio_XoscStartError\fP = 0x03, \fBradio_Rc13mCalibError\fP = 0x04, \fBradio_Rc64kCalibError\fP = 0x05, \fBradio_PllCalibError\fP = 0x06, \fBradio_PllLockError\fP = 0x07, \fBradio_ImgCalibError\fP = 0x08, \fBradio_AdcCalibError\fP = 0x09, \fBradio_PaRampError\fP = 0x0A, \fBradio_InvalidFrequency\fP = 0x0B, \fBradio_UndefinedError\fP = 0xFA }"
+.br
+.RI "Type of parameter error returned by the Onethinx stack\&. "
+.ti -1c
+.RI "enum \fBmacErrors_e\fP { \fBmac_OK\fP = 0x00, \fBmac_BusyError\fP = 0x01, \fBmac_NotJoinedError\fP = 0x02, \fBmac_ChannelsOccupiedError\fP = 0x03, \fBmac_UnrecognizedKeyType\fP = 0x04, \fBmac_EmptyPayload_Error\fP = 0x05, \fBmac_RXheader_Error\fP = 0x06, \fBmac_RX_MIC_Error\fP = 0x07, \fBmac_RX_InvalidDevAddr\fP = 0x08, \fBmac_InvalidPacket_Error\fP = 0x09, \fBmac_RXtimeout_Error\fP = 0x0A, \fBmac_CRC_Error\fP = 0x0B, \fBmac_FCNT_Error\fP = 0x0C, \fBmac_Confirmation_Error\fP = 0x0D, \fBmac_PayloadSize_Error\fP = 0x0E, \fBmac_UndefinedError\fP = 0xFA }"
+.br
+.RI "Type of MAC error returned by the Onethinx stack\&. "
+.ti -1c
+.RI "enum \fBsystemErrors_e\fP { \fBsystem_OK\fP = 0x00, \fBsystem_BusyError\fP = 0x01, \fBsystem_NotStarted\fP = 0x02, \fBsystem_IPCError\fP = 0x03, \fBsystem_FlashWriteError\fP = 0x04, \fBsystem_VersionMatchError\fP = 0x05, \fBsystem_UndefinedError\fP = 0xFA }"
+.br
+.RI "Wait Modes\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "enum \fBsleepMode_e\fP { \fBmodeSleep\fP = 0x1, \fBmodeDeepSleep\fP = 0x2, \fBmodeHibernate\fP = 0x3 }"
+.br
+.ti -1c
+.RI "enum \fBsleepCores_e\fP { \fBcoresM0p\fP = 1, \fBcoresM4\fP = 2, \fBcoresBoth\fP = 3 }"
+.br
+.ti -1c
+.RI "enum \fBMACcmd_e\fP { \fBMACcmd_None\fP = 0, \fBLinkCheckReq\fP = 1, \fBDeviceTimeReq\fP = 2, \fBLinkCheck_DeviceTimeReq\fP = 3 }"
+.br
+.in -1c
+.in +1c
+.ti -1c
+.RI "enum \fBstackRegion_e\fP { \fBstack_AS\fP = 1, \fBstack_AU\fP = 2, \fBstack_CN_L\fP = 3, \fBstack_CN_H\fP = 4, \fBstack_EU_L\fP = 5, \fBstack_EU_H\fP = 6, \fBstack_IN\fP = 7, \fBstack_KR\fP = 8, \fBstack_US\fP = 9, \fBstack_RU\fP = 10 }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Onethinx LoRaWAN API Enumerated Types\&. 
+
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBIdleMode_e\fP"
+
+.PP
+Idle Modes\&. 
+.SS "enum \fBkeyType_e\fP"
+
+.PP
+LoRaWAN Activation Type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIABP_10x_key \fP\fP
+Activation by Personalization (ABP) 
+.TP
+\fB\fIOTAA_10x_key \fP\fP
+Over the air activation (OTAA) for versions 1\&.0\&.x 
+.TP
+\fB\fIOTAA_11x_key \fP\fP
+Over the air activation (OTAA) for versions 1\&.1\&.x 
+.TP
+\fB\fIPreStored_key \fP\fP
+Pre-Stored Key 
+.TP
+\fB\fIUserStored_key \fP\fP
+User Stored Key 
+.SS "enum \fBMACcmd_e\fP"
+
+.SS "enum \fBmacErrors_e\fP"
+
+.PP
+Type of MAC error returned by the Onethinx stack\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBcoreConfiguration_t\fP and \fBmacStatus_t\fP 
+.RE
+.PP
+
+.SS "enum \fBparamErrors_e\fP"
+
+.PP
+Type of parameter error returned by the Onethinx stack\&. Error in your initialisation of the \fBcoreConfiguration_t\fP struct variable\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBparameterStatus_t\fP and \fBcoreConfiguration_t\fP 
+.RE
+.PP
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIparam_OK \fP\fP
+All Parameters are OK\&. 
+.TP
+\fB\fIparam_Invalid \fP\fP
+Invalid Parameter\&. 
+.TP
+\fB\fIparam_OutOfRange \fP\fP
+Parameters out of Range\&. 
+.TP
+\fB\fIparam_UndefinedError \fP\fP
+Undefined Parameter Error\&. 
+.SS "enum \fBRadio_DataRate_e\fP"
+
+.PP
+LoRaWAN Data Rates\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDR_0 \fP\fP
+EU: SF12 125KHz, US: SF10 125KHz\&. 
+.TP
+\fB\fIDR_1 \fP\fP
+EU: SF11 125KHz, US: SF9 125KHz\&. 
+.TP
+\fB\fIDR_2 \fP\fP
+EU: SF10 125KHz, US: SF8 125KHz\&. 
+.TP
+\fB\fIDR_3 \fP\fP
+EU: SF9 125KHz, US: SF7 125KHz\&. 
+.TP
+\fB\fIDR_4 \fP\fP
+EU: SF8 125KHz, US: SF8 500KHz\&. 
+.TP
+\fB\fIDR_5 \fP\fP
+EU: SF7 125KHz\&. 
+.TP
+\fB\fIDR_6 \fP\fP
+EU: SF7 250KHz\&. 
+.TP
+\fB\fIDR_7 \fP\fP
+EU: FSK 50kbps\&. 
+.TP
+\fB\fIDR_8 \fP\fP
+US: SF12 500KHz (downlinks only) 
+.TP
+\fB\fIDR_9 \fP\fP
+US: SF11 500KHz (downlinks only) 
+.TP
+\fB\fIDR_10 \fP\fP
+US: SF10 500KHz (downlinks only) 
+.TP
+\fB\fIDR_11 \fP\fP
+US: SF9 500KHz (downlinks only) 
+.TP
+\fB\fIDR_12 \fP\fP
+US: SF8 500KHz (downlinks only) 
+.TP
+\fB\fIDR_13 \fP\fP
+US: SF7 500KHz (downlinks only) 
+.TP
+\fB\fIDR_ADR \fP\fP
+Adaptive DataRate\&. 
+.TP
+\fB\fIDR_AUTO \fP\fP
+Automatic DataRate (during joining) 
+.SS "enum \fBRadio_SubBands_e\fP"
+
+.PP
+LoRaWAN Subbands\&. 
+.SS "enum \fBRadio_TXpower_e\fP"
+
+.PP
+LoRaWAN Output Power Settings\&. 
+.SS "enum \fBradioErrors_e\fP"
+
+.PP
+Type of parameter error returned by the Onethinx stack\&. Error in your initialisation of the \fBcoreConfiguration_t\fP struct variable\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBcoreConfiguration_t\fP and \fBparameterStatus_t\fP 
+.RE
+.PP
+
+.SS "enum \fBsleepCores_e\fP"
+
+.SS "enum \fBsleepMode_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fImodeSleep \fP\fP
+.TP
+\fB\fImodeDeepSleep \fP\fP
+.TP
+\fB\fImodeHibernate \fP\fP
+.SS "enum \fBstackRegion_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIstack_AS \fP\fP
+Region Australia 923 MHz\&. 
+.TP
+\fB\fIstack_AU \fP\fP
+Region Japan 915-928 MHz\&. 
+.TP
+\fB\fIstack_CN_L \fP\fP
+Region China 470-510 MHz\&. 
+.TP
+\fB\fIstack_CN_H \fP\fP
+Region China 779-787 MHz\&. 
+.TP
+\fB\fIstack_EU_L \fP\fP
+Region Europe 433 MHz\&. 
+.TP
+\fB\fIstack_EU_H \fP\fP
+Region Europe 863-870 MHz\&. 
+.TP
+\fB\fIstack_IN \fP\fP
+Region India 865-867 MHz\&. 
+.TP
+\fB\fIstack_KR \fP\fP
+Region Korea 920-923 MHz\&. 
+.TP
+\fB\fIstack_US \fP\fP
+Region North America 902-928 MHz\&. 
+.TP
+\fB\fIstack_RU \fP\fP
+Region Russia 864-870 MHz\&. 
+.SS "enum \fBsystemErrors_e\fP"
+
+.PP
+Wait Modes\&. 
+.SS "enum \fBWaitMode_e\fP"
+
+.PP
+Wait Modes\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

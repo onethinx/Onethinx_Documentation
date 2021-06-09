@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_lo_ra_modulation_params__t" kind="struct" language="C++" prot="public">
+    <compoundname>LoRaModulationParams_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_lo_ra_modulation_params__t_1acc5f88a83089e02f3a39e86b6a8f7235" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1af5e2e1e9f1dbf849ff021caf3f6e2eab" kindref="member">RadioLoRaSpreadingFactors_e</ref></type>
+        <definition>RadioLoRaSpreadingFactors_e SF</definition>
+        <argsstring></argsstring>
+        <name>SF</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="117" column="32" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lo_ra_modulation_params__t_1a130b3eff87fea7f599d392f67599cbee" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1a4276056194a6469e782bc72f7ed1fc9d" kindref="member">RadioLoRaBandwidths_e</ref></type>
+        <definition>RadioLoRaBandwidths_e BW</definition>
+        <argsstring></argsstring>
+        <name>BW</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="118" column="22" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lo_ra_modulation_params__t_1aaf9f5c13499e9b8a0a9174d62fcb1598" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1afd556eb66388736375143794a99d18ff" kindref="member">RadioLoRaCodingRates_e</ref></type>
+        <definition>RadioLoRaCodingRates_e CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="119" column="23" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lo_ra_modulation_params__t_1a443c5c603c5f6e2ee532329ef494c892" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1ae65853c42a7967e938cb959ffb2b6af7" kindref="member">RadioLoraLowDataRateOptimize_e</ref></type>
+        <definition>RadioLoraLowDataRateOptimize_e LowDataRateOptimize</definition>
+        <argsstring></argsstring>
+        <name>LowDataRateOptimize</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="120" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="116" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="116" bodyend="121"/>
+    <listofallmembers>
+      <member refid="struct_lo_ra_modulation_params__t_1a130b3eff87fea7f599d392f67599cbee" prot="public" virt="non-virtual"><scope>LoRaModulationParams_t</scope><name>BW</name></member>
+      <member refid="struct_lo_ra_modulation_params__t_1aaf9f5c13499e9b8a0a9174d62fcb1598" prot="public" virt="non-virtual"><scope>LoRaModulationParams_t</scope><name>CR</name></member>
+      <member refid="struct_lo_ra_modulation_params__t_1a443c5c603c5f6e2ee532329ef494c892" prot="public" virt="non-virtual"><scope>LoRaModulationParams_t</scope><name>LowDataRateOptimize</name></member>
+      <member refid="struct_lo_ra_modulation_params__t_1acc5f88a83089e02f3a39e86b6a8f7235" prot="public" virt="non-virtual"><scope>LoRaModulationParams_t</scope><name>SF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

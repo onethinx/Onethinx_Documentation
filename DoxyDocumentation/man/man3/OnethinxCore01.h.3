@@ -1,0 +1,366 @@
+.TH "C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" 3 "Fri Jan 29 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBarr8b_t\fP"
+.br
+.ti -1c
+.RI "struct \fBarr16b_t\fP"
+.br
+.ti -1c
+.RI "struct \fBipc_msg_t\fP"
+.br
+.ti -1c
+.RI "struct \fBipc_msgs_t\fP"
+.br
+.ti -1c
+.RI "struct \fBStoredKeys_t\fP"
+.br
+.RI "
+.br
+ "
+.ti -1c
+.RI "struct \fBOTAA_10x_t\fP"
+.br
+.RI "
+.br
+ "
+.ti -1c
+.RI "struct \fBOTAA_11x_t\fP"
+.br
+.RI "
+.br
+ "
+.ti -1c
+.RI "struct \fBABP_10x_t\fP"
+.br
+.RI "
+.br
+ "
+.ti -1c
+.RI "struct \fBLoRaWAN_keys_t\fP"
+.br
+.RI "
+.br
+ "
+.ti -1c
+.RI "union \fBcoreConfiguration_t\fP"
+.br
+.RI "The main LoRaWAN configuration structure, the location of which is forwarded to the stack\&. "
+.ti -1c
+.RI "union \fBparameterStatus_t\fP"
+.br
+.RI "Parameter status structure returned by LoRaWAN functions, found in \fBcoreStatus_t\fP structure\&. "
+.ti -1c
+.RI "union \fBradioStatus_t\fP"
+.br
+.RI "Radio status structure returned by LoRaWAN functions, found in \fBcoreStatus_t\fP structure\&. "
+.ti -1c
+.RI "union \fBmacStatus_t\fP"
+.br
+.RI "Radio status structure returned by LoRaWAN functions, found in \fBcoreStatus_t\fP structure\&. "
+.ti -1c
+.RI "union \fBsystemStatus_t\fP"
+.br
+.RI "System status structure returned by LoRaWAN functions, found in \fBcoreStatus_t\fP structure\&. "
+.ti -1c
+.RI "struct \fBcoreStatus_t\fP"
+.br
+.RI "System status structure returned by LoRaWAN functions, found in \fBcoreStatus_t\fP structure\&. "
+.ti -1c
+.RI "union \fBerrorStatus_t\fP"
+.br
+.ti -1c
+.RI "struct \fBwakeUpPin_t\fP"
+.br
+.RI "used when defining the sleep configuration\&. "
+.ti -1c
+.RI "struct \fBwakeUpTime_t\fP"
+.br
+.ti -1c
+.RI "struct \fBcoreArguments_t\fP"
+.br
+.ti -1c
+.RI "struct \fBsleepConfig_t\fP"
+.br
+.RI "Sleep configuration 
+.br
+ "
+.ti -1c
+.RI "struct \fBcoreInfo_t\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBminimumVersion\fP   0x000000BD"
+.br
+.ti -1c
+.RI "#define \fBmaximumVersion\fP   0x000000BE"
+.br
+.ti -1c
+.RI "#define \fBthisDevEUI\fP   { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }"
+.br
+.ti -1c
+.RI "#define \fBerrorStatus_NoError\fP   0"
+.br
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "#define \fBwakeUpPinHigh\fP(pullDown)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = true, \&.internalPullUpDown =  pullDown})"
+.br
+.ti -1c
+.RI "#define \fBwakeUpPinLow\fP(pullUp)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = false, \&.internalPullUpDown =  pullUp})"
+.br
+.ti -1c
+.RI "#define \fBwakeUpPinOff\fP   ((\fBwakeUpPin_t\fP) { \&.enabled = false })"
+.br
+.ti -1c
+.RI "#define \fBwakeUpTimestamp\fP(_timestamp)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isTimestamp = true, \&.timestamp = _timestamp })"
+.br
+.ti -1c
+.RI "#define \fBwakeUpDelay\fP(_days,  _hours,  _minutes,  _seconds)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isTimestamp = false, \&.days = _days, \&.hours = _hours, \&.minutes = _minutes, \&.seconds = _seconds })"
+.br
+.ti -1c
+.RI "#define \fBwakeUpTimeOff\fP   ((\fBwakeUpTime_t\fP) { \&.enabled = false })"
+.br
+.in -1c
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBarr8b_t\fP \fBarr8b_t\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBarr16b_t\fP \fBarr16b_t\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBcoreFunctions_e\fP { \fBcoreFunction_Init\fP = 0x01, \fBcoreFunction_Reset\fP = 0x02, \fBcoreFunction_GetInfo\fP = 0x03, \fBcoreFunction_LW_join\fP = 0x20, \fBcoreFunction_LW_send\fP = 0x30, \fBcoreFunction_LW_sendMac\fP = 0x31, \fBcoreFunction_LW_getRXdata\fP = 0x40, \fBcoreFunction_LW_sleep\fP = 0x50, \fBcoreFunction_LW_MACsave\fP = 0x60, \fBcoreFunction_LW_flashRead\fP = 0x70, \fBcoreFunction_LW_flashWrite\fP = 0x71 }"
+.br
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "enum \fBkeyType_e\fP { \fBABP_10x_key\fP = 0x01, \fBOTAA_10x_key\fP = 0x02, \fBOTAA_11x_key\fP = 0x03, \fBPreStored_key\fP = 0xF0, \fBUserStored_key\fP = 0xF1 }"
+.br
+.RI "LoRaWAN Activation Type\&. "
+.in -1c
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "enum \fBRadio_DataRate_e\fP { \fBDR_0\fP = 0x00, \fBDR_1\fP = 0x01, \fBDR_2\fP = 0x02, \fBDR_3\fP = 0x03, \fBDR_4\fP = 0x04, \fBDR_5\fP = 0x05, \fBDR_6\fP = 0x06, \fBDR_7\fP = 0x07, \fBDR_8\fP = 0x08, \fBDR_9\fP = 0x09, \fBDR_10\fP = 0x0A, \fBDR_11\fP = 0x0B, \fBDR_12\fP = 0x0C, \fBDR_13\fP = 0x0D, \fBDR_ADR\fP = 0xF0, \fBDR_AUTO\fP = 0xF1 }"
+.br
+.RI "LoRaWAN Data Rates\&. "
+.ti -1c
+.RI "enum \fBRadio_TXpower_e\fP { \fBPWR_ADR\fP = 0xF0, \fBPWR_MAX\fP = 0x00, \fBPWR_ATT_2dB\fP = 0x01, \fBPWR_ATT_4dB\fP = 0x02, \fBPWR_ATT_6dB\fP = 0x03, \fBPWR_ATT_8dB\fP = 0x04, \fBPWR_ATT_10dB\fP = 0x05, \fBPWR_ATT_12dB\fP = 0x06, \fBPWR_ATT_14dB\fP = 0x07, \fBPWR_ATT_16dB\fP = 0x08, \fBPWR_ATT_18dB\fP = 0x09, \fBPWR_ATT_20dB\fP = 0x0A, \fBPWR_ATT_22dB\fP = 0x0B, \fBPWR_ATT_24dB\fP = 0x0C, \fBPWR_ATT_26dB\fP = 0x0D, \fBPWR_ATT_28dB\fP = 0x0E, \fBPWR_ATT_30dB\fP = 0x0F, \fBPWR_ATT_32dB\fP = 0x10, \fBPWR_MIN\fP = 0x11 }"
+.br
+.RI "LoRaWAN Output Power Settings\&. "
+.ti -1c
+.RI "enum \fBRadio_SubBands_e\fP { \fBUS_SUB_BAND_1\fP = 0, \fBUS_SUB_BAND_2\fP = 1, \fBUS_SUB_BAND_3\fP = 2, \fBUS_SUB_BAND_4\fP = 3, \fBUS_SUB_BAND_5\fP = 4, \fBUS_SUB_BAND_6\fP = 5, \fBUS_SUB_BAND_7\fP = 6, \fBUS_SUB_BAND_8\fP = 7, \fBUS_SUB_BAND_NONE\fP = 14, \fBUS_SUB_BANDS_ALL\fP = 15, \fBEU_SUB_BANDS_DEFAULT\fP = 0, \fBEU_SUB_BAND1_ON\fP = 1, \fBEU_SUB_BAND1_OFF\fP = 2, \fBEU_SUB_BAND2_ON\fP = 3, \fBEU_SUB_BAND2_OFF\fP = 4 }"
+.br
+.RI "LoRaWAN Subbands\&. "
+.ti -1c
+.RI "enum \fBIdleMode_e\fP { \fBM0_Active\fP = 0x0, \fBM0_Sleep\fP = 0x1, \fBM0_DeepSleep\fP = 0x2 }"
+.br
+.RI "Idle Modes\&. "
+.ti -1c
+.RI "enum \fBWaitMode_e\fP { \fBM4_NoWait\fP = 0x0, \fBM4_WaitActive\fP = 0x1, \fBM4_WaitSleep\fP = 0x2, \fBM4_WaitDeepSleep\fP = 0x3 }"
+.br
+.RI "Wait Modes\&. "
+.in -1c
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "enum \fBparamErrors_e\fP { \fBparam_OK\fP = 0x00, \fBparam_Invalid\fP = 0x01, \fBparam_OutOfRange\fP = 0x02, \fBparam_UndefinedError\fP = 0xFA }"
+.br
+.RI "Type of parameter error returned by the Onethinx stack\&. "
+.ti -1c
+.RI "enum \fBradioErrors_e\fP { \fBradio_OK\fP = 0x00, \fBradio_BusyError\fP = 0x01, \fBradio_BuckStartError\fP = 0x02, \fBradio_XoscStartError\fP = 0x03, \fBradio_Rc13mCalibError\fP = 0x04, \fBradio_Rc64kCalibError\fP = 0x05, \fBradio_PllCalibError\fP = 0x06, \fBradio_PllLockError\fP = 0x07, \fBradio_ImgCalibError\fP = 0x08, \fBradio_AdcCalibError\fP = 0x09, \fBradio_PaRampError\fP = 0x0A, \fBradio_InvalidFrequency\fP = 0x0B, \fBradio_UndefinedError\fP = 0xFA }"
+.br
+.RI "Type of parameter error returned by the Onethinx stack\&. "
+.ti -1c
+.RI "enum \fBmacErrors_e\fP { \fBmac_OK\fP = 0x00, \fBmac_BusyError\fP = 0x01, \fBmac_NotJoinedError\fP = 0x02, \fBmac_ChannelsOccupiedError\fP = 0x03, \fBmac_UnrecognizedKeyType\fP = 0x04, \fBmac_EmptyPayload_Error\fP = 0x05, \fBmac_RXheader_Error\fP = 0x06, \fBmac_RX_MIC_Error\fP = 0x07, \fBmac_RX_InvalidDevAddr\fP = 0x08, \fBmac_InvalidPacket_Error\fP = 0x09, \fBmac_RXtimeout_Error\fP = 0x0A, \fBmac_CRC_Error\fP = 0x0B, \fBmac_FCNT_Error\fP = 0x0C, \fBmac_Confirmation_Error\fP = 0x0D, \fBmac_PayloadSize_Error\fP = 0x0E, \fBmac_UndefinedError\fP = 0xFA }"
+.br
+.RI "Type of MAC error returned by the Onethinx stack\&. "
+.ti -1c
+.RI "enum \fBsystemErrors_e\fP { \fBsystem_OK\fP = 0x00, \fBsystem_BusyError\fP = 0x01, \fBsystem_NotStarted\fP = 0x02, \fBsystem_IPCError\fP = 0x03, \fBsystem_FlashWriteError\fP = 0x04, \fBsystem_VersionMatchError\fP = 0x05, \fBsystem_UndefinedError\fP = 0xFA }"
+.br
+.RI "Wait Modes\&. "
+.in -1c
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "enum \fBsleepMode_e\fP { \fBmodeSleep\fP = 0x1, \fBmodeDeepSleep\fP = 0x2, \fBmodeHibernate\fP = 0x3 }"
+.br
+.ti -1c
+.RI "enum \fBsleepCores_e\fP { \fBcoresM0p\fP = 1, \fBcoresM4\fP = 2, \fBcoresBoth\fP = 3 }"
+.br
+.ti -1c
+.RI "enum \fBMACcmd_e\fP { \fBMACcmd_None\fP = 0, \fBLinkCheckReq\fP = 1, \fBDeviceTimeReq\fP = 2, \fBLinkCheck_DeviceTimeReq\fP = 3 }"
+.br
+.in -1c
+.in -1c
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "enum \fBstackRegion_e\fP { \fBstack_AS\fP = 1, \fBstack_AU\fP = 2, \fBstack_CN_L\fP = 3, \fBstack_CN_H\fP = 4, \fBstack_EU_L\fP = 5, \fBstack_EU_H\fP = 6, \fBstack_IN\fP = 7, \fBstack_KR\fP = 8, \fBstack_US\fP = 9, \fBstack_RU\fP = 10 }"
+.br
+.in -1c
+.in -1c
+.SS "Functions"
+
+.PP
+.RI "\fB\fP"
+.br
+
+.in +1c
+.in +1c
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Reset\fP (void)"
+.br
+.RI "This function forces the current non-blocking function to stop\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Init\fP (\fBcoreConfiguration_t\fP *coreConfigurationPtr)"
+.br
+.RI "Initializes the LoRaWAN stack and points the stack to the location of the settings\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetInfo\fP (\fBcoreInfo_t\fP *coreInfo)"
+.br
+.RI "This function gives the stack information which were saved at the time of the programming\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Join\fP (\fBWaitMode_e\fP waitMode)"
+.br
+.RI "Joins the LoRaWAN network, taking the parameters from the coreConfiguration structure which was passed to LoRaWAN_Init\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_MacSave\fP ()"
+.br
+.RI "This function saves the current MAC configuration\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_FlashRead\fP (uint8_t *buffer, uint8_t block, uint8_t length)"
+.br
+.RI "This function reads the buffer that was previously saved to flash\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_FlashWrite\fP (uint8_t *buffer, uint8_t block, uint8_t length)"
+.br
+.RI "This function saves a buffer to flash\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetRXdata\fP (uint8_t *RXdata, uint8_t length)"
+.br
+.RI "This function retrieves the specified length of data reveived via downlink from a gateway and saves it to a buffer\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Send\fP (uint8_t *buffer, uint8_t length, \fBWaitMode_e\fP waitMode)"
+.br
+.RI "This function sends your buffer of data to the LoRaWAN network\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_SendMac\fP (uint8_t *buffer, uint8_t length, \fBWaitMode_e\fP waitMode, \fBMACcmd_e\fP MACcmd)"
+.br
+.RI "This function sends your buffer of data and a MAC command to the LoRaWAN network\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Sleep\fP (\fBsleepConfig_t\fP *sleepConfig)"
+.br
+.RI "This function allows you to enter a sleep mode\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetStatus\fP ()"
+.br
+.RI "This function returns the current error /status\&. "
+.ti -1c
+.RI "\fBerrorStatus_t\fP \fBLoRaWAN_GetError\fP ()"
+.br
+.RI "This function returns the current error /status\&. "
+.in -1c
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define errorStatus_NoError   0"
+
+.SS "#define maximumVersion   0x000000BE"
+
+.SS "#define minimumVersion   0x000000BD"
+
+.SS "#define thisDevEUI   { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBarr16b_t\fP \fBarr16b_t\fP"
+
+.SS "typedef struct \fBarr8b_t\fP \fBarr8b_t\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBcoreFunctions_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIcoreFunction_Init \fP\fP
+.TP
+\fB\fIcoreFunction_Reset \fP\fP
+.TP
+\fB\fIcoreFunction_GetInfo \fP\fP
+.TP
+\fB\fIcoreFunction_LW_join \fP\fP
+.TP
+\fB\fIcoreFunction_LW_send \fP\fP
+.TP
+\fB\fIcoreFunction_LW_sendMac \fP\fP
+.TP
+\fB\fIcoreFunction_LW_getRXdata \fP\fP
+.TP
+\fB\fIcoreFunction_LW_sleep \fP\fP
+.TP
+\fB\fIcoreFunction_LW_MACsave \fP\fP
+.TP
+\fB\fIcoreFunction_LW_flashRead \fP\fP
+.TP
+\fB\fIcoreFunction_LW_flashWrite \fP\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

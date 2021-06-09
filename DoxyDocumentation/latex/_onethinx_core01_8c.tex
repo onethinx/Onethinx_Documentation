@@ -1,0 +1,152 @@
+\hypertarget{_onethinx_core01_8c}{}\doxysection{C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+BE API/\+Onethinx\+Core01.c File Reference}
+\label{_onethinx_core01_8c}\index{C:/Onethinx\_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.c@{C:/Onethinx\_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.c}}
+{\ttfamily \#include \char`\"{}Onethinx\+Core01.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cy\+\_\+ipc\+\_\+pipe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cy\+\_\+syspm.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_onethinx_core01_8c_a4fa1f911adf9b383e3d2087344d23c3d}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP0}}~(uint32\+\_\+t)(0x0001ul $<$$<$ CY\+\_\+\+IPC\+\_\+\+CHAN\+\_\+\+CYPIPE\+\_\+\+EP0)
+\item 
+\#define \mbox{\hyperlink{_onethinx_core01_8c_a98ab84444b935d0042648eeda2bf95a6}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP1}}~(uint32\+\_\+t)(0x0001ul $<$$<$ CY\+\_\+\+IPC\+\_\+\+CHAN\+\_\+\+CYPIPE\+\_\+\+EP1)
+\item 
+\#define \mbox{\hyperlink{_onethinx_core01_8c_ab983d7fdb2b90c9357e5219e5412f684}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+INTR\+\_\+\+MASK}}~(uint32\+\_\+t)( \mbox{\hyperlink{_onethinx_core01_8c_a4fa1f911adf9b383e3d2087344d23c3d}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP0}} $\vert$ \mbox{\hyperlink{_onethinx_core01_8c_a98ab84444b935d0042648eeda2bf95a6}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP1}} )
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_onethinx_core01_8c_ac7c25a8e6b837a3871051019020d3db3}{CM4\+\_\+\+Message\+Callback}} (uint32\+\_\+t $\ast$msg)
+\item 
+void \mbox{\hyperlink{_onethinx_core01_8c_a52dfb37b1fcc740827e5073bf32f0631}{CM4\+\_\+\+Release\+Callback}} (void)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{_onethinx_core01_8c_a7e446dbe320fdd7952c1e93fb240b3fe}{core\+Comm}} (\mbox{\hyperlink{_onethinx_core01_8h_afe59dcb2aa2a33b6e6c17a5cfefd8a1b}{core\+Functions\+\_\+e}} function, \mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_ga106680a253a673c3061e790b90656a5a}{Lo\+Ra\+WAN\+\_\+\+Init}} (\mbox{\hyperlink{unioncore_configuration__t}{core\+Configuration\+\_\+t}} $\ast$core\+Configuration\+Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the Lo\+Ra\+WAN stack with the. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gad8b399309ffabdefa97ae9be0e3a9757}{Lo\+Ra\+WAN\+\_\+\+Reset}} (void)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gab2e567785485d16be2642f04e6e7b276}{Lo\+Ra\+WAN\+\_\+\+Join}} (\mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_ga74bf789aec2952e900743a988850c1d8}{Lo\+Ra\+WAN\+\_\+\+Get\+Info}} (\mbox{\hyperlink{_onethinx_core01_8h_a05b3c436e1c6c412e21acc7c95360637}{core\+Info\+\_\+t}} $\ast$core\+Info)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gab5f7f2b6551fe084bb63ab24dbdaf19f}{Lo\+Ra\+WAN\+\_\+\+Send}} (uint8\+\_\+t $\ast$buffer\+Ptr, uint8\+\_\+t length, \mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_ga5dce371feddd58cfe5eb70789e00bf61}{Lo\+Ra\+WAN\+\_\+\+Send\+Mac}} (uint8\+\_\+t $\ast$buffer\+Ptr, uint8\+\_\+t length, \mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode, \mbox{\hyperlink{_onethinx_core01_8h_a6393fcb2900b24fa2a580ebfc66fc569}{MACcmd\+\_\+e}} MACcmd)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_ga6fcb4e6817783f5cdf155aa22f1e361c}{Lo\+Ra\+WAN\+\_\+\+Get\+RXdata}} (uint8\+\_\+t $\ast$RXdata, uint8\+\_\+t length)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_ga50e698f432ec47ae93f3901b0534dcd1}{Lo\+Ra\+WAN\+\_\+\+Get\+Status}} ()
+\item 
+\mbox{\hyperlink{unionerror_status__t}{error\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gab888acd59c2be2c5e41dff4c398aa375}{Lo\+Ra\+WAN\+\_\+\+Get\+Error}} ()
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gaf0a38454913b6186fc45c1e16d4610cb}{Lo\+Ra\+WAN\+\_\+\+Sleep}} (\mbox{\hyperlink{_onethinx_core01_8h_aef658907e8200d40358cd05c696bc88c}{sleep\+Config\+\_\+t}} $\ast$sleep\+Config)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_ga5ef2061df2213f8286d733dda78e59eb}{Lo\+Ra\+WAN\+\_\+\+Mac\+Save}} ()
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gaf8e70d4aee605bc13b477dbf60bfca49}{Lo\+Ra\+WAN\+\_\+\+Flash\+Read}} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t block, uint8\+\_\+t length)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__functions__lorawan_gaa5dc29f3cae973c71c19c2b3935a02e0}{Lo\+Ra\+WAN\+\_\+\+Flash\+Write}} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t block, uint8\+\_\+t length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{structcore_arguments__t}{core\+Arguments\+\_\+t}} \mbox{\hyperlink{_onethinx_core01_8c_a6c95a849ac23f743560b17a79bb70ced}{core\+Arguments}}
+\item 
+\mbox{\hyperlink{_onethinx_core01_8h_a1f2d51f19399b3c1921216b679f9e45a}{ipc\+\_\+msgs\+\_\+t}} \mbox{\hyperlink{_onethinx_core01_8c_a5488afe0474766ee5c61a3389e9e07ce}{ipc\+Msgs}}
+\item 
+volatile uint32\+\_\+t \mbox{\hyperlink{_onethinx_core01_8c_a296582602448a912aa1f4c1364bfeaed}{call\+Back\+Done}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_onethinx_core01_8c_a4fa1f911adf9b383e3d2087344d23c3d}\label{_onethinx_core01_8c_a4fa1f911adf9b383e3d2087344d23c3d}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP0@{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP0}}
+\index{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP0@{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP0}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP0}{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP0}}
+{\footnotesize\ttfamily \#define CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP0~(uint32\+\_\+t)(0x0001ul $<$$<$ CY\+\_\+\+IPC\+\_\+\+CHAN\+\_\+\+CYPIPE\+\_\+\+EP0)}
+
+\mbox{\Hypertarget{_onethinx_core01_8c_a98ab84444b935d0042648eeda2bf95a6}\label{_onethinx_core01_8c_a98ab84444b935d0042648eeda2bf95a6}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP1@{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP1}}
+\index{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP1@{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP1}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP1}{CY\_IPC\_CYPIPE\_CHAN\_MASK\_EP1}}
+{\footnotesize\ttfamily \#define CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP1~(uint32\+\_\+t)(0x0001ul $<$$<$ CY\+\_\+\+IPC\+\_\+\+CHAN\+\_\+\+CYPIPE\+\_\+\+EP1)}
+
+\mbox{\Hypertarget{_onethinx_core01_8c_ab983d7fdb2b90c9357e5219e5412f684}\label{_onethinx_core01_8c_ab983d7fdb2b90c9357e5219e5412f684}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!CY\_IPC\_CYPIPE\_INTR\_MASK@{CY\_IPC\_CYPIPE\_INTR\_MASK}}
+\index{CY\_IPC\_CYPIPE\_INTR\_MASK@{CY\_IPC\_CYPIPE\_INTR\_MASK}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{CY\_IPC\_CYPIPE\_INTR\_MASK}{CY\_IPC\_CYPIPE\_INTR\_MASK}}
+{\footnotesize\ttfamily \#define CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+INTR\+\_\+\+MASK~(uint32\+\_\+t)( \mbox{\hyperlink{_onethinx_core01_8c_a4fa1f911adf9b383e3d2087344d23c3d}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP0}} $\vert$ \mbox{\hyperlink{_onethinx_core01_8c_a98ab84444b935d0042648eeda2bf95a6}{CY\+\_\+\+IPC\+\_\+\+CYPIPE\+\_\+\+CHAN\+\_\+\+MASK\+\_\+\+EP1}} )}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_onethinx_core01_8c_ac7c25a8e6b837a3871051019020d3db3}\label{_onethinx_core01_8c_ac7c25a8e6b837a3871051019020d3db3}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!CM4\_MessageCallback@{CM4\_MessageCallback}}
+\index{CM4\_MessageCallback@{CM4\_MessageCallback}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{CM4\_MessageCallback()}{CM4\_MessageCallback()}}
+{\footnotesize\ttfamily void CM4\+\_\+\+Message\+Callback (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{msg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_core01_8c_a52dfb37b1fcc740827e5073bf32f0631}\label{_onethinx_core01_8c_a52dfb37b1fcc740827e5073bf32f0631}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!CM4\_ReleaseCallback@{CM4\_ReleaseCallback}}
+\index{CM4\_ReleaseCallback@{CM4\_ReleaseCallback}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{CM4\_ReleaseCallback()}{CM4\_ReleaseCallback()}}
+{\footnotesize\ttfamily void CM4\+\_\+\+Release\+Callback (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_core01_8c_a7e446dbe320fdd7952c1e93fb240b3fe}\label{_onethinx_core01_8c_a7e446dbe320fdd7952c1e93fb240b3fe}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!coreComm@{coreComm}}
+\index{coreComm@{coreComm}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{coreComm()}{coreComm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} core\+Comm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_onethinx_core01_8h_afe59dcb2aa2a33b6e6c17a5cfefd8a1b}{core\+Functions\+\_\+e}}}]{function,  }\item[{\mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_onethinx_core01_8c_a296582602448a912aa1f4c1364bfeaed}\label{_onethinx_core01_8c_a296582602448a912aa1f4c1364bfeaed}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!callBackDone@{callBackDone}}
+\index{callBackDone@{callBackDone}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{callBackDone}{callBackDone}}
+{\footnotesize\ttfamily volatile uint32\+\_\+t call\+Back\+Done}
+
+\mbox{\Hypertarget{_onethinx_core01_8c_a6c95a849ac23f743560b17a79bb70ced}\label{_onethinx_core01_8c_a6c95a849ac23f743560b17a79bb70ced}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!coreArguments@{coreArguments}}
+\index{coreArguments@{coreArguments}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{coreArguments}{coreArguments}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{structcore_arguments__t}{core\+Arguments\+\_\+t}} core\+Arguments}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    .configurationPtr = 0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_onethinx_core01_8c_a5488afe0474766ee5c61a3389e9e07ce}\label{_onethinx_core01_8c_a5488afe0474766ee5c61a3389e9e07ce}} 
+\index{OnethinxCore01.c@{OnethinxCore01.c}!ipcMsgs@{ipcMsgs}}
+\index{ipcMsgs@{ipcMsgs}!OnethinxCore01.c@{OnethinxCore01.c}}
+\doxysubsubsection{\texorpdfstring{ipcMsgs}{ipcMsgs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_onethinx_core01_8h_a1f2d51f19399b3c1921216b679f9e45a}{ipc\+\_\+msgs\+\_\+t}} ipc\+Msgs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        .clientId = 1,  }
+\DoxyCodeLine{        .userCode = 0,}
+\DoxyCodeLine{        .intrMask = \mbox{\hyperlink{_onethinx_core01_8c_ab983d7fdb2b90c9357e5219e5412f684}{CY\_IPC\_CYPIPE\_INTR\_MASK}},}
+\DoxyCodeLine{        .coreArgumentsPtr = \&\mbox{\hyperlink{_onethinx_core01_8c_a6c95a849ac23f743560b17a79bb70ced}{coreArguments}}}
+\DoxyCodeLine{    \},}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        .clientId = 0,  }
+\DoxyCodeLine{        .userCode = 0,}
+\DoxyCodeLine{        .intrMask = \mbox{\hyperlink{_onethinx_core01_8c_ab983d7fdb2b90c9357e5219e5412f684}{CY\_IPC\_CYPIPE\_INTR\_MASK}},}
+\DoxyCodeLine{        .coreArgumentsPtr = \&\mbox{\hyperlink{_onethinx_core01_8c_a6c95a849ac23f743560b17a79bb70ced}{coreArguments}}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,145 @@
+.TH "macStatus_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+macStatus_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   \fBmacErrors_e\fP \fBerrorStatus\fP: 8"
+.br
+.RI "MAC Errors\&. "
+.ti -1c
+.RI "   uint8_t \fBbytesToRead\fP: 8"
+.br
+.RI "Total bytes in Receive buffer\&. "
+.ti -1c
+.RI "   uint8_t \fB__pad0__\fP: 1"
+.br
+.RI "reserved "
+.ti -1c
+.RI "   bool \fBMACcmdReceived\fP: 1"
+.br
+.RI "The MAC received a MAC command (implemented since Stack version 0x000000BC) "
+.ti -1c
+.RI "   bool \fBconfDown\fP: 1"
+.br
+.RI "Is a confirmed downlink received? (implemented since Stack version 0x000000B5) "
+.ti -1c
+.RI "   bool \fBisConfigured\fP: 1"
+.br
+.RI "The MAC is configured? "
+.ti -1c
+.RI "   bool \fBmessageReceived\fP: 1"
+.br
+.RI "The MAC received a message\&. "
+.ti -1c
+.RI "   bool \fBisJoined\fP: 1"
+.br
+.RI "Is Device Joined? "
+.ti -1c
+.RI "   bool \fBisBusy\fP: 1"
+.br
+.RI "Is the MAC busy? "
+.ti -1c
+.RI "   bool \fBisPublicNetwork\fP: 1"
+.br
+.RI "True for LoRaWAN Public Network\&. "
+.ti -1c
+.RI "   uint32_t \fBdevAddr\fP"
+.br
+.RI "The Device address received when joining the network\&. "
+.ti -1c
+.RI "   uint8_t \fBMargin\fP"
+.br
+.RI "The Demodulation Margin (in dB above the demodulation floor) for last LinkCheckReq command (implemented since Stack version 0x000000BC) "
+.ti -1c
+.RI "   uint8_t \fBGwCnt\fP"
+.br
+.RI "The number of gateways that successfully received the last LinkCheckReq command (implemented since Stack version 0x000000BC) "
+.ti -1c
+.RI "   uint8_t \fBfPort\fP"
+.br
+.RI "The port number of the last received packet (implemented since Stack version 0x000000BC) "
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "uint8_t \fBreserved\fP [16]"
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.PP
+reserved 
+.SS "uint8_t bytesToRead"
+
+.PP
+Total bytes in Receive buffer\&. 
+.SS "bool confDown"
+
+.PP
+Is a confirmed downlink received? (implemented since Stack version 0x000000B5) 
+.SS "uint32_t devAddr"
+
+.PP
+The Device address received when joining the network\&. 
+.SS "\fBmacErrors_e\fP errorStatus"
+
+.PP
+MAC Errors\&. 
+.SS "uint8_t fPort"
+
+.PP
+The port number of the last received packet (implemented since Stack version 0x000000BC) 
+.SS "uint8_t GwCnt"
+
+.PP
+The number of gateways that successfully received the last LinkCheckReq command (implemented since Stack version 0x000000BC) 
+.SS "bool isBusy"
+
+.PP
+Is the MAC busy? 
+.SS "bool isConfigured"
+
+.PP
+The MAC is configured? 
+.SS "bool isJoined"
+
+.PP
+Is Device Joined? 
+.SS "bool isPublicNetwork"
+
+.PP
+True for LoRaWAN Public Network\&. 
+.SS "bool MACcmdReceived"
+
+.PP
+The MAC received a MAC command (implemented since Stack version 0x000000BC) 
+.SS "uint8_t Margin"
+
+.PP
+The Demodulation Margin (in dB above the demodulation floor) for last LinkCheckReq command (implemented since Stack version 0x000000BC) 
+.SS "bool messageReceived"
+
+.PP
+The MAC received a message\&. 
+.SS "uint8_t reserved[16]"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

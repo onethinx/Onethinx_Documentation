@@ -1,0 +1,60 @@
+\hypertarget{group__lorawan__macros}{}\doxysection{Macros}
+\label{group__lorawan__macros}\index{Macros@{Macros}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__lorawan__macros_ga8a63dd8d76274d1e633fe0f2332f4ba2}{wake\+Up\+Pin\+High}}(pull\+Down)~((\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}) \{ .enabled = true, .rising\+Edge = true, .internal\+Pull\+Up\+Down =  pull\+Down\})
+\item 
+\#define \mbox{\hyperlink{group__lorawan__macros_ga8bb927c57a7ce69467538f5d79809605}{wake\+Up\+Pin\+Low}}(pull\+Up)~((\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}) \{ .enabled = true, .rising\+Edge = false, .internal\+Pull\+Up\+Down =  pull\+Up\})
+\item 
+\#define \mbox{\hyperlink{group__lorawan__macros_ga64a3c18593c40bc12a30ed2c51e0138d}{wake\+Up\+Pin\+Off}}~((\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}) \{ .enabled = false \})
+\item 
+\#define \mbox{\hyperlink{group__lorawan__macros_gad650cd852806f9d898259be430d465b0}{wake\+Up\+Timestamp}}(\+\_\+date\+Time)~((\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}) \{ .enabled = true, .is\+Date\+Time = true, .date\+Time = \+\_\+date\+Time \})
+\item 
+\#define \mbox{\hyperlink{group__lorawan__macros_gad7d8db81525a648d5bc04d10fc581960}{wake\+Up\+Delay}}(\+\_\+days,  \+\_\+hours,  \+\_\+minutes,  \+\_\+seconds)~((\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}) \{ .enabled = true, .is\+Date\+Time = false, .days = \+\_\+days, .hours = \+\_\+hours, .minutes = \+\_\+minutes, .seconds = \+\_\+seconds \})
+\item 
+\#define \mbox{\hyperlink{group__lorawan__macros_gab2caec9e02dd240279898b42e341ba72}{wake\+Up\+Time\+Off}}~((\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}) \{ .enabled = false \})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Onethinx Lo\+Ra\+WAN API Macros 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__lorawan__macros_gad7d8db81525a648d5bc04d10fc581960}\label{group__lorawan__macros_gad7d8db81525a648d5bc04d10fc581960}} 
+\index{Macros@{Macros}!wakeUpDelay@{wakeUpDelay}}
+\index{wakeUpDelay@{wakeUpDelay}!Macros@{Macros}}
+\doxysubsubsection{\texorpdfstring{wakeUpDelay}{wakeUpDelay}}
+{\footnotesize\ttfamily \#define wake\+Up\+Delay(\begin{DoxyParamCaption}\item[{}]{\+\_\+days,  }\item[{}]{\+\_\+hours,  }\item[{}]{\+\_\+minutes,  }\item[{}]{\+\_\+seconds }\end{DoxyParamCaption})~((\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}) \{ .enabled = true, .is\+Date\+Time = false, .days = \+\_\+days, .hours = \+\_\+hours, .minutes = \+\_\+minutes, .seconds = \+\_\+seconds \})}
+
+Used in sleep\+Config\+\_\+t \mbox{\Hypertarget{group__lorawan__macros_ga8a63dd8d76274d1e633fe0f2332f4ba2}\label{group__lorawan__macros_ga8a63dd8d76274d1e633fe0f2332f4ba2}} 
+\index{Macros@{Macros}!wakeUpPinHigh@{wakeUpPinHigh}}
+\index{wakeUpPinHigh@{wakeUpPinHigh}!Macros@{Macros}}
+\doxysubsubsection{\texorpdfstring{wakeUpPinHigh}{wakeUpPinHigh}}
+{\footnotesize\ttfamily \#define wake\+Up\+Pin\+High(\begin{DoxyParamCaption}\item[{}]{pull\+Down }\end{DoxyParamCaption})~((\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}) \{ .enabled = true, .rising\+Edge = true, .internal\+Pull\+Up\+Down =  pull\+Down\})}
+
+Used in sleep\+Config\+\_\+t \mbox{\Hypertarget{group__lorawan__macros_ga8bb927c57a7ce69467538f5d79809605}\label{group__lorawan__macros_ga8bb927c57a7ce69467538f5d79809605}} 
+\index{Macros@{Macros}!wakeUpPinLow@{wakeUpPinLow}}
+\index{wakeUpPinLow@{wakeUpPinLow}!Macros@{Macros}}
+\doxysubsubsection{\texorpdfstring{wakeUpPinLow}{wakeUpPinLow}}
+{\footnotesize\ttfamily \#define wake\+Up\+Pin\+Low(\begin{DoxyParamCaption}\item[{}]{pull\+Up }\end{DoxyParamCaption})~((\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}) \{ .enabled = true, .rising\+Edge = false, .internal\+Pull\+Up\+Down =  pull\+Up\})}
+
+Used in sleep\+Config\+\_\+t \mbox{\Hypertarget{group__lorawan__macros_ga64a3c18593c40bc12a30ed2c51e0138d}\label{group__lorawan__macros_ga64a3c18593c40bc12a30ed2c51e0138d}} 
+\index{Macros@{Macros}!wakeUpPinOff@{wakeUpPinOff}}
+\index{wakeUpPinOff@{wakeUpPinOff}!Macros@{Macros}}
+\doxysubsubsection{\texorpdfstring{wakeUpPinOff}{wakeUpPinOff}}
+{\footnotesize\ttfamily \#define wake\+Up\+Pin\+Off~((\mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}) \{ .enabled = false \})}
+
+Used in sleep\+Config\+\_\+t \mbox{\Hypertarget{group__lorawan__macros_gab2caec9e02dd240279898b42e341ba72}\label{group__lorawan__macros_gab2caec9e02dd240279898b42e341ba72}} 
+\index{Macros@{Macros}!wakeUpTimeOff@{wakeUpTimeOff}}
+\index{wakeUpTimeOff@{wakeUpTimeOff}!Macros@{Macros}}
+\doxysubsubsection{\texorpdfstring{wakeUpTimeOff}{wakeUpTimeOff}}
+{\footnotesize\ttfamily \#define wake\+Up\+Time\+Off~((\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}) \{ .enabled = false \})}
+
+Used in sleep\+Config\+\_\+t \mbox{\Hypertarget{group__lorawan__macros_gad650cd852806f9d898259be430d465b0}\label{group__lorawan__macros_gad650cd852806f9d898259be430d465b0}} 
+\index{Macros@{Macros}!wakeUpTimestamp@{wakeUpTimestamp}}
+\index{wakeUpTimestamp@{wakeUpTimestamp}!Macros@{Macros}}
+\doxysubsubsection{\texorpdfstring{wakeUpTimestamp}{wakeUpTimestamp}}
+{\footnotesize\ttfamily \#define wake\+Up\+Timestamp(\begin{DoxyParamCaption}\item[{}]{\+\_\+date\+Time }\end{DoxyParamCaption})~((\mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}) \{ .enabled = true, .is\+Date\+Time = true, .date\+Time = \+\_\+date\+Time \})}
+
+Used in sleep\+Config\+\_\+t 

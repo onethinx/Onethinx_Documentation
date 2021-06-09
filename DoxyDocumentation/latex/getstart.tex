@@ -1,0 +1,379 @@
+\hypertarget{getstart_ide}{}\doxysection{Installing the IDE}\label{getstart_ide}
+This guide will show you how to setup Visual Studio Code with the Onethinx Core dependencies pack. \hypertarget{getstart_idewindows}{}\doxysubsection{Windows}\label{getstart_idewindows}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Download prerequisites}}
+\begin{DoxyItemize}
+\item \href{https://code.visualstudio.com/download}{\texttt{ Download Visual Studio Code}}
+\item \href{https://github.com/onethinx/VSCode_OnethinxPack_Windows/archive/master.zip}{\texttt{ Download the Onethinx dependencies pack for Windows}}
+\end{DoxyItemize}
+\item {\bfseries{Install VS Code \& extensions}}
+\begin{DoxyItemize}
+\item Install VS Code.
+\item Install extensions\+:
+\begin{DoxyItemize}
+\item ARM Support For Visual Studio Code (dan-\/c-\/underwood)
+\item C/\+C++ Intelli\+Sense, debugging (microsoft)
+\item CMake language support (twxs)
+\item CMake Tools (microsoft)
+\item Cortex-\/\+Debug GDB support (marus25)
+\item Linker\+Script support for GNU (Zixuan Wang)
+\item Open in Application (Fabio Spampinato)
+\item Output Colorizer (IBM)
+\item Tasks (actboy168)
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Install the Onethinx Dependencies Pack}}
+\begin{DoxyItemize}
+\item Unzip the pack archive to your local harddisk (eg\+: C\+:\textbackslash{}\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+\+Windows).
+\item Open your command prompt (cmd).
+\item Drag and drop the file set\+Variables.\+bat to your command prompt (or type C\+:\textbackslash{}\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+\+Windows\textbackslash{}set\+Variables.bat).
+\item Press enter, you\textquotesingle{}ll see the environment variables and the path being set.
+\item Restart your machine.
+\end{DoxyItemize}
+\item {\bfseries{Check}}
+\begin{DoxyItemize}
+\item If CMake, Make and the compiler is correctly installed by typing the following into your command prompt or terminal window of VS Code.
+\begin{DoxyItemize}
+\item {\ttfamily cmake -\/version}
+\item {\ttfamily mingw32-\/make -\/v}
+\item {\ttfamily arm-\/none-\/eabi-\/gcc -\/v}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Remind}}
+\begin{DoxyItemize}
+\item After changing the device configuration (or project file structure) to use
+\begin{DoxyItemize}
+\item Clean Reconfigure
+\item Clean Rebuild in order to build the image properly
+\end{DoxyItemize}
+\item To delete the contents of the build folder
+\begin{DoxyItemize}
+\item if you copied the project including build folder from another location / machine
+\item when build fails.
+\end{DoxyItemize}
+\item This pack contains the 64bit version of CMake. Replace with the 32bit version if you run on a 32bit machine.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+Windows\DoxyHorRuler{0}
+ \hypertarget{getstart_idemacos}{}\doxysubsection{Mac\+OS}\label{getstart_idemacos}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Download prerequisites}}
+\begin{DoxyItemize}
+\item \href{https://code.visualstudio.com/download}{\texttt{ Download Visual Studio Code}}
+\item \href{https://github.com/onethinx/VSCode_OnethinxPack_macOS/archive/master.zip}{\texttt{ Download the Onethinx dependencies pack for Mac OS}}
+\item \href{https://cmake.org/download/}{\texttt{ Download CMake}}
+\item Install homebrew GNU by\+: make brew install homebrew/core/make as \href{https://apple.stackexchange.com/questions/261918/how-to-upgrade-gnu-make-in-os-x-el-capitan}{\texttt{ explained here}}
+\end{DoxyItemize}
+\item {\bfseries{Install VS Code \& extensions}}
+\begin{DoxyItemize}
+\item Install CMake.
+\item Install VS Code.
+\item Install extensions\+:
+\begin{DoxyItemize}
+\item ARM Support For Visual Studio Code (dan-\/c-\/underwood)
+\item C/\+C++ Intelli\+Sense, debugging (microsoft)
+\item CMake language support (twxs)
+\item CMake Tools (microsoft)
+\item Cortex-\/\+Debug GDB support (marus25)
+\item Linker\+Script support for GNU (Zixuan Wang)
+\item Open in Application (Fabio Spampinato)
+\item Output Colorizer (IBM)
+\item Tasks (actboy168)
+\end{DoxyItemize}
+\item Apply the CMake path to VS Settings\+: \char`\"{}cmake.\+cmake\+Path\char`\"{}\+: \char`\"{}/\+Applications/\+CMake.\+app/\+Contents/bin/cmake\char`\"{},
+\end{DoxyItemize}
+\item {\bfseries{Install the Onethinx Dependencies Pack}}
+\begin{DoxyItemize}
+\item Unzip the pack archive to your local harddisk (eg\+: /\+Applications/\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+mac\+OS).
+\item If the file $\sim$.bash\+\_\+profile doesn\textquotesingle{}t exist, create it\+: Terminal $>$$>$ cd $\sim$ \&\& touch .bash\+\_\+profile
+\item Open $\sim$.bash\+\_\+profile\+: Terminal $>$$>$ cd $\sim$ \&\& open -\/e .bash\+\_\+profile
+\item Add this to the end of the file (make sure you enter the correct path) and save\+:
+\item \# Loading environment variables for the Onethinx Pack
+\item source /location\+Of\+Your/\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+mac\+OS/variables.env
+\item Set the correct path in this pack\textquotesingle{}s variables.\+env file.
+\item Restart your machine (or log-\/out and log-\/in) to reload the environment variables.
+\end{DoxyItemize}
+\item {\bfseries{Check}}
+\begin{DoxyItemize}
+\item If CMake, Make and the compiler is correctly installed by typing the following into your command prompt or terminal window of VS Code.
+\begin{DoxyItemize}
+\item {\ttfamily cmake -\/version}
+\item {\ttfamily mingw32-\/make -\/v}
+\item {\ttfamily arm-\/none-\/eabi-\/gcc -\/v}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Remind}}
+\begin{DoxyItemize}
+\item After changing the device configuration (or project file structure) to use
+\begin{DoxyItemize}
+\item Clean Reconfigure
+\item Clean Rebuild in order to build the image properly
+\end{DoxyItemize}
+\item To delete the contents of the build folder
+\begin{DoxyItemize}
+\item if you copied the project including build folder from another location / machine
+\item when build fails.
+\end{DoxyItemize}
+\item This pack contains the 64bit version of CMake. Replace with the 32bit version if you run on a 32bit machine.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+Mac\+OS\DoxyHorRuler{0}
+ \hypertarget{getstart_idelinux}{}\doxysubsection{Linux}\label{getstart_idelinux}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Download prerequisites}}
+\begin{DoxyItemize}
+\item \href{https://code.visualstudio.com/download}{\texttt{ Download Visual Studio Code}}
+\item \href{https://github.com/onethinx/VSCode_OnethinxPack_Linux/archive/master.zip}{\texttt{ Download Onethinx Dependencies Pack}}
+\item Install CMake\+: {\ttfamily sudo apt install cmake}
+\end{DoxyItemize}
+\item {\bfseries{Install VS Code \& extensions}}
+\begin{DoxyItemize}
+\item Install VS Code.
+\item Install extensions\+:
+\begin{DoxyItemize}
+\item ARM Support For Visual Studio Code (dan-\/c-\/underwood)
+\item C/\+C++ Intelli\+Sense, debugging (microsoft)
+\item CMake language support (twxs)
+\item CMake Tools (microsoft)
+\item Cortex-\/\+Debug GDB support (marus25)
+\item Linker\+Script support for GNU (Zixuan Wang)
+\item Open in Application (Fabio Spampinato)
+\item Output Colorizer (IBM)
+\item Tasks (actboy168)
+\end{DoxyItemize}
+\item Apply the Open\+OCD USB rules by running {\ttfamily yourpath\textbackslash{}\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+\+Linux/tools\+\_\+2.\+0/linux/openocd/udev\+\_\+rules/install\+\_\+rules.sh}
+\end{DoxyItemize}
+\item Install the Onethinx Dependencies Pack
+\begin{DoxyItemize}
+\item Unzip the pack archive to your local harddisk (eg\+: /\+Applications/\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+\+Linux).
+\item Open $\sim$.profile\+: Terminal $>$$>$ {\ttfamily cd $\sim$ \&\& sudo nano .profile}
+\item Add this to the end of the file (make sure you enter the correct path) and save\+:~\newline
+ \# Loading environment variables for the Onethinx Pack~\newline
+ source /location\+Of\+Your/\+VSCode\+\_\+\+Onethinx\+Pack\+\_\+mac\+OS/variables.env~\newline
+
+\item Set the correct path in this pack\textquotesingle{}s variables.\+env file.
+\item Restart your machine (or log-\/out and log-\/in) to reload the environment variables.
+\end{DoxyItemize}
+\item Check
+\begin{DoxyItemize}
+\item If CMake, Make and the compiler is correctly installed by typing the following into your terminal or terminal window of VS Code.
+\begin{DoxyItemize}
+\item {\ttfamily cmake -\/version}
+\item {\ttfamily make -\/v}
+\item {\ttfamily arm-\/none-\/eabi-\/gcc -\/v}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Remind
+\begin{DoxyItemize}
+\item After changing the device configuration (or project file structure) to use
+\begin{DoxyItemize}
+\item Clean Reconfigure
+\item Clean Rebuild in order to build the image properly
+\end{DoxyItemize}
+\item To delete the contents of the build folder
+\begin{DoxyItemize}
+\item if you copied the project including build folder from another location / machine
+\item when build fails.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+Linux\DoxyHorRuler{0}
+\hypertarget{getstart_programmer}{}\doxysection{Programmer/\+Debugger}\label{getstart_programmer}
+In order to program a Onethinx Lo\+Ra\+WAN module, you need a programmer. You can also find our recomendations on our \href{https://forum.onethinx.com/t/which-programmers-debuggers-are-compatible/216}{\texttt{ {\bfseries{forum}}}}.
+
+\doxygenemoji{\+:white\+\_\+check\+\_\+mark\+:}{white_check_mark} Mini\+Prog 4 $<$ recommended
+\begin{DoxyItemize}
+\item \href{https://www.cypress.com/documentation/development-kitsboards/cy8ckit-005-miniprog4-program-and-debug-kit}{\texttt{ CY8\+CKIT-\/005 -\/ \$99.\+00}} For our dev.\+kit, use an extension header, eg. \href{https://www.samtec.com/products/ssq-105-03-f-s}{\texttt{ Samtec SSQ-\/105-\/03-\/\+F-\/S}}
+\end{DoxyItemize}
+
+\doxygenemoji{\+:white\+\_\+check\+\_\+mark\+:}{white_check_mark} Kit\+Prog 2 (\href{https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376}{\texttt{ fter voltage upgrade}}!! and \href{https://community.cypress.com/t5/ModusToolbox-General/KitProg-firmware-out-of-date-message/td-p/72805}{\texttt{ upgrading to Kit\+Prog 3}})
+\begin{DoxyItemize}
+\item \href{https://www.cypress.com/documentation/development-kitsboards/cy8ckit-147-psoc-4100ps-prototyping-kit}{\texttt{ CY8\+CKIT-\/147 -\/ \$10.\+00}} (needs \href{https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376}{\texttt{ upgrade}}!!) $<$ budgetary recommended
+\item \href{https://www.cypress.com/documentation/development-kitsboards/cy8ckit-145-40xx-psoc-4000s-capsense-prototyping-kit}{\texttt{ CY8\+CKIT-\/145 -\/ \$15.\+00}} (needs \href{https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376}{\texttt{ upgrade}}!!)
+\item \href{https://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-146-4xxx-prototyping-kits}{\texttt{ CY8\+CKIT-\/146 -\/ \$15.\+00}} (needs \href{https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376}{\texttt{ upgrade}}!!)
+\item \href{https://www.cypress.com/documentation/development-kitsboards/psoc-6-ble-prototyping-kit-cy8cproto-063-ble}{\texttt{ CY8\+CPROTO-\/063-\/\+BLE -\/ \$20.\+00}} (needs \href{https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376}{\texttt{ upgrade}}!!)
+\end{DoxyItemize}
+
+\doxygenemoji{\+:grey\+\_\+question\+:}{grey_question} Kit\+Prog 3
+\begin{DoxyItemize}
+\item \href{https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w}{\texttt{ CY8\+CPROTO-\/062-\/4343W -\/ \$30.\+00}}
+\end{DoxyItemize}
+
+\doxygenemoji{\+:white\+\_\+check\+\_\+mark\+:}{white_check_mark} Segger J-\/\+Link
+\begin{DoxyItemize}
+\item \href{https://www.segger.com/products/debug-probes/j-link/models/j-link-edu/}{\texttt{ J-\/\+Link EDU -\/ \$60.\+00}}
+\item \href{https://www.segger.com/products/debug-probes/j-link/models/j-link-pro/}{\texttt{ J-\/\+Link PRO -\/ \$800.\+00}}
+\end{DoxyItemize}
+
+\doxygenemoji{\+:x\+:}{x} Kit\+Prog 1 Doesn’t work! (\sout{should work according to \href{https://forum.onethinx.com/t/error-on-uploading-the-code-solved/118/5}{\texttt{ this topic}}}, however not erised)
+\begin{DoxyItemize}
+\item \sout{\href{https://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit}{\texttt{ CY8\+CKIT-\/043 -\/ \$10.\+00}}}
+\item \sout{\href{https://www.cypress.com/documentation/development-kitsboards/cy8ckit-059-psoc-5lp-prototyping-kit-onboard-programmer-and}{\texttt{ CY8\+CKIT-\/059 -\/ \$10.\+00}}}
+\end{DoxyItemize}
+
+\doxygenemoji{\+:grey\+\_\+question\+:}{grey_question} ST Link (after \href{https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/}{\texttt{ converting to J-\/\+Link?}})
+\begin{DoxyItemize}
+\item \href{https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-nucleo-boards/nucleo-f030r8.html}{\texttt{ NUCLEO-\/\+F030\+R8}}
+\end{DoxyItemize}
+
+\doxygenemoji{\+:x\+:}{x} Mini\+Prog 3 (Not working)
+\begin{DoxyItemize}
+\item \href{https://www.cypress.com/documentation/development-kitsboards/cy8ckit-002-psoc-miniprog3-program-and-debug-kit}{\texttt{ CY8\+CKIT-\/002}}
+\end{DoxyItemize}
+
+{\bfseries{NOTE}}\+: If you find that a programmer that is not listed here either works or does not work with our module, please let us know on the \href{https://forum.onethinx.com/t/which-programmers-debuggers-are-compatible/216}{\texttt{ {\bfseries{forum}}}}.\DoxyHorRuler{0}
+\hypertarget{getstart_examples}{}\doxysection{Downloading the examples}\label{getstart_examples}
+Onethinx examples can be found on our \href{https://github.com/onethinx/Onethinx_Creator_Examples}{\texttt{ {\bfseries{Github}}}} page. For detailed explanation of the examples please see the \mbox{\hyperlink{ex_examples}{Examples}} page of this document. \DoxyHorRuler{0}
+\hypertarget{getstart_apiLibs}{}\doxysection{Using the correct API libraries}\label{getstart_apiLibs}
+As we update our Onethinx module, newer versions of the Onethinx API and stack come out. Onethinx stack is programmed on the modules ARM Cortex M0+ core, while your application, which you will program on the ARM Cortex M4 core uses the Onethinx API to communicate with the stack. Not all stack versions support the same API version (there are versions of the stack that do support same API). Although we strive to have one single API version for all future stacks, updates are inevitable. Examples found on our Github, are usually updated to the latest API version. Onethinx API can be found on our \href{https://github.com/onethinx}{\texttt{ Github}} page\+:
+\begin{DoxyItemize}
+\item \href{https://github.com/onethinx/OnethinxCoreAPI}{\texttt{ {\bfseries{Lo\+Ra\+WAN API}}}}
+\item \href{https://github.com/onethinx/OnethinxCoreAPI_Extended}{\texttt{ {\bfseries{Lo\+Ra API}}}}
+\end{DoxyItemize}
+
+The API version you are using should always match the Stack version that is on the module according to this table\+: \hypertarget{getstart_multi_row}{}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\caption{Onethinx API Versions}\label{getstart_multi_row}\\
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Stack Version }&\cellcolor{\tableheadbgcolor}\textbf{ Lo\+Ra\+WAN API Version }&\cellcolor{\tableheadbgcolor}\textbf{ Lo\+Ra API Version }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Stack Version }&\cellcolor{\tableheadbgcolor}\textbf{ Lo\+Ra\+WAN API Version }&\cellcolor{\tableheadbgcolor}\textbf{ Lo\+Ra API Version }\\\cline{1-3}
+\endhead
+0x\+AD &0x\+AD &not available \\\cline{1-3}
+0x\+AE &0x\+AD &not available \\\cline{1-3}
+0x\+B0 &0x\+B0 &not available \\\cline{1-3}
+0x\+B1 &0x\+B1 &not available \\\cline{1-3}
+0x\+B2 &0x\+B2 &not available \\\cline{1-3}
+0x\+B3 &0x\+B2 &not available \\\cline{1-3}
+0x\+B4 &0x\+B2 &not available \\\cline{1-3}
+0x\+B5 &0x\+B2 &not available \\\cline{1-3}
+0x\+B6 &not public &not available \\\cline{1-3}
+0x\+B7 &not public &not available \\\cline{1-3}
+0x\+B8 &0x\+B8 &0x\+B8 \\\cline{1-3}
+0x\+B9 &0x\+B8 &0x\+B8 \\\cline{1-3}
+0x\+BA &0x\+B8 &0x\+B8 \\\cline{1-3}
+0x\+BB &0x\+BB &0x\+B8 \\\cline{1-3}
+0x\+BC &0x\+BB &0x\+B8 \\\cline{1-3}
+0x\+BD &not public &not public \\\cline{1-3}
+0x\+BE &0x\+BE &0x\+BE \\\cline{1-3}
+0x\+BF &0x\+BE &0x\+BE \\\cline{1-3}
+0x\+C0 &not public &not public \\\cline{1-3}
+0x\+C1 &0x\+C1 &0x\+C1 \\\cline{1-3}
+\end{longtabu}
+If the tables in this document are not up to date, please consult the tables found in the \href{https://github.com/onethinx/OnethinxCoreAPI}{\texttt{ Lo\+Ra\+WAN API}} and \href{https://github.com/onethinx/OnethinxCoreAPI_Extended}{\texttt{ Lo\+Ra API}} pages on our Github.
+
+{\bfseries{Dont know which stack version your module has?}} In order to find out which version of the stack your module has, you can copy and run a piece of code found here\+: \mbox{\hyperlink{ex_examples_ex_deveui}{Stack Version Code}}. Similar code can also be found on the bottom of this \href{https://github.com/onethinx/OnethinxCoreAPI}{\texttt{ Github page}}.
+
+{\bfseries{NOTE}}\+: Once you find a stable version that suits you, you tested your device with it and you plan to go to mass production, we recommend to stick to that version when ordering modules. \DoxyHorRuler{0}
+\hypertarget{getstart_lwkeys}{}\doxysection{Lo\+Ra\+WAN Keys and Connection}\label{getstart_lwkeys}
+In order to connect to a Lo\+Ra\+WAN network, you need a Lo\+Ra\+WAN gateway and Lo\+Ra\+WAN keys. Keys are
+
+If you are using The Things Network (or some other public network), you may not need a gateway to test your Lo\+Ra\+WAN device because there may already be coverage in your area by a gateway somebody else has placed. Although this saves you some money not needing to put up your own gateway, we still recommend that you get your own gateway as this will save you a lot of time during development of your product as there are many things that can influence the connection. It is acceptable to use public gateways for prototyping. The public gateway may be far and the network conditions may be poor on a certain day, limiting your development. Also, the person that owns the public gateway, may decide they will unplug the gateway for a day, which will disable your connection to the Network Server. This is why, for serious development, we recommend having your own gateway.
+
+Onethinx Lo\+Ra\+WAN module supports 1.\+0.\+2 Lo\+Ra\+WAN specification and is Lo\+Ra Alliance Certified for this version. In order to connect to any Lo\+Ra\+WAN network, the Lo\+Ra\+WAN stack needs to know these 3 parameters (keys)\+:
+\begin{DoxyItemize}
+\item {\bfseries{Dev\+EUI}} is a unique ID in the IEEE EUI64 address space used to identify a device. There must not be 2 same Dev\+EUIs on different devices! Dev\+EUI is supplied by the device manufacturer, in this case, each Onethinx module has its own unique Dev\+EUI which can be used.
+\item {\bfseries{App\+EUI}} is a global application ID in the IEEE EUI64 address space identifying the join server during the over the air activation. For non-\/private networks it corresponds to a subdomain of joineuis.\+lora-\/alliance.\+org. This server name is used to find the IP address of the join server via DNS. The App\+EUI can be different for each device or it can also be same for all device. It also depends on what kind of application server you are using. App\+EUI identifies the join server and it can only be provided by the owner of the join server.
+\item {\bfseries{App\+Key}} is an encryption key used for messages during every Over The Air Activation (OTAA). After the activation the App\+SKey is used. A listener knowing the App\+Key can derive the App\+SKey. So you want to keep the App\+Key secret. Which side of the communication channel creates it, is not important. You simply want to be sure that it is random and unique for each device.
+\end{DoxyItemize}
+
+In Onethinx project, the Lo\+Ra\+WAN keys are usually saved in Lo\+Ra\+WAN\+\_\+keys.\+h header file. This header file is located in the project source folder\+: Project -\/$>$ source -\/$>$ Onethinx\+Core -\/$>$ Lo\+Ra\+WAN\+\_\+keys.\+h
+
+In Lo\+Ra\+WAN\+\_\+keys.\+h you will find an initalization structure, where you need to fill in the Dev\+EUI (or use internal), App\+EUI and App\+Key. You can replace the zero (0x00) values in the structure with your keys.
+
+You can use a different Dev\+EUI\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LoRaWAN\_keys\_t TTN\_OTAAkeys = \{}
+\DoxyCodeLine{    .KeyType                        = OTAA\_10x\_key,}
+\DoxyCodeLine{    .PublicNetwork                  = true,}
+\DoxyCodeLine{    .OTAA\_10x.DevEui                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\},}
+\DoxyCodeLine{    .OTAA\_10x.AppEui                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\},}
+\DoxyCodeLine{    .OTAA\_10x.AppKey                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+Or use the internal unique Dev\+EUI that is provided with every module\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LoRaWAN\_keys\_t TTN\_OTAAkeys = \{}
+\DoxyCodeLine{    .KeyType                        = OTAA\_10x\_key,}
+\DoxyCodeLine{    .PublicNetwork                  = true,}
+\DoxyCodeLine{    .OTAA\_10x.DevEui                = thisDevEUI,}
+\DoxyCodeLine{    .OTAA\_10x.AppEui                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\},}
+\DoxyCodeLine{    .OTAA\_10x.AppKey                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+There are several ways to read out or to extract {\bfseries{Onethinx Dev\+EUI}} from a Onethinx module\+:
+\begin{DoxyEnumerate}
+\item \href{OTX-18-Programmer}{\texttt{ {\bfseries{OTX-\/18-\/\+Programmer}}}} -\/ This program (made by Onethinx) allows you to read our a Dev\+EUI, but also, if needed, to program a .hex or an .elf file to the module using Open\+OCD. This program is written in C\# (Visual Studio) and the code is available so you can make your own program with it. For example, you can ceate a factory tester that reads out the internal Dev\+EUI and writes the App\+EUI and App\+Key in with Open\+OCD with the help of this programs source code.
+\item Directly from code by using this code \mbox{\hyperlink{ex_examples_ex_deveui}{Dev\+EUI extraction}}
+\end{DoxyEnumerate}
+
+Lo\+Ra\+WAN Keys and Connection\DoxyHorRuler{0}
+ \hypertarget{getstart_builddebug}{}\doxysection{Building and Debugging}\label{getstart_builddebug}
+Now that you have installed Visual Studio Code, gotten a programmer/debugger, downloaded the examples (matched the API if needed), you can get started with the examples.
+
+If you have access to a Lo\+Ra\+WAN gateway, we suggest to start with the \char`\"{}\+Hello World\char`\"{} example. If you do not have access to a Lo\+Ra\+WAN gateway or a Lo\+Ra\+WAN network in you vicinity, you can get started with the Lora2\+Lo\+Ra example. In order to use Lo\+Ra\+WAN you need access to a Lo\+Ra\+WAN gateway and/or network, however in order to use Lo\+Ra, you do not need these because you can achieve Lo\+Ra communication between 2 modules (at least). To get details and differences between Lo\+Ra and Lo\+Ra\+WAN I suggest that you go to the \mbox{\hyperlink{_f_a_q_faq_loralorawan}{Lo\+Ra vs Lo\+Ra\+WAN}} page.
+
+To run the example, please open VSCode. A wellcome page will open where you can start. Start by pressing \char`\"{}\+Open Folder\char`\"{} (Or go to\+: File-\/$>$Open Folder) and select the folder with the example you wish to run.
+
+
+
+When opening the example for the first time (or when you move the project to a different folder), you will be asked to select the compiler. Select the latest GCC compiler you have installed. In this case, it is \char`\"{}\+GCC for arm-\/none-\/eabi 9.\+2.\+1\char`\"{}.
+
+
+
+In order to build the code, you can press the \char`\"{}\+Build\char`\"{} button on the bottom, or press \char`\"{}\+Build and Launch\char`\"{} to Build and Launch debugging.
+
+
+
+In the Debug mode, you can use the buttons on the top to\+:
+\begin{DoxyItemize}
+\item Continue/\+Pause
+\item Step Over
+\item Step Into
+\item Step Out
+\item Restart
+\item Stop Debugging Session
+\end{DoxyItemize}
+
+
+
+Building and Debugging\DoxyHorRuler{0}
+\hypertarget{getstart_gs_psoccreator}{}\doxysection{PSo\+C Creator}\label{getstart_gs_psoccreator}
+In order to extract the full power of PSoC 6 dual ARM Cortex Core microcontroller, we recommend that you use PSoC Creator for the hadware set up. Although you can use only PSoC Creator to program PSoC chips, you are not able to use PSoC Creator on its own to program/debug/make project for Onethinx module. This is because PSoC Creator needs access to the M0+ core, while the M0+ core on the Onethinx module is locked. In order to use PSoC Creator as a \char`\"{}\+HW desing setup\char`\"{}, you need to use Onethinx VSCode Project with it. You can download \href{https://www.cypress.com/products/psoc-creator-integrated-design-environment-ide}{\texttt{ PSoC Creator here}}.
+
+
+
+The PSoC Creator project which is used to generate the API is located in the Onethinx Visual Studio Code (VSC) project. When you make the hardware configuration (in Top Design) and assign pins (in Pins), only thing you need is to successfully build the project (with no errors), and an API usable by the VSC will be generated. After creation of the API in PSoC Creator, the only thing that is needed to be done in VSC in order for it to recognise the generated API from PSoC Creator is to do a \char`\"{}\+Clean-\/\+Reconfigure\char`\"{}. \char`\"{}\+Clean-\/\+Reconfigure\char`\"{} button is located at the bottom of the screen, next to the \char`\"{}\+Build\char`\"{} button. No need to \#include any API. You can start writing the code using the API straight away.
+
+Open PSoC Creator Project by double clicking on the Onethinx\+\_\+\+Creator.\+cyprj\+:
+
+
+
+You can create your hardware configuration in Top\+Design. You can place components found on the right in \char`\"{}\+Component Catalog\char`\"{}, and after placing them, you can edit the component, its name and its settings by double clicking on it. You can connect the lines with the \char`\"{}\+Wire\char`\"{} tool found on the left side of the Top\+Design (marked purple). (NOTE\+: \mbox{\hyperlink{_f_a_q_faq_err_components}{VSC Errors after changing names or component in Creator}}).
+
+
+
+Map your pins in the Pins tab. You can find which pins are available by checking out our \href{https://github.com/onethinx/Core_Datasheet/blob/master/Onethinx_Core_Specification.pdf}{\texttt{ Onethinx Datasheet}}. 
+
+Use the \char`\"{}\+Build\char`\"{} button located in the top tray (marked with a blue box in both images). If successful, API will be generated which can be used in the VSCode project (after \char`\"{}\+Clean-\/\+Reconfigure\char`\"{}). API Datasheet can be found by right clicking on the specific component, while the API documentation can be found by going to Help-\/$>$Documentation-\/$>$Peripheral Driver Library.
+
+NOTE\+: When building for the PSoC Creator project for the first time, if you get promted to replace some files, click Replace.
+
+PSoC Creator\DoxyHorRuler{0}
+ 

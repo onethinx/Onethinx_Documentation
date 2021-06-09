@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_f_s_k_modulation_params__t" kind="struct" language="C++" prot="public">
+    <compoundname>FSKModulationParams_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_s_k_modulation_params__t_1a7ceb5a41c5fc2957892cfc6f382e74bf" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1a92ea6ee7973d64d0acdd5450e0ea46d9" kindref="member">RadioFSKRBitrate_e</ref></type>
+        <definition>RadioFSKRBitrate_e BitRate</definition>
+        <argsstring></argsstring>
+        <name>BitRate</name>
+        <bitfield> 32</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="283" column="31" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_modulation_params__t_1a96eca3bbd091d3c54a46ca2c029e29ef" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1afac9c93dc5b6e0979d5529591803705c" kindref="member">RadioFSKRDeviation_e</ref></type>
+        <definition>RadioFSKRDeviation_e Fdev</definition>
+        <argsstring></argsstring>
+        <name>Fdev</name>
+        <bitfield> 32</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="284" column="25" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_modulation_params__t_1aae945ed7db6ec60878555c3d6cff0d1d" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1abbe986916a54d576176083330a5ac743" kindref="member">RadioFSKModShapings_e</ref></type>
+        <definition>RadioFSKModShapings_e PulseShape</definition>
+        <argsstring></argsstring>
+        <name>PulseShape</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="285" column="22" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_s_k_modulation_params__t_1a997de99e8240f71bf1eeac7576e66909" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1ae09eefbe3ba7d6ab0b2266571a5ecf90" kindref="member">RadioFSKRxBandwidth_e</ref></type>
+        <definition>RadioFSKRxBandwidth_e RxBandwidth</definition>
+        <argsstring></argsstring>
+        <name>RxBandwidth</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="286" column="22" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="282" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="282" bodyend="287"/>
+    <listofallmembers>
+      <member refid="struct_f_s_k_modulation_params__t_1a7ceb5a41c5fc2957892cfc6f382e74bf" prot="public" virt="non-virtual"><scope>FSKModulationParams_t</scope><name>BitRate</name></member>
+      <member refid="struct_f_s_k_modulation_params__t_1a96eca3bbd091d3c54a46ca2c029e29ef" prot="public" virt="non-virtual"><scope>FSKModulationParams_t</scope><name>Fdev</name></member>
+      <member refid="struct_f_s_k_modulation_params__t_1aae945ed7db6ec60878555c3d6cff0d1d" prot="public" virt="non-virtual"><scope>FSKModulationParams_t</scope><name>PulseShape</name></member>
+      <member refid="struct_f_s_k_modulation_params__t_1a997de99e8240f71bf1eeac7576e66909" prot="public" virt="non-virtual"><scope>FSKModulationParams_t</scope><name>RxBandwidth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

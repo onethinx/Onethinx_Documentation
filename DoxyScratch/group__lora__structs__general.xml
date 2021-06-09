@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__structs__general" kind="group">
+    <compoundname>lora_structs_general</compoundname>
+    <title>General</title>
+    <innerclass refid="struct_radio_params__t" prot="public">RadioParams_t</innerclass>
+    <innerclass refid="unionchip_status__t" prot="public">chipStatus_t</innerclass>
+    <innerclass refid="union_i_r_qstatus__t" prot="public">IRQstatus_t</innerclass>
+    <innerclass refid="uniondevice_errors__t" prot="public">deviceErrors_t</innerclass>
+    <innerclass refid="struct_radio_status__t" prot="public">RadioStatus_t</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

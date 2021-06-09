@@ -1,0 +1,354 @@
+\hypertarget{group__lorawan__functions}{}\doxysection{Functions}
+\label{group__lorawan__functions}\index{Functions@{Functions}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gad8b399309ffabdefa97ae9be0e3a9757}{Lo\+Ra\+WAN\+\_\+\+Reset}} (void)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga106680a253a673c3061e790b90656a5a}{Lo\+Ra\+WAN\+\_\+\+Init}} (\mbox{\hyperlink{unioncore_configuration__t}{core\+Configuration\+\_\+t}} $\ast$core\+Configuration\+Ptr)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga74bf789aec2952e900743a988850c1d8}{Lo\+Ra\+WAN\+\_\+\+Get\+Info}} (core\+Info\+\_\+t $\ast$core\+Info)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gab2e567785485d16be2642f04e6e7b276}{Lo\+Ra\+WAN\+\_\+\+Join}} (\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gaf8e70d4aee605bc13b477dbf60bfca49}{Lo\+Ra\+WAN\+\_\+\+Flash\+Read}} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t block, uint8\+\_\+t length)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gaa5dc29f3cae973c71c19c2b3935a02e0}{Lo\+Ra\+WAN\+\_\+\+Flash\+Write}} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t block, uint8\+\_\+t length)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga5e04cecde87fd5a5f142c74e1cabaa3d}{Lo\+Ra\+WAN\+\_\+\+Set\+Date\+Time}} (\mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} $\ast$dt)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga2c61c5b91dbf1d6cdb4cead610ac1bd7}{Lo\+Ra\+WAN\+\_\+\+Get\+Date\+Time}} (\mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} $\ast$dt)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga6fcb4e6817783f5cdf155aa22f1e361c}{Lo\+Ra\+WAN\+\_\+\+Get\+RXdata}} (uint8\+\_\+t $\ast$RXdata, uint8\+\_\+t length)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gab5f7f2b6551fe084bb63ab24dbdaf19f}{Lo\+Ra\+WAN\+\_\+\+Send}} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t length, \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga5dce371feddd58cfe5eb70789e00bf61}{Lo\+Ra\+WAN\+\_\+\+Send\+Mac}} (uint8\+\_\+t $\ast$buffer, uint8\+\_\+t length, \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode, \mbox{\hyperlink{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}{MACcmd\+\_\+e}} MACcmd)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gaf0a38454913b6186fc45c1e16d4610cb}{Lo\+Ra\+WAN\+\_\+\+Sleep}} (sleep\+Config\+\_\+t $\ast$sleep\+Config)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_ga50e698f432ec47ae93f3901b0534dcd1}{Lo\+Ra\+WAN\+\_\+\+Get\+Status}} ()
+\item 
+\mbox{\hyperlink{unionerror_status__t}{error\+Status\+\_\+t}} \mbox{\hyperlink{group__lorawan__functions_gab888acd59c2be2c5e41dff4c398aa375}{Lo\+Ra\+WAN\+\_\+\+Get\+Error}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Onethinx Lo\+Ra\+WAN Functions 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__lorawan__functions_gaf8e70d4aee605bc13b477dbf60bfca49}\label{group__lorawan__functions_gaf8e70d4aee605bc13b477dbf60bfca49}} 
+\index{Functions@{Functions}!LoRaWAN\_FlashRead@{LoRaWAN\_FlashRead}}
+\index{LoRaWAN\_FlashRead@{LoRaWAN\_FlashRead}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_FlashRead()}{LoRaWAN\_FlashRead()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Flash\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{uint8\+\_\+t}]{block,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+This function reads the buffer that was previously saved to flash. This allows user to access the buffer even if reset or power off occures.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Block   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Data    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Block   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Data    }\\\cline{1-2}
+\endhead
+0   &Max 256 bytes    \\\cline{1-2}
+1   &Max 256 bytes    \\\cline{1-2}
+2   &Max 256 bytes    \\\cline{1-2}
+3   &Max 256 bytes    \\\cline{1-2}
+4   &Max 256 bytes    \\\cline{1-2}
+5   &Max 256 bytes    \\\cline{1-2}
+6   &Max 256 bytes    \\\cline{1-2}
+7   &Max 256 bytes   \\\cline{1-2}
+\end{longtabu}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Pointer to the buffer where the data read from flash will be saved to. \\
+\hline
+{\em block} & Block from which the data is read from. Available blocks\+: 0 to 7 \\
+\hline
+{\em length} & Length of data which you wish to read. Maximum 255 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__lorawan__functions_gaa5dc29f3cae973c71c19c2b3935a02e0}{Lo\+Ra\+WAN\+\_\+\+Flash\+Write}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_gaa5dc29f3cae973c71c19c2b3935a02e0}\label{group__lorawan__functions_gaa5dc29f3cae973c71c19c2b3935a02e0}} 
+\index{Functions@{Functions}!LoRaWAN\_FlashWrite@{LoRaWAN\_FlashWrite}}
+\index{LoRaWAN\_FlashWrite@{LoRaWAN\_FlashWrite}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_FlashWrite()}{LoRaWAN\_FlashWrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Flash\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{uint8\+\_\+t}]{block,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+This function saves a buffer to flash. This allows user to access the buffer even if reset or power off occures.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Block   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Data    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Block   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Data    }\\\cline{1-2}
+\endhead
+0   &Max 256 bytes    \\\cline{1-2}
+1   &Max 256 bytes    \\\cline{1-2}
+2   &Max 256 bytes    \\\cline{1-2}
+3   &Max 256 bytes    \\\cline{1-2}
+4   &Max 256 bytes    \\\cline{1-2}
+5   &Max 256 bytes    \\\cline{1-2}
+6   &Max 256 bytes    \\\cline{1-2}
+7   &Max 256 bytes   \\\cline{1-2}
+\end{longtabu}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Pointer to the data which needs to be saved. \\
+\hline
+{\em block} & Block to which the data should be saved to. Available blocks\+: 0 to 7 \\
+\hline
+{\em length} & Length of data which you wish saved. Maximum 255 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__lorawan__functions_gaf8e70d4aee605bc13b477dbf60bfca49}{Lo\+Ra\+WAN\+\_\+\+Flash\+Read}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_ga2c61c5b91dbf1d6cdb4cead610ac1bd7}\label{group__lorawan__functions_ga2c61c5b91dbf1d6cdb4cead610ac1bd7}} 
+\index{Functions@{Functions}!LoRaWAN\_GetDateTime@{LoRaWAN\_GetDateTime}}
+\index{LoRaWAN\_GetDateTime@{LoRaWAN\_GetDateTime}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_GetDateTime()}{LoRaWAN\_GetDateTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} $\ast$}]{dt }\end{DoxyParamCaption})}
+
+This function allows the user to get the current date and time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Point to the location where date and time data is saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_gab888acd59c2be2c5e41dff4c398aa375}\label{group__lorawan__functions_gab888acd59c2be2c5e41dff4c398aa375}} 
+\index{Functions@{Functions}!LoRaWAN\_GetError@{LoRaWAN\_GetError}}
+\index{LoRaWAN\_GetError@{LoRaWAN\_GetError}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_GetError()}{LoRaWAN\_GetError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionerror_status__t}{error\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function returns the current error /status.
+
+\begin{DoxyReturn}{Returns}
+Returns error codes. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{unionerror_status__t}{error\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_ga74bf789aec2952e900743a988850c1d8}\label{group__lorawan__functions_ga74bf789aec2952e900743a988850c1d8}} 
+\index{Functions@{Functions}!LoRaWAN\_GetInfo@{LoRaWAN\_GetInfo}}
+\index{LoRaWAN\_GetInfo@{LoRaWAN\_GetInfo}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_GetInfo()}{LoRaWAN\_GetInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Get\+Info (\begin{DoxyParamCaption}\item[{core\+Info\+\_\+t $\ast$}]{core\+Info }\end{DoxyParamCaption})}
+
+This function gives the stack information which were saved at the time of the programming.
+
+
+\begin{DoxyParams}{Parameters}
+{\em core\+Info} & Pointer to the location where info will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__lorawan__functions_ga6fcb4e6817783f5cdf155aa22f1e361c}\label{group__lorawan__functions_ga6fcb4e6817783f5cdf155aa22f1e361c}} 
+\index{Functions@{Functions}!LoRaWAN\_GetRXdata@{LoRaWAN\_GetRXdata}}
+\index{LoRaWAN\_GetRXdata@{LoRaWAN\_GetRXdata}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_GetRXdata()}{LoRaWAN\_GetRXdata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Get\+RXdata (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{RXdata,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+This function retrieves the specified length of data reveived via downlink from a gateway and saves it to a buffer. The lenght of data can be retrieved after a succesful Lo\+Ra\+WAN\+\_\+\+Send, through the status structure it returns
+
+
+\begin{DoxyParams}{Parameters}
+{\em RXdata} & Pointer to the byte buffer to which the data is retrieved to. \\
+\hline
+{\em length} & Length of data which you wish saved. The length of data received can be seen after Lo\+Ra\+WAN\+\_\+\+Send in core\+Status.\+mac.\+bytes\+To\+Read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__lorawan__functions_gab5f7f2b6551fe084bb63ab24dbdaf19f}{Lo\+Ra\+WAN\+\_\+\+Send}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_ga50e698f432ec47ae93f3901b0534dcd1}\label{group__lorawan__functions_ga50e698f432ec47ae93f3901b0534dcd1}} 
+\index{Functions@{Functions}!LoRaWAN\_GetStatus@{LoRaWAN\_GetStatus}}
+\index{LoRaWAN\_GetStatus@{LoRaWAN\_GetStatus}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_GetStatus()}{LoRaWAN\_GetStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function returns the current error /status.
+
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__lorawan__functions_ga106680a253a673c3061e790b90656a5a}\label{group__lorawan__functions_ga106680a253a673c3061e790b90656a5a}} 
+\index{Functions@{Functions}!LoRaWAN\_Init@{LoRaWAN\_Init}}
+\index{LoRaWAN\_Init@{LoRaWAN\_Init}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Init()}{LoRaWAN\_Init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unioncore_configuration__t}{core\+Configuration\+\_\+t}} $\ast$}]{core\+Configuration\+Ptr }\end{DoxyParamCaption})}
+
+Initializes the Lo\+Ra\+WAN stack and points the stack to the location of the settings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em core\+Configuration\+Ptr} & Pointer to the structure where Join, TXwhich sets the Lo\+Ra\+WAN parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__lorawan__functions_gab2e567785485d16be2642f04e6e7b276}\label{group__lorawan__functions_gab2e567785485d16be2642f04e6e7b276}} 
+\index{Functions@{Functions}!LoRaWAN\_Join@{LoRaWAN\_Join}}
+\index{LoRaWAN\_Join@{LoRaWAN\_Join}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Join()}{LoRaWAN\_Join()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Join (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+Joins the Lo\+Ra\+WAN network, taking the parameters from the core\+Configuration structure which was passed to Lo\+Ra\+WAN\+\_\+\+Init.
+
+
+\begin{DoxyParams}{Parameters}
+{\em wait\+Mode} & Type of wait mode that the microcontroller core should wait in.\\
+\hline
+\end{DoxyParams}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Mode   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Mode   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endhead
+M4\+\_\+\+No\+Wait   &Non-\/blocking. Do not wait untill stack is finished, M4 continues with operation.    \\\cline{1-2}
+M4\+\_\+\+Wait\+Active   &Blocking. Wait while stack busy, M4 stays in Active mode.    \\\cline{1-2}
+M4\+\_\+\+Wait\+Sleep   &Blocking. Wait while stack busy, M4 goes into Sleep while is stack busy.    \\\cline{1-2}
+M4\+\_\+\+Wait\+Deep\+Sleep   &Blocking. Wait while stack busy, M4 goes into Deep\+Sleep while is stack busy.   \\\cline{1-2}
+\end{longtabu}
+
+
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_gad8b399309ffabdefa97ae9be0e3a9757}\label{group__lorawan__functions_gad8b399309ffabdefa97ae9be0e3a9757}} 
+\index{Functions@{Functions}!LoRaWAN\_Reset@{LoRaWAN\_Reset}}
+\index{LoRaWAN\_Reset@{LoRaWAN\_Reset}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Reset()}{LoRaWAN\_Reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+This function forces the current non-\/blocking function to stop. Functions which receive wait\+Mode\+\_\+t can be set at both blocking and non-\/blocking.
+
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__lorawan__functions_gab5f7f2b6551fe084bb63ab24dbdaf19f}\label{group__lorawan__functions_gab5f7f2b6551fe084bb63ab24dbdaf19f}} 
+\index{Functions@{Functions}!LoRaWAN\_Send@{LoRaWAN\_Send}}
+\index{LoRaWAN\_Send@{LoRaWAN\_Send}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Send()}{LoRaWAN\_Send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{uint8\+\_\+t}]{length,  }\item[{\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+This function sends your buffer of data to the Lo\+Ra\+WAN network.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Pointer to the data which needs to be sent. \\
+\hline
+{\em length} & Length of data which you wish to send. \\
+\hline
+{\em wait\+Mode} & Type of wait mode that the microcontroller core should wait in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_ga5dce371feddd58cfe5eb70789e00bf61}\label{group__lorawan__functions_ga5dce371feddd58cfe5eb70789e00bf61}} 
+\index{Functions@{Functions}!LoRaWAN\_SendMac@{LoRaWAN\_SendMac}}
+\index{LoRaWAN\_SendMac@{LoRaWAN\_SendMac}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_SendMac()}{LoRaWAN\_SendMac()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Send\+Mac (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{uint8\+\_\+t}]{length,  }\item[{\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode,  }\item[{\mbox{\hyperlink{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}{MACcmd\+\_\+e}}}]{MACcmd }\end{DoxyParamCaption})}
+
+This function sends your buffer of data and a MAC command to the Lo\+Ra\+WAN network. It is similar to Lo\+Ra\+WAN\+\_\+\+Send, but this also sends a MAC command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Pointer to the data which needs to be sent. \\
+\hline
+{\em length} & Length of data which you wish to send. \\
+\hline
+{\em wait\+Mode} & Type of wait mode that the microcontroller core should wait in. \\
+\hline
+{\em MACcmd} & MAC command to be sent to the Lo\+Ra\+WAN network. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}, \mbox{\hyperlink{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}{MACcmd\+\_\+e}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_ga5e04cecde87fd5a5f142c74e1cabaa3d}\label{group__lorawan__functions_ga5e04cecde87fd5a5f142c74e1cabaa3d}} 
+\index{Functions@{Functions}!LoRaWAN\_SetDateTime@{LoRaWAN\_SetDateTime}}
+\index{LoRaWAN\_SetDateTime@{LoRaWAN\_SetDateTime}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_SetDateTime()}{LoRaWAN\_SetDateTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} $\ast$}]{dt }\end{DoxyParamCaption})}
+
+This function allows the user to set the current date and time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Point to the location where date and time data is saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lorawan__functions_gaf0a38454913b6186fc45c1e16d4610cb}\label{group__lorawan__functions_gaf0a38454913b6186fc45c1e16d4610cb}} 
+\index{Functions@{Functions}!LoRaWAN\_Sleep@{LoRaWAN\_Sleep}}
+\index{LoRaWAN\_Sleep@{LoRaWAN\_Sleep}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Sleep()}{LoRaWAN\_Sleep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+WAN\+\_\+\+Sleep (\begin{DoxyParamCaption}\item[{sleep\+Config\+\_\+t $\ast$}]{sleep\+Config }\end{DoxyParamCaption})}
+
+This function allows you to enter a sleep mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sleep\+Config} & Pointer to the sleep configuration structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+sleep\+Config\+\_\+t and \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} 
+\end{DoxySeeAlso}

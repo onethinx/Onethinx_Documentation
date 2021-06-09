@@ -1,0 +1,65 @@
+\hypertarget{_onethinx_ext01_8c}{}\doxysection{C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+BE API/\+Onethinx\+Ext01.c File Reference}
+\label{_onethinx_ext01_8c}\index{C:/Onethinx\_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.c@{C:/Onethinx\_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.c}}
+{\ttfamily \#include \char`\"{}Onethinx\+Core01.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Onethinx\+Ext01.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cy\+\_\+gpio.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{_onethinx_ext01_8c_a7e446dbe320fdd7952c1e93fb240b3fe}{core\+Comm}} (\mbox{\hyperlink{_onethinx_core01_8h_afe59dcb2aa2a33b6e6c17a5cfefd8a1b}{core\+Functions\+\_\+e}} function, \mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{_onethinx_ext01_8c_a50e656cf395118e0c0aa35cc8ef8e4c7}{Lo\+Ra\+\_\+\+RX}} (\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$Radio\+Params, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$Radio\+Status, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+Size, uint16\+\_\+t time\+Out\+MS, \mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{_onethinx_ext01_8c_ae91649711b993d3e9ba56805ddc598e5}{Lo\+Ra\+\_\+\+TX}} (\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$Radio\+Params, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$Radio\+Status, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+Size, uint16\+\_\+t time\+Out\+MS, \mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+void \mbox{\hyperlink{_onethinx_ext01_8c_afddff51e54e43c9310e1185ea8a79a08}{Lo\+Ra\+WAN\+\_\+\+Debug}} (bool debug\+Leds\+On, uint32\+\_\+t $\ast$core\+State\+PNT)
+\item 
+void \mbox{\hyperlink{_onethinx_ext01_8c_a6c5c729a3095fafed9bcf6fc6d0b5fa8}{Lo\+Ra\+WAN\+\_\+\+Unlock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{structcore_arguments__t}{core\+Arguments\+\_\+t}} \mbox{\hyperlink{_onethinx_ext01_8c_a6c95a849ac23f743560b17a79bb70ced}{core\+Arguments}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_onethinx_ext01_8c_a7e446dbe320fdd7952c1e93fb240b3fe}\label{_onethinx_ext01_8c_a7e446dbe320fdd7952c1e93fb240b3fe}} 
+\index{OnethinxExt01.c@{OnethinxExt01.c}!coreComm@{coreComm}}
+\index{coreComm@{coreComm}!OnethinxExt01.c@{OnethinxExt01.c}}
+\doxysubsubsection{\texorpdfstring{coreComm()}{coreComm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} core\+Comm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_onethinx_core01_8h_afe59dcb2aa2a33b6e6c17a5cfefd8a1b}{core\+Functions\+\_\+e}}}]{function,  }\item[{\mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8c_a50e656cf395118e0c0aa35cc8ef8e4c7}\label{_onethinx_ext01_8c_a50e656cf395118e0c0aa35cc8ef8e4c7}} 
+\index{OnethinxExt01.c@{OnethinxExt01.c}!LoRa\_RX@{LoRa\_RX}}
+\index{LoRa\_RX@{LoRa\_RX}!OnethinxExt01.c@{OnethinxExt01.c}}
+\doxysubsubsection{\texorpdfstring{LoRa\_RX()}{LoRa\_RX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+\_\+\+RX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$}]{Radio\+Params,  }\item[{\mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$}]{Radio\+Status,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+Size,  }\item[{uint16\+\_\+t}]{time\+Out\+MS,  }\item[{\mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8c_ae91649711b993d3e9ba56805ddc598e5}\label{_onethinx_ext01_8c_ae91649711b993d3e9ba56805ddc598e5}} 
+\index{OnethinxExt01.c@{OnethinxExt01.c}!LoRa\_TX@{LoRa\_TX}}
+\index{LoRa\_TX@{LoRa\_TX}!OnethinxExt01.c@{OnethinxExt01.c}}
+\doxysubsubsection{\texorpdfstring{LoRa\_TX()}{LoRa\_TX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+\_\+\+TX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$}]{Radio\+Params,  }\item[{\mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$}]{Radio\+Status,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+Size,  }\item[{uint16\+\_\+t}]{time\+Out\+MS,  }\item[{\mbox{\hyperlink{_onethinx_core01_8h_a882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8c_afddff51e54e43c9310e1185ea8a79a08}\label{_onethinx_ext01_8c_afddff51e54e43c9310e1185ea8a79a08}} 
+\index{OnethinxExt01.c@{OnethinxExt01.c}!LoRaWAN\_Debug@{LoRaWAN\_Debug}}
+\index{LoRaWAN\_Debug@{LoRaWAN\_Debug}!OnethinxExt01.c@{OnethinxExt01.c}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Debug()}{LoRaWAN\_Debug()}}
+{\footnotesize\ttfamily void Lo\+Ra\+WAN\+\_\+\+Debug (\begin{DoxyParamCaption}\item[{bool}]{debug\+Leds\+On,  }\item[{uint32\+\_\+t $\ast$}]{core\+State\+PNT }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8c_a6c5c729a3095fafed9bcf6fc6d0b5fa8}\label{_onethinx_ext01_8c_a6c5c729a3095fafed9bcf6fc6d0b5fa8}} 
+\index{OnethinxExt01.c@{OnethinxExt01.c}!LoRaWAN\_Unlock@{LoRaWAN\_Unlock}}
+\index{LoRaWAN\_Unlock@{LoRaWAN\_Unlock}!OnethinxExt01.c@{OnethinxExt01.c}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Unlock()}{LoRaWAN\_Unlock()}}
+{\footnotesize\ttfamily void Lo\+Ra\+WAN\+\_\+\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_onethinx_ext01_8c_a6c95a849ac23f743560b17a79bb70ced}\label{_onethinx_ext01_8c_a6c95a849ac23f743560b17a79bb70ced}} 
+\index{OnethinxExt01.c@{OnethinxExt01.c}!coreArguments@{coreArguments}}
+\index{coreArguments@{coreArguments}!OnethinxExt01.c@{OnethinxExt01.c}}
+\doxysubsubsection{\texorpdfstring{coreArguments}{coreArguments}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{structcore_arguments__t}{core\+Arguments\+\_\+t}} core\+Arguments\hspace{0.3cm}{\ttfamily [extern]}}
+

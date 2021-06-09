@@ -1,0 +1,36 @@
+\hypertarget{unionsystem_status__t}{}\doxysection{system\+Status\+\_\+t Union Reference}
+\label{unionsystem_status__t}\index{systemStatus\_t@{systemStatus\_t}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{unionsystem_status__t_a2922c23d7791460800967d5de45f5897}\label{unionsystem_status__t_a2922c23d7791460800967d5de45f5897}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{unionsystem_status__t_abff87442a9fbccad3f0ede43a2b4523a}{version}}\\
+\>\>{\em The version of the stack. }\\
+\>systemErrors\_e \mbox{\hyperlink{unionsystem_status__t_a48513175caf73f325e09ba2b526a5cc9}{errorStatus}}: 8\\
+\>\>{\em System Errors. }\\
+\>uint8\_t \mbox{\hyperlink{unionsystem_status__t_afddad91a410c065cf7d647c539ac000e}{batteryLevel}}\\
+\>\>{\em The battery level for the DevStatusAns command (network check on battery level) to be set optionally by the user (0 = external, 1 = minimum battery, 254 = maximum battery, 255 = not implemented) }\\
+\>uint8\_t \mbox{\hyperlink{unionsystem_status__t_adc47ec56d55b5bd94105f1c0c6c6dee9}{\_\_pad0\_\_}}: 5\\
+\>\>{\em reserved }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a44a6a336187056dbdd9fb47d8b3441f1}{breakCurrentFunction}}: 1\\
+\>\>{\em Break current execution. }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a63d67f59ccb29a9ac68acab0072b5992}{isStarted}}: 1\\
+\>\>{\em System is started? }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a9209d774d52ac481a0d3054fe817ab3e}{isBusy}}: 1\\
+\>\>{\em System is busy? }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a16988e775ff1749d1b3433fa07548803}{isSleeping}}: 1\\
+\>\>{\em System is sleeping? }\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionsystem_status__t_af9d030b972bde22150de47cae977bac9}\label{unionsystem_status__t_af9d030b972bde22150de47cae977bac9}} 
+uint8\+\_\+t {\bfseries reserved} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+C1\+\_\+\+API/Onethinx\+Core01.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structwake_up_pin__t" kind="struct" language="C++" prot="public">
+    <compoundname>wakeUpPin_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structwake_up_pin__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="496" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwake_up_pin__t_1a4c0b022d96e9f2baaf73386545a68267" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool risingEdge</definition>
+        <argsstring></argsstring>
+        <name>risingEdge</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="497" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwake_up_pin__t_1a7d2caff5b7149cd851b929b2434762bd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool internalPullUpDown</definition>
+        <argsstring></argsstring>
+        <name>internalPullUpDown</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="498" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structwake_up_pin__t_1a3e57c2ef1c3ffb36722f000cc1156824" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 21</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="499" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="495" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="495" bodyend="500"/>
+    <listofallmembers>
+      <member refid="structwake_up_pin__t_1a3e57c2ef1c3ffb36722f000cc1156824" prot="public" virt="non-virtual"><scope>wakeUpPin_t</scope><name>__pad0__</name></member>
+      <member refid="structwake_up_pin__t_1a8740ba80e30dd75e71d09fa1dcf04f3d" prot="public" virt="non-virtual"><scope>wakeUpPin_t</scope><name>enabled</name></member>
+      <member refid="structwake_up_pin__t_1a7d2caff5b7149cd851b929b2434762bd" prot="public" virt="non-virtual"><scope>wakeUpPin_t</scope><name>internalPullUpDown</name></member>
+      <member refid="structwake_up_pin__t_1a4c0b022d96e9f2baaf73386545a68267" prot="public" virt="non-virtual"><scope>wakeUpPin_t</scope><name>risingEdge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

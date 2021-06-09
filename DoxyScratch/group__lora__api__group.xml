@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__api__group" kind="group">
+    <compoundname>lora_api_group</compoundname>
+    <title>LoRa</title>
+    <innergroup refid="group__lora__macros">Macros</innergroup>
+    <innergroup refid="group__lora__structs">Data Structures</innergroup>
+    <innergroup refid="group__lora__enums">Enumerated Types</innergroup>
+    <innergroup refid="group__lora__functions">Functions</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

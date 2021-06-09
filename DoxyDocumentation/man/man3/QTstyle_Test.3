@@ -1,0 +1,156 @@
+.TH "QTstyle_Test" 3 "Fri Jan 29 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+QTstyle_Test \- A test class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTEnum\fP { \fBTVal1\fP, \fBTVal2\fP, \fBTVal3\fP }"
+.br
+.RI "An enum\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQTstyle_Test\fP ()"
+.br
+.RI "A constructor\&. "
+.ti -1c
+.RI "\fB~QTstyle_Test\fP ()"
+.br
+.RI "A destructor\&. "
+.ti -1c
+.RI "int \fBtestMe\fP (int a, const char *s)"
+.br
+.RI "A normal member taking two arguments and returning an integer value\&. "
+.ti -1c
+.RI "virtual void \fBtestMeToo\fP (char c1, char c2)=0"
+.br
+.RI "A pure virtual member\&. "
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "enum \fBQTstyle_Test::TEnum\fP * \fBenumPtr\fP"
+.br
+.RI "Enum pointer\&. "
+.ti -1c
+.RI "enum \fBQTstyle_Test::TEnum\fP \fBenumVar\fP"
+.br
+.RI "Enum variable\&. "
+.ti -1c
+.RI "int \fBpublicVar\fP"
+.br
+.RI "A public variable\&. "
+.ti -1c
+.RI "int(* \fBhandler\fP )(int a, int b)"
+.br
+.RI "A function variable\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A test class\&. 
+
+A more elaborate class description\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBTEnum\fP"
+
+.PP
+An enum\&. More detailed enum description\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fITVal1 \fP\fP
+Enum value TVal1\&. 
+.TP
+\fB\fITVal2 \fP\fP
+Enum value TVal2\&. 
+.TP
+\fB\fITVal3 \fP\fP
+Enum value TVal3\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBQTstyle_Test\fP ()"
+
+.PP
+A constructor\&. A more elaborate description of the constructor\&. 
+.SS "~\fBQTstyle_Test\fP ()"
+
+.PP
+A destructor\&. A more elaborate description of the destructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int testMe (int a, const char * s)"
+
+.PP
+A normal member taking two arguments and returning an integer value\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP an integer argument\&. 
+.br
+\fIs\fP a constant character pointer\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The test results 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBQTstyle_Test()\fP, \fB~QTstyle_Test()\fP, \fBtestMeToo()\fP and \fBpublicVar()\fP 
+.RE
+.PP
+
+.SS "virtual void testMeToo (char c1, char c2)\fC [pure virtual]\fP"
+
+.PP
+A pure virtual member\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBtestMe()\fP 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIc1\fP the first argument\&. 
+.br
+\fIc2\fP the second argument\&. 
+.RE
+.PP
+
+.SH "Field Documentation"
+.PP 
+.SS "enum \fBQTstyle_Test::TEnum\fP
+         * enumPtr"
+
+.PP
+Enum pointer\&. Details\&. 
+.SS "enum \fBQTstyle_Test::TEnum\fP enumVar"
+
+.PP
+Enum variable\&. Details\&. 
+.SS "int(* handler) (int a, int b)"
+
+.PP
+A function variable\&. Details\&. 
+.SS "int publicVar"
+
+.PP
+A public variable\&. Details\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

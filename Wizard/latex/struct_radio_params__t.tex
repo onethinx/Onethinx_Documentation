@@ -1,0 +1,40 @@
+\hypertarget{struct_radio_params__t}{}\doxysection{Radio\+Params\+\_\+t Struct Reference}
+\label{struct_radio_params__t}\index{RadioParams\_t@{RadioParams\_t}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_radio_params__t_a9297b1f4d0189474bdfa128a0b723b54}\label{struct_radio_params__t_a9297b1f4d0189474bdfa128a0b723b54}} 
+uint32\+\_\+t {\bfseries Frequency}
+\item 
+\mbox{\Hypertarget{struct_radio_params__t_ac93135019c40e00a96ce7a5c30aef255}\label{struct_radio_params__t_ac93135019c40e00a96ce7a5c30aef255}} 
+\mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\+\_\+\+TXpower\+\_\+e}} \mbox{\hyperlink{struct_radio_params__t_ac93135019c40e00a96ce7a5c30aef255}{TXpower}}
+\begin{DoxyCompactList}\small\item\em TXpower (PWR = MAX -\/ (2 $\ast$ value)), not used in receive mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_radio_params__t_a5c039f4f02e7ed79d6a2831d930b2c3f}\label{struct_radio_params__t_a5c039f4f02e7ed79d6a2831d930b2c3f}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{struct_lo_ra_modulation_params__t}{LoRaModulationParams\_t}} {\bfseries Modulation}\\
+\>\>\mbox{\hyperlink{struct_lo_ra_packet_params__t}{LoRaPacketParams\_t}} {\bfseries Packet}\\
+\>\} {\bfseries LoRa}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{struct_f_s_k_modulation_params__t}{FSKModulationParams\_t}} {\bfseries Modulation}\\
+\>\>\mbox{\hyperlink{struct_f_s_k_packet_params__t}{FSKPacketParams\_t}} {\bfseries Packet}\\
+\>\} {\bfseries FSK}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{struct_radio_params__t_a18e1a2704989b836819801e92771bb77}\label{struct_radio_params__t_a18e1a2704989b836819801e92771bb77}} 
+\mbox{\hyperlink{group__lora__enums__general_gac345bddf7c620d03ecd1753dab7f1434}{Radio\+Packet\+Types\+\_\+e}} {\bfseries Packet\+Type}
+\item 
+\mbox{\Hypertarget{struct_radio_params__t_a957235aab7c84992fea429d4628be0af}\label{struct_radio_params__t_a957235aab7c84992fea429d4628be0af}} 
+uint8\+\_\+t \mbox{\hyperlink{struct_radio_params__t_a957235aab7c84992fea429d4628be0af}{RXboost}}\+: 1
+\begin{DoxyCompactList}\small\item\em RX Boost mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_radio_params__t_a6ba800999071d355e87c4747d0076f56}\label{struct_radio_params__t_a6ba800999071d355e87c4747d0076f56}} 
+uint8\+\_\+t \mbox{\hyperlink{struct_radio_params__t_a6ba800999071d355e87c4747d0076f56}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}\+: 7
+\begin{DoxyCompactList}\small\item\em Reserved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+C1\+\_\+\+API/Onethinx\+Ext01.\+h\end{DoxyCompactItemize}

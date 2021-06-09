@@ -1,0 +1,91 @@
+.TH "sleepConfig_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sleepConfig_t \- Sleep configuration 
+.br
+  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBwakeUpPin_t\fP \fBwakeUpPin\fP"
+.br
+.RI "S24 bits 
+.br
+ "
+.ti -1c
+.RI "\fBwakeUpTime_t\fP \fBwakeUpTime\fP"
+.br
+.RI "S40 bits 
+.br
+ "
+.ti -1c
+.RI "\fBsleepMode_e\fP \fBsleepMode\fP: 3"
+.br
+.RI "Set sleepmode to Sleep, DeepSleep or Hibernate\&. "
+.ti -1c
+.RI "bool \fBBleEcoON\fP: 1"
+.br
+.RI "Leaves BLE ECO ON during sleep\&. "
+.ti -1c
+.RI "bool \fBDebugON\fP: 1"
+.br
+.RI "Leaves Debug Port active during idle\&. "
+.ti -1c
+.RI "\fBsleepCores_e\fP \fBsleepCores\fP: 3"
+.br
+.ti -1c
+.RI "uint32_t \fB__pad0__\fP: 32"
+.br
+.RI "Reserved\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Sleep configuration 
+.br
+ 
+
+Make sure to initialize all members, best practise is to use examples 
+.SH "Field Documentation"
+.PP 
+.SS "uint32_t __pad0__"
+
+.PP
+Reserved\&. 
+.SS "bool BleEcoON"
+
+.PP
+Leaves BLE ECO ON during sleep\&. Consumes additional power, enable only when ECO/BLE functionality is needed during sleep 
+.SS "bool DebugON"
+
+.PP
+Leaves Debug Port active during idle\&. Consumes additional power, enable only for debugging purposes 
+.SS "\fBsleepCores_e\fP sleepCores"
+
+.SS "\fBsleepMode_e\fP sleepMode"
+
+.PP
+Set sleepmode to Sleep, DeepSleep or Hibernate\&. 
+.SS "\fBwakeUpPin_t\fP wakeUpPin"
+
+.PP
+S24 bits 
+.br
+ 
+.SS "\fBwakeUpTime_t\fP wakeUpTime"
+
+.PP
+S40 bits 
+.br
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

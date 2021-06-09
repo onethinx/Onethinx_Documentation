@@ -1,0 +1,488 @@
+.TH "getstart" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+getstart \- Getting Started 
+
+.SH "Installing the IDE"
+.PP
+This guide will show you how to setup Visual Studio Code with the Onethinx Core dependencies pack\&. 
+.SS "Windows"
+.IP "1." 4
+\fBDownload prerequisites\fP
+.IP "  \(bu" 4
+\fCDownload Visual Studio Code\fP
+.IP "  \(bu" 4
+\fCDownload the Onethinx dependencies pack for Windows\fP
+.PP
+
+.IP "2." 4
+\fBInstall VS Code & extensions\fP
+.IP "  \(bu" 4
+Install VS Code\&.
+.IP "  \(bu" 4
+Install extensions:
+.IP "    \(bu" 6
+ARM Support For Visual Studio Code (dan-c-underwood)
+.IP "    \(bu" 6
+C/C++ IntelliSense, debugging (microsoft)
+.IP "    \(bu" 6
+CMake language support (twxs)
+.IP "    \(bu" 6
+CMake Tools (microsoft)
+.IP "    \(bu" 6
+Cortex-Debug GDB support (marus25)
+.IP "    \(bu" 6
+LinkerScript support for GNU (Zixuan Wang)
+.IP "    \(bu" 6
+Open in Application (Fabio Spampinato)
+.IP "    \(bu" 6
+Output Colorizer (IBM)
+.IP "    \(bu" 6
+Tasks (actboy168)
+.PP
+
+.PP
+
+.IP "3." 4
+\fBInstall the Onethinx Dependencies Pack\fP
+.IP "  \(bu" 4
+Unzip the pack archive to your local harddisk (eg: C:\\VSCode_OnethinxPack_Windows)\&.
+.IP "  \(bu" 4
+Open your command prompt (cmd)\&.
+.IP "  \(bu" 4
+Drag and drop the file setVariables\&.bat to your command prompt (or type C:\\VSCode_OnethinxPack_Windows\\setVariables\&.bat)\&.
+.IP "  \(bu" 4
+Press enter, you'll see the environment variables and the path being set\&.
+.IP "  \(bu" 4
+Restart your machine\&.
+.PP
+
+.IP "4." 4
+\fBCheck\fP
+.IP "  \(bu" 4
+If CMake, Make and the compiler is correctly installed by typing the following into your command prompt or terminal window of VS Code\&.
+.IP "    \(bu" 6
+\fCcmake -version\fP
+.IP "    \(bu" 6
+\fCmingw32-make -v\fP
+.IP "    \(bu" 6
+\fCarm-none-eabi-gcc -v\fP
+.PP
+
+.PP
+
+.IP "5." 4
+\fBRemind\fP
+.IP "  \(bu" 4
+After changing the device configuration (or project file structure) to use
+.IP "    \(bu" 6
+Clean Reconfigure
+.IP "    \(bu" 6
+Clean Rebuild in order to build the image properly
+.PP
+
+.IP "  \(bu" 4
+To delete the contents of the build folder
+.IP "    \(bu" 6
+if you copied the project including build folder from another location / machine
+.IP "    \(bu" 6
+when build fails\&.
+.PP
+
+.IP "  \(bu" 4
+This pack contains the 64bit version of CMake\&. Replace with the 32bit version if you run on a 32bit machine\&.
+.PP
+
+.PP
+.PP
+Windows
+.PP
+ 
+.SS "MacOS"
+.IP "1." 4
+\fBDownload prerequisites\fP
+.IP "  \(bu" 4
+\fCDownload Visual Studio Code\fP
+.IP "  \(bu" 4
+\fCDownload the Onethinx dependencies pack for Mac OS\fP
+.IP "  \(bu" 4
+\fCDownload CMake\fP
+.IP "  \(bu" 4
+Install homebrew GNU by: make brew install homebrew/core/make as \fCexplained here\fP
+.PP
+
+.IP "2." 4
+\fBInstall VS Code & extensions\fP
+.IP "  \(bu" 4
+Install CMake\&.
+.IP "  \(bu" 4
+Install VS Code\&.
+.IP "  \(bu" 4
+Install extensions:
+.IP "    \(bu" 6
+ARM Support For Visual Studio Code (dan-c-underwood)
+.IP "    \(bu" 6
+C/C++ IntelliSense, debugging (microsoft)
+.IP "    \(bu" 6
+CMake language support (twxs)
+.IP "    \(bu" 6
+CMake Tools (microsoft)
+.IP "    \(bu" 6
+Cortex-Debug GDB support (marus25)
+.IP "    \(bu" 6
+LinkerScript support for GNU (Zixuan Wang)
+.IP "    \(bu" 6
+Open in Application (Fabio Spampinato)
+.IP "    \(bu" 6
+Output Colorizer (IBM)
+.IP "    \(bu" 6
+Tasks (actboy168)
+.PP
+
+.IP "  \(bu" 4
+Apply the CMake path to VS Settings: 'cmake\&.cmakePath': '/Applications/CMake\&.app/Contents/bin/cmake',
+.PP
+
+.IP "3." 4
+\fBInstall the Onethinx Dependencies Pack\fP
+.IP "  \(bu" 4
+Unzip the pack archive to your local harddisk (eg: /Applications/VSCode_OnethinxPack_macOS)\&.
+.IP "  \(bu" 4
+If the file ~\&.bash_profile doesn't exist, create it: Terminal >> cd ~ && touch \&.bash_profile
+.IP "  \(bu" 4
+Open ~\&.bash_profile: Terminal >> cd ~ && open -e \&.bash_profile
+.IP "  \(bu" 4
+Add this to the end of the file (make sure you enter the correct path) and save:
+.IP "  \(bu" 4
+# Loading environment variables for the Onethinx Pack
+.IP "  \(bu" 4
+source /locationOfYour/VSCode_OnethinxPack_macOS/variables\&.env
+.IP "  \(bu" 4
+Set the correct path in this pack's variables\&.env file\&.
+.IP "  \(bu" 4
+Restart your machine (or log-out and log-in) to reload the environment variables\&.
+.PP
+
+.IP "4." 4
+\fBCheck\fP
+.IP "  \(bu" 4
+If CMake, Make and the compiler is correctly installed by typing the following into your command prompt or terminal window of VS Code\&.
+.IP "    \(bu" 6
+\fCcmake -version\fP
+.IP "    \(bu" 6
+\fCmingw32-make -v\fP
+.IP "    \(bu" 6
+\fCarm-none-eabi-gcc -v\fP
+.PP
+
+.PP
+
+.IP "5." 4
+\fBRemind\fP
+.IP "  \(bu" 4
+After changing the device configuration (or project file structure) to use
+.IP "    \(bu" 6
+Clean Reconfigure
+.IP "    \(bu" 6
+Clean Rebuild in order to build the image properly
+.PP
+
+.IP "  \(bu" 4
+To delete the contents of the build folder
+.IP "    \(bu" 6
+if you copied the project including build folder from another location / machine
+.IP "    \(bu" 6
+when build fails\&.
+.PP
+
+.IP "  \(bu" 4
+This pack contains the 64bit version of CMake\&. Replace with the 32bit version if you run on a 32bit machine\&.
+.PP
+
+.PP
+.PP
+MacOS
+.PP
+ 
+.SS "Linux"
+.IP "1." 4
+\fBDownload prerequisites\fP
+.IP "  \(bu" 4
+\fCDownload Visual Studio Code\fP
+.IP "  \(bu" 4
+\fCDownload Onethinx Dependencies Pack\fP
+.IP "  \(bu" 4
+Install CMake: \fCsudo apt install cmake\fP
+.PP
+
+.IP "2." 4
+\fBInstall VS Code & extensions\fP
+.IP "  \(bu" 4
+Install VS Code\&.
+.IP "  \(bu" 4
+Install extensions:
+.IP "    \(bu" 6
+ARM Support For Visual Studio Code (dan-c-underwood)
+.IP "    \(bu" 6
+C/C++ IntelliSense, debugging (microsoft)
+.IP "    \(bu" 6
+CMake language support (twxs)
+.IP "    \(bu" 6
+CMake Tools (microsoft)
+.IP "    \(bu" 6
+Cortex-Debug GDB support (marus25)
+.IP "    \(bu" 6
+LinkerScript support for GNU (Zixuan Wang)
+.IP "    \(bu" 6
+Open in Application (Fabio Spampinato)
+.IP "    \(bu" 6
+Output Colorizer (IBM)
+.IP "    \(bu" 6
+Tasks (actboy168)
+.PP
+
+.IP "  \(bu" 4
+Apply the OpenOCD USB rules by running \fCyourpath\\VSCode_OnethinxPack_Linux/tools_2\&.0/linux/openocd/udev_rules/install_rules\&.sh\fP
+.PP
+
+.IP "3." 4
+Install the Onethinx Dependencies Pack
+.IP "  \(bu" 4
+Unzip the pack archive to your local harddisk (eg: /Applications/VSCode_OnethinxPack_Linux)\&.
+.IP "  \(bu" 4
+Open ~\&.profile: Terminal >> \fCcd ~ && sudo nano \&.profile\fP
+.IP "  \(bu" 4
+Add this to the end of the file (make sure you enter the correct path) and save:
+.br
+ # Loading environment variables for the Onethinx Pack
+.br
+ source /locationOfYour/VSCode_OnethinxPack_macOS/variables\&.env
+.br
+
+.IP "  \(bu" 4
+Set the correct path in this pack's variables\&.env file\&.
+.IP "  \(bu" 4
+Restart your machine (or log-out and log-in) to reload the environment variables\&.
+.PP
+
+.IP "4." 4
+Check
+.IP "  \(bu" 4
+If CMake, Make and the compiler is correctly installed by typing the following into your terminal or terminal window of VS Code\&.
+.IP "    \(bu" 6
+\fCcmake -version\fP
+.IP "    \(bu" 6
+\fCmake -v\fP
+.IP "    \(bu" 6
+\fCarm-none-eabi-gcc -v\fP
+.PP
+
+.PP
+
+.IP "5." 4
+Remind
+.IP "  \(bu" 4
+After changing the device configuration (or project file structure) to use
+.IP "    \(bu" 6
+Clean Reconfigure
+.IP "    \(bu" 6
+Clean Rebuild in order to build the image properly
+.PP
+
+.IP "  \(bu" 4
+To delete the contents of the build folder
+.IP "    \(bu" 6
+if you copied the project including build folder from another location / machine
+.IP "    \(bu" 6
+when build fails\&.
+.PP
+
+.PP
+
+.PP
+.PP
+Linux
+.PP
+.SH "Programmer/Debugger"
+.PP
+In order to program a Onethinx LoRaWAN module, you need a programmer\&. You can also find our recomendations on our \fC\fBforum\fP\fP\&.
+.PP
+:white_check_mark: MiniProg 4 < recommended
+.IP "\(bu" 2
+\fCCY8CKIT-005 - $99\&.00\fP For our dev\&.kit, use an extension header, eg\&. \fCSamtec SSQ-105-03-F-S\fP
+.PP
+.PP
+:white_check_mark: KitProg 2 (\fCfter voltage upgrade\fP!! and \fCupgrading to KitProg 3\fP)
+.IP "\(bu" 2
+\fCCY8CKIT-147 - $10\&.00\fP (needs \fCupgrade\fP!!) < budgetary recommended
+.IP "\(bu" 2
+\fCCY8CKIT-145 - $15\&.00\fP (needs \fCupgrade\fP!!)
+.IP "\(bu" 2
+\fCCY8CKIT-146 - $15\&.00\fP (needs \fCupgrade\fP!!)
+.IP "\(bu" 2
+\fCCY8CPROTO-063-BLE - $20\&.00\fP (needs \fCupgrade\fP!!)
+.PP
+.PP
+:grey_question: KitProg 3
+.IP "\(bu" 2
+\fCCY8CPROTO-062-4343W - $30\&.00\fP
+.PP
+.PP
+:white_check_mark: Segger J-Link
+.IP "\(bu" 2
+\fCJ-Link EDU - $60\&.00\fP
+.IP "\(bu" 2
+\fCJ-Link PRO - $800\&.00\fP
+.PP
+.PP
+:x: KitProg 1 Doesn’t work! (should work according to \fCthis topic\fP, however not erised)
+.IP "\(bu" 2
+\fCCY8CKIT-043 - $10\&.00\fP
+.IP "\(bu" 2
+\fCCY8CKIT-059 - $10\&.00\fP
+.PP
+.PP
+:grey_question: ST Link (after \fCconverting to J-Link?\fP)
+.IP "\(bu" 2
+\fCNUCLEO-F030R8\fP
+.PP
+.PP
+:x: MiniProg 3 (Not working)
+.IP "\(bu" 2
+\fCCY8CKIT-002\fP
+.PP
+.PP
+\fBNOTE\fP: If you find that a programmer that is not listed here either works or does not work with our module, please let us know on the \fC\fBforum\fP\fP\&.
+.PP
+.SH "Downloading the examples"
+.PP
+Onethinx examples can be found on our \fC\fBGithub\fP\fP page\&. For detailed explanation of the examples please see the \fBExamples\fP page of this document\&. 
+.PP
+.SH "Using the correct API libraries"
+.PP
+As we update our Onethinx module, newer versions of the Onethinx API and stack come out\&. Onethinx stack is programmed on the modules ARM Cortex M0+ core, while your application, which you will program on the ARM Cortex M4 core uses the Onethinx API to communicate with the stack\&. Not all stack versions support the same API version (there are versions of the stack that do support same API)\&. Although we strive to have one single API version for all future stacks, updates are inevitable\&. Examples found on our Github, are usually updated to the latest API version\&. Onethinx API can be found on our \fCGithub\fP page:
+.IP "\(bu" 2
+\fC\fBLoRaWAN API\fP\fP
+.IP "\(bu" 2
+\fC\fBLoRa API\fP\fP
+.PP
+.PP
+The API version you are using should always match the Stack version that is on the module according to this table: Onethinx API VersionsStack Version LoRaWAN API Version LoRa API Version 0xAD 0xAD not available 0xAE 0xAD not available 0xB0 0xB0 not available 0xB1 0xB1 not available 0xB2 0xB2 not available 0xB3 0xB2 not available 0xB4 0xB2 not available 0xB5 0xB2 not available 0xB6 not public not available 0xB7 not public not available 0xB8 0xB8 0xB8 0xB9 0xB8 0xB8 0xBA 0xB8 0xB8 0xBB 0xBB 0xB8 0xBC 0xBB 0xB8 0xBD not public not public 0xBE 0xBE 0xBE 0xBF 0xBE 0xBE 0xC0 not public not public 0xC1 0xC1 0xC1 If the tables in this document are not up to date, please consult the tables found in the \fCLoRaWAN API\fP and \fCLoRa API\fP pages on our Github\&.
+.PP
+\fBDont know which stack version your module has?\fP In order to find out which version of the stack your module has, you can copy and run a piece of code found here: \fBStack Version Code\fP\&. Similar code can also be found on the bottom of this \fCGithub page\fP\&.
+.PP
+\fBNOTE\fP: Once you find a stable version that suits you, you tested your device with it and you plan to go to mass production, we recommend to stick to that version when ordering modules\&. 
+.PP
+.SH "LoRaWAN Keys and Connection"
+.PP
+In order to connect to a LoRaWAN network, you need a LoRaWAN gateway and LoRaWAN keys\&. Keys are
+.PP
+If you are using The Things Network (or some other public network), you may not need a gateway to test your LoRaWAN device because there may already be coverage in your area by a gateway somebody else has placed\&. Although this saves you some money not needing to put up your own gateway, we still recommend that you get your own gateway as this will save you a lot of time during development of your product as there are many things that can influence the connection\&. It is acceptable to use public gateways for prototyping\&. The public gateway may be far and the network conditions may be poor on a certain day, limiting your development\&. Also, the person that owns the public gateway, may decide they will unplug the gateway for a day, which will disable your connection to the Network Server\&. This is why, for serious development, we recommend having your own gateway\&.
+.PP
+Onethinx LoRaWAN module supports 1\&.0\&.2 LoRaWAN specification and is LoRa Alliance Certified for this version\&. In order to connect to any LoRaWAN network, the LoRaWAN stack needs to know these 3 parameters (keys):
+.IP "\(bu" 2
+\fBDevEUI\fP is a unique ID in the IEEE EUI64 address space used to identify a device\&. There must not be 2 same DevEUIs on different devices! DevEUI is supplied by the device manufacturer, in this case, each Onethinx module has its own unique DevEUI which can be used\&.
+.IP "\(bu" 2
+\fBAppEUI\fP is a global application ID in the IEEE EUI64 address space identifying the join server during the over the air activation\&. For non-private networks it corresponds to a subdomain of joineuis\&.lora-alliance\&.org\&. This server name is used to find the IP address of the join server via DNS\&. The AppEUI can be different for each device or it can also be same for all device\&. It also depends on what kind of application server you are using\&. AppEUI identifies the join server and it can only be provided by the owner of the join server\&.
+.IP "\(bu" 2
+\fBAppKey\fP is an encryption key used for messages during every Over The Air Activation (OTAA)\&. After the activation the AppSKey is used\&. A listener knowing the AppKey can derive the AppSKey\&. So you want to keep the AppKey secret\&. Which side of the communication channel creates it, is not important\&. You simply want to be sure that it is random and unique for each device\&.
+.PP
+.PP
+In Onethinx project, the LoRaWAN keys are usually saved in LoRaWAN_keys\&.h header file\&. This header file is located in the project source folder: Project -> source -> OnethinxCore -> LoRaWAN_keys\&.h
+.PP
+In LoRaWAN_keys\&.h you will find an initalization structure, where you need to fill in the DevEUI (or use internal), AppEUI and AppKey\&. You can replace the zero (0x00) values in the structure with your keys\&.
+.PP
+You can use a different DevEUI: 
+.PP
+.nf
+LoRaWAN_keys_t TTN_OTAAkeys = {
+    \&.KeyType                        = OTAA_10x_key,
+    \&.PublicNetwork                  = true,
+    \&.OTAA_10x\&.DevEui                = {{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }},
+    \&.OTAA_10x\&.AppEui                = {{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }},
+    \&.OTAA_10x\&.AppKey                = {{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }}
+};
+
+.fi
+.PP
+.PP
+Or use the internal unique DevEUI that is provided with every module: 
+.PP
+.nf
+LoRaWAN_keys_t TTN_OTAAkeys = {
+    \&.KeyType                        = OTAA_10x_key,
+    \&.PublicNetwork                  = true,
+    \&.OTAA_10x\&.DevEui                = thisDevEUI,
+    \&.OTAA_10x\&.AppEui                = {{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }},
+    \&.OTAA_10x\&.AppKey                = {{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }}
+};
+
+.fi
+.PP
+.PP
+There are several ways to read out or to extract \fBOnethinx DevEUI\fP from a Onethinx module:
+.IP "1." 4
+\fC\fBOTX-18-Programmer\fP\fP - This program (made by Onethinx) allows you to read our a DevEUI, but also, if needed, to program a \&.hex or an \&.elf file to the module using OpenOCD\&. This program is written in C# (Visual Studio) and the code is available so you can make your own program with it\&. For example, you can ceate a factory tester that reads out the internal DevEUI and writes the AppEUI and AppKey in with OpenOCD with the help of this programs source code\&.
+.IP "2." 4
+Directly from code by using this code \fBDevEUI extraction\fP
+.PP
+.PP
+LoRaWAN Keys and Connection
+.PP
+ 
+.SH "Building and Debugging"
+.PP
+Now that you have installed Visual Studio Code, gotten a programmer/debugger, downloaded the examples (matched the API if needed), you can get started with the examples\&.
+.PP
+If you have access to a LoRaWAN gateway, we suggest to start with the 'Hello World' example\&. If you do not have access to a LoRaWAN gateway or a LoRaWAN network in you vicinity, you can get started with the Lora2LoRa example\&. In order to use LoRaWAN you need access to a LoRaWAN gateway and/or network, however in order to use LoRa, you do not need these because you can achieve LoRa communication between 2 modules (at least)\&. To get details and differences between LoRa and LoRaWAN I suggest that you go to the \fBLoRa vs LoRaWAN\fP page\&.
+.PP
+To run the example, please open VSCode\&. A wellcome page will open where you can start\&. Start by pressing 'Open Folder' (Or go to: File->Open Folder) and select the folder with the example you wish to run\&.
+.PP
+.PP
+When opening the example for the first time (or when you move the project to a different folder), you will be asked to select the compiler\&. Select the latest GCC compiler you have installed\&. In this case, it is 'GCC for arm-none-eabi 9\&.2\&.1'\&.
+.PP
+.PP
+In order to build the code, you can press the 'Build' button on the bottom, or press 'Build and Launch' to Build and Launch debugging\&.
+.PP
+.PP
+In the Debug mode, you can use the buttons on the top to:
+.IP "\(bu" 2
+Continue/Pause
+.IP "\(bu" 2
+Step Over
+.IP "\(bu" 2
+Step Into
+.IP "\(bu" 2
+Step Out
+.IP "\(bu" 2
+Restart
+.IP "\(bu" 2
+Stop Debugging Session
+.PP
+.PP
+.PP
+Building and Debugging
+.PP
+.SH "PSoC Creator"
+.PP
+In order to extract the full power of PSoC 6 dual ARM Cortex Core microcontroller, we recommend that you use PSoC Creator for the hadware set up\&. Although you can use only PSoC Creator to program PSoC chips, you are not able to use PSoC Creator on its own to program/debug/make project for Onethinx module\&. This is because PSoC Creator needs access to the M0+ core, while the M0+ core on the Onethinx module is locked\&. In order to use PSoC Creator as a 'HW desing setup', you need to use Onethinx VSCode Project with it\&. You can download \fCPSoC Creator here\fP\&.
+.PP
+.PP
+The PSoC Creator project which is used to generate the API is located in the Onethinx Visual Studio Code (VSC) project\&. When you make the hardware configuration (in Top Design) and assign pins (in Pins), only thing you need is to successfully build the project (with no errors), and an API usable by the VSC will be generated\&. After creation of the API in PSoC Creator, the only thing that is needed to be done in VSC in order for it to recognise the generated API from PSoC Creator is to do a 'Clean-Reconfigure'\&. 'Clean-Reconfigure' button is located at the bottom of the screen, next to the 'Build' button\&. No need to #include any API\&. You can start writing the code using the API straight away\&.
+.PP
+Open PSoC Creator Project by double clicking on the Onethinx_Creator\&.cyprj:
+.PP
+.PP
+You can create your hardware configuration in TopDesign\&. You can place components found on the right in 'Component Catalog', and after placing them, you can edit the component, its name and its settings by double clicking on it\&. You can connect the lines with the 'Wire' tool found on the left side of the TopDesign (marked purple)\&. (NOTE: \fBVSC Errors after changing names or component in Creator\fP)\&.
+.PP
+.PP
+Map your pins in the Pins tab\&. You can find which pins are available by checking out our \fCOnethinx Datasheet\fP\&. 
+.PP
+Use the 'Build' button located in the top tray (marked with a blue box in both images)\&. If successful, API will be generated which can be used in the VSCode project (after 'Clean-Reconfigure')\&. API Datasheet can be found by right clicking on the specific component, while the API documentation can be found by going to Help->Documentation->Peripheral Driver Library\&.
+.PP
+NOTE: When building for the PSoC Creator project for the first time, if you get promted to replace some files, click Replace\&.
+.PP
+PSoC Creator
+.PP
+ 

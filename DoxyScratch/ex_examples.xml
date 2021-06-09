@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="ex_examples" kind="page">
+    <compoundname>ex_examples</compoundname>
+    <title>Examples</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="ex_examples_1ex_helloworld">
+<title>LoRaWAN Hello World</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="ex_examples_1ex_light">
+<title>LoRaWAN Analog Sensor</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="ex_examples_1ex_lora">
+<title>LoRa to LoRa</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="ex_examples_1ex_capsense">
+<title>CapSense Example</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="ex_examples_1ex_deveui">
+<title>DevEUI and Stack Version</title>
+<para><programlisting><codeline><highlight class="normal">LoRaWAN_keys_t<sp/>SomeOTAAkeys<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.KeyType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>OTAA_10x_key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.PublicNetwork<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.DevEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.AppEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.OTAA_10x.AppKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">coreConfiguration_t<sp/>coreConfigMain<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Join.KeysPtr<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;SomeOTAAkeys,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Join.DataRate<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DR_AUTO,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Join.Power<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_MAX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.Join.MAXTries<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.TX.Confirmed<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>false,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.TX.DataRate<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DR_0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.TX.Power<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_MAX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.TX.FPort<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.System.Idle.Mode<sp/>=<sp/><sp/><sp/><sp/><sp/>M0_DeepSleep,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.System.Idle.BleEcoON<sp/>=<sp/>false,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.System.Idle.DebugON<sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.RX.Boost<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false,</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">coreStatus_t<sp/>coreStatus;</highlight></codeline>
+<codeline><highlight class="normal">coreInfo_t<sp/>coreInfo;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>main(void)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CyDelay(2000);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/*<sp/>enable<sp/>global<sp/>interrupts<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>__enable_irq();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>coreStatus<sp/>=<sp/>LoRaWAN_Init(&amp;coreConfigMain);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>coreStatus<sp/>=<sp/>LoRaWAN_GetInfo(&amp;coreInfo);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/*<sp/>&gt;&gt;&gt;<sp/>coreInfo.devEUI[]<sp/>&lt;&lt;&lt;<sp/>Internal<sp/>DevEUI<sp/>here<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/*<sp/>&gt;&gt;&gt;<sp/>coreStatus.system.version<sp/>&lt;&lt;&lt;<sp/>Stack<sp/>Version<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>CyDelay(2000);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

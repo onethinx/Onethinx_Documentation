@@ -1,0 +1,75 @@
+.TH "dateTime_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dateTime_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBvalue\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   uint32_t \fBSecond\fP: 6"
+.br
+.ti -1c
+.RI "   uint32_t \fBMinute\fP: 6"
+.br
+.ti -1c
+.RI "   uint32_t \fBHour\fP: 5"
+.br
+.RI "Hour in 24h mode\&. "
+.ti -1c
+.RI "   uint32_t \fBDayOfMonth\fP: 5"
+.br
+.RI "First day of month = 0\&. "
+.ti -1c
+.RI "   uint32_t \fBMonth\fP: 4"
+.br
+.RI "First month = 0\&. "
+.ti -1c
+.RI "   uint32_t \fBYear\fP: 6"
+.br
+.RI "Year 2000 = 0\&. "
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "uint32_t DayOfMonth"
+
+.PP
+First day of month = 0\&. 
+.SS "uint32_t Hour"
+
+.PP
+Hour in 24h mode\&. 
+.SS "uint32_t Minute"
+
+.SS "uint32_t Month"
+
+.PP
+First month = 0\&. 
+.SS "uint32_t Second"
+
+.SS "uint32_t value"
+
+.SS "uint32_t Year"
+
+.PP
+Year 2000 = 0\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

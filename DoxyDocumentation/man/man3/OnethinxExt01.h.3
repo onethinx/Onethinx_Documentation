@@ -1,0 +1,549 @@
+.TH "C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" 3 "Fri Jan 29 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBLoRaModulationParams_t\fP"
+.br
+.ti -1c
+.RI "struct \fBLoRaPacketParams_t\fP"
+.br
+.ti -1c
+.RI "struct \fBFSKModulationParams_t\fP"
+.br
+.ti -1c
+.RI "struct \fBFSKPacketParams_t\fP"
+.br
+.ti -1c
+.RI "struct \fBRadioParams_t\fP"
+.br
+.ti -1c
+.RI "union \fBchipStatus_t\fP"
+.br
+.RI "Represents the possible device error states\&. "
+.ti -1c
+.RI "union \fBIRQstatus_t\fP"
+.br
+.RI "Represents the possible IRQ states\&. "
+.ti -1c
+.RI "union \fBdeviceErrors_t\fP"
+.br
+.RI "Represents the possible device error states\&. "
+.ti -1c
+.RI "union \fBLoRaPacketStatus_t\fP"
+.br
+.RI "Represents the packet status for every packet type\&. "
+.ti -1c
+.RI "struct \fBLoRaStats_t\fP"
+.br
+.RI "Represents the LoRa Packet statistics\&. "
+.ti -1c
+.RI "struct \fBRadioStatus_t\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBcoreFunctionsExt_e\fP { \fBcoreFunction_L_RX\fP = 0x80, \fBcoreFunction_L_TX\fP = 0x81, \fBcoreFunction_Debug\fP = 0xA3, \fBcoreFunction_Unlock\fP = 0xA4 }"
+.br
+.ti -1c
+.RI "enum \fBRadioPacketTypes_e\fP { \fBPACKET_TYPE_GFSK\fP = 0x00, \fBPACKET_TYPE_LORA\fP = 0x01, \fBPACKET_TYPE_NONE\fP = 0x0F }"
+.br
+.RI "Represents the possible packet type (i\&.e\&. modem) used\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaSpreadingFactors_e\fP { \fBLORA_SF5\fP = 0x05, \fBLORA_SF6\fP = 0x06, \fBLORA_SF7\fP = 0x07, \fBLORA_SF8\fP = 0x08, \fBLORA_SF9\fP = 0x09, \fBLORA_SF10\fP = 0x0A, \fBLORA_SF11\fP = 0x0B, \fBLORA_SF12\fP = 0x0C }"
+.br
+.RI "Represents the possible spreading factor values in LoRa packet types\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaBandwidths_e\fP { \fBLORA_BW_500\fP = 6, \fBLORA_BW_250\fP = 5, \fBLORA_BW_125\fP = 4, \fBLORA_BW_062\fP = 3, \fBLORA_BW_041\fP = 10, \fBLORA_BW_031\fP = 2, \fBLORA_BW_020\fP = 9, \fBLORA_BW_015\fP = 1, \fBLORA_BW_010\fP = 8, \fBLORA_BW_007\fP = 0 }"
+.br
+.RI "Represents the bandwidth values for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaCodingRates_e\fP { \fBLORA_CR_4_5\fP = 0x01, \fBLORA_CR_4_6\fP = 0x02, \fBLORA_CR_4_7\fP = 0x03, \fBLORA_CR_4_8\fP = 0x04 }"
+.br
+.RI "Represents the coding rate values for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoraLowDataRateOptimize_e\fP { \fBLORA_LOWDATARATEOPTIMIZE_OFF\fP = 0x00, \fBLORA_LOWDATARATEOPTIMIZE_ON\fP = 0x01 }"
+.br
+.ti -1c
+.RI "enum \fBRadioLoRaHeaderType_e\fP { \fBLORA_PACKET_VARIABLE_LENGTH\fP = 0x00, \fBLORA_PACKET_FIXED_LENGTH\fP = 0x01, \fBLORA_PACKET_EXPLICIT\fP = LORA_PACKET_VARIABLE_LENGTH, \fBLORA_PACKET_IMPLICIT\fP = LORA_PACKET_FIXED_LENGTH }"
+.br
+.RI "Holds the Radio lengths mode for the LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaCrcMode_e\fP { \fBLORA_CRC_ON\fP = 0x01, \fBLORA_CRC_OFF\fP = 0x00 }"
+.br
+.RI "Represents the CRC mode for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBRadioLoRaIQMode_e\fP { \fBLORA_IQ_NORMAL\fP = 0x00, \fBLORA_IQ_INVERTED\fP = 0x01 }"
+.br
+.RI "Represents the IQ mode for LoRa packet type\&. "
+.ti -1c
+.RI "enum \fBLoRaSyncWord_e\fP { \fBLORA_MAC_PRIVATE_SYNCWORD\fP = 0x1424, \fBLORA_MAC_PUBLIC_SYNCWORD\fP = 0x3444 }"
+.br
+.ti -1c
+.RI "enum \fBRadioFSKModShapings_e\fP { \fBMOD_SHAPING_OFF\fP = 0x00, \fBMOD_SHAPING_G_BT_03\fP = 0x08, \fBMOD_SHAPING_G_BT_05\fP = 0x09, \fBMOD_SHAPING_G_BT_07\fP = 0x0A, \fBMOD_SHAPING_G_BT_1\fP = 0x0B }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKRxBandwidth_e\fP { \fBRX_BW_4800\fP = 0x1F, \fBRX_BW_5800\fP = 0x17, \fBRX_BW_7300\fP = 0x0F, \fBRX_BW_9700\fP = 0x1E, \fBRX_BW_11700\fP = 0x16, \fBRX_BW_14600\fP = 0x0E, \fBRX_BW_19500\fP = 0x1D, \fBRX_BW_23400\fP = 0x15, \fBRX_BW_29300\fP = 0x0D, \fBRX_BW_39000\fP = 0x1C, \fBRX_BW_46900\fP = 0x14, \fBRX_BW_58600\fP = 0x0C, \fBRX_BW_78200\fP = 0x1B, \fBRX_BW_93800\fP = 0x13, \fBRX_BW_117300\fP = 0x0B, \fBRX_BW_156200\fP = 0x1A, \fBRX_BW_187200\fP = 0x12, \fBRX_BW_234300\fP = 0x0A, \fBRX_BW_312000\fP = 0x19, \fBRX_BW_373600\fP = 0x11, \fBRX_BW_467000\fP = 0x09 }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKRBitrate_e\fP { \fBBITRATE_25K\fP = 40960, \fBBITRATE_50K\fP = 20480, \fBBITRATE_100K\fP = 10240, \fBINTERNAL_BR_MAX\fP = 0xFFFFFF }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKRDeviation_e\fP { \fBFDEV_SSB_25K\fP = 26214, \fBFDEV_DSB_50K\fP = 26214, \fBFDEV_SSB_30K\fP = 31457, \fBFDEV_DSB_60K\fP = 31457, \fBFDEV_SSB_50K\fP = 52429, \fBFDEV_DSB_100K\fP = 52429, \fBINTERNAL_DEV_MAX\fP = 0xFFFFFF }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKPreambleDetection_e\fP { \fBRADIO_PREAMBLE_DETECTOR_OFF\fP = 0x00, \fBRADIO_PREAMBLE_DETECTOR_08_BITS\fP = 0x04, \fBRADIO_PREAMBLE_DETECTOR_16_BITS\fP = 0x05, \fBRADIO_PREAMBLE_DETECTOR_24_BITS\fP = 0x06, \fBRADIO_PREAMBLE_DETECTOR_32_BITS\fP = 0x07 }"
+.br
+.RI "Represents the preamble length used to detect the packet on Rx side\&. "
+.ti -1c
+.RI "enum \fBRadioFSKAddressComp_e\fP { \fBRADIO_ADDRESSCOMP_FILT_OFF\fP = 0x00, \fBRADIO_ADDRESSCOMP_FILT_NODE\fP = 0x01, \fBRADIO_ADDRESSCOMP_FILT_NODE_BROAD\fP = 0x02 }"
+.br
+.RI "Represents the possible combinations of SyncWord correlators activated\&. "
+.ti -1c
+.RI "enum \fBRadioFSKPacketLengthModes_e\fP { \fBRADIO_PACKET_FIXED_LENGTH\fP = 0x00, \fBRADIO_PACKET_VARIABLE_LENGTH\fP = 0x01 }"
+.br
+.RI "Radio GFSK packet length mode\&. "
+.ti -1c
+.RI "enum \fBRadioFSKWhiteningSeed_e\fP { \fBRADIO_WHITENINGSEED\fP = 0x01FF }"
+.br
+.RI "Radio whitening initial seed value\&. "
+.ti -1c
+.RI "enum \fBRadioFSKDcFree_e\fP { \fBRADIO_DC_FREE_OFF\fP = 0x00, \fBRADIO_DC_FREEWHITENING\fP = 0x01 }"
+.br
+.RI "Radio whitening mode activated or deactivated\&. "
+.ti -1c
+.RI "enum \fBRadioFSKCrcTypes_e\fP { \fBRADIO_CRC_OFF\fP = 0x01, \fBRADIO_CRC_1_BYTES\fP = 0x00, \fBRADIO_CRC_2_BYTES\fP = 0x02, \fBRADIO_CRC_1_BYTES_INV\fP = 0x04, \fBRADIO_CRC_2_BYTES_INV\fP = 0x06, \fBRADIO_CRC_2_BYTES_IBM\fP = RADIO_CRC_2_BYTES, \fBRADIO_CRC_2_BYTES_CCIT\fP = RADIO_CRC_2_BYTES_INV }"
+.br
+.RI "Represents the CRC length\&. "
+.ti -1c
+.RI "enum \fBRadioFSKCrcSeed_e\fP { \fBRADIO_CRC_IBM_SEED\fP = 0xFFFF, \fBRADIO_CRC_CCITT_SEED\fP = 0x1D0F }"
+.br
+.RI "LFSR initial value to compute the FSK CRC\&. "
+.ti -1c
+.RI "enum \fBRadioFSKCrcPolynomial_e\fP { \fBRADIO_CRC_POLYNOMIAL_IBM\fP = 0x8005, \fBRADIO_CRC_POLYNOMIAL_CCITT\fP = 0x1021 }"
+.br
+.RI "Polynomial used to compute the FSK CRC\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRa_RX\fP (\fBRadioParams_t\fP *RadioParams, \fBRadioStatus_t\fP *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRa_TX\fP (\fBRadioParams_t\fP *RadioParams, \fBRadioStatus_t\fP *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "void \fBLoRaWAN_Debug\fP (bool debugLedsOn, uint32_t *coreStatePNT)"
+.br
+.ti -1c
+.RI "void \fBLoRaWAN_Unlock\fP ()"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBcoreFunctionsExt_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIcoreFunction_L_RX \fP\fP
+.TP
+\fB\fIcoreFunction_L_TX \fP\fP
+.TP
+\fB\fIcoreFunction_Debug \fP\fP
+.TP
+\fB\fIcoreFunction_Unlock \fP\fP
+.SS "enum \fBLoRaSyncWord_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_MAC_PRIVATE_SYNCWORD \fP\fP
+.TP
+\fB\fILORA_MAC_PUBLIC_SYNCWORD \fP\fP
+.SS "enum \fBRadioFSKAddressComp_e\fP"
+
+.PP
+Represents the possible combinations of SyncWord correlators activated\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_ADDRESSCOMP_FILT_OFF \fP\fP
+No correlator turned on, i\&.e\&. do not search for SyncWord\&. 
+.TP
+\fB\fIRADIO_ADDRESSCOMP_FILT_NODE \fP\fP
+.TP
+\fB\fIRADIO_ADDRESSCOMP_FILT_NODE_BROAD \fP\fP
+.SS "enum \fBRadioFSKCrcPolynomial_e\fP"
+
+.PP
+Polynomial used to compute the FSK CRC\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_CRC_POLYNOMIAL_IBM \fP\fP
+Polynomial to compute IBM type CRC\&. 
+.TP
+\fB\fIRADIO_CRC_POLYNOMIAL_CCITT \fP\fP
+Polynomial value to compute CCIT type CRC\&. 
+.SS "enum \fBRadioFSKCrcSeed_e\fP"
+
+.PP
+LFSR initial value to compute the FSK CRC\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_CRC_IBM_SEED \fP\fP
+FSR initial value to compute IBM type CRC\&. 
+.TP
+\fB\fIRADIO_CRC_CCITT_SEED \fP\fP
+FSR initial value to compute CCIT type CRC\&. 
+.SS "enum \fBRadioFSKCrcTypes_e\fP"
+
+.PP
+Represents the CRC length\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_CRC_OFF \fP\fP
+No CRC in use\&. 
+.TP
+\fB\fIRADIO_CRC_1_BYTES \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES \fP\fP
+.TP
+\fB\fIRADIO_CRC_1_BYTES_INV \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES_INV \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES_IBM \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES_CCIT \fP\fP
+.SS "enum \fBRadioFSKDcFree_e\fP"
+
+.PP
+Radio whitening mode activated or deactivated\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_DC_FREE_OFF \fP\fP
+.TP
+\fB\fIRADIO_DC_FREEWHITENING \fP\fP
+.SS "enum \fBRadioFSKModShapings_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIMOD_SHAPING_OFF \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_03 \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_05 \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_07 \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_1 \fP\fP
+.SS "enum \fBRadioFSKPacketLengthModes_e\fP"
+
+.PP
+Radio GFSK packet length mode\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_PACKET_FIXED_LENGTH \fP\fP
+The packet is known on both sides, no header included in the packet\&. 
+.TP
+\fB\fIRADIO_PACKET_VARIABLE_LENGTH \fP\fP
+The packet is on variable size, header included\&. 
+.SS "enum \fBRadioFSKPreambleDetection_e\fP"
+
+.PP
+Represents the preamble length used to detect the packet on Rx side\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_OFF \fP\fP
+Preamble detection length off\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_08_BITS \fP\fP
+Preamble detection length 8 bits\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_16_BITS \fP\fP
+Preamble detection length 16 bits\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_24_BITS \fP\fP
+Preamble detection length 24 bits\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_32_BITS \fP\fP
+Preamble detection length 32 bit\&. 
+.SS "enum \fBRadioFSKRBitrate_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBITRATE_25K \fP\fP
+.TP
+\fB\fIBITRATE_50K \fP\fP
+.TP
+\fB\fIBITRATE_100K \fP\fP
+.TP
+\fB\fIINTERNAL_BR_MAX \fP\fP
+.SS "enum \fBRadioFSKRDeviation_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFDEV_SSB_25K \fP\fP
+.TP
+\fB\fIFDEV_DSB_50K \fP\fP
+.TP
+\fB\fIFDEV_SSB_30K \fP\fP
+.TP
+\fB\fIFDEV_DSB_60K \fP\fP
+.TP
+\fB\fIFDEV_SSB_50K \fP\fP
+.TP
+\fB\fIFDEV_DSB_100K \fP\fP
+.TP
+\fB\fIINTERNAL_DEV_MAX \fP\fP
+.SS "enum \fBRadioFSKRxBandwidth_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRX_BW_4800 \fP\fP
+.TP
+\fB\fIRX_BW_5800 \fP\fP
+.TP
+\fB\fIRX_BW_7300 \fP\fP
+.TP
+\fB\fIRX_BW_9700 \fP\fP
+.TP
+\fB\fIRX_BW_11700 \fP\fP
+.TP
+\fB\fIRX_BW_14600 \fP\fP
+.TP
+\fB\fIRX_BW_19500 \fP\fP
+.TP
+\fB\fIRX_BW_23400 \fP\fP
+.TP
+\fB\fIRX_BW_29300 \fP\fP
+.TP
+\fB\fIRX_BW_39000 \fP\fP
+.TP
+\fB\fIRX_BW_46900 \fP\fP
+.TP
+\fB\fIRX_BW_58600 \fP\fP
+.TP
+\fB\fIRX_BW_78200 \fP\fP
+.TP
+\fB\fIRX_BW_93800 \fP\fP
+.TP
+\fB\fIRX_BW_117300 \fP\fP
+.TP
+\fB\fIRX_BW_156200 \fP\fP
+.TP
+\fB\fIRX_BW_187200 \fP\fP
+.TP
+\fB\fIRX_BW_234300 \fP\fP
+.TP
+\fB\fIRX_BW_312000 \fP\fP
+.TP
+\fB\fIRX_BW_373600 \fP\fP
+.TP
+\fB\fIRX_BW_467000 \fP\fP
+.SS "enum \fBRadioFSKWhiteningSeed_e\fP"
+
+.PP
+Radio whitening initial seed value\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_WHITENINGSEED \fP\fP
+.SS "enum \fBRadioLoRaBandwidths_e\fP"
+
+.PP
+Represents the bandwidth values for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_BW_500 \fP\fP
+.TP
+\fB\fILORA_BW_250 \fP\fP
+.TP
+\fB\fILORA_BW_125 \fP\fP
+.TP
+\fB\fILORA_BW_062 \fP\fP
+.TP
+\fB\fILORA_BW_041 \fP\fP
+.TP
+\fB\fILORA_BW_031 \fP\fP
+.TP
+\fB\fILORA_BW_020 \fP\fP
+.TP
+\fB\fILORA_BW_015 \fP\fP
+.TP
+\fB\fILORA_BW_010 \fP\fP
+.TP
+\fB\fILORA_BW_007 \fP\fP
+.SS "enum \fBRadioLoRaCodingRates_e\fP"
+
+.PP
+Represents the coding rate values for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_CR_4_5 \fP\fP
+.TP
+\fB\fILORA_CR_4_6 \fP\fP
+.TP
+\fB\fILORA_CR_4_7 \fP\fP
+.TP
+\fB\fILORA_CR_4_8 \fP\fP
+.SS "enum \fBRadioLoRaCrcMode_e\fP"
+
+.PP
+Represents the CRC mode for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_CRC_ON \fP\fP
+CRC activated\&. 
+.TP
+\fB\fILORA_CRC_OFF \fP\fP
+CRC not used\&. 
+.SS "enum \fBRadioLoRaHeaderType_e\fP"
+
+.PP
+Holds the Radio lengths mode for the LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_PACKET_VARIABLE_LENGTH \fP\fP
+The packet is on variable size, header included\&. 
+.TP
+\fB\fILORA_PACKET_FIXED_LENGTH \fP\fP
+The packet is known on both sides, no header included in the packet\&. 
+.TP
+\fB\fILORA_PACKET_EXPLICIT \fP\fP
+.TP
+\fB\fILORA_PACKET_IMPLICIT \fP\fP
+.SS "enum \fBRadioLoRaIQMode_e\fP"
+
+.PP
+Represents the IQ mode for LoRa packet type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_IQ_NORMAL \fP\fP
+.TP
+\fB\fILORA_IQ_INVERTED \fP\fP
+.SS "enum \fBRadioLoraLowDataRateOptimize_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_LOWDATARATEOPTIMIZE_OFF \fP\fP
+.TP
+\fB\fILORA_LOWDATARATEOPTIMIZE_ON \fP\fP
+.SS "enum \fBRadioLoRaSpreadingFactors_e\fP"
+
+.PP
+Represents the possible spreading factor values in LoRa packet types\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fILORA_SF5 \fP\fP
+.TP
+\fB\fILORA_SF6 \fP\fP
+.TP
+\fB\fILORA_SF7 \fP\fP
+.TP
+\fB\fILORA_SF8 \fP\fP
+.TP
+\fB\fILORA_SF9 \fP\fP
+.TP
+\fB\fILORA_SF10 \fP\fP
+.TP
+\fB\fILORA_SF11 \fP\fP
+.TP
+\fB\fILORA_SF12 \fP\fP
+.SS "enum \fBRadioPacketTypes_e\fP"
+
+.PP
+Represents the possible packet type (i\&.e\&. modem) used\&. 
+.PP
+ 
+.SH "Public Radio Settings"
+.PP
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPACKET_TYPE_GFSK \fP\fP
+.TP
+\fB\fIPACKET_TYPE_LORA \fP\fP
+.TP
+\fB\fIPACKET_TYPE_NONE \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "\fBcoreStatus_t\fP LoRa_RX (\fBRadioParams_t\fP * RadioParams, \fBRadioStatus_t\fP * RadioStatus, uint8_t * payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+
+.SS "\fBcoreStatus_t\fP LoRa_TX (\fBRadioParams_t\fP * RadioParams, \fBRadioStatus_t\fP * RadioStatus, uint8_t * payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+
+.SS "void LoRaWAN_Debug (bool debugLedsOn, uint32_t * coreStatePNT)"
+
+.SS "void LoRaWAN_Unlock ()"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

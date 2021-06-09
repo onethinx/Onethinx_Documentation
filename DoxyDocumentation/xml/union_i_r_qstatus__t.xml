@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="union_i_r_qstatus__t" kind="union" language="C++" prot="public">
+    <compoundname>IRQstatus_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1ab9f8b6cc437a49de5fa39ca0d3bc3a59" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="346" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1aeaf7fc2eb33ae137ac5cf58176781929" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_TX_DONE</definition>
+        <argsstring></argsstring>
+        <name>IRQ_TX_DONE</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received <ref refid="struct_t_x" kindref="compound">TX</ref> DONE IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="349" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1ab11c23b695935db7a0b768f08f212907" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_RX_DONE</definition>
+        <argsstring></argsstring>
+        <name>IRQ_RX_DONE</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received RX DONE IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="350" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a0810af42300d17184f81c51c3957c19f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_PREAMBLE_DETECTED</definition>
+        <argsstring></argsstring>
+        <name>IRQ_PREAMBLE_DETECTED</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received PREAMBLE DETECTED IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="351" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a3b47a91820a2843082dc7afb4be2f60b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_SYNCWORD_VALID</definition>
+        <argsstring></argsstring>
+        <name>IRQ_SYNCWORD_VALID</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received SYNCWORD VALID IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="352" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a884ae7ca92c1285b15a4f265b4db2174" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_HEADER_VALID</definition>
+        <argsstring></argsstring>
+        <name>IRQ_HEADER_VALID</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received HEADER VALID IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="353" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a2f4ee3ff946a57a76877ca4863c61525" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_HEADER_ERROR</definition>
+        <argsstring></argsstring>
+        <name>IRQ_HEADER_ERROR</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received HEADER ERROR IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="354" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1aa70a49d3743fb51ee384277f01532801" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_CRC_ERROR</definition>
+        <argsstring></argsstring>
+        <name>IRQ_CRC_ERROR</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received CRC ERROR IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="355" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1aad4ccaef80e0f4652800d5d16f1ad2fb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_CAD_DONE</definition>
+        <argsstring></argsstring>
+        <name>IRQ_CAD_DONE</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received CAD DONE IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="356" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a026e0c7958dc4b9e58f64d7e4da960de" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_CAD_ACTIVITY_DETECTED</definition>
+        <argsstring></argsstring>
+        <name>IRQ_CAD_ACTIVITY_DETECTED</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received CAD ACTIVITY DETECTED IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="357" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a8eb4ddbf935df0a91fffc3fd449de14d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IRQ_RX_TX_TIMEOUT</definition>
+        <argsstring></argsstring>
+        <name>IRQ_RX_TX_TIMEOUT</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Radio received RX <ref refid="struct_t_x" kindref="compound">TX</ref> TIMEOUT IRQ. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="358" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+<para>Reserved. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="359" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_i_r_qstatus__t_1adf6d227f3962cd05f96eae91a6742cbe" prot="public" static="no" mutable="no">
+        <type>struct IRQstatus_t::@28</type>
+        <definition>struct IRQstatus_t::@28 @29</definition>
+        <argsstring></argsstring>
+        <name>@29</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="360" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the possible IRQ states. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="344" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="345" bodyend="361"/>
+    <listofallmembers>
+      <member refid="union_i_r_qstatus__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>__pad0__</name></member>
+      <member refid="union_i_r_qstatus__t_1a026e0c7958dc4b9e58f64d7e4da960de" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_CAD_ACTIVITY_DETECTED</name></member>
+      <member refid="union_i_r_qstatus__t_1aad4ccaef80e0f4652800d5d16f1ad2fb" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_CAD_DONE</name></member>
+      <member refid="union_i_r_qstatus__t_1aa70a49d3743fb51ee384277f01532801" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_CRC_ERROR</name></member>
+      <member refid="union_i_r_qstatus__t_1a2f4ee3ff946a57a76877ca4863c61525" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_HEADER_ERROR</name></member>
+      <member refid="union_i_r_qstatus__t_1a884ae7ca92c1285b15a4f265b4db2174" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_HEADER_VALID</name></member>
+      <member refid="union_i_r_qstatus__t_1a0810af42300d17184f81c51c3957c19f" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_PREAMBLE_DETECTED</name></member>
+      <member refid="union_i_r_qstatus__t_1ab11c23b695935db7a0b768f08f212907" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_RX_DONE</name></member>
+      <member refid="union_i_r_qstatus__t_1a8eb4ddbf935df0a91fffc3fd449de14d" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_RX_TX_TIMEOUT</name></member>
+      <member refid="union_i_r_qstatus__t_1a3b47a91820a2843082dc7afb4be2f60b" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_SYNCWORD_VALID</name></member>
+      <member refid="union_i_r_qstatus__t_1aeaf7fc2eb33ae137ac5cf58176781929" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>IRQ_TX_DONE</name></member>
+      <member refid="union_i_r_qstatus__t_1ab9f8b6cc437a49de5fa39ca0d3bc3a59" prot="public" virt="non-virtual"><scope>IRQstatus_t</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

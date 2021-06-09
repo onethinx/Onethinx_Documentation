@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unionchip_status__t" kind="union" language="C++" prot="public">
+    <compoundname>chipStatus_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionchip_status__t_1a88f4d00bdab99ae6f48c7ae0bc468bb4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="470" column="13" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionchip_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Reserved. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="473" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionchip_status__t_1a97330d84fe1b4aac1e1d7bae7ca5b9b5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CmdStatus</definition>
+        <argsstring></argsstring>
+        <name>CmdStatus</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+<para>Command status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="474" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionchip_status__t_1ad5dfaf88b2f7c2079cb1b503e4b9a788" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ChipMode</definition>
+        <argsstring></argsstring>
+        <name>ChipMode</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+<para>Chip mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="475" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionchip_status__t_1aeea2beb0ba2cbab2e2d2bf5cdde24908" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CpuBusy</definition>
+        <argsstring></argsstring>
+        <name>CpuBusy</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Flag for CPU radio busy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="476" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionchip_status__t_1af7c317bc2d22800112f7f94abea32b2e" prot="public" static="no" mutable="no">
+        <type>struct chipStatus_t::@31</type>
+        <definition>struct chipStatus_t::@31 @32</definition>
+        <argsstring></argsstring>
+        <name>@32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="477" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the possible device error states. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="468" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="469" bodyend="478"/>
+    <listofallmembers>
+      <member refid="unionchip_status__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>chipStatus_t</scope><name>__pad0__</name></member>
+      <member refid="unionchip_status__t_1ad5dfaf88b2f7c2079cb1b503e4b9a788" prot="public" virt="non-virtual"><scope>chipStatus_t</scope><name>ChipMode</name></member>
+      <member refid="unionchip_status__t_1a97330d84fe1b4aac1e1d7bae7ca5b9b5" prot="public" virt="non-virtual"><scope>chipStatus_t</scope><name>CmdStatus</name></member>
+      <member refid="unionchip_status__t_1aeea2beb0ba2cbab2e2d2bf5cdde24908" prot="public" virt="non-virtual"><scope>chipStatus_t</scope><name>CpuBusy</name></member>
+      <member refid="unionchip_status__t_1a88f4d00bdab99ae6f48c7ae0bc468bb4" prot="public" virt="non-virtual"><scope>chipStatus_t</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

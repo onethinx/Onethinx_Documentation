@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structcore_info__t" kind="struct" language="C++" prot="public">
+    <compoundname>coreInfo_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore_info__t_1af9f0e4f9b5ddf23f616951a8754c1a3f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildYear</definition>
+        <argsstring></argsstring>
+        <name>buildYear</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+<para>core firmware Year of build </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="532" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1abca41036d96522c254e7a86353d281cc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildMonth</definition>
+        <argsstring></argsstring>
+        <name>buildMonth</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+<para>core firmware Month of build </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="533" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a7f148176f225dcc218752e29e0560578" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildDayOfMonth</definition>
+        <argsstring></argsstring>
+        <name>buildDayOfMonth</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+<para>core firmware Day of build </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="534" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a36a08ebc99ad71b6d8dd82ae3486be07" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildHour</definition>
+        <argsstring></argsstring>
+        <name>buildHour</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+<para>core firmware Hour of build (24h mode) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="535" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a79d6d54a3e45e0f162a76c972c6d4a0b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildMinute</definition>
+        <argsstring></argsstring>
+        <name>buildMinute</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+<para>core firmware Minute of build </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="536" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a132bf874d95bbc6280d4f07f7530fe72" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildSecond</definition>
+        <argsstring></argsstring>
+        <name>buildSecond</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+<para>core firmware Second of build </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="537" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a25ffa84a6c7672babd5a320609cead9e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buildNumber</definition>
+        <argsstring></argsstring>
+        <name>buildNumber</name>
+        <briefdescription>
+<para>core firmware incremental build number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="538" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a8cb88b75e59fb8e7ff55040fb8d4200a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t devEUI[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>devEUI</name>
+        <briefdescription>
+<para>core devEUI </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="539" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a9891bec429ca3cc5e5c3759f7a0f119c" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char buildType</definition>
+        <argsstring></argsstring>
+        <name>buildType</name>
+        <briefdescription>
+<para>core firmware build type </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="540" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="540" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a051ab41b5ea3d02e4d6776d2406f0501" prot="public" static="no" mutable="no">
+        <type><ref refid="group__lorawan__enums_1ga288bc59a2996be3d2d0507c911c110eb" kindref="member">stackRegion_e</ref></type>
+        <definition>stackRegion_e stackRegion</definition>
+        <argsstring></argsstring>
+        <name>stackRegion</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+<para>core firmware stack region </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="541" column="15" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1af27507ca39067e4fc18d135822a4dbac" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char stackOption</definition>
+        <argsstring></argsstring>
+        <name>stackOption</name>
+        <briefdescription>
+<para>core firmware stack option: &apos;S&apos;ecure, &apos;P&apos;SA, &apos;C&apos;onfigurable </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="542" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a9d7e84964cd69d6a0ccf46fed4d5bcf8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char stackStage</definition>
+        <argsstring></argsstring>
+        <name>stackStage</name>
+        <briefdescription>
+<para>core firmware lifecycle stage: &apos;a&apos; pre-alpha, &apos;A&apos; Alpha, &apos;b&apos; perpetual beta, &apos;B&apos; Beta, &apos;r&apos; release candidate, &apos;R&apos; Release </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="543" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore_info__t_1a16d64cea0bb5390abd433f501be21a6b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char codeName[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>codeName</name>
+        <briefdescription>
+<para>core firmware code name </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="544" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="530" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="531" bodyend="545"/>
+    <listofallmembers>
+      <member refid="structcore_info__t_1a7f148176f225dcc218752e29e0560578" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildDayOfMonth</name></member>
+      <member refid="structcore_info__t_1a36a08ebc99ad71b6d8dd82ae3486be07" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildHour</name></member>
+      <member refid="structcore_info__t_1a79d6d54a3e45e0f162a76c972c6d4a0b" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildMinute</name></member>
+      <member refid="structcore_info__t_1abca41036d96522c254e7a86353d281cc" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildMonth</name></member>
+      <member refid="structcore_info__t_1a25ffa84a6c7672babd5a320609cead9e" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildNumber</name></member>
+      <member refid="structcore_info__t_1a132bf874d95bbc6280d4f07f7530fe72" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildSecond</name></member>
+      <member refid="structcore_info__t_1a9891bec429ca3cc5e5c3759f7a0f119c" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildType</name></member>
+      <member refid="structcore_info__t_1af9f0e4f9b5ddf23f616951a8754c1a3f" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>buildYear</name></member>
+      <member refid="structcore_info__t_1a16d64cea0bb5390abd433f501be21a6b" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>codeName</name></member>
+      <member refid="structcore_info__t_1a8cb88b75e59fb8e7ff55040fb8d4200a" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>devEUI</name></member>
+      <member refid="structcore_info__t_1af27507ca39067e4fc18d135822a4dbac" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>stackOption</name></member>
+      <member refid="structcore_info__t_1a051ab41b5ea3d02e4d6776d2406f0501" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>stackRegion</name></member>
+      <member refid="structcore_info__t_1a9d7e84964cd69d6a0ccf46fed4d5bcf8" prot="public" virt="non-virtual"><scope>coreInfo_t</scope><name>stackStage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,49 @@
+\hypertarget{ex_examples_ex_helloworld}{}\doxysection{Lo\+Ra\+WAN Hello World}\label{ex_examples_ex_helloworld}
+TODO \hypertarget{ex_examples_ex_light}{}\doxysection{Lo\+Ra\+WAN Analog Sensor}\label{ex_examples_ex_light}
+TODO \hypertarget{ex_examples_ex_lora}{}\doxysection{Lo\+Ra to Lo\+Ra}\label{ex_examples_ex_lora}
+TODO \hypertarget{ex_examples_ex_capsense}{}\doxysection{Cap\+Sense Example}\label{ex_examples_ex_capsense}
+TODO \hypertarget{ex_examples_ex_deveui}{}\doxysection{Dev\+EUI and Stack Version}\label{ex_examples_ex_deveui}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LoRaWAN\_keys\_t SomeOTAAkeys = \{}
+\DoxyCodeLine{    .KeyType                    = OTAA\_10x\_key,}
+\DoxyCodeLine{    .PublicNetwork                  = true,}
+\DoxyCodeLine{    .OTAA\_10x.DevEui                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\},}
+\DoxyCodeLine{    .OTAA\_10x.AppEui                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\},}
+\DoxyCodeLine{    .OTAA\_10x.AppKey                = \{\{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 \}\}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{coreConfiguration\_t coreConfigMain = \{}
+\DoxyCodeLine{    .Join.KeysPtr =         \&SomeOTAAkeys,}
+\DoxyCodeLine{    .Join.DataRate =        DR\_AUTO,}
+\DoxyCodeLine{    .Join.Power =           PWR\_MAX,}
+\DoxyCodeLine{    .Join.MAXTries =        100,}
+\DoxyCodeLine{    .TX.Confirmed =         false,}
+\DoxyCodeLine{    .TX.DataRate =          DR\_0,}
+\DoxyCodeLine{    .TX.Power =             PWR\_MAX,}
+\DoxyCodeLine{    .TX.FPort =             1,}
+\DoxyCodeLine{    .System.Idle.Mode =     M0\_DeepSleep,}
+\DoxyCodeLine{    .System.Idle.BleEcoON = false,}
+\DoxyCodeLine{    .System.Idle.DebugON  = true,}
+\DoxyCodeLine{    .RX.Boost             = false,}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{coreStatus\_t coreStatus;}
+\DoxyCodeLine{coreInfo\_t coreInfo;}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main(void)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    CyDelay(2000);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    /* enable global interrupts */}
+\DoxyCodeLine{    \_\_enable\_irq();}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    coreStatus = LoRaWAN\_Init(\&coreConfigMain);}
+\DoxyCodeLine{    coreStatus = LoRaWAN\_GetInfo(\&coreInfo);}
+\DoxyCodeLine{    /* >>> coreInfo.devEUI[] <<< Internal DevEUI here */}
+\DoxyCodeLine{    /* >>> coreStatus.system.version <<< Stack Version */}
+\DoxyCodeLine{    CyDelay(2000);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 

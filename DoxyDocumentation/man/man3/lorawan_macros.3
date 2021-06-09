@@ -1,0 +1,73 @@
+.TH "lorawan_macros" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lorawan_macros \- Macros
+.PP
+ \- Onethinx LoRaWAN API Macros\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBwakeUpPinHigh\fP(pullDown)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = true, \&.internalPullUpDown =  pullDown})"
+.br
+.RI "Used in \fBsleepConfig_t\fP\&. "
+.ti -1c
+.RI "#define \fBwakeUpPinLow\fP(pullUp)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = false, \&.internalPullUpDown =  pullUp})"
+.br
+.RI "Used in \fBsleepConfig_t\fP\&. "
+.ti -1c
+.RI "#define \fBwakeUpPinOff\fP   ((\fBwakeUpPin_t\fP) { \&.enabled = false })"
+.br
+.RI "Used in \fBsleepConfig_t\fP\&. "
+.ti -1c
+.RI "#define \fBwakeUpTimestamp\fP(_dateTime)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isDateTime = true, \&.dateTime = _dateTime })"
+.br
+.RI "Used in \fBsleepConfig_t\fP\&. "
+.ti -1c
+.RI "#define \fBwakeUpDelay\fP(_days,  _hours,  _minutes,  _seconds)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isDateTime = false, \&.days = _days, \&.hours = _hours, \&.minutes = _minutes, \&.seconds = _seconds })"
+.br
+.RI "Used in \fBsleepConfig_t\fP\&. "
+.ti -1c
+.RI "#define \fBwakeUpTimeOff\fP   ((\fBwakeUpTime_t\fP) { \&.enabled = false })"
+.br
+.RI "Used in \fBsleepConfig_t\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Onethinx LoRaWAN API Macros\&. 
+
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define wakeUpDelay(_days, _hours, _minutes, _seconds)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isDateTime = false, \&.days = _days, \&.hours = _hours, \&.minutes = _minutes, \&.seconds = _seconds })"
+
+.PP
+Used in \fBsleepConfig_t\fP\&. 
+.SS "#define wakeUpPinHigh(pullDown)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = true, \&.internalPullUpDown =  pullDown})"
+
+.PP
+Used in \fBsleepConfig_t\fP\&. 
+.SS "#define wakeUpPinLow(pullUp)   ((\fBwakeUpPin_t\fP) { \&.enabled = true, \&.risingEdge = false, \&.internalPullUpDown =  pullUp})"
+
+.PP
+Used in \fBsleepConfig_t\fP\&. 
+.SS "#define wakeUpPinOff   ((\fBwakeUpPin_t\fP) { \&.enabled = false })"
+
+.PP
+Used in \fBsleepConfig_t\fP\&. 
+.SS "#define wakeUpTimeOff   ((\fBwakeUpTime_t\fP) { \&.enabled = false })"
+
+.PP
+Used in \fBsleepConfig_t\fP\&. 
+.SS "#define wakeUpTimestamp(_dateTime)   ((\fBwakeUpTime_t\fP) { \&.enabled = true, \&.isDateTime = true, \&.dateTime = _dateTime })"
+
+.PP
+Used in \fBsleepConfig_t\fP\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

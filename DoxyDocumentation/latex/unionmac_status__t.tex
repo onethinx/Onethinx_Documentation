@@ -1,0 +1,198 @@
+\hypertarget{unionmac_status__t}{}\doxysection{mac\+Status\+\_\+t Union Reference}
+\label{unionmac_status__t}\index{macStatus\_t@{macStatus\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{group__lorawan__enums_gaabb9d4b1e41b33a28ad84076f7776013}{macErrors\_e}} \mbox{\hyperlink{unionmac_status__t_a236adb083f822153f46d25c870562cff}{errorStatus}}: 8\\
+\>\>{\em MAC Errors. }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_ad30b29159bf1a264a8075970afd72010}{bytesToRead}}: 8\\
+\>\>{\em Total bytes in Receive buffer. }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 1\\
+\>\>{\em reserved }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a00c5de6ee9627149efbe7d21a60bd4ac}{MACcmdReceived}}: 1\\
+\>\>{\em The MAC received a MAC command (implemented since Stack version 0x000000BC) }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a3cb3248c1af514c037c7ce283949f883}{confDown}}: 1\\
+\>\>{\em Is a confirmed downlink received? (implemented since Stack version 0x000000B5) }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a2e813ffcb6defeae2490eb1cf6c0418a}{isConfigured}}: 1\\
+\>\>{\em The MAC is configured? }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a109a5b4a978e1cfc92ebc8094456f8a7}{messageReceived}}: 1\\
+\>\>{\em The MAC received a message. }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a206513b47da6c346ebda7a5f06cce87e}{isJoined}}: 1\\
+\>\>{\em Is Device Joined? }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a099f725f22a344e190121634f53328d8}{isBusy}}: 1\\
+\>\>{\em Is the MAC busy? }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a90ae81c58017da5ecf4ca6c7fb0e9c51}{isPublicNetwork}}: 1\\
+\>\>{\em True for LoRaWAN Public Network. }\\
+\>uint32\_t \mbox{\hyperlink{unionmac_status__t_ac51020cf74fc68b40d713ebcc11942ca}{devAddr}}\\
+\>\>{\em The Device address received when joining the network. }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_afeaf136987efbe05e2eea813c00d13d8}{Margin}}\\
+\>\>{\em The Demodulation Margin (in dB above the demodulation floor) for last LinkCheckReq command (implemented since Stack version 0x000000BC) }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_ae85a7bfb65c731f336057c9604640a98}{GwCnt}}\\
+\>\>{\em The number of gateways that successfully received the last LinkCheckReq command (implemented since Stack version 0x000000BC) }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_a2973de9ac0ab5e876b80362bc4c6a88b}{fPort}}\\
+\>\>{\em The port number of the last received packet (implemented since Stack version 0x000000BC) }\\
+\}; \\
+
+\end{tabbing}\item 
+uint8\+\_\+t \mbox{\hyperlink{unionmac_status__t_a92a6167e64e6a8206286aa6423a17140}{reserved}} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{unionmac_status__t_a26df07b6d5a76098a45817bc0067cdbc}\label{unionmac_status__t_a26df07b6d5a76098a45817bc0067cdbc}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \} }
+
+\mbox{\Hypertarget{unionmac_status__t_a8b4eebe79ded0459acec2f4950102ba3}\label{unionmac_status__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{macStatus\_t@{macStatus\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+reserved 
+
+\mbox{\Hypertarget{unionmac_status__t_ad30b29159bf1a264a8075970afd72010}\label{unionmac_status__t_ad30b29159bf1a264a8075970afd72010}} 
+\index{macStatus\_t@{macStatus\_t}!bytesToRead@{bytesToRead}}
+\index{bytesToRead@{bytesToRead}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{bytesToRead}{bytesToRead}}
+{\footnotesize\ttfamily uint8\+\_\+t bytes\+To\+Read}
+
+
+
+Total bytes in Receive buffer. 
+
+\mbox{\Hypertarget{unionmac_status__t_a3cb3248c1af514c037c7ce283949f883}\label{unionmac_status__t_a3cb3248c1af514c037c7ce283949f883}} 
+\index{macStatus\_t@{macStatus\_t}!confDown@{confDown}}
+\index{confDown@{confDown}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{confDown}{confDown}}
+{\footnotesize\ttfamily bool conf\+Down}
+
+
+
+Is a confirmed downlink received? (implemented since Stack version 0x000000\+B5) 
+
+\mbox{\Hypertarget{unionmac_status__t_ac51020cf74fc68b40d713ebcc11942ca}\label{unionmac_status__t_ac51020cf74fc68b40d713ebcc11942ca}} 
+\index{macStatus\_t@{macStatus\_t}!devAddr@{devAddr}}
+\index{devAddr@{devAddr}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{devAddr}{devAddr}}
+{\footnotesize\ttfamily uint32\+\_\+t dev\+Addr}
+
+
+
+The Device address received when joining the network. 
+
+\mbox{\Hypertarget{unionmac_status__t_a236adb083f822153f46d25c870562cff}\label{unionmac_status__t_a236adb083f822153f46d25c870562cff}} 
+\index{macStatus\_t@{macStatus\_t}!errorStatus@{errorStatus}}
+\index{errorStatus@{errorStatus}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{errorStatus}{errorStatus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_gaabb9d4b1e41b33a28ad84076f7776013}{mac\+Errors\+\_\+e}} error\+Status}
+
+
+
+MAC Errors. 
+
+\mbox{\Hypertarget{unionmac_status__t_a2973de9ac0ab5e876b80362bc4c6a88b}\label{unionmac_status__t_a2973de9ac0ab5e876b80362bc4c6a88b}} 
+\index{macStatus\_t@{macStatus\_t}!fPort@{fPort}}
+\index{fPort@{fPort}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{fPort}{fPort}}
+{\footnotesize\ttfamily uint8\+\_\+t f\+Port}
+
+
+
+The port number of the last received packet (implemented since Stack version 0x000000\+BC) 
+
+\mbox{\Hypertarget{unionmac_status__t_ae85a7bfb65c731f336057c9604640a98}\label{unionmac_status__t_ae85a7bfb65c731f336057c9604640a98}} 
+\index{macStatus\_t@{macStatus\_t}!GwCnt@{GwCnt}}
+\index{GwCnt@{GwCnt}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{GwCnt}{GwCnt}}
+{\footnotesize\ttfamily uint8\+\_\+t Gw\+Cnt}
+
+
+
+The number of gateways that successfully received the last Link\+Check\+Req command (implemented since Stack version 0x000000\+BC) 
+
+\mbox{\Hypertarget{unionmac_status__t_a099f725f22a344e190121634f53328d8}\label{unionmac_status__t_a099f725f22a344e190121634f53328d8}} 
+\index{macStatus\_t@{macStatus\_t}!isBusy@{isBusy}}
+\index{isBusy@{isBusy}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isBusy}{isBusy}}
+{\footnotesize\ttfamily bool is\+Busy}
+
+
+
+Is the MAC busy? 
+
+\mbox{\Hypertarget{unionmac_status__t_a2e813ffcb6defeae2490eb1cf6c0418a}\label{unionmac_status__t_a2e813ffcb6defeae2490eb1cf6c0418a}} 
+\index{macStatus\_t@{macStatus\_t}!isConfigured@{isConfigured}}
+\index{isConfigured@{isConfigured}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isConfigured}{isConfigured}}
+{\footnotesize\ttfamily bool is\+Configured}
+
+
+
+The MAC is configured? 
+
+\mbox{\Hypertarget{unionmac_status__t_a206513b47da6c346ebda7a5f06cce87e}\label{unionmac_status__t_a206513b47da6c346ebda7a5f06cce87e}} 
+\index{macStatus\_t@{macStatus\_t}!isJoined@{isJoined}}
+\index{isJoined@{isJoined}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isJoined}{isJoined}}
+{\footnotesize\ttfamily bool is\+Joined}
+
+
+
+Is Device Joined? 
+
+\mbox{\Hypertarget{unionmac_status__t_a90ae81c58017da5ecf4ca6c7fb0e9c51}\label{unionmac_status__t_a90ae81c58017da5ecf4ca6c7fb0e9c51}} 
+\index{macStatus\_t@{macStatus\_t}!isPublicNetwork@{isPublicNetwork}}
+\index{isPublicNetwork@{isPublicNetwork}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isPublicNetwork}{isPublicNetwork}}
+{\footnotesize\ttfamily bool is\+Public\+Network}
+
+
+
+True for Lo\+Ra\+WAN Public Network. 
+
+\mbox{\Hypertarget{unionmac_status__t_a00c5de6ee9627149efbe7d21a60bd4ac}\label{unionmac_status__t_a00c5de6ee9627149efbe7d21a60bd4ac}} 
+\index{macStatus\_t@{macStatus\_t}!MACcmdReceived@{MACcmdReceived}}
+\index{MACcmdReceived@{MACcmdReceived}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{MACcmdReceived}{MACcmdReceived}}
+{\footnotesize\ttfamily bool MACcmd\+Received}
+
+
+
+The MAC received a MAC command (implemented since Stack version 0x000000\+BC) 
+
+\mbox{\Hypertarget{unionmac_status__t_afeaf136987efbe05e2eea813c00d13d8}\label{unionmac_status__t_afeaf136987efbe05e2eea813c00d13d8}} 
+\index{macStatus\_t@{macStatus\_t}!Margin@{Margin}}
+\index{Margin@{Margin}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{Margin}{Margin}}
+{\footnotesize\ttfamily uint8\+\_\+t Margin}
+
+
+
+The Demodulation Margin (in dB above the demodulation floor) for last Link\+Check\+Req command (implemented since Stack version 0x000000\+BC) 
+
+\mbox{\Hypertarget{unionmac_status__t_a109a5b4a978e1cfc92ebc8094456f8a7}\label{unionmac_status__t_a109a5b4a978e1cfc92ebc8094456f8a7}} 
+\index{macStatus\_t@{macStatus\_t}!messageReceived@{messageReceived}}
+\index{messageReceived@{messageReceived}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{messageReceived}{messageReceived}}
+{\footnotesize\ttfamily bool message\+Received}
+
+
+
+The MAC received a message. 
+
+\mbox{\Hypertarget{unionmac_status__t_a92a6167e64e6a8206286aa6423a17140}\label{unionmac_status__t_a92a6167e64e6a8206286aa6423a17140}} 
+\index{macStatus\_t@{macStatus\_t}!reserved@{reserved}}
+\index{reserved@{reserved}!macStatus\_t@{macStatus\_t}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t reserved\mbox{[}16\mbox{]}}
+

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="uniondevice_errors__t" kind="union" language="C++" prot="public">
+    <compoundname>deviceErrors_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="uniondevice_errors__t_1ab9f8b6cc437a49de5fa39ca0d3bc3a59" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="368" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1a6bf494d1a2ef7bede84d9b5226b765e7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Rc64kCalib</definition>
+        <argsstring></argsstring>
+        <name>Rc64kCalib</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>RC 64kHz oscillator calibration failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="371" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1af41516430c25791f68e7df021b63d9c3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Rc13mCalib</definition>
+        <argsstring></argsstring>
+        <name>Rc13mCalib</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>RC 13MHz oscillator calibration failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="372" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1a1e67f90c7c2f4d04926529baa71da294" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t PllCalib</definition>
+        <argsstring></argsstring>
+        <name>PllCalib</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>PLL calibration failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="373" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1a73bc00ede3cbdb95745e821a1dad6100" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AdcCalib</definition>
+        <argsstring></argsstring>
+        <name>AdcCalib</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>ADC calibration failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="374" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1ad02aaa6bbb19fc7884679f2bf2e879d3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ImgCalib</definition>
+        <argsstring></argsstring>
+        <name>ImgCalib</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Image calibration failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="375" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1af4fafcff7b2ba8410b6da169b66d5db2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t XoscStart</definition>
+        <argsstring></argsstring>
+        <name>XoscStart</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>XOSC oscillator failed to start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="376" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1ab4282c2e04a5628b19a4f615874266d4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t PllLock</definition>
+        <argsstring></argsstring>
+        <name>PllLock</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>PLL lock failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="377" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1a680615266a0361762516ae79dd6dbf0d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t BuckStart</definition>
+        <argsstring></argsstring>
+        <name>BuckStart</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Buck converter failed to start. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="378" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1aaf0835dc7d38501af780cf315f15d116" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t PaRamp</definition>
+        <argsstring></argsstring>
+        <name>PaRamp</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>PA ramp failed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="379" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+<para>Reserved. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="380" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniondevice_errors__t_1a678d0e47d72e9fe828da006c229c576e" prot="public" static="no" mutable="no">
+        <type>struct deviceErrors_t::@30</type>
+        <definition>struct deviceErrors_t::@30 @31</definition>
+        <argsstring></argsstring>
+        <name>@31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="381" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the possible device error states. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="366" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="367" bodyend="382"/>
+    <listofallmembers>
+      <member refid="uniondevice_errors__t_1a8b4eebe79ded0459acec2f4950102ba3" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>__pad0__</name></member>
+      <member refid="uniondevice_errors__t_1a73bc00ede3cbdb95745e821a1dad6100" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>AdcCalib</name></member>
+      <member refid="uniondevice_errors__t_1a680615266a0361762516ae79dd6dbf0d" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>BuckStart</name></member>
+      <member refid="uniondevice_errors__t_1ad02aaa6bbb19fc7884679f2bf2e879d3" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>ImgCalib</name></member>
+      <member refid="uniondevice_errors__t_1aaf0835dc7d38501af780cf315f15d116" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>PaRamp</name></member>
+      <member refid="uniondevice_errors__t_1a1e67f90c7c2f4d04926529baa71da294" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>PllCalib</name></member>
+      <member refid="uniondevice_errors__t_1ab4282c2e04a5628b19a4f615874266d4" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>PllLock</name></member>
+      <member refid="uniondevice_errors__t_1af41516430c25791f68e7df021b63d9c3" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>Rc13mCalib</name></member>
+      <member refid="uniondevice_errors__t_1a6bf494d1a2ef7bede84d9b5226b765e7" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>Rc64kCalib</name></member>
+      <member refid="uniondevice_errors__t_1ab9f8b6cc437a49de5fa39ca0d3bc3a59" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>Value</name></member>
+      <member refid="uniondevice_errors__t_1af4fafcff7b2ba8410b6da169b66d5db2" prot="public" virt="non-virtual"><scope>deviceErrors_t</scope><name>XoscStart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

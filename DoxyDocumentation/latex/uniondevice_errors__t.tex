@@ -1,0 +1,158 @@
+\hypertarget{uniondevice_errors__t}{}\doxysection{device\+Errors\+\_\+t Union Reference}
+\label{uniondevice_errors__t}\index{deviceErrors\_t@{deviceErrors\_t}}
+
+
+Represents the possible device error states.  
+
+
+
+
+{\ttfamily \#include $<$Onethinx\+Ext01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{uniondevice_errors__t_ab9f8b6cc437a49de5fa39ca0d3bc3a59}{Value}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_a6bf494d1a2ef7bede84d9b5226b765e7}{Rc64kCalib}}: 1\\
+\>\>{\em RC 64kHz oscillator calibration failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_af41516430c25791f68e7df021b63d9c3}{Rc13mCalib}}: 1\\
+\>\>{\em RC 13MHz oscillator calibration failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_a1e67f90c7c2f4d04926529baa71da294}{PllCalib}}: 1\\
+\>\>{\em PLL calibration failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_a73bc00ede3cbdb95745e821a1dad6100}{AdcCalib}}: 1\\
+\>\>{\em ADC calibration failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_ad02aaa6bbb19fc7884679f2bf2e879d3}{ImgCalib}}: 1\\
+\>\>{\em Image calibration failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_af4fafcff7b2ba8410b6da169b66d5db2}{XoscStart}}: 1\\
+\>\>{\em XOSC oscillator failed to start. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_ab4282c2e04a5628b19a4f615874266d4}{PllLock}}: 1\\
+\>\>{\em PLL lock failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_a680615266a0361762516ae79dd6dbf0d}{BuckStart}}: 1\\
+\>\>{\em Buck converter failed to start. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_aaf0835dc7d38501af780cf315f15d116}{PaRamp}}: 1\\
+\>\>{\em PA ramp failed. }\\
+\>uint8\_t \mbox{\hyperlink{uniondevice_errors__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 7\\
+\>\>{\em Reserved. }\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the possible device error states. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{uniondevice_errors__t_a9344798c4530493ab46db68956507f12}\label{uniondevice_errors__t_a9344798c4530493ab46db68956507f12}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \} }
+
+\mbox{\Hypertarget{uniondevice_errors__t_a8b4eebe79ded0459acec2f4950102ba3}\label{uniondevice_errors__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+Reserved. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_a73bc00ede3cbdb95745e821a1dad6100}\label{uniondevice_errors__t_a73bc00ede3cbdb95745e821a1dad6100}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!AdcCalib@{AdcCalib}}
+\index{AdcCalib@{AdcCalib}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{AdcCalib}{AdcCalib}}
+{\footnotesize\ttfamily uint8\+\_\+t Adc\+Calib}
+
+
+
+ADC calibration failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_a680615266a0361762516ae79dd6dbf0d}\label{uniondevice_errors__t_a680615266a0361762516ae79dd6dbf0d}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!BuckStart@{BuckStart}}
+\index{BuckStart@{BuckStart}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{BuckStart}{BuckStart}}
+{\footnotesize\ttfamily uint8\+\_\+t Buck\+Start}
+
+
+
+Buck converter failed to start. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_ad02aaa6bbb19fc7884679f2bf2e879d3}\label{uniondevice_errors__t_ad02aaa6bbb19fc7884679f2bf2e879d3}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!ImgCalib@{ImgCalib}}
+\index{ImgCalib@{ImgCalib}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{ImgCalib}{ImgCalib}}
+{\footnotesize\ttfamily uint8\+\_\+t Img\+Calib}
+
+
+
+Image calibration failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_aaf0835dc7d38501af780cf315f15d116}\label{uniondevice_errors__t_aaf0835dc7d38501af780cf315f15d116}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!PaRamp@{PaRamp}}
+\index{PaRamp@{PaRamp}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{PaRamp}{PaRamp}}
+{\footnotesize\ttfamily uint8\+\_\+t Pa\+Ramp}
+
+
+
+PA ramp failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_a1e67f90c7c2f4d04926529baa71da294}\label{uniondevice_errors__t_a1e67f90c7c2f4d04926529baa71da294}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!PllCalib@{PllCalib}}
+\index{PllCalib@{PllCalib}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{PllCalib}{PllCalib}}
+{\footnotesize\ttfamily uint8\+\_\+t Pll\+Calib}
+
+
+
+PLL calibration failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_ab4282c2e04a5628b19a4f615874266d4}\label{uniondevice_errors__t_ab4282c2e04a5628b19a4f615874266d4}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!PllLock@{PllLock}}
+\index{PllLock@{PllLock}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{PllLock}{PllLock}}
+{\footnotesize\ttfamily uint8\+\_\+t Pll\+Lock}
+
+
+
+PLL lock failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_af41516430c25791f68e7df021b63d9c3}\label{uniondevice_errors__t_af41516430c25791f68e7df021b63d9c3}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!Rc13mCalib@{Rc13mCalib}}
+\index{Rc13mCalib@{Rc13mCalib}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{Rc13mCalib}{Rc13mCalib}}
+{\footnotesize\ttfamily uint8\+\_\+t Rc13m\+Calib}
+
+
+
+RC 13MHz oscillator calibration failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_a6bf494d1a2ef7bede84d9b5226b765e7}\label{uniondevice_errors__t_a6bf494d1a2ef7bede84d9b5226b765e7}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!Rc64kCalib@{Rc64kCalib}}
+\index{Rc64kCalib@{Rc64kCalib}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{Rc64kCalib}{Rc64kCalib}}
+{\footnotesize\ttfamily uint8\+\_\+t Rc64k\+Calib}
+
+
+
+RC 64k\+Hz oscillator calibration failed. 
+
+\mbox{\Hypertarget{uniondevice_errors__t_ab9f8b6cc437a49de5fa39ca0d3bc3a59}\label{uniondevice_errors__t_ab9f8b6cc437a49de5fa39ca0d3bc3a59}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!Value@{Value}}
+\index{Value@{Value}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily uint16\+\_\+t Value}
+
+\mbox{\Hypertarget{uniondevice_errors__t_af4fafcff7b2ba8410b6da169b66d5db2}\label{uniondevice_errors__t_af4fafcff7b2ba8410b6da169b66d5db2}} 
+\index{deviceErrors\_t@{deviceErrors\_t}!XoscStart@{XoscStart}}
+\index{XoscStart@{XoscStart}!deviceErrors\_t@{deviceErrors\_t}}
+\doxysubsubsection{\texorpdfstring{XoscStart}{XoscStart}}
+{\footnotesize\ttfamily uint8\+\_\+t Xosc\+Start}
+
+
+
+XOSC oscillator failed to start. 
+

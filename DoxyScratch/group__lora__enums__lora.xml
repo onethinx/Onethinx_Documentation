@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__enums__lora" kind="group">
+    <compoundname>lora_enums_lora</compoundname>
+    <title>LoRa</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lora__enums__lora_1gaf5e2e1e9f1dbf849ff021caf3f6e2eab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioLoRaSpreadingFactors_e</name>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba94fa32c51693607d6f7ce2b8c5d7c76f" prot="public">
+          <name>LORA_SF5</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba3460e11edb4af3d15e2fb7d3823d1114" prot="public">
+          <name>LORA_SF6</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba252967b1109a2820337ae52698bd38bd" prot="public">
+          <name>LORA_SF7</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba70d0b72617d730a266e1fa69d2bb77d6" prot="public">
+          <name>LORA_SF8</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eabaa5e8e668ce8c14a85c99f04fd9c9c2b4" prot="public">
+          <name>LORA_SF9</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba4fa2cb57b3c09a7ba48fae7fa764cfc8" prot="public">
+          <name>LORA_SF10</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba6a8704a080ddc948acd2f78038ac3c90" prot="public">
+          <name>LORA_SF11</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggaf5e2e1e9f1dbf849ff021caf3f6e2eaba5b2451cb3fae097662e1f72b2562c517" prot="public">
+          <name>LORA_SF12</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the possible spreading factor values in LoRa packet types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="140" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="141" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__lora_1gafd556eb66388736375143794a99d18ff" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioLoRaCodingRates_e</name>
+        <enumvalue id="group__lora__enums__lora_1ggafd556eb66388736375143794a99d18ffa916cb1c30262177cf11791adf3c6c976" prot="public">
+          <name>LORA_CR_4_5</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggafd556eb66388736375143794a99d18ffa3d26c19984df0202c58dbab57042fd76" prot="public">
+          <name>LORA_CR_4_6</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggafd556eb66388736375143794a99d18ffa900fdaffc679facfc7551607c7f9e1d2" prot="public">
+          <name>LORA_CR_4_7</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggafd556eb66388736375143794a99d18ffaca861f0c081d4b2e0fd1ae609ce593a8" prot="public">
+          <name>LORA_CR_4_8</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the coding rate values for LoRa packet type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="155" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="156" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__lora_1gae65853c42a7967e938cb959ffb2b6af7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioLoraLowDataRateOptimize_e</name>
+        <enumvalue id="group__lora__enums__lora_1ggae65853c42a7967e938cb959ffb2b6af7a76432af1c2107c7ac65519a660087d86" prot="public">
+          <name>LORA_LOWDATARATEOPTIMIZE_OFF</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggae65853c42a7967e938cb959ffb2b6af7a98375d2e24de4b08ed04f53b5dac390b" prot="public">
+          <name>LORA_LOWDATARATEOPTIMIZE_ON</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="163" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__lora_1ga17b12bbe1bb4560f4332736c46a8d54e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioLoRaHeaderType_e</name>
+        <enumvalue id="group__lora__enums__lora_1gga17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92" prot="public">
+          <name>LORA_PACKET_VARIABLE_LENGTH</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>The packet is on variable size, header included. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1gga17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb" prot="public">
+          <name>LORA_PACKET_FIXED_LENGTH</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>The packet is known on both sides, no header included in the packet. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1gga17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca" prot="public">
+          <name>LORA_PACKET_EXPLICIT</name>
+          <initializer>= LORA_PACKET_VARIABLE_LENGTH</initializer>
+          <briefdescription>
+<para>The packet is on variable size, header included. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1gga17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a" prot="public">
+          <name>LORA_PACKET_IMPLICIT</name>
+          <initializer>= LORA_PACKET_FIXED_LENGTH</initializer>
+          <briefdescription>
+<para>The packet is on variable size, header included. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Holds the Radio lengths mode for the LoRa packet type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="172" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__lora_1gae5f60a2d6228652cbfa3383464f2b81c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioLoRaCrcMode_e</name>
+        <enumvalue id="group__lora__enums__lora_1ggae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba" prot="public">
+          <name>LORA_CRC_ON</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>CRC activated. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599" prot="public">
+          <name>LORA_CRC_OFF</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>CRC not used. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the CRC mode for LoRa packet type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="183" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__lora_1gac6eb2960ab8586432bcc1694d4d11184" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioLoRaIQMode_e</name>
+        <enumvalue id="group__lora__enums__lora_1ggac6eb2960ab8586432bcc1694d4d11184a6b5adfb3c66ba8a3c8f9bc9d5c8bce1f" prot="public">
+          <name>LORA_IQ_NORMAL</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1ggac6eb2960ab8586432bcc1694d4d11184a273f00ac155214f0be6de3f015078311" prot="public">
+          <name>LORA_IQ_INVERTED</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the IQ mode for LoRa packet type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="192" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__lora_1ga5609de14c7dc3e15a3943130acee8498" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LoRaSyncWord_e</name>
+        <enumvalue id="group__lora__enums__lora_1gga5609de14c7dc3e15a3943130acee8498a29afb28571c1e2357084636600cb4a87" prot="public">
+          <name>LORA_MAC_PRIVATE_SYNCWORD</name>
+          <initializer>= 0x1424</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__lora_1gga5609de14c7dc3e15a3943130acee8498a37014be1aca9682d5b87b1285f266560" prot="public">
+          <name>LORA_MAC_PUBLIC_SYNCWORD</name>
+          <initializer>= 0x3444</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="198" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="198" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+\hypertarget{group__lora__enums__lora}{}\doxysection{Lo\+Ra}
+\label{group__lora__enums__lora}\index{LoRa@{LoRa}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__lora__enums__lora_gaf5e2e1e9f1dbf849ff021caf3f6e2eab}\label{group__lora__enums__lora_gaf5e2e1e9f1dbf849ff021caf3f6e2eab}} 
+enum \mbox{\hyperlink{group__lora__enums__lora_gaf5e2e1e9f1dbf849ff021caf3f6e2eab}{Radio\+Lo\+Ra\+Spreading\+Factors\+\_\+e}} \{ \newline
+{\bfseries LORA\+\_\+\+SF5} = 0x05
+, {\bfseries LORA\+\_\+\+SF6} = 0x06
+, {\bfseries LORA\+\_\+\+SF7} = 0x07
+, {\bfseries LORA\+\_\+\+SF8} = 0x08
+, \newline
+{\bfseries LORA\+\_\+\+SF9} = 0x09
+, {\bfseries LORA\+\_\+\+SF10} = 0x0A
+, {\bfseries LORA\+\_\+\+SF11} = 0x0B
+, {\bfseries LORA\+\_\+\+SF12} = 0x0C
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the possible spreading factor values in Lo\+Ra packet types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__lora__enums__lora_gafd556eb66388736375143794a99d18ff}\label{group__lora__enums__lora_gafd556eb66388736375143794a99d18ff}} 
+enum \mbox{\hyperlink{group__lora__enums__lora_gafd556eb66388736375143794a99d18ff}{Radio\+Lo\+Ra\+Coding\+Rates\+\_\+e}} \{ {\bfseries LORA\+\_\+\+CR\+\_\+4\+\_\+5} = 0x01
+, {\bfseries LORA\+\_\+\+CR\+\_\+4\+\_\+6} = 0x02
+, {\bfseries LORA\+\_\+\+CR\+\_\+4\+\_\+7} = 0x03
+, {\bfseries LORA\+\_\+\+CR\+\_\+4\+\_\+8} = 0x04
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the coding rate values for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__lora__enums__lora_gae65853c42a7967e938cb959ffb2b6af7}\label{group__lora__enums__lora_gae65853c42a7967e938cb959ffb2b6af7}} 
+enum {\bfseries Radio\+Lora\+Low\+Data\+Rate\+Optimize\+\_\+e} \{ {\bfseries LORA\+\_\+\+LOWDATARATEOPTIMIZE\+\_\+\+OFF} = 0x00
+, {\bfseries LORA\+\_\+\+LOWDATARATEOPTIMIZE\+\_\+\+ON} = 0x01
+ \}
+\item 
+enum \mbox{\hyperlink{group__lora__enums__lora_ga17b12bbe1bb4560f4332736c46a8d54e}{Radio\+Lo\+Ra\+Header\+Type\+\_\+e}} \{ \mbox{\hyperlink{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92}{LORA\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH}} = 0x00
+, \mbox{\hyperlink{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb}{LORA\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH}} = 0x01
+, \mbox{\hyperlink{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca}{LORA\+\_\+\+PACKET\+\_\+\+EXPLICIT}} = LORA\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH
+, \mbox{\hyperlink{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a}{LORA\+\_\+\+PACKET\+\_\+\+IMPLICIT}} = LORA\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH
+ \}
+\begin{DoxyCompactList}\small\item\em Holds the Radio lengths mode for the Lo\+Ra packet type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lora__enums__lora_gae5f60a2d6228652cbfa3383464f2b81c}{Radio\+Lo\+Ra\+Crc\+Mode\+\_\+e}} \{ \mbox{\hyperlink{group__lora__enums__lora_ggae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba}{LORA\+\_\+\+CRC\+\_\+\+ON}} = 0x01
+, \mbox{\hyperlink{group__lora__enums__lora_ggae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599}{LORA\+\_\+\+CRC\+\_\+\+OFF}} = 0x00
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the CRC mode for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__lora__enums__lora_gac6eb2960ab8586432bcc1694d4d11184}\label{group__lora__enums__lora_gac6eb2960ab8586432bcc1694d4d11184}} 
+enum \mbox{\hyperlink{group__lora__enums__lora_gac6eb2960ab8586432bcc1694d4d11184}{Radio\+Lo\+Ra\+IQMode\+\_\+e}} \{ {\bfseries LORA\+\_\+\+IQ\+\_\+\+NORMAL} = 0x00
+, {\bfseries LORA\+\_\+\+IQ\+\_\+\+INVERTED} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the IQ mode for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__lora__enums__lora_ga5609de14c7dc3e15a3943130acee8498}\label{group__lora__enums__lora_ga5609de14c7dc3e15a3943130acee8498}} 
+enum {\bfseries Lo\+Ra\+Sync\+Word\+\_\+e} \{ {\bfseries LORA\+\_\+\+MAC\+\_\+\+PRIVATE\+\_\+\+SYNCWORD} = 0x1424
+, {\bfseries LORA\+\_\+\+MAC\+\_\+\+PUBLIC\+\_\+\+SYNCWORD} = 0x3444
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__lora__enums__lora_gae5f60a2d6228652cbfa3383464f2b81c}\label{group__lora__enums__lora_gae5f60a2d6228652cbfa3383464f2b81c}} 
+\index{LoRa@{LoRa}!RadioLoRaCrcMode\_e@{RadioLoRaCrcMode\_e}}
+\index{RadioLoRaCrcMode\_e@{RadioLoRaCrcMode\_e}!LoRa@{LoRa}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaCrcMode\_e}{RadioLoRaCrcMode\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lora__enums__lora_gae5f60a2d6228652cbfa3383464f2b81c}{Radio\+Lo\+Ra\+Crc\+Mode\+\_\+e}}}
+
+
+
+Represents the CRC mode for Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CRC\_ON@{LORA\_CRC\_ON}!LoRa@{LoRa}}\index{LoRa@{LoRa}!LORA\_CRC\_ON@{LORA\_CRC\_ON}}}\mbox{\Hypertarget{group__lora__enums__lora_ggae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba}\label{group__lora__enums__lora_ggae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba}} 
+LORA\+\_\+\+CRC\+\_\+\+ON&CRC activated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CRC\_OFF@{LORA\_CRC\_OFF}!LoRa@{LoRa}}\index{LoRa@{LoRa}!LORA\_CRC\_OFF@{LORA\_CRC\_OFF}}}\mbox{\Hypertarget{group__lora__enums__lora_ggae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599}\label{group__lora__enums__lora_ggae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599}} 
+LORA\+\_\+\+CRC\+\_\+\+OFF&CRC not used. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lora__enums__lora_ga17b12bbe1bb4560f4332736c46a8d54e}\label{group__lora__enums__lora_ga17b12bbe1bb4560f4332736c46a8d54e}} 
+\index{LoRa@{LoRa}!RadioLoRaHeaderType\_e@{RadioLoRaHeaderType\_e}}
+\index{RadioLoRaHeaderType\_e@{RadioLoRaHeaderType\_e}!LoRa@{LoRa}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaHeaderType\_e}{RadioLoRaHeaderType\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lora__enums__lora_ga17b12bbe1bb4560f4332736c46a8d54e}{Radio\+Lo\+Ra\+Header\+Type\+\_\+e}}}
+
+
+
+Holds the Radio lengths mode for the Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_VARIABLE\_LENGTH@{LORA\_PACKET\_VARIABLE\_LENGTH}!LoRa@{LoRa}}\index{LoRa@{LoRa}!LORA\_PACKET\_VARIABLE\_LENGTH@{LORA\_PACKET\_VARIABLE\_LENGTH}}}\mbox{\Hypertarget{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92}\label{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92}} 
+LORA\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH&The packet is on variable size, header included. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_FIXED\_LENGTH@{LORA\_PACKET\_FIXED\_LENGTH}!LoRa@{LoRa}}\index{LoRa@{LoRa}!LORA\_PACKET\_FIXED\_LENGTH@{LORA\_PACKET\_FIXED\_LENGTH}}}\mbox{\Hypertarget{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb}\label{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb}} 
+LORA\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH&The packet is known on both sides, no header included in the packet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_EXPLICIT@{LORA\_PACKET\_EXPLICIT}!LoRa@{LoRa}}\index{LoRa@{LoRa}!LORA\_PACKET\_EXPLICIT@{LORA\_PACKET\_EXPLICIT}}}\mbox{\Hypertarget{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca}\label{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca}} 
+LORA\+\_\+\+PACKET\+\_\+\+EXPLICIT&The packet is on variable size, header included. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_IMPLICIT@{LORA\_PACKET\_IMPLICIT}!LoRa@{LoRa}}\index{LoRa@{LoRa}!LORA\_PACKET\_IMPLICIT@{LORA\_PACKET\_IMPLICIT}}}\mbox{\Hypertarget{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a}\label{group__lora__enums__lora_gga17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a}} 
+LORA\+\_\+\+PACKET\+\_\+\+IMPLICIT&The packet is on variable size, header included. \\
+\hline
+
+\end{DoxyEnumFields}

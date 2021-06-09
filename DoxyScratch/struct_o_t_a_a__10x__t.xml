@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_o_t_a_a__10x__t" kind="struct" language="C++" prot="public">
+    <compoundname>OTAA_10x_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_o_t_a_a__10x__t_1ac1539901553f3b3913de55b7d9d1c42b" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr8b__t" kindref="compound">arr8b_t</ref></type>
+        <definition>arr8b_t DevEui</definition>
+        <argsstring></argsstring>
+        <name>DevEui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="344" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_o_t_a_a__10x__t_1acf38166db295390d13633b7d31fdce16" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr8b__t" kindref="compound">arr8b_t</ref></type>
+        <definition>arr8b_t AppEui</definition>
+        <argsstring></argsstring>
+        <name>AppEui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="345" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_o_t_a_a__10x__t_1ac49db846c1220a6ba18a76de333f7247" prot="public" static="no" mutable="no">
+        <type><ref refid="structarr16b__t" kindref="compound">arr16b_t</ref></type>
+        <definition>arr16b_t AppKey</definition>
+        <argsstring></argsstring>
+        <name>AppKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="346" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>OTAA_10x_t</label>
+        <link refid="struct_o_t_a_a__10x__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>AppEui</edgelabel>
+          <edgelabel>DevEui</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>AppKey</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>arr8b_t</label>
+        <link refid="structarr8b__t"/>
+      </node>
+      <node id="3">
+        <label>arr16b_t</label>
+        <link refid="structarr16b__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="343" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="343" bodyend="347"/>
+    <listofallmembers>
+      <member refid="struct_o_t_a_a__10x__t_1acf38166db295390d13633b7d31fdce16" prot="public" virt="non-virtual"><scope>OTAA_10x_t</scope><name>AppEui</name></member>
+      <member refid="struct_o_t_a_a__10x__t_1ac49db846c1220a6ba18a76de333f7247" prot="public" virt="non-virtual"><scope>OTAA_10x_t</scope><name>AppKey</name></member>
+      <member refid="struct_o_t_a_a__10x__t_1ac1539901553f3b3913de55b7d9d1c42b" prot="public" virt="non-virtual"><scope>OTAA_10x_t</scope><name>DevEui</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

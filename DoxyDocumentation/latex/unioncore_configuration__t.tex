@@ -1,0 +1,190 @@
+\hypertarget{unioncore_configuration__t}{}\doxysection{core\+Configuration\+\_\+t Union Reference}
+\label{unioncore_configuration__t}\index{coreConfiguration\_t@{coreConfiguration\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>struct \{\\
+\>\>bool \mbox{\hyperlink{unioncore_configuration__t_a75b2efb60e15430b9b6b04f510edd9a4}{Confirmed}}: 1\\
+\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 7\\
+\>\>\mbox{\hyperlink{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}{Radio\_DataRate\_e}} \mbox{\hyperlink{unioncore_configuration__t_a0c1177e7e72717895f4e9be1559735fb}{DataRate}}: 8\\
+\>\>\mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\_TXpower\_e}} \mbox{\hyperlink{unioncore_configuration__t_a9422e9861f230bc0e447bba26f253bee}{Power}}: 8\\
+\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_aaf6bacaccee2f7d7968a0a4ca2cae74b}{FPort}}: 8\\
+\>\} \mbox{\hyperlink{unioncore_configuration__t_aadf76e3091f071ad79f827488a3ada41}{TX}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t}{LoRaWAN\_keys\_t}} $\ast$ \mbox{\hyperlink{unioncore_configuration__t_ac0da556dd561dd6761eec003b7b42409}{KeysPtr}}\\
+\>\>\mbox{\hyperlink{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}{Radio\_DataRate\_e}} \mbox{\hyperlink{unioncore_configuration__t_a0c1177e7e72717895f4e9be1559735fb}{DataRate}}: 8\\
+\>\>\>{\em Not used for US version (defined by LoRaWAN spec) }\\
+\>\>\mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\_TXpower\_e}} \mbox{\hyperlink{unioncore_configuration__t_a9422e9861f230bc0e447bba26f253bee}{Power}}: 8\\
+\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_a8b3829ff051e7199fac18ed11199d30f}{MAXTries}}: 8\\
+\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_ae1793fe6ee0f7addc79ba85560bdd910}{SubBand\_1st}}: 4\\
+\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_a064025acabfe1b67fa5bb10c4df7aa0e}{SubBand\_2nd}}: 4\\
+\>\} \mbox{\hyperlink{unioncore_configuration__t_a710fac55b0f2242f4ae35dc7028c58a9}{Join}}\\
+\>struct \{\\
+\>\>struct \{\\
+\>\>\>\mbox{\hyperlink{group__lorawan__enums_ga323240888cac3e1210f2afa8cdd8b3f9}{IdleMode\_e}} \mbox{\hyperlink{unioncore_configuration__t_a4eb11eff816d76978fa4911f2605e170}{Mode}}: 2\\
+\>\>\>\>{\em Set M0 Idle Mode to M0\_Active, M0\_Sleep or M0\_DeepSleep. }\\
+\>\>\>bool \mbox{\hyperlink{unioncore_configuration__t_a2849078572f8ab876e22ee4d3b8b543a}{BleEcoON}}: 1\\
+\>\>\>\>{\em Leaves BLE ECO ON during idle. }\\
+\>\>\>bool \mbox{\hyperlink{unioncore_configuration__t_a6d7194467f50d7eca9bedbd4b91fba43}{DebugON}}: 1\\
+\>\>\>\>{\em Leaves Debug Port active during idle. }\\
+\>\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 4\\
+\>\>\>\>{\em Reserved. }\\
+\>\>\} \mbox{\hyperlink{unioncore_configuration__t_abe002724bbb096ded12305068af4790c}{Idle}}\\
+\>\} \mbox{\hyperlink{unioncore_configuration__t_afa65e25d3d92f5c8af9b44b8643f4ff2}{System}}\\
+\>struct \{\\
+\>\>bool \mbox{\hyperlink{unioncore_configuration__t_a53b3b7df0272fd106e38a69b86e378c1}{Boost}}: 1\\
+\>\>uint8\_t \mbox{\hyperlink{unioncore_configuration__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 7\\
+\>\} \mbox{\hyperlink{unioncore_configuration__t_a160456f973a8b6bf999900f735a06ccd}{RX}}\\
+\}; \\
+
+\end{tabbing}\item 
+uint8\+\_\+t \mbox{\hyperlink{unioncore_configuration__t_a60f55957c042aa67ccfc8a0d996c19bb}{reserved}} \mbox{[}32\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{unioncore_configuration__t_a2bc994df49462093e53fb43217f9d67f}\label{unioncore_configuration__t_a2bc994df49462093e53fb43217f9d67f}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \} }
+
+\mbox{\Hypertarget{unioncore_configuration__t_a8b4eebe79ded0459acec2f4950102ba3}\label{unioncore_configuration__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+Reserved. 
+
+\mbox{\Hypertarget{unioncore_configuration__t_a2849078572f8ab876e22ee4d3b8b543a}\label{unioncore_configuration__t_a2849078572f8ab876e22ee4d3b8b543a}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!BleEcoON@{BleEcoON}}
+\index{BleEcoON@{BleEcoON}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{BleEcoON}{BleEcoON}}
+{\footnotesize\ttfamily bool Ble\+Eco\+ON}
+
+
+
+Leaves BLE ECO ON during idle. 
+
+Consumes additional power, enable only when ECO/\+BLE functionality is needed \mbox{\Hypertarget{unioncore_configuration__t_a53b3b7df0272fd106e38a69b86e378c1}\label{unioncore_configuration__t_a53b3b7df0272fd106e38a69b86e378c1}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!Boost@{Boost}}
+\index{Boost@{Boost}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{Boost}{Boost}}
+{\footnotesize\ttfamily bool Boost}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a75b2efb60e15430b9b6b04f510edd9a4}\label{unioncore_configuration__t_a75b2efb60e15430b9b6b04f510edd9a4}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!Confirmed@{Confirmed}}
+\index{Confirmed@{Confirmed}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{Confirmed}{Confirmed}}
+{\footnotesize\ttfamily bool Confirmed}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a0c1177e7e72717895f4e9be1559735fb}\label{unioncore_configuration__t_a0c1177e7e72717895f4e9be1559735fb}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!DataRate@{DataRate}}
+\index{DataRate@{DataRate}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{DataRate}{DataRate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}{Radio\+\_\+\+Data\+Rate\+\_\+e}} Data\+Rate}
+
+
+
+Not used for US version (defined by Lo\+Ra\+WAN spec) 
+
+\mbox{\Hypertarget{unioncore_configuration__t_a6d7194467f50d7eca9bedbd4b91fba43}\label{unioncore_configuration__t_a6d7194467f50d7eca9bedbd4b91fba43}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!DebugON@{DebugON}}
+\index{DebugON@{DebugON}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{DebugON}{DebugON}}
+{\footnotesize\ttfamily bool Debug\+ON}
+
+
+
+Leaves Debug Port active during idle. 
+
+Consumes additional power, enable only for debugging purposes \mbox{\Hypertarget{unioncore_configuration__t_aaf6bacaccee2f7d7968a0a4ca2cae74b}\label{unioncore_configuration__t_aaf6bacaccee2f7d7968a0a4ca2cae74b}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!FPort@{FPort}}
+\index{FPort@{FPort}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{FPort}{FPort}}
+{\footnotesize\ttfamily uint8\+\_\+t FPort}
+
+\mbox{\Hypertarget{unioncore_configuration__t_abe002724bbb096ded12305068af4790c}\label{unioncore_configuration__t_abe002724bbb096ded12305068af4790c}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!Idle@{Idle}}
+\index{Idle@{Idle}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  Idle}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a710fac55b0f2242f4ae35dc7028c58a9}\label{unioncore_configuration__t_a710fac55b0f2242f4ae35dc7028c58a9}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!Join@{Join}}
+\index{Join@{Join}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  Join}
+
+\mbox{\Hypertarget{unioncore_configuration__t_ac0da556dd561dd6761eec003b7b42409}\label{unioncore_configuration__t_ac0da556dd561dd6761eec003b7b42409}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!KeysPtr@{KeysPtr}}
+\index{KeysPtr@{KeysPtr}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{KeysPtr}{KeysPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t}{Lo\+Ra\+WAN\+\_\+keys\+\_\+t}}$\ast$ Keys\+Ptr}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a8b3829ff051e7199fac18ed11199d30f}\label{unioncore_configuration__t_a8b3829ff051e7199fac18ed11199d30f}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!MAXTries@{MAXTries}}
+\index{MAXTries@{MAXTries}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{MAXTries}{MAXTries}}
+{\footnotesize\ttfamily uint8\+\_\+t MAXTries}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a4eb11eff816d76978fa4911f2605e170}\label{unioncore_configuration__t_a4eb11eff816d76978fa4911f2605e170}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!Mode@{Mode}}
+\index{Mode@{Mode}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_ga323240888cac3e1210f2afa8cdd8b3f9}{Idle\+Mode\+\_\+e}} Mode}
+
+
+
+Set M0 Idle Mode to M0\+\_\+\+Active, M0\+\_\+\+Sleep or M0\+\_\+\+Deep\+Sleep. 
+
+\mbox{\Hypertarget{unioncore_configuration__t_a9422e9861f230bc0e447bba26f253bee}\label{unioncore_configuration__t_a9422e9861f230bc0e447bba26f253bee}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!Power@{Power}}
+\index{Power@{Power}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{Power}{Power}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\+\_\+\+TXpower\+\_\+e}} Power}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a60f55957c042aa67ccfc8a0d996c19bb}\label{unioncore_configuration__t_a60f55957c042aa67ccfc8a0d996c19bb}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!reserved@{reserved}}
+\index{reserved@{reserved}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t reserved\mbox{[}32\mbox{]}}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a160456f973a8b6bf999900f735a06ccd}\label{unioncore_configuration__t_a160456f973a8b6bf999900f735a06ccd}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!RX@{RX}}
+\index{RX@{RX}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  RX}
+
+\mbox{\Hypertarget{unioncore_configuration__t_ae1793fe6ee0f7addc79ba85560bdd910}\label{unioncore_configuration__t_ae1793fe6ee0f7addc79ba85560bdd910}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!SubBand\_1st@{SubBand\_1st}}
+\index{SubBand\_1st@{SubBand\_1st}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{SubBand\_1st}{SubBand\_1st}}
+{\footnotesize\ttfamily uint8\+\_\+t Sub\+Band\+\_\+1st}
+
+\mbox{\Hypertarget{unioncore_configuration__t_a064025acabfe1b67fa5bb10c4df7aa0e}\label{unioncore_configuration__t_a064025acabfe1b67fa5bb10c4df7aa0e}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!SubBand\_2nd@{SubBand\_2nd}}
+\index{SubBand\_2nd@{SubBand\_2nd}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{SubBand\_2nd}{SubBand\_2nd}}
+{\footnotesize\ttfamily uint8\+\_\+t Sub\+Band\+\_\+2nd}
+
+\mbox{\Hypertarget{unioncore_configuration__t_afa65e25d3d92f5c8af9b44b8643f4ff2}\label{unioncore_configuration__t_afa65e25d3d92f5c8af9b44b8643f4ff2}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!System@{System}}
+\index{System@{System}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  System}
+
+\mbox{\Hypertarget{unioncore_configuration__t_aadf76e3091f071ad79f827488a3ada41}\label{unioncore_configuration__t_aadf76e3091f071ad79f827488a3ada41}} 
+\index{coreConfiguration\_t@{coreConfiguration\_t}!TX@{TX}}
+\index{TX@{TX}!coreConfiguration\_t@{coreConfiguration\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  TX}
+

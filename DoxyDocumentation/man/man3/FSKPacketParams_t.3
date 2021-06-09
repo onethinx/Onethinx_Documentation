@@ -1,0 +1,95 @@
+.TH "FSKPacketParams_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FSKPacketParams_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxExt01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBPreambleLength\fP"
+.br
+.ti -1c
+.RI "\fBRadioFSKPreambleDetection_e\fP \fBPreambleDetectorLength\fP: 8"
+.br
+.ti -1c
+.RI "\fBarr8b_t\fP \fBSyncWord\fP"
+.br
+.RI "The SX126x FSK syncword setting\&. "
+.ti -1c
+.RI "uint8_t \fBSyncWordLength\fP: 8"
+.br
+.RI "Size of the SyncWord in bits\&. "
+.ti -1c
+.RI "\fBRadioFSKAddressComp_e\fP \fBAddrComp\fP: 8"
+.br
+.ti -1c
+.RI "\fBRadioFSKPacketLengthModes_e\fP \fBPacketType\fP: 8"
+.br
+.ti -1c
+.RI "uint8_t \fBPayloadLength\fP"
+.br
+.RI "Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept\&. "
+.ti -1c
+.RI "\fBRadioFSKCrcTypes_e\fP \fBCRCType\fP: 8"
+.br
+.ti -1c
+.RI "\fBRadioFSKCrcSeed_e\fP \fBCrcSeed\fP: 16"
+.br
+.RI "LFSR initial value to compute the FSK CRC\&. "
+.ti -1c
+.RI "\fBRadioFSKCrcPolynomial_e\fP \fBCrcPolynomial\fP: 16"
+.br
+.RI "Polynomial used to compute the FSK CRC\&. "
+.ti -1c
+.RI "\fBRadioFSKDcFree_e\fP \fBWhitening\fP: 8"
+.br
+.ti -1c
+.RI "\fBRadioFSKWhiteningSeed_e\fP \fBWhiteningSeed\fP: 16"
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "\fBRadioFSKAddressComp_e\fP AddrComp"
+
+.SS "\fBRadioFSKCrcPolynomial_e\fP CrcPolynomial"
+
+.PP
+Polynomial used to compute the FSK CRC\&. 
+.SS "\fBRadioFSKCrcSeed_e\fP CrcSeed"
+
+.PP
+LFSR initial value to compute the FSK CRC\&. 
+.SS "\fBRadioFSKCrcTypes_e\fP CRCType"
+
+.SS "\fBRadioFSKPacketLengthModes_e\fP PacketType"
+
+.SS "uint8_t PayloadLength"
+
+.PP
+Size of the payload (in bytes) to transmit or maximum size of the payload that the receiver can accept\&. 
+.SS "\fBRadioFSKPreambleDetection_e\fP PreambleDetectorLength"
+
+.SS "uint16_t PreambleLength"
+
+.SS "\fBarr8b_t\fP SyncWord"
+
+.PP
+The SX126x FSK syncword setting\&. 
+.SS "uint8_t SyncWordLength"
+
+.PP
+Size of the SyncWord in bits\&. 
+.SS "\fBRadioFSKDcFree_e\fP Whitening"
+
+.SS "\fBRadioFSKWhiteningSeed_e\fP WhiteningSeed"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

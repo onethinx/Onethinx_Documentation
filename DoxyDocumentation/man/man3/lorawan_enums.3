@@ -1,0 +1,605 @@
+.TH "lorawan_enums" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lorawan_enums \- Enumerated Types
+.PP
+ \- Onethinx LoRaWAN API Enumerated Types\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBkeyType_e\fP { \fBABP_10x_key\fP = 0x01, \fBOTAA_10x_key\fP = 0x02, \fBOTAA_11x_key\fP = 0x03, \fBPreStored_key\fP = 0xF0, \fBUserStored_key\fP = 0xF1 }"
+.br
+.RI "LoRaWAN Activation Type\&. "
+.ti -1c
+.RI "enum \fBRadio_DataRate_e\fP { \fBDR_0\fP = 0x00, \fBDR_1\fP = 0x01, \fBDR_2\fP = 0x02, \fBDR_3\fP = 0x03, \fBDR_4\fP = 0x04, \fBDR_5\fP = 0x05, \fBDR_6\fP = 0x06, \fBDR_7\fP = 0x07, \fBDR_8\fP = 0x08, \fBDR_9\fP = 0x09, \fBDR_10\fP = 0x0A, \fBDR_11\fP = 0x0B, \fBDR_12\fP = 0x0C, \fBDR_13\fP = 0x0D, \fBDR_ADR\fP = 0xF0, \fBDR_AUTO\fP = 0xF1 }"
+.br
+.RI "LoRaWAN Data Rates\&. "
+.ti -1c
+.RI "enum \fBRadio_TXpower_e\fP { \fBPWR_ADR\fP = 0xF0, \fBPWR_MAX\fP = 0x00, \fBPWR_ATT_2dB\fP = 0x01, \fBPWR_ATT_4dB\fP = 0x02, \fBPWR_ATT_6dB\fP = 0x03, \fBPWR_ATT_8dB\fP = 0x04, \fBPWR_ATT_10dB\fP = 0x05, \fBPWR_ATT_12dB\fP = 0x06, \fBPWR_ATT_14dB\fP = 0x07, \fBPWR_ATT_16dB\fP = 0x08, \fBPWR_ATT_18dB\fP = 0x09, \fBPWR_ATT_20dB\fP = 0x0A, \fBPWR_ATT_22dB\fP = 0x0B, \fBPWR_ATT_24dB\fP = 0x0C, \fBPWR_ATT_26dB\fP = 0x0D, \fBPWR_ATT_28dB\fP = 0x0E, \fBPWR_ATT_30dB\fP = 0x0F, \fBPWR_ATT_32dB\fP = 0x10, \fBPWR_MIN\fP = 0x11 }"
+.br
+.RI "Output power levels\&. "
+.ti -1c
+.RI "enum \fBRadio_SubBands_e\fP { \fBUS_SUB_BAND_1\fP = 0, \fBUS_SUB_BAND_2\fP = 1, \fBUS_SUB_BAND_3\fP = 2, \fBUS_SUB_BAND_4\fP = 3, \fBUS_SUB_BAND_5\fP = 4, \fBUS_SUB_BAND_6\fP = 5, \fBUS_SUB_BAND_7\fP = 6, \fBUS_SUB_BAND_8\fP = 7, \fBUS_SUB_BAND_NONE\fP = 14, \fBUS_SUB_BANDS_ALL\fP = 15, \fBEU_SUB_BANDS_DEFAULT\fP = 0, \fBEU_SUB_BAND1_ON\fP = 1, \fBEU_SUB_BAND1_OFF\fP = 2, \fBEU_SUB_BAND2_ON\fP = 3, \fBEU_SUB_BAND2_OFF\fP = 4 }"
+.br
+.RI "LoRaWAN Subbands\&. "
+.ti -1c
+.RI "enum \fBIdleMode_e\fP { \fBM0_Active\fP = 0x0, \fBM0_Sleep\fP = 0x1, \fBM0_DeepSleep\fP = 0x2 }"
+.br
+.RI "M0+ Idle modes\&. "
+.ti -1c
+.RI "enum \fBWaitMode_e\fP { \fBM4_NoWait\fP = 0x0, \fBM4_WaitActive\fP = 0x1, \fBM4_WaitSleep\fP = 0x2, \fBM4_WaitDeepSleep\fP = 0x3 }"
+.br
+.RI "M4 Wait modes\&. "
+.ti -1c
+.RI "enum \fBparamErrors_e\fP { \fBparam_OK\fP = 0x00, \fBparam_Invalid\fP = 0x01, \fBparam_OutOfRange\fP = 0x02, \fBparam_UndefinedError\fP = 0xFA }"
+.br
+.RI "Onethinx module parameter errors\&. "
+.ti -1c
+.RI "enum \fBradioErrors_e\fP { \fBradio_OK\fP = 0x00, \fBradio_BusyError\fP = 0x01, \fBradio_BuckStartError\fP = 0x02, \fBradio_XoscStartError\fP = 0x03, \fBradio_Rc13mCalibError\fP = 0x04, \fBradio_Rc64kCalibError\fP = 0x05, \fBradio_PllCalibError\fP = 0x06, \fBradio_PllLockError\fP = 0x07, \fBradio_ImgCalibError\fP = 0x08, \fBradio_AdcCalibError\fP = 0x09, \fBradio_PaRampError\fP = 0x0A, \fBradio_InvalidFrequency\fP = 0x0B, \fBradio_UndefinedError\fP = 0xFA }"
+.br
+.RI "Onethinx module radio errors\&. "
+.ti -1c
+.RI "enum \fBmacErrors_e\fP { \fBmac_OK\fP = 0x00, \fBmac_BusyError\fP = 0x01, \fBmac_NotJoinedError\fP = 0x02, \fBmac_ChannelsOccupiedError\fP = 0x03, \fBmac_UnrecognizedKeyType\fP = 0x04, \fBmac_EmptyPayload_Error\fP = 0x05, \fBmac_RXheader_Error\fP = 0x06, \fBmac_RX_MIC_Error\fP = 0x07, \fBmac_RX_InvalidDevAddr\fP = 0x08, \fBmac_InvalidPacket_Error\fP = 0x09, \fBmac_RXtimeout_Error\fP = 0x0A, \fBmac_CRC_Error\fP = 0x0B, \fBmac_FCNT_Error\fP = 0x0C, \fBmac_Confirmation_Error\fP = 0x0D, \fBmac_PayloadSize_Error\fP = 0x0E, \fBmac_UndefinedError\fP = 0xFA }"
+.br
+.RI "Onethinx module MAC errors\&. "
+.ti -1c
+.RI "enum \fBsystemErrors_e\fP { \fBsystem_OK\fP = 0x00, \fBsystem_BusyError\fP = 0x01, \fBsystem_NotStarted\fP = 0x02, \fBsystem_IPCError\fP = 0x03, \fBsystem_FlashWriteError\fP = 0x04, \fBsystem_VersionMatchError\fP = 0x05, \fBsystem_UndefinedError\fP = 0xFA }"
+.br
+.RI "Onethinx module system errors\&. "
+.ti -1c
+.RI "enum \fBsleepMode_e\fP { \fBmodeSleep\fP = 0x1, \fBmodeDeepSleep\fP = 0x2, \fBmodeHibernate\fP = 0x3, \fBmodeHibernate_RtcOn\fP = 0x4, \fBmodeHibernate_MACsave\fP = 0x5 }"
+.br
+.RI "Onethinx module sleep modes\&. "
+.ti -1c
+.RI "enum \fBsleepCores_e\fP { \fBcoresM0p\fP = 1, \fBcoresM4\fP = 2, \fBcoresBoth\fP = 3 }"
+.br
+.RI "Specifies the cores that go to sleep\&. "
+.ti -1c
+.RI "enum \fBMACcmd_e\fP { \fBMACcmd_None\fP = 0, \fBLinkCheckReq\fP = 1, \fBDeviceTimeReq\fP = 2, \fBLinkCheck_DeviceTimeReq\fP = 3 }"
+.br
+.RI "LoRaWAN MAC commands\&. "
+.ti -1c
+.RI "enum \fBstackRegion_e\fP { \fBstack_AS\fP = 1, \fBstack_AU\fP = 2, \fBstack_CN_L\fP = 3, \fBstack_CN_H\fP = 4, \fBstack_EU_L\fP = 5, \fBstack_EU_H\fP = 6, \fBstack_IN\fP = 7, \fBstack_KR\fP = 8, \fBstack_US\fP = 9, \fBstack_RU\fP = 10 }"
+.br
+.RI "LoRaWAN stack used on the module\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Onethinx LoRaWAN API Enumerated Types\&. 
+
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBIdleMode_e\fP"
+
+.PP
+M0+ Idle modes\&. Defines the mode that M0+ is in while M4 is working\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIM0_Active \fP\fP
+Keep M0+ active during system idle\&. 
+.TP
+\fB\fIM0_Sleep \fP\fP
+Put M0+ in Sleep mode during system idle\&. 
+.TP
+\fB\fIM0_DeepSleep \fP\fP
+Put M0+ in DeepSleep mode during system idle\&. 
+.SS "enum \fBkeyType_e\fP"
+
+.PP
+LoRaWAN Activation Type\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIABP_10x_key \fP\fP
+Activation by Personalization (ABP) 
+.TP
+\fB\fIOTAA_10x_key \fP\fP
+Over the air activation (OTAA) for versions 1\&.0\&.x 
+.TP
+\fB\fIOTAA_11x_key \fP\fP
+Over the air activation (OTAA) for versions 1\&.1\&.x 
+.TP
+\fB\fIPreStored_key \fP\fP
+Pre-Stored Key 
+.TP
+\fB\fIUserStored_key \fP\fP
+User Stored Key 
+.SS "enum \fBMACcmd_e\fP"
+
+.PP
+LoRaWAN MAC commands\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIMACcmd_None \fP\fP
+No command\&. 
+.TP
+\fB\fILinkCheckReq \fP\fP
+Link Check Request MAC Command\&. 
+.TP
+\fB\fIDeviceTimeReq \fP\fP
+Device Time Request MAC Command\&. 
+.TP
+\fB\fILinkCheck_DeviceTimeReq \fP\fP
+Both Link Check and Device Time Request MAC Commands\&. 
+.SS "enum \fBmacErrors_e\fP"
+
+.PP
+Onethinx module MAC errors\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fImac_OK \fP\fP
+No MAC Errors\&. 
+.TP
+\fB\fImac_BusyError \fP\fP
+MAC Busy Error, example, if lorawan_send and not waiting, lorawan mac cant be used because its still busy\&. 
+.TP
+\fB\fImac_NotJoinedError \fP\fP
+Not Joined To The Network\&. 
+.TP
+\fB\fImac_ChannelsOccupiedError \fP\fP
+Channels Occupied Error, Duty Cycle Limit Reached\&. 
+.TP
+\fB\fImac_UnrecognizedKeyType \fP\fP
+Unrecognized Key Type\&. 
+.TP
+\fB\fImac_EmptyPayload_Error \fP\fP
+Empty Payload\&. 
+.TP
+\fB\fImac_RXheader_Error \fP\fP
+Invalid RX Header\&. 
+.TP
+\fB\fImac_RX_MIC_Error \fP\fP
+Message Integrity Code Error\&. 
+.TP
+\fB\fImac_RX_InvalidDevAddr \fP\fP
+Invalid DevAddr Error\&. 
+.TP
+\fB\fImac_InvalidPacket_Error \fP\fP
+Invalid Packet Error\&. 
+.TP
+\fB\fImac_RXtimeout_Error \fP\fP
+Receive Window Timeout Error, if expecting a downlink (at confirmed upling you expect a conformation), rx timeout if no conformation\&. 
+.TP
+\fB\fImac_CRC_Error \fP\fP
+Cyclic Redundancy Check Error\&. 
+.TP
+\fB\fImac_FCNT_Error \fP\fP
+Frame Counter Error\&. 
+.TP
+\fB\fImac_Confirmation_Error \fP\fP
+Confirmation Error, the lorawan gateway can ask for redundancy, if redundancy, message is sent x times, up to 10 times, if sent x times and not confirmed, then this error sprungs\&. 
+.TP
+\fB\fImac_PayloadSize_Error \fP\fP
+Payload Size Error\&. 
+.TP
+\fB\fImac_UndefinedError \fP\fP
+Undefined Error\&. 
+.SS "enum \fBparamErrors_e\fP"
+
+.PP
+Onethinx module parameter errors\&. Check your LoRa and/or LoRaWAN parameters/configuration\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIparam_OK \fP\fP
+All Parameters are OK\&. 
+.TP
+\fB\fIparam_Invalid \fP\fP
+Invalid Parameter\&. 
+.TP
+\fB\fIparam_OutOfRange \fP\fP
+Parameters out of Range\&. 
+.TP
+\fB\fIparam_UndefinedError \fP\fP
+Undefined Parameter Error\&. 
+.SS "enum \fBRadio_DataRate_e\fP"
+
+.PP
+LoRaWAN Data Rates\&. Consult LoRaWAN Specification 1\&.0\&.2 for more details\&. Note that Data Rates are different depending on the region version of the module\&. RFU = Reserved for Future Use (reserved by LoRa Alliance) 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDR_0 \fP\fP
+EU: SF12 125KHz, 
+.PP
+US: SF10 125KHz, 
+.PP
+AU: SF12 125KHz, 
+.TP
+\fB\fIDR_1 \fP\fP
+EU: SF11 125KHz, 
+.PP
+US: SF9 125KHz, 
+.PP
+AU: SF11 125KHz, 
+.TP
+\fB\fIDR_2 \fP\fP
+EU: SF10 125KHz, 
+.PP
+US: SF8 125KHz, 
+.PP
+AU: SF10 125KHz, 
+.TP
+\fB\fIDR_3 \fP\fP
+EU: SF9 125KHz, 
+.PP
+US: SF7 125KHz, 
+.PP
+AU: SF9 125KHz, 
+.TP
+\fB\fIDR_4 \fP\fP
+EU: SF8 125KHz, 
+.PP
+US: SF8 500KHz, 
+.PP
+AU: SF8 125KHz, 
+.TP
+\fB\fIDR_5 \fP\fP
+EU: SF7 125KHz, 
+.PP
+US: RFU 
+.PP
+AU: SF7 125KHz, 
+.TP
+\fB\fIDR_6 \fP\fP
+EU: SF7 250KHz, 
+.PP
+US: RFU 
+.PP
+AU: SF8 500KHz, 
+.TP
+\fB\fIDR_7 \fP\fP
+EU: FSK 50kbps, 
+.PP
+US: RFU 
+.PP
+AU: RFU 
+.TP
+\fB\fIDR_8 \fP\fP
+EU: RFU, 
+.PP
+US: SF12 500KHz (downlinks only), 
+.PP
+AU: SF12 500KHz (downlinks only), 
+.TP
+\fB\fIDR_9 \fP\fP
+EU: RFU, 
+.PP
+US: SF11 500KHz (downlinks only), 
+.PP
+AU: SF11 500KHz (downlinks only), 
+.TP
+\fB\fIDR_10 \fP\fP
+EU: RFU, 
+.PP
+US: SF10 500KHz (downlinks only), 
+.PP
+AU: SF10 500KHz (downlinks only), 
+.TP
+\fB\fIDR_11 \fP\fP
+EU: RFU, 
+.PP
+US: SF9 500KHz (downlinks only), 
+.PP
+AU: SF9 500KHz (downlinks only), 
+.TP
+\fB\fIDR_12 \fP\fP
+EU: RFU, 
+.PP
+US: SF8 500KHz (downlinks only), 
+.PP
+AU: SF8 500KHz (downlinks only), 
+.TP
+\fB\fIDR_13 \fP\fP
+EU: RFU, 
+.PP
+US: SF7 500KHz (downlinks only), 
+.PP
+AU: SF7 500KHz (downlinks only), 
+.TP
+\fB\fIDR_ADR \fP\fP
+ADR (Adaptive DataRate and Power Setting by LoRaWAN network) 
+.TP
+\fB\fIDR_AUTO \fP\fP
+Automatic DataRate (during joining) 
+.SS "enum \fBRadio_SubBands_e\fP"
+
+.PP
+LoRaWAN Subbands\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUS_SUB_BAND_1 \fP\fP
+US 902-928 Sub-Band 1, uplink channels 0 to 7 (902\&.3 MHz to 903\&.7Mhz, 0\&.2MHz steps) and 1 downlink channel (923\&.3 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_2 \fP\fP
+US 902-928 Sub-Band 2, uplink channels 8 to 15 (903\&.9 MHz to 905\&.3Mhz, 0\&.2MHz steps) and 1 downlink channel (923\&.9 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_3 \fP\fP
+US 902-928 Sub-Band 3, uplink channels 16 to 23 (905\&.5 MHz to 906\&.9Mhz, 0\&.2MHz steps) and 1 downlink channel (924\&.5 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_4 \fP\fP
+US 902-928 Sub-Band 4, uplink channels 24 to 31 (907\&.1 MHz to 908\&.5Mhz, 0\&.2MHz steps) and 1 downlink channel (925\&.1 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_5 \fP\fP
+US 902-928 Sub-Band 5, uplink channels 32 to 39 (908\&.7 MHz to 910\&.1Mhz, 0\&.2MHz steps) and 1 downlink channel (925\&.7 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_6 \fP\fP
+US 902-928 Sub-Band 6, uplink channels 40 to 47 (910\&.3 MHz to 911\&.7Mhz, 0\&.2MHz steps) and 1 downlink channel (926\&.3 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_7 \fP\fP
+US 902-928 Sub-Band 7, uplink channels 48 to 55 (911\&.9 MHz to 913\&.3Mhz, 0\&.2MHz steps) and 1 downlink channel (926\&.9 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_8 \fP\fP
+US 902-928 Sub-Band 8, uplink channels 56 to 63 (913\&.5 MHz to 914\&.9Mhz, 0\&.2MHz steps) and 1 downlink channel (927\&.5 MHz) 
+.TP
+\fB\fIUS_SUB_BAND_NONE \fP\fP
+US 902-928 No Sub-Band Selected\&. 
+.TP
+\fB\fIUS_SUB_BANDS_ALL \fP\fP
+US 902-928 All Sub-Bands Selected\&. 
+.TP
+\fB\fIEU_SUB_BANDS_DEFAULT \fP\fP
+EU 863-870 Default Sub-Bands\&. 
+.TP
+\fB\fIEU_SUB_BAND1_ON \fP\fP
+No Longer Used, DEPRECIATED\&. 
+.TP
+\fB\fIEU_SUB_BAND1_OFF \fP\fP
+No Longer Used, DEPRECIATED\&. 
+.TP
+\fB\fIEU_SUB_BAND2_ON \fP\fP
+No Longer Used, DEPRECIATED\&. 
+.TP
+\fB\fIEU_SUB_BAND2_OFF \fP\fP
+No Longer Used, DEPRECIATED\&. 
+.SS "enum \fBRadio_TXpower_e\fP"
+
+.PP
+Output power levels\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPWR_ADR \fP\fP
+ADR (ADR MAX PWR, same as PWR_MAX) 
+.TP
+\fB\fIPWR_MAX \fP\fP
+15dBm for SX1261, 22dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_2dB \fP\fP
+14dBm for SX1261, 20dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_4dB \fP\fP
+12dBm for SX1261, 18dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_6dB \fP\fP
+10dBm for SX1261, 16dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_8dB \fP\fP
+8dBm for SX1261, 14dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_10dB \fP\fP
+6dBm for SX1261, 12dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_12dB \fP\fP
+4dBm for SX1261, 10dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_14dB \fP\fP
+2dBm for SX1261, 8dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_16dB \fP\fP
+0dBm for SX1261, 6dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_18dB \fP\fP
+-2dBm for SX1261, 4dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_20dB \fP\fP
+-4dBm for SX1261, 2dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_22dB \fP\fP
+-6dBm for SX1261, 0dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_24dB \fP\fP
+-8dBm for SX1261, -2dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_26dB \fP\fP
+-10dBm for SX1261, -4dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_28dB \fP\fP
+-12dBm for SX1261, -6dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_30dB \fP\fP
+-14dBm for SX1261, -8dBm for SX1262 
+.TP
+\fB\fIPWR_ATT_32dB \fP\fP
+-16dBm for SX1261, -9dBm for SX1262 
+.TP
+\fB\fIPWR_MIN \fP\fP
+-17dBm for SX1261, -9dBm for SX1262 
+.SS "enum \fBradioErrors_e\fP"
+
+.PP
+Onethinx module radio errors\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIradio_OK \fP\fP
+.TP
+\fB\fIradio_BusyError \fP\fP
+Radio Busy Error\&. 
+.TP
+\fB\fIradio_BuckStartError \fP\fP
+Buck converter failed to start\&. 
+.TP
+\fB\fIradio_XoscStartError \fP\fP
+XOSC failed to start\&. 
+.TP
+\fB\fIradio_Rc13mCalibError \fP\fP
+RC 13MHz oscillator calibration failed\&. 
+.TP
+\fB\fIradio_Rc64kCalibError \fP\fP
+RC 64kHz oscillator calibration failed\&. 
+.TP
+\fB\fIradio_PllCalibError \fP\fP
+PLL calibration failed\&. 
+.TP
+\fB\fIradio_PllLockError \fP\fP
+PLL lock failed\&. 
+.TP
+\fB\fIradio_ImgCalibError \fP\fP
+Image calibration failed\&. 
+.TP
+\fB\fIradio_AdcCalibError \fP\fP
+ADC calibration failed\&. 
+.TP
+\fB\fIradio_PaRampError \fP\fP
+PA ramp failed\&. 
+.TP
+\fB\fIradio_InvalidFrequency \fP\fP
+Invalid frequency set\&. 
+.TP
+\fB\fIradio_UndefinedError \fP\fP
+.SS "enum \fBsleepCores_e\fP"
+
+.PP
+Specifies the cores that go to sleep\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIcoresM0p \fP\fP
+Only ARM Cortex M0+ goes to sleep\&. 
+.TP
+\fB\fIcoresM4 \fP\fP
+Only ARM Cortex M4 goes to sleep\&. 
+.TP
+\fB\fIcoresBoth \fP\fP
+Only ARM Cortex M4 and M0+ goes to sleep\&. 
+.SS "enum \fBsleepMode_e\fP"
+
+.PP
+Onethinx module sleep modes\&. For current consumption please consult the datasheet found on our Github page\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fImodeSleep \fP\fP
+Sleep Mode, Fastest wake up, Highest consumption of all sleep modes\&. After wake up from this mode, the code continues normally from where it went to sleep\&. 
+.TP
+\fB\fImodeDeepSleep \fP\fP
+Deep Sleep Mode, Lower power consumption than Sleep Mode, Best ration between power and ease of use\&. After wake up from this mode, the code continues normally from where it went to sleep\&. 
+.TP
+\fB\fImodeHibernate \fP\fP
+Hibernates, WCO & RTC are shut down\&. After the module is woken up from Hibernate, it resets\&. 
+.TP
+\fB\fImodeHibernate_RtcOn \fP\fP
+Hibernates, RTC will keep running\&. After the module is woken up from Hibernate, it resets\&. (RTC consumes approx\&. an additional \&.7uA) 
+.TP
+\fB\fImodeHibernate_MACsave \fP\fP
+Hibernates, RTC on, LoRaWAN MAC is saved to EEPROM and restored at wakeup\&. EEPROM USAGE = 0x1400\&.7800 - 0x1400\&.7FFF\&. After the module is woken up from Hibernate, it resets\&. (RTC consumes approx\&. an additional \&.7uA) 
+.SS "enum \fBstackRegion_e\fP"
+
+.PP
+LoRaWAN stack used on the module\&. Returned in \fBcoreInfo_t\fP structure when LoRaWAN_GetInfo function is called\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIstack_AS \fP\fP
+Region Australia 923 MHz\&. 
+.TP
+\fB\fIstack_AU \fP\fP
+Region Japan 915-928 MHz\&. 
+.TP
+\fB\fIstack_CN_L \fP\fP
+Region China 470-510 MHz\&. 
+.TP
+\fB\fIstack_CN_H \fP\fP
+Region China 779-787 MHz\&. 
+.TP
+\fB\fIstack_EU_L \fP\fP
+Region Europe 433 MHz\&. 
+.TP
+\fB\fIstack_EU_H \fP\fP
+Region Europe 863-870 MHz\&. 
+.TP
+\fB\fIstack_IN \fP\fP
+Region India 865-867 MHz\&. 
+.TP
+\fB\fIstack_KR \fP\fP
+Region Korea 920-923 MHz\&. 
+.TP
+\fB\fIstack_US \fP\fP
+Region North America 902-928 MHz\&. 
+.TP
+\fB\fIstack_RU \fP\fP
+Region Russia 864-870 MHz\&. 
+.SS "enum \fBsystemErrors_e\fP"
+
+.PP
+Onethinx module system errors\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIsystem_OK \fP\fP
+No System Errors\&. 
+.TP
+\fB\fIsystem_BusyError \fP\fP
+System is Busy\&. 
+.TP
+\fB\fIsystem_NotStarted \fP\fP
+System has not Started\&. 
+.TP
+\fB\fIsystem_IPCError \fP\fP
+Inter Processor Communication Error\&. 
+.TP
+\fB\fIsystem_FlashWriteError \fP\fP
+Flash Write Error\&. 
+.TP
+\fB\fIsystem_VersionMatchError \fP\fP
+Version mismatch error, change API version\&. 
+.TP
+\fB\fIsystem_UndefinedError \fP\fP
+Undefined Error\&. 
+.SS "enum \fBWaitMode_e\fP"
+
+.PP
+M4 Wait modes\&. Defines the mode that M4 is in while M0+ is working\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIM4_NoWait \fP\fP
+Do not wait till stack finished\&. 
+.TP
+\fB\fIM4_WaitActive \fP\fP
+Wait while stack busy, M4 stays in Active mode\&. 
+.TP
+\fB\fIM4_WaitSleep \fP\fP
+M4 goes into Sleep while is stack busy\&. 
+.TP
+\fB\fIM4_WaitDeepSleep \fP\fP
+M4 goes into DeepSleep while is stack busy\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lorawan__macros" kind="group">
+    <compoundname>lorawan_macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__lorawan__macros_1ga8a63dd8d76274d1e633fe0f2332f4ba2" prot="public" static="no">
+        <name>wakeUpPinHigh</name>
+        <param><defname>pullDown</defname></param>
+        <initializer>((<ref refid="structwake_up_pin__t" kindref="compound">wakeUpPin_t</ref>) { .enabled = true, .risingEdge = true, .internalPullUpDown =  pullDown})</initializer>
+        <briefdescription>
+<para>Used in <ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="556" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lorawan__macros_1ga8bb927c57a7ce69467538f5d79809605" prot="public" static="no">
+        <name>wakeUpPinLow</name>
+        <param><defname>pullUp</defname></param>
+        <initializer>((<ref refid="structwake_up_pin__t" kindref="compound">wakeUpPin_t</ref>) { .enabled = true, .risingEdge = false, .internalPullUpDown =  pullUp})</initializer>
+        <briefdescription>
+<para>Used in <ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="557" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lorawan__macros_1ga64a3c18593c40bc12a30ed2c51e0138d" prot="public" static="no">
+        <name>wakeUpPinOff</name>
+        <initializer>((<ref refid="structwake_up_pin__t" kindref="compound">wakeUpPin_t</ref>) { .enabled = false })</initializer>
+        <briefdescription>
+<para>Used in <ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="558" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lorawan__macros_1gad650cd852806f9d898259be430d465b0" prot="public" static="no">
+        <name>wakeUpTimestamp</name>
+        <param><defname>_dateTime</defname></param>
+        <initializer>((<ref refid="structwake_up_time__t" kindref="compound">wakeUpTime_t</ref>) { .enabled = true, .isDateTime = true, .dateTime = _dateTime })</initializer>
+        <briefdescription>
+<para>Used in <ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="559" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lorawan__macros_1gad7d8db81525a648d5bc04d10fc581960" prot="public" static="no">
+        <name>wakeUpDelay</name>
+        <param><defname>_days</defname></param>
+        <param><defname>_hours</defname></param>
+        <param><defname>_minutes</defname></param>
+        <param><defname>_seconds</defname></param>
+        <initializer>((<ref refid="structwake_up_time__t" kindref="compound">wakeUpTime_t</ref>) { .enabled = true, .isDateTime = false, .days = _days, .hours = _hours, .minutes = _minutes, .seconds = _seconds })</initializer>
+        <briefdescription>
+<para>Used in <ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="560" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__lorawan__macros_1gab2caec9e02dd240279898b42e341ba72" prot="public" static="no">
+        <name>wakeUpTimeOff</name>
+        <initializer>((<ref refid="structwake_up_time__t" kindref="compound">wakeUpTime_t</ref>) { .enabled = false })</initializer>
+        <briefdescription>
+<para>Used in <ref refid="structsleep_config__t" kindref="compound">sleepConfig_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="561" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Onethinx LoRaWAN API Macros. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

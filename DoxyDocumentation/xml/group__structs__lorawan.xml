@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__structs__lorawan" kind="group">
+    <compoundname>structs_lorawan</compoundname>
+    <title>Data Structures</title>
+    <innerclass refid="struct_stored_keys__t" prot="public">StoredKeys_t</innerclass>
+    <innerclass refid="unionparameter_status__t" prot="public">parameterStatus_t</innerclass>
+    <innerclass refid="structsleep_config__t" prot="public">sleepConfig_t</innerclass>
+    <innerclass refid="structcore_info__t" prot="public">coreInfo_t</innerclass>
+    <innerclass refid="unioncore_configuration__t" prot="public">coreConfiguration_t</innerclass>
+    <briefdescription>
+<para>Onethinx LoRaWAN API Data Structures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

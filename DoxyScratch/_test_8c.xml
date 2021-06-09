@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="_test_8c" kind="file" language="C++">
+    <compoundname>Test.c</compoundname>
+    <innerclass refid="class_q_tstyle___test" prot="public">QTstyle_Test</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_q_tstyle___test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_q_tstyle___test" kindref="compound">QTstyle_Test</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166" kindref="member">TEnum</ref><sp/>{<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166ac9f4289a4feb75ac0139725819c1b157" kindref="member">TVal1</ref>,<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166ac00c479a45ce5e7084ad3f2afdfc2fb3" kindref="member">TVal2</ref>,<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166a0fdf008c61e518a16a3e9ec2cc8d2c78" kindref="member">TVal3</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_q_tstyle___test_1ab4ffc353b47d656f895ed0fabb3037f1" kindref="member">enumPtr</ref>,<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_q_tstyle___test_1a876c9a8f2fea8abfe6488104998da21a" kindref="member">enumVar</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_q_tstyle___test_1ac3b85941ca31e9ad22f5bbe68b08a5d8" kindref="member">QTstyle_Test</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_q_tstyle___test_1a3a2c6d99c82a00c5e3224aca01f6c7c3" kindref="member">~QTstyle_Test</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_q_tstyle___test_1af1299ea1b7efeb1548c7aba201ebe756" kindref="member">testMe</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_q_tstyle___test_1afe4f857536cdccd2f160ad619a61eba3" kindref="member">testMeToo</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c1,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c2)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_q_tstyle___test_1a292887ac25652b1d8448430f583378c3" kindref="member">publicVar</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="class_q_tstyle___test_1a83e6d7b763dc413e96b0c435a1d29a5d" kindref="member">handler</ref>)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c"/>
+  </compounddef>
+</doxygen>

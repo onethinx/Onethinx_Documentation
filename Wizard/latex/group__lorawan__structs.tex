@@ -1,0 +1,192 @@
+\hypertarget{group__lorawan__structs}{}\doxysection{Data Structures}
+\label{group__lorawan__structs}\index{Data Structures@{Data Structures}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{unioncore_configuration__t}{core\+Configuration\+\_\+t}}
+\item 
+union \mbox{\hyperlink{unionparameter_status__t}{parameter\+Status\+\_\+t}}
+\item 
+union \mbox{\hyperlink{unionradio_status__t}{radio\+Status\+\_\+t}}
+\item 
+union \mbox{\hyperlink{unionmac_status__t}{mac\+Status\+\_\+t}}
+\item 
+union \mbox{\hyperlink{unionsystem_status__t}{system\+Status\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}
+\item 
+union \mbox{\hyperlink{unionerror_status__t}{error\+Status\+\_\+t}}
+\item 
+union \mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structwake_up_pin__t}{wake\+Up\+Pin\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structwake_up_time__t}{wake\+Up\+Time\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__lorawan__structs_gad09246453a4dabd919c7541484046a87}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((\+\_\+\+\_\+packed\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Onethinx module parameter errors. Check your Lo\+Ra and/or Lo\+Ra\+WAN parameters/configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_gac1ce41a6a078f393f96cd43a78dfa321}\label{group__lorawan__structs_gac1ce41a6a078f393f96cd43a78dfa321}} 
+{\bfseries Stored\+Keys\+\_\+t}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_ga72c52544c4e408cbf7e76bf1d41433e1}\label{group__lorawan__structs_ga72c52544c4e408cbf7e76bf1d41433e1}} 
+{\bfseries OTAA\+\_\+10x\+\_\+t}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_ga23867dd36db1842773b1504b859a6bea}\label{group__lorawan__structs_ga23867dd36db1842773b1504b859a6bea}} 
+{\bfseries OTAA\+\_\+11x\+\_\+t}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_gafdc1027c081781e02a52addb4ebb5d60}\label{group__lorawan__structs_gafdc1027c081781e02a52addb4ebb5d60}} 
+{\bfseries ABP\+\_\+10x\+\_\+t}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_ga2208bbd083d6c94c8c4845f0d28dc316}\label{group__lorawan__structs_ga2208bbd083d6c94c8c4845f0d28dc316}} 
+{\bfseries Lo\+Ra\+WAN\+\_\+keys\+\_\+t}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_gaef658907e8200d40358cd05c696bc88c}\label{group__lorawan__structs_gaef658907e8200d40358cd05c696bc88c}} 
+{\bfseries sleep\+Config\+\_\+t}
+\item 
+\mbox{\Hypertarget{group__lorawan__structs_ga05b3c436e1c6c412e21acc7c95360637}\label{group__lorawan__structs_ga05b3c436e1c6c412e21acc7c95360637}} 
+{\bfseries core\+Info\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Onethinx Lo\+Ra\+WAN API Data Structures 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__lorawan__structs_gad09246453a4dabd919c7541484046a87}\label{group__lorawan__structs_gad09246453a4dabd919c7541484046a87}} 
+\index{Data Structures@{Data Structures}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!Data Structures@{Data Structures}}
+\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily struct \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(\+\_\+\+\_\+packed\+\_\+\+\_\+)}]{ }\end{DoxyParamCaption})}
+
+
+
+Onethinx module parameter errors. Check your Lo\+Ra and/or Lo\+Ra\+WAN parameters/configuration. 
+
+Onethinx module system errors.
+
+Onethinx module MAC errors.
+
+Onethinx module radio errors.
+
+Sleep configuration ~\newline
+ Make sure to initialize all members, best practise is to use examples $<$ All Parameters are OK.
+
+$<$ Invalid Parameter.
+
+$<$ Parameters out of Range.
+
+$<$ Undefined Parameter Error.
+
+$<$ Radio Busy Error
+
+$<$ Buck converter failed to start
+
+$<$ XOSC failed to start
+
+$<$ RC 13MHz oscillator calibration failed
+
+$<$ RC 64k\+Hz oscillator calibration failed
+
+$<$ PLL calibration failed
+
+$<$ PLL lock failed
+
+$<$ Image calibration failed
+
+$<$ ADC calibration failed
+
+$<$ PA ramp failed
+
+$<$ Invalid frequency set
+
+$<$ No MAC Errors
+
+$<$ MAC Busy Error, example, if lorawan\+\_\+send and not waiting, lorawan mac cant be used because its still busy
+
+$<$ Not Joined To The Network
+
+$<$ Channels Occupied Error, Duty Cycle Limit Reached
+
+$<$ Unrecognized Key Type
+
+$<$ Empty Payload
+
+$<$ Invalid RX Header
+
+$<$ Message Integrity Code Error
+
+$<$ Invalid Dev\+Addr Error
+
+$<$ Invalid Packet Error
+
+$<$ Receive Window Timeout Error, if expecting a downlink (at confirmed upling you expect a conformation), rx timeout if no conformation
+
+$<$ Cyclic Redundancy Check Error
+
+$<$ Frame Counter Error
+
+$<$ Confirmation Error, the lorawan gateway can ask for redundancy, if redundancy, message is sent x times, up to 10 times, if sent x times and not confirmed, then this error sprungs
+
+$<$ Payload Size Error
+
+$<$ Undefined Error
+
+$<$ No System Errors.
+
+$<$ System is Busy
+
+$<$ System has not Started
+
+$<$ Inter Processor Communication Error
+
+$<$ Flash Write Error
+
+$<$ Version mismatch error, change API version
+
+$<$ Undefined Error
+
+$<$ S24 bits ~\newline
+
+
+$<$ S40 bits ~\newline
+
+
+$<$ Set sleepmode to Sleep, Deep\+Sleep or Hibernate
+
+$<$ Leaves BLE ECO ON during sleep. Consumes additional power, enable only when ECO/\+BLE functionality is needed during sleep
+
+$<$ Leaves Debug Port active during idle. Consumes additional power, enable only for debugging purposes
+
+$<$ Reserved
+
+$<$ core firmware Year of build
+
+$<$ core firmware Month of build
+
+$<$ core firmware Day of build
+
+$<$ core firmware Hour of build (24h mode)
+
+$<$ core firmware Minute of build
+
+$<$ core firmware Second of build
+
+$<$ core firmware incremental build number
+
+$<$ core dev\+EUI
+
+$<$ core firmware build type
+
+$<$ core firmware stack region
+
+$<$ core firmware stack option\+: \textquotesingle{}S\textquotesingle{}ecure, \textquotesingle{}P\textquotesingle{}SA, \textquotesingle{}C\textquotesingle{}onfigurable
+
+$<$ core firmware lifecycle stage\+: \textquotesingle{}a\textquotesingle{} pre-\/alpha, \textquotesingle{}A\textquotesingle{} Alpha, \textquotesingle{}b\textquotesingle{} perpetual beta, \textquotesingle{}B\textquotesingle{} Beta, \textquotesingle{}r\textquotesingle{} release candidate, \textquotesingle{}R\textquotesingle{} Release
+
+$<$ core firmware code name

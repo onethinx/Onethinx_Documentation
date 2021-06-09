@@ -1,0 +1,1335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lorawan__enums" kind="group">
+    <compoundname>lorawan_enums</compoundname>
+    <title>Enumerated Types</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lorawan__enums_1gaea59b3ad47895313a826e87e0bb6ce9d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>keyType_e</name>
+        <enumvalue id="group__lorawan__enums_1ggaea59b3ad47895313a826e87e0bb6ce9da4212c3f7eaae834dd55c73f5da6e98df" prot="public">
+          <name>ABP_10x_key</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Activation by Personalization (ABP) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaea59b3ad47895313a826e87e0bb6ce9dab500d39a3ecda3d713f67019d6102533" prot="public">
+          <name>OTAA_10x_key</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Over the air activation (OTAA) for versions 1.0.x </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaea59b3ad47895313a826e87e0bb6ce9daf5ff53d8e86ee7413f6feb7bacdc2722" prot="public">
+          <name>OTAA_11x_key</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Over the air activation (OTAA) for versions 1.1.x </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaea59b3ad47895313a826e87e0bb6ce9da3de66f44b20cdbc6b8cae70bab641ed8" prot="public">
+          <name>PreStored_key</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Pre-Stored Key </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaea59b3ad47895313a826e87e0bb6ce9da668753566d35f447412554a92e68fbc2" prot="public">
+          <name>UserStored_key</name>
+          <initializer>= 0xF1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>User Stored Key </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LoRaWAN Activation Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="148" column="2" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga446653b10978880583589e822ebdd6c1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Radio_DataRate_e</name>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a322c54b75b5d189e75a4e75cfc524202" prot="public">
+          <name>DR_0</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>EU: SF12 125KHz, </para>
+<para>US: SF10 125KHz, </para>
+<para>AU: SF12 125KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a3e430e7fab785bca8adcfe960653042a" prot="public">
+          <name>DR_1</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>EU: SF11 125KHz, </para>
+<para>US: SF9 125KHz, </para>
+<para>AU: SF11 125KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1adf859878ab5b6ba677cb273d65e63bdc" prot="public">
+          <name>DR_2</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>EU: SF10 125KHz, </para>
+<para>US: SF8 125KHz, </para>
+<para>AU: SF10 125KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1af75cdd2fd3db176fd9fd9e37175a4eb5" prot="public">
+          <name>DR_3</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>EU: SF9 125KHz, </para>
+<para>US: SF7 125KHz, </para>
+<para>AU: SF9 125KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a724b61b313f7e8a13cb652d7720b546d" prot="public">
+          <name>DR_4</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>EU: SF8 125KHz, </para>
+<para>US: SF8 500KHz, </para>
+<para>AU: SF8 125KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a867bb224b02dfc56d38c4d402ee3c713" prot="public">
+          <name>DR_5</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>EU: SF7 125KHz, </para>
+<para>US: RFU </para>
+<para>AU: SF7 125KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a0f77c366c8780c691f7d4606940ab9d3" prot="public">
+          <name>DR_6</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>EU: SF7 250KHz, </para>
+<para>US: RFU </para>
+<para>AU: SF8 500KHz, </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a99ebed4d1b8f8e5d59a0001912ded04f" prot="public">
+          <name>DR_7</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>EU: FSK 50kbps, </para>
+<para>US: RFU </para>
+<para>AU: RFU </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a7e09580a42fee231bdaf0f9a2038939c" prot="public">
+          <name>DR_8</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>EU: RFU, </para>
+<para>US: SF12 500KHz (downlinks only), </para>
+<para>AU: SF12 500KHz (downlinks only), </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1ac097927272ba4c4ca661845bc0119a05" prot="public">
+          <name>DR_9</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>EU: RFU, </para>
+<para>US: SF11 500KHz (downlinks only), </para>
+<para>AU: SF11 500KHz (downlinks only), </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1ad993e9cf00e33d5b3243e33f3ca9aa29" prot="public">
+          <name>DR_10</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+<para>EU: RFU, </para>
+<para>US: SF10 500KHz (downlinks only), </para>
+<para>AU: SF10 500KHz (downlinks only), </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a28d6e9803bec15df748afe73942d8672" prot="public">
+          <name>DR_11</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+<para>EU: RFU, </para>
+<para>US: SF9 500KHz (downlinks only), </para>
+<para>AU: SF9 500KHz (downlinks only), </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a6c639ae07f5596ae68a226fdc600a7e5" prot="public">
+          <name>DR_12</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+<para>EU: RFU, </para>
+<para>US: SF8 500KHz (downlinks only), </para>
+<para>AU: SF8 500KHz (downlinks only), </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1afd5a41d3e3a253652cdf99ced3144a72" prot="public">
+          <name>DR_13</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+<para>EU: RFU, </para>
+<para>US: SF7 500KHz (downlinks only), </para>
+<para>AU: SF7 500KHz (downlinks only), </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a2a3ec1bd9b0b732abc1b02dd352d2ed2" prot="public">
+          <name>DR_ADR</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+<para>ADR (Adaptive DataRate and Power Setting by LoRaWAN network) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga446653b10978880583589e822ebdd6c1a9b91d826f5aa5c81330ee4bdc5fe8093" prot="public">
+          <name>DR_AUTO</name>
+          <initializer>= 0xF1</initializer>
+          <briefdescription>
+<para>Automatic DataRate (during joining) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LoRaWAN Data Rates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Consult LoRaWAN Specification 1.0.2 for more details. Note that Data Rates are different depending on the region version of the module. RFU = Reserved for Future Use (reserved by LoRa Alliance) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="161" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="161" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga8c75f11ec2550a083e5a2a39cb030fc3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Radio_TXpower_e</name>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3afe65edd43a2db67e1959bf05190069d0" prot="public">
+          <name>PWR_ADR</name>
+          <initializer>= 0xF0</initializer>
+          <briefdescription>
+<para>ADR (ADR MAX PWR, same as PWR_MAX) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a2c4d538f91768ce0fba1e546d6e7f647" prot="public">
+          <name>PWR_MAX</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>15dBm for SX1261, 22dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a94720a372a2b46bf0590cace18c98c67" prot="public">
+          <name>PWR_ATT_2dB</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>14dBm for SX1261, 20dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3ace5e1db94341502897fbd98c6f1e9bc2" prot="public">
+          <name>PWR_ATT_4dB</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>12dBm for SX1261, 18dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a38c528f8ee745ac48c93c353ec8e5783" prot="public">
+          <name>PWR_ATT_6dB</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>10dBm for SX1261, 16dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a65a8fcfe04999c4414eec712b10f17e3" prot="public">
+          <name>PWR_ATT_8dB</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>8dBm for SX1261, 14dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a23337474088ffa94d73e84e542573238" prot="public">
+          <name>PWR_ATT_10dB</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>6dBm for SX1261, 12dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a55f9012626a36775e97ac022d732156d" prot="public">
+          <name>PWR_ATT_12dB</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>4dBm for SX1261, 10dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a5dbcd91a5b6c3f9bdc9ab42e0473e840" prot="public">
+          <name>PWR_ATT_14dB</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>2dBm for SX1261, 8dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3adb51d665a08e89fda43067c57fa030e4" prot="public">
+          <name>PWR_ATT_16dB</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>0dBm for SX1261, 6dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3ac10505e52a53c776bec90e521c2e631e" prot="public">
+          <name>PWR_ATT_18dB</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>-2dBm for SX1261, 4dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a9af6df96733fd1717e7f8afb82218f99" prot="public">
+          <name>PWR_ATT_20dB</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+<para>-4dBm for SX1261, 2dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a710962fc5693c48611bf970e5e7ea232" prot="public">
+          <name>PWR_ATT_22dB</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+<para>-6dBm for SX1261, 0dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a1607a4f39eea76f3018c5358b63fcbef" prot="public">
+          <name>PWR_ATT_24dB</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+<para>-8dBm for SX1261, -2dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a0c8acd454a0cbd2ddd31fb229f171668" prot="public">
+          <name>PWR_ATT_26dB</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+<para>-10dBm for SX1261, -4dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a4f864f92f2b0cc062fd64785ffe832c2" prot="public">
+          <name>PWR_ATT_28dB</name>
+          <initializer>= 0x0E</initializer>
+          <briefdescription>
+<para>-12dBm for SX1261, -6dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3aaefbfc2ad30ea946a82a56f9825e1714" prot="public">
+          <name>PWR_ATT_30dB</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+<para>-14dBm for SX1261, -8dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a340d52cbc4f90736993c824ab68d62e0" prot="public">
+          <name>PWR_ATT_32dB</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>-16dBm for SX1261, -9dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga8c75f11ec2550a083e5a2a39cb030fc3a49e2ec870950817a6f12c93b21aed225" prot="public">
+          <name>PWR_MIN</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+<para>-17dBm for SX1261, -9dBm for SX1262 </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Output power levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="181" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="181" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga1b2b45cb23e8b347f921f12d7010d1e8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Radio_SubBands_e</name>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a2920178bfb7e40e496a5be3b739e9642" prot="public">
+          <name>US_SUB_BAND_1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 1, uplink channels 0 to 7 (902.3 MHz to 903.7Mhz, 0.2MHz steps) and 1 downlink channel (923.3 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a39d13d4cd7f1ca2f43fff5a70583bb36" prot="public">
+          <name>US_SUB_BAND_2</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 2, uplink channels 8 to 15 (903.9 MHz to 905.3Mhz, 0.2MHz steps) and 1 downlink channel (923.9 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a1351a26110e6e5047dc96287caca2242" prot="public">
+          <name>US_SUB_BAND_3</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 3, uplink channels 16 to 23 (905.5 MHz to 906.9Mhz, 0.2MHz steps) and 1 downlink channel (924.5 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8ad077eacf945f9584c53f3257892739d3" prot="public">
+          <name>US_SUB_BAND_4</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 4, uplink channels 24 to 31 (907.1 MHz to 908.5Mhz, 0.2MHz steps) and 1 downlink channel (925.1 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8aadbea70a0b710c7ca95fe405c85b9a79" prot="public">
+          <name>US_SUB_BAND_5</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 5, uplink channels 32 to 39 (908.7 MHz to 910.1Mhz, 0.2MHz steps) and 1 downlink channel (925.7 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8af998227427b6c0649db53c4d13206be6" prot="public">
+          <name>US_SUB_BAND_6</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 6, uplink channels 40 to 47 (910.3 MHz to 911.7Mhz, 0.2MHz steps) and 1 downlink channel (926.3 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8ae44b561b4a28c6e802b6a8e87de62bc6" prot="public">
+          <name>US_SUB_BAND_7</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 7, uplink channels 48 to 55 (911.9 MHz to 913.3Mhz, 0.2MHz steps) and 1 downlink channel (926.9 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a78a448dc2c18247b7df9e3d7a0eff125" prot="public">
+          <name>US_SUB_BAND_8</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>US 902-928 Sub-Band 8, uplink channels 56 to 63 (913.5 MHz to 914.9Mhz, 0.2MHz steps) and 1 downlink channel (927.5 MHz) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a6a2bc45fe2cd88d82864d5b8eaacf36f" prot="public">
+          <name>US_SUB_BAND_NONE</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+<para>US 902-928 No Sub-Band Selected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a9635910cf83bfe46af1a7026ad406c5a" prot="public">
+          <name>US_SUB_BANDS_ALL</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+<para>US 902-928 All Sub-Bands Selected. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8afb3a2ebc36f4e37d20dd8f6f858cc341" prot="public">
+          <name>EU_SUB_BANDS_DEFAULT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>EU 863-870 Default Sub-Bands. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a9e28a3e86e56d8109e9eef81a31eff47" prot="public">
+          <name>EU_SUB_BAND1_ON</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>No Longer Used, DEPRECIATED. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a84dd268ca5819adf8f954db7721dc1c2" prot="public">
+          <name>EU_SUB_BAND1_OFF</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>No Longer Used, DEPRECIATED. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8aedf5ab1957fc0c73940d999c1dd81165" prot="public">
+          <name>EU_SUB_BAND2_ON</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>No Longer Used, DEPRECIATED. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga1b2b45cb23e8b347f921f12d7010d1e8a65cb0ff2d7a7e3d229d3f9bff0c716da" prot="public">
+          <name>EU_SUB_BAND2_OFF</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>No Longer Used, DEPRECIATED. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LoRaWAN Subbands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="204" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="204" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga323240888cac3e1210f2afa8cdd8b3f9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>IdleMode_e</name>
+        <enumvalue id="group__lorawan__enums_1gga323240888cac3e1210f2afa8cdd8b3f9a37977294a9eeff1d3540f5cf30a54de8" prot="public">
+          <name>M0_Active</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+<para>Keep M0+ active during system idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga323240888cac3e1210f2afa8cdd8b3f9a9257448c14e6da628a35020593fbe85f" prot="public">
+          <name>M0_Sleep</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>Put M0+ in Sleep mode during system idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga323240888cac3e1210f2afa8cdd8b3f9a4472b2a529981f03616dfd36ee741458" prot="public">
+          <name>M0_DeepSleep</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>Put M0+ in DeepSleep mode during system idle. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>M0+ Idle modes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the mode that M0+ is in while M4 is working. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="223" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WaitMode_e</name>
+        <enumvalue id="group__lorawan__enums_1gga882bb3b14bb6e2505038fb393880ea59a0910770075bd2667ed0bcc4219968b00" prot="public">
+          <name>M4_NoWait</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+<para>Do not wait till stack finished. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga882bb3b14bb6e2505038fb393880ea59a7889178752f78f035e15821a593e3c6b" prot="public">
+          <name>M4_WaitActive</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>Wait while stack busy, M4 stays in Active mode. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga882bb3b14bb6e2505038fb393880ea59a41f8c61d0ce1b62e7d371ab1c8e1f651" prot="public">
+          <name>M4_WaitSleep</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>M4 goes into Sleep while is stack busy. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga882bb3b14bb6e2505038fb393880ea59afcf9a510516a11f1506467d64db5577e" prot="public">
+          <name>M4_WaitDeepSleep</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+<para>M4 goes into DeepSleep while is stack busy. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>M4 Wait modes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines the mode that M4 is in while M0+ is working. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="230" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="230" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1gae580edc7d795c978aeb9344494604bbf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>paramErrors_e</name>
+        <enumvalue id="group__lorawan__enums_1ggae580edc7d795c978aeb9344494604bbfabfbfb291922ba3ee85f595f1455ea265" prot="public">
+          <name>param_OK</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>All Parameters are OK. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggae580edc7d795c978aeb9344494604bbfa03563e5c0d6481f95300cb976a1180c4" prot="public">
+          <name>param_Invalid</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Invalid Parameter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggae580edc7d795c978aeb9344494604bbfa98dc52eb76fde9b6396034bd6d4bb801" prot="public">
+          <name>param_OutOfRange</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Parameters out of Range. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggae580edc7d795c978aeb9344494604bbfa85d4e54a7f60719ddb064509356161f7" prot="public">
+          <name>param_UndefinedError</name>
+          <initializer>= 0xFA</initializer>
+          <briefdescription>
+<para>Undefined Parameter Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Onethinx module parameter errors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check your LoRa and/or LoRaWAN parameters/configuration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="238" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="238" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga059c8ad521b77e896ea7a264b98f3aca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>radioErrors_e</name>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaaf87d76b3d614098003351676e6854a29" prot="public">
+          <name>radio_OK</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa40149acd83caee19de03c57a4ecb1e25" prot="public">
+          <name>radio_BusyError</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Radio Busy Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaaf24c3a13daa10d8139d1b1a241127955" prot="public">
+          <name>radio_BuckStartError</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Buck converter failed to start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa3db57a8e96cace1c3bf9a7ab50dd879d" prot="public">
+          <name>radio_XoscStartError</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>XOSC failed to start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa1e319dc99fc3ec04ae9d98d5e5a81b89" prot="public">
+          <name>radio_Rc13mCalibError</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>RC 13MHz oscillator calibration failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa1d0c5dcaaac4a824487fd8c88b65a0d5" prot="public">
+          <name>radio_Rc64kCalibError</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>RC 64kHz oscillator calibration failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaab6d541de0f6017a411bcef5871108743" prot="public">
+          <name>radio_PllCalibError</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>PLL calibration failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa6a028968bbc2c723bffbe75f340b8b36" prot="public">
+          <name>radio_PllLockError</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>PLL lock failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa7cf346c810544695b4391649cfe4f8df" prot="public">
+          <name>radio_ImgCalibError</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>Image calibration failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaaa02a0f79942a94fc437f719f6c262321" prot="public">
+          <name>radio_AdcCalibError</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>ADC calibration failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaad47159966efb0d9097adc670647facaa" prot="public">
+          <name>radio_PaRampError</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+<para>PA ramp failed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaadb1f88306319f2910dd02aab57660d59" prot="public">
+          <name>radio_InvalidFrequency</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+<para>Invalid frequency set. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga059c8ad521b77e896ea7a264b98f3acaa86365a7791af1b825b5c6f7e89ac13b3" prot="public">
+          <name>radio_UndefinedError</name>
+          <initializer>= 0xFA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Onethinx module radio errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="246" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="246" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1gaabb9d4b1e41b33a28ad84076f7776013" prot="public" static="no" strong="no">
+        <type></type>
+        <name>macErrors_e</name>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a365761c790b9052231a493c2cebaa878" prot="public">
+          <name>mac_OK</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>No MAC Errors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a46a8c6a425a1abe14084cba603234d58" prot="public">
+          <name>mac_BusyError</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>MAC Busy Error, example, if lorawan_send and not waiting, lorawan mac cant be used because its still busy. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013af2495242fcc816123f554141aa7118c8" prot="public">
+          <name>mac_NotJoinedError</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>Not Joined To The Network. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013aaf0898fccbbb7a541b629892a5d952ba" prot="public">
+          <name>mac_ChannelsOccupiedError</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>Channels Occupied Error, Duty Cycle Limit Reached. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a50ae00804f0dc88b308440ea6d7167c6" prot="public">
+          <name>mac_UnrecognizedKeyType</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Unrecognized Key Type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a025cf4efbaa95537f9ee16f09fd68b5f" prot="public">
+          <name>mac_EmptyPayload_Error</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>Empty Payload. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013aee5366c511c904db202a9f32336b69b1" prot="public">
+          <name>mac_RXheader_Error</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>Invalid RX Header. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013aac6754951cdda574cfe30f8002a344a9" prot="public">
+          <name>mac_RX_MIC_Error</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>Message Integrity Code Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013afadc3e3954a8c7894dcf96ce15d53aac" prot="public">
+          <name>mac_RX_InvalidDevAddr</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>Invalid DevAddr Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a75f6121f10d209006ab55d26c73d1bb0" prot="public">
+          <name>mac_InvalidPacket_Error</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+<para>Invalid Packet Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a5b7dc28d34b0f5a96b1be5dcdc06c8af" prot="public">
+          <name>mac_RXtimeout_Error</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+<para>Receive Window Timeout Error, if expecting a downlink (at confirmed upling you expect a conformation), rx timeout if no conformation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a0e5676f34a0ff734f7a7f2d8087eedf9" prot="public">
+          <name>mac_CRC_Error</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+<para>Cyclic Redundancy Check Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013aba6ee6638589cfd23c444e0e39cf4d5c" prot="public">
+          <name>mac_FCNT_Error</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+<para>Frame Counter Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a8124d9b5f1eb8bd68380a9292163e7d3" prot="public">
+          <name>mac_Confirmation_Error</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+<para>Confirmation Error, the lorawan gateway can ask for redundancy, if redundancy, message is sent x times, up to 10 times, if sent x times and not confirmed, then this error sprungs. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013a4770cfb215ff0de34f5426f8b4b7b9a1" prot="public">
+          <name>mac_PayloadSize_Error</name>
+          <initializer>= 0x0E</initializer>
+          <briefdescription>
+<para>Payload Size Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaabb9d4b1e41b33a28ad84076f7776013aec62242076f87776176d6bc24180bb1a" prot="public">
+          <name>mac_UndefinedError</name>
+          <initializer>= 0xFA</initializer>
+          <briefdescription>
+<para>Undefined Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Onethinx module MAC errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="263" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="263" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga9660163b15da218c7be89c824c39b356" prot="public" static="no" strong="no">
+        <type></type>
+        <name>systemErrors_e</name>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356a44c5b0db6fa359b5d106b40e898b2adf" prot="public">
+          <name>system_OK</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>No System Errors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356a1fd29bb786cc5baffdf415c79ff3e9e5" prot="public">
+          <name>system_BusyError</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>System is Busy. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356af5e146922e3bdf69c08b7e2369c6ab06" prot="public">
+          <name>system_NotStarted</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>System has not Started. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356a1f133ed86c9ec26cff7c96ca56f3206d" prot="public">
+          <name>system_IPCError</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+<para>Inter Processor Communication Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356a5157e07bbb0f0ab83b03ef199b538e75" prot="public">
+          <name>system_FlashWriteError</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Flash Write Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356a07ee72e4b9c577526f1609064e61da06" prot="public">
+          <name>system_VersionMatchError</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>Version mismatch error, change API version. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga9660163b15da218c7be89c824c39b356a700cf2089e2dfbdc9b9b313789652555" prot="public">
+          <name>system_UndefinedError</name>
+          <initializer>= 0xFA</initializer>
+          <briefdescription>
+<para>Undefined Error. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Onethinx module system errors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="283" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="283" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1gab6b0609d5e1bb7369e244aad6c5de87d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>sleepMode_e</name>
+        <enumvalue id="group__lorawan__enums_1ggab6b0609d5e1bb7369e244aad6c5de87dacde3b8c080e6bdbe2c14bb01603fcf75" prot="public">
+          <name>modeSleep</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>Sleep Mode, Fastest wake up, Highest consumption of all sleep modes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>After wake up from this mode, the code continues normally from where it went to sleep. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggab6b0609d5e1bb7369e244aad6c5de87dacc7fbd501647cf541496e1f97f8610ae" prot="public">
+          <name>modeDeepSleep</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>Deep Sleep Mode, Lower power consumption than Sleep Mode, Best ration between power and ease of use. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>After wake up from this mode, the code continues normally from where it went to sleep. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggab6b0609d5e1bb7369e244aad6c5de87da07db8a6c6f3fc27ff61d04641219fd6f" prot="public">
+          <name>modeHibernate</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+<para>Hibernates, WCO &amp; RTC are shut down. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>After the module is woken up from Hibernate, it resets. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggab6b0609d5e1bb7369e244aad6c5de87daa8ace6c3b95d2c0132c4095e6518c446" prot="public">
+          <name>modeHibernate_RtcOn</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+<para>Hibernates, RTC will keep running. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>After the module is woken up from Hibernate, it resets. (RTC consumes approx. an additional .7uA) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggab6b0609d5e1bb7369e244aad6c5de87da7cde89b0f76bc46f96f84d76fb832b9d" prot="public">
+          <name>modeHibernate_MACsave</name>
+          <initializer>= 0x5</initializer>
+          <briefdescription>
+<para>Hibernates, RTC on, LoRaWAN MAC is saved to EEPROM and restored at wakeup. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>EEPROM USAGE = 0x1400.7800 - 0x1400.7FFF. After the module is woken up from Hibernate, it resets. (RTC consumes approx. an additional .7uA) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Onethinx module sleep modes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For current consumption please consult the datasheet found on our Github page. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="294" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="294" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1gaff762a336d05a5043b3199da3d5f53c9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>sleepCores_e</name>
+        <enumvalue id="group__lorawan__enums_1ggaff762a336d05a5043b3199da3d5f53c9af209127afcc5c5763a9bce3413857e44" prot="public">
+          <name>coresM0p</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Only ARM Cortex M0+ goes to sleep. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaff762a336d05a5043b3199da3d5f53c9a9a97ba6caf97a933983788edb43d8150" prot="public">
+          <name>coresM4</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Only ARM Cortex M4 goes to sleep. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1ggaff762a336d05a5043b3199da3d5f53c9aef2317a4b910707cbc60ce68d8a71a98" prot="public">
+          <name>coresBoth</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Only ARM Cortex M4 and M0+ goes to sleep. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specifies the cores that go to sleep. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="303" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="303" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga6393fcb2900b24fa2a580ebfc66fc569" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MACcmd_e</name>
+        <enumvalue id="group__lorawan__enums_1gga6393fcb2900b24fa2a580ebfc66fc569a27fb03043b72131cb87db472c71b6528" prot="public">
+          <name>MACcmd_None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>No command. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga6393fcb2900b24fa2a580ebfc66fc569a41c494495b72c13e41a1930af14cbf16" prot="public">
+          <name>LinkCheckReq</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Link Check Request MAC Command. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga6393fcb2900b24fa2a580ebfc66fc569a9b9dbd3c7e850db7c117408cc7cf7ba9" prot="public">
+          <name>DeviceTimeReq</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Device Time Request MAC Command. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga6393fcb2900b24fa2a580ebfc66fc569af429d8fc354fd9b3331794653ea429b7" prot="public">
+          <name>LinkCheck_DeviceTimeReq</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Both Link Check and Device Time Request MAC Commands. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LoRaWAN MAC commands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="310" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="310" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lorawan__enums_1ga288bc59a2996be3d2d0507c911c110eb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>stackRegion_e</name>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110ebaab6316eefc4f7ab4e00f5f51fdb949c9" prot="public">
+          <name>stack_AS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Region Australia 923 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110ebaab51d357f8300514ec84422cd50f2f5a" prot="public">
+          <name>stack_AU</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Region Japan 915-928 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110ebaba3ef9c32015bcd1abd1544702626a1c" prot="public">
+          <name>stack_CN_L</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>Region China 470-510 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110eba2668a10e21f9788d6ae4f81b22771a53" prot="public">
+          <name>stack_CN_H</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>Region China 779-787 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110eba3e62920d947a13aee432c9d879e8bea7" prot="public">
+          <name>stack_EU_L</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>Region Europe 433 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110ebad2e0ae1d441de8ca1b4526d7f265fd44" prot="public">
+          <name>stack_EU_H</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+<para>Region Europe 863-870 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110eba132b63539dc0bb17248e5dfc375d139e" prot="public">
+          <name>stack_IN</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+<para>Region India 865-867 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110ebadcbc6ba88b5b8a1a7085e2eba6d2810d" prot="public">
+          <name>stack_KR</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>Region Korea 920-923 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110eba63f5149f36e0377c2865bfd689e0e6f9" prot="public">
+          <name>stack_US</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+<para>Region North America 902-928 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lorawan__enums_1gga288bc59a2996be3d2d0507c911c110eba60862018c6a7636b35137df6daf5b5a9" prot="public">
+          <name>stack_RU</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+<para>Region Russia 864-870 MHz. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LoRaWAN stack used on the module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returned in <ref refid="structcore_info__t" kindref="compound">coreInfo_t</ref> structure when LoRaWAN_GetInfo function is called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" line="318" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxCore01.h" bodystart="318" bodyend="329"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Onethinx LoRaWAN API Enumerated Types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

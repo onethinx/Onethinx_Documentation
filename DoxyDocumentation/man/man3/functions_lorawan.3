@@ -1,0 +1,330 @@
+.TH "functions_lorawan" 3 "Mon Jun 7 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+functions_lorawan \- Functions
+.PP
+ \- These are the LoRaWAN functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+
+.in +1c
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Reset\fP (void)"
+.br
+.RI "This function forces the current non-blocking function to stop\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Init\fP (\fBcoreConfiguration_t\fP *coreConfigurationPtr)"
+.br
+.RI "Initializes the LoRaWAN stack and points the stack to the location of the settings\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetInfo\fP (\fBcoreInfo_t\fP *coreInfo)"
+.br
+.RI "This function gives the stack information which were saved at the time of the programming\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Join\fP (\fBWaitMode_e\fP waitMode)"
+.br
+.RI "Joins the LoRaWAN network, taking the parameters from the coreConfiguration structure which was passed to LoRaWAN_Init\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_MacSave\fP ()"
+.br
+.RI "This function saves the current MAC configuration\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_FlashRead\fP (uint8_t *buffer, uint8_t block, uint8_t length)"
+.br
+.RI "This function reads the buffer that was previously saved to flash\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_FlashWrite\fP (uint8_t *buffer, uint8_t block, uint8_t length)"
+.br
+.RI "This function saves a buffer to flash\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetRXdata\fP (uint8_t *RXdata, uint8_t length)"
+.br
+.RI "This function retrieves the specified length of data reveived via downlink from a gateway and saves it to a buffer\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Send\fP (uint8_t *buffer, uint8_t length, \fBWaitMode_e\fP waitMode)"
+.br
+.RI "This function sends your buffer of data to the LoRaWAN network\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_SendMac\fP (uint8_t *buffer, uint8_t length, \fBWaitMode_e\fP waitMode, \fBMACcmd_e\fP MACcmd)"
+.br
+.RI "This function sends your buffer of data and a MAC command to the LoRaWAN network\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Sleep\fP (\fBsleepConfig_t\fP *sleepConfig)"
+.br
+.RI "This function allows you to enter a sleep mode\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetStatus\fP ()"
+.br
+.RI "This function returns the current error /status\&. "
+.ti -1c
+.RI "\fBerrorStatus_t\fP \fBLoRaWAN_GetError\fP ()"
+.br
+.RI "This function returns the current error /status\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+These are the LoRaWAN functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBcoreStatus_t\fP LoRaWAN_FlashRead (uint8_t * buffer, uint8_t block, uint8_t length)"
+
+.PP
+This function reads the buffer that was previously saved to flash\&. This allows user to access the buffer even if reset or power off occures\&.
+.PP
+Block   Data    0   Max 256 bytes    1   Max 256 bytes    2   Max 256 bytes    3   Max 256 bytes    4   Max 256 bytes    5   Max 256 bytes    6   Max 256 bytes    7   Max 256 bytes   
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuffer\fP Pointer to the buffer where the data read from flash will be saved to\&. 
+.br
+\fIblock\fP Block from which the data is read from\&. Available blocks: 0 to 7 
+.br
+\fIlength\fP Length of data which you wish to read\&. Maximum 255 bytes\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBLoRaWAN_FlashWrite\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_FlashWrite (uint8_t * buffer, uint8_t block, uint8_t length)"
+
+.PP
+This function saves a buffer to flash\&. This allows user to access the buffer even if reset or power off occures\&.
+.PP
+Block   Data    0   Max 256 bytes    1   Max 256 bytes    2   Max 256 bytes    3   Max 256 bytes    4   Max 256 bytes    5   Max 256 bytes    6   Max 256 bytes    7   Max 256 bytes   
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuffer\fP Pointer to the data which needs to be saved\&. 
+.br
+\fIblock\fP Block to which the data should be saved to\&. Available blocks: 0 to 7 
+.br
+\fIlength\fP Length of data which you wish saved\&. Maximum 255 bytes\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBLoRaWAN_FlashRead\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBerrorStatus_t\fP LoRaWAN_GetError ()"
+
+.PP
+This function returns the current error /status\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Returns error codes\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBerrorStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_GetInfo (\fBcoreInfo_t\fP * coreInfo)"
+
+.PP
+This function gives the stack information which were saved at the time of the programming\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcoreInfo\fP Pointer to the location where info will be saved\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_GetRXdata (uint8_t * RXdata, uint8_t length)"
+
+.PP
+This function retrieves the specified length of data reveived via downlink from a gateway and saves it to a buffer\&. The lenght of data can be retrieved after a succesful LoRaWAN_Send, through the status structure it returns
+.PP
+\fBParameters\fP
+.RS 4
+\fIRXdata\fP Pointer to the byte buffer to which the data is retrieved to\&. 
+.br
+\fIlength\fP Length of data which you wish saved\&. The length of data received can be seen after LoRaWAN_Send in coreStatus\&.mac\&.bytesToRead 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBLoRaWAN_Send\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_GetStatus ()"
+
+.PP
+This function returns the current error /status\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_Init (\fBcoreConfiguration_t\fP * coreConfigurationPtr)"
+
+.PP
+Initializes the LoRaWAN stack and points the stack to the location of the settings\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcoreConfigurationPtr\fP Pointer to the structure where Join, TXwhich sets the LoRaWAN parameters\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_Join (\fBWaitMode_e\fP waitMode)"
+
+.PP
+Joins the LoRaWAN network, taking the parameters from the coreConfiguration structure which was passed to LoRaWAN_Init\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwaitMode\fP Type of wait mode that the microcontroller core should wait in\&.
+.RE
+.PP
+Mode   Description    M4_NoWait   Non-blocking\&. Do not wait untill stack is finished, M4 continues with operation\&.    M4_WaitActive   Blocking\&. Wait while stack busy, M4 stays in Active mode\&.    M4_WaitSleep   Blocking\&. Wait while stack busy, M4 goes into Sleep while is stack busy\&.    M4_WaitDeepSleep   Blocking\&. Wait while stack busy, M4 goes into DeepSleep while is stack busy\&.   
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBWaitMode_e\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_MacSave ()"
+
+.PP
+This function saves the current MAC configuration\&. If device device resets de configuration is active by default\&.
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_Reset (void)"
+
+.PP
+This function forces the current non-blocking function to stop\&. Functions which receive waitMode_t can be set at both blocking and non-blocking\&.
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_Send (uint8_t * buffer, uint8_t length, \fBWaitMode_e\fP waitMode)"
+
+.PP
+This function sends your buffer of data to the LoRaWAN network\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuffer\fP Pointer to the data which needs to be sent\&. 
+.br
+\fIlength\fP Length of data which you wish to send\&. 
+.br
+\fIwaitMode\fP Type of wait mode that the microcontroller core should wait in\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBWaitMode_e\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_SendMac (uint8_t * buffer, uint8_t length, \fBWaitMode_e\fP waitMode, \fBMACcmd_e\fP MACcmd)"
+
+.PP
+This function sends your buffer of data and a MAC command to the LoRaWAN network\&. It is similar to LoRaWAN_Send, but this also sends a MAC command\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuffer\fP Pointer to the data which needs to be sent\&. 
+.br
+\fIlength\fP Length of data which you wish to send\&. 
+.br
+\fIwaitMode\fP Type of wait mode that the microcontroller core should wait in\&. 
+.br
+\fIMACcmd\fP MAC command to be sent to the LoRaWAN network\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBWaitMode_e\fP, \fBMACcmd_e\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRaWAN_Sleep (\fBsleepConfig_t\fP * sleepConfig)"
+
+.PP
+This function allows you to enter a sleep mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIsleepConfig\fP Pointer to the sleep configuration structure\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBsleepConfig_t\fP and \fBcoreStatus_t\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

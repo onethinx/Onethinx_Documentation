@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="advanced" kind="page">
+    <compoundname>advanced</compoundname>
+    <title>Advanced</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="advanced_1adv_structs">
+<title>Structures</title>
+<sect2 id="advanced_1adv_structs_lorawan_config">
+<title>LoRaWAN configuration</title>
+<para>TODO </para>
+</sect2>
+<sect2 id="advanced_1adv_structs_lorawan_status">
+<title>LoRaWAN status</title>
+<para>TODO </para>
+</sect2>
+<sect2 id="advanced_1adv_structs_lora_param">
+<title>LoRa configuration</title>
+<para>TODO </para>
+</sect2>
+<sect2 id="advanced_1adv_structs_lora_status">
+<title>LoRa status</title>
+<para>TODO </para>
+</sect2>
+</sect1>
+<sect1 id="advanced_1adv_otxversions">
+<title>Module Versions</title>
+<sect2 id="advanced_1otxversion_EU868">
+<title>EU868</title>
+<para>TODO </para>
+</sect2>
+<sect2 id="advanced_1otxversion_US915">
+<title>US915</title>
+<para>TODO </para>
+</sect2>
+<sect2 id="advanced_1otxversion_AU923">
+<title>AU923</title>
+<para>Not yet available. </para>
+</sect2>
+<sect2 id="advanced_1otxversion_IN865">
+<title>IN865</title>
+<para>Not yet available. </para>
+</sect2>
+</sect1>
+<sect1 id="advanced_1adv_pinout">
+<title>Pinout</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="advanced_1adv_footprint">
+<title>Footprint</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="advanced_1adv_internaldeveui">
+<title>Internal DevEUI</title>
+<para>TODO UART OpenOCD OTX18-Programmer </para>
+</sect1>
+<sect1 id="advanced_1adv_openocd">
+<title>OpenOCD Programming</title>
+<para>TODO </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

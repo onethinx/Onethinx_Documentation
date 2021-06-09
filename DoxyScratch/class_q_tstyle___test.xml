@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="class_q_tstyle___test" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>QTstyle_Test</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TEnum</name>
+        <enumvalue id="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166ac9f4289a4feb75ac0139725819c1b157" prot="public">
+          <name>TVal1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enum value TVal1. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166ac00c479a45ce5e7084ad3f2afdfc2fb3" prot="public">
+          <name>TVal2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enum value TVal2. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166a0fdf008c61e518a16a3e9ec2cc8d2c78" prot="public">
+          <name>TVal3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enum value TVal3. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>An enum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>More detailed enum description. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="12" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" bodystart="12" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_q_tstyle___test_1ab4ffc353b47d656f895ed0fabb3037f1" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166" kindref="member">QTstyle_Test::TEnum</ref> *</type>
+        <definition>enum QTstyle_Test::TEnum
+         * enumPtr</definition>
+        <argsstring></argsstring>
+        <name>enumPtr</name>
+        <briefdescription>
+<para>Enum pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="19" column="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_tstyle___test_1a876c9a8f2fea8abfe6488104998da21a" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166" kindref="member">QTstyle_Test::TEnum</ref></type>
+        <definition>enum QTstyle_Test::TEnum enumVar</definition>
+        <argsstring></argsstring>
+        <name>enumVar</name>
+        <briefdescription>
+<para>Enum variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="22" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_tstyle___test_1a292887ac25652b1d8448430f583378c3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int publicVar</definition>
+        <argsstring></argsstring>
+        <name>publicVar</name>
+        <briefdescription>
+<para>A public variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="57" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_tstyle___test_1a83e6d7b763dc413e96b0c435a1d29a5d" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* handler) (int a, int b)</definition>
+        <argsstring>)(int a, int b)</argsstring>
+        <name>handler</name>
+        <briefdescription>
+<para>A function variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="63" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_tstyle___test_1ac3b85941ca31e9ad22f5bbe68b08a5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QTstyle_Test</definition>
+        <argsstring>()</argsstring>
+        <name>QTstyle_Test</name>
+        <briefdescription>
+<para>A constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A more elaborate description of the constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="28" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_tstyle___test_1a3a2c6d99c82a00c5e3224aca01f6c7c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~QTstyle_Test</definition>
+        <argsstring>()</argsstring>
+        <name>~QTstyle_Test</name>
+        <briefdescription>
+<para>A destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A more elaborate description of the destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="34" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_tstyle___test_1af1299ea1b7efeb1548c7aba201ebe756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int testMe</definition>
+        <argsstring>(int a, const char *s)</argsstring>
+        <name>testMe</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>A normal member taking two arguments and returning an integer value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an integer argument. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a constant character pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The test results </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_q_tstyle___test_1ac3b85941ca31e9ad22f5bbe68b08a5d8" kindref="member">QTstyle_Test()</ref>, <ref refid="class_q_tstyle___test_1a3a2c6d99c82a00c5e3224aca01f6c7c3" kindref="member">~QTstyle_Test()</ref>, <ref refid="class_q_tstyle___test_1afe4f857536cdccd2f160ad619a61eba3" kindref="member">testMeToo()</ref> and <ref refid="class_q_tstyle___test_1a292887ac25652b1d8448430f583378c3" kindref="member">publicVar()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="43" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_tstyle___test_1afe4f857536cdccd2f160ad619a61eba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void testMeToo</definition>
+        <argsstring>(char c1, char c2)=0</argsstring>
+        <name>testMeToo</name>
+        <param>
+          <type>char</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+<para>A pure virtual member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_q_tstyle___test_1af1299ea1b7efeb1548c7aba201ebe756" kindref="member">testMe()</ref> </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first argument. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second argument. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="51" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A test class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A more elaborate class description. </para>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" line="6" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/Test.c" bodystart="7" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_q_tstyle___test_1ab4ffc353b47d656f895ed0fabb3037f1" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>enumPtr</name></member>
+      <member refid="class_q_tstyle___test_1a876c9a8f2fea8abfe6488104998da21a" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>enumVar</name></member>
+      <member refid="class_q_tstyle___test_1a83e6d7b763dc413e96b0c435a1d29a5d" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>handler</name></member>
+      <member refid="class_q_tstyle___test_1a292887ac25652b1d8448430f583378c3" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>publicVar</name></member>
+      <member refid="class_q_tstyle___test_1ac3b85941ca31e9ad22f5bbe68b08a5d8" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>QTstyle_Test</name></member>
+      <member refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>TEnum</name></member>
+      <member refid="class_q_tstyle___test_1af1299ea1b7efeb1548c7aba201ebe756" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>testMe</name></member>
+      <member refid="class_q_tstyle___test_1afe4f857536cdccd2f160ad619a61eba3" prot="public" virt="pure-virtual"><scope>QTstyle_Test</scope><name>testMeToo</name></member>
+      <member refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166ac9f4289a4feb75ac0139725819c1b157" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>TVal1</name></member>
+      <member refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166ac00c479a45ce5e7084ad3f2afdfc2fb3" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>TVal2</name></member>
+      <member refid="class_q_tstyle___test_1a33e3643b66dfa91e4fb7cc663a23e166a0fdf008c61e518a16a3e9ec2cc8d2c78" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>TVal3</name></member>
+      <member refid="class_q_tstyle___test_1a3a2c6d99c82a00c5e3224aca01f6c7c3" prot="public" virt="non-virtual"><scope>QTstyle_Test</scope><name>~QTstyle_Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

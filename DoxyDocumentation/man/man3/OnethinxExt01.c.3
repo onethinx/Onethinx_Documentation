@@ -1,0 +1,60 @@
+.TH "C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.c" 3 "Fri Jan 8 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'OnethinxCore01\&.h'\fP
+.br
+\fC#include 'OnethinxExt01\&.h'\fP
+.br
+\fC#include 'cy_gpio\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBcoreComm\fP (\fBcoreFunctions_e\fP function, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRa_RX\fP (\fBRadioParams_t\fP *RadioParams, \fBRadioStatus_t\fP *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRa_TX\fP (\fBRadioParams_t\fP *RadioParams, \fBRadioStatus_t\fP *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "void \fBLoRaWAN_Debug\fP (bool debugLedsOn, uint32_t *coreStatePNT)"
+.br
+.ti -1c
+.RI "void \fBLoRaWAN_Unlock\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile \fBcoreArguments_t\fP \fBcoreArguments\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBcoreStatus_t\fP coreComm (\fBcoreFunctions_e\fP function, \fBWaitMode_e\fP waitMode)"
+
+.SS "\fBcoreStatus_t\fP LoRa_RX (\fBRadioParams_t\fP * RadioParams, \fBRadioStatus_t\fP * RadioStatus, uint8_t * payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+
+.SS "\fBcoreStatus_t\fP LoRa_TX (\fBRadioParams_t\fP * RadioParams, \fBRadioStatus_t\fP * RadioStatus, uint8_t * payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+
+.SS "void LoRaWAN_Debug (bool debugLedsOn, uint32_t * coreStatePNT)"
+
+.SS "void LoRaWAN_Unlock ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "volatile \fBcoreArguments_t\fP coreArguments\fC [extern]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

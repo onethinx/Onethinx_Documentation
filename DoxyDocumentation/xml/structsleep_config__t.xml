@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="structsleep_config__t" kind="struct" language="C++" prot="public">
+    <compoundname>sleepConfig_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsleep_config__t_1a9b9bcd82f65cb41b66b6b988538b1fc2" prot="public" static="no" mutable="no">
+        <type><ref refid="structwake_up_pin__t" kindref="compound">wakeUpPin_t</ref></type>
+        <definition>wakeUpPin_t wakeUpPin</definition>
+        <argsstring></argsstring>
+        <name>wakeUpPin</name>
+        <briefdescription>
+<para>S24 bits <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="561" column="12" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1a3fc707dd920ffcfe69460f9c08bfcb64" prot="public" static="no" mutable="no">
+        <type><ref refid="structwake_up_time__t" kindref="compound">wakeUpTime_t</ref></type>
+        <definition>wakeUpTime_t wakeUpTime</definition>
+        <argsstring></argsstring>
+        <name>wakeUpTime</name>
+        <briefdescription>
+<para>S40 bits <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="562" column="13" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1a6af23566a00c74b360907334afbe68fa" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1gab6b0609d5e1bb7369e244aad6c5de87d" kindref="member">sleepMode_e</ref></type>
+        <definition>sleepMode_e sleepMode</definition>
+        <argsstring></argsstring>
+        <name>sleepMode</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+<para>Set sleepmode to Sleep, DeepSleep or Hibernate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="563" column="12" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1a2849078572f8ab876e22ee4d3b8b543a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BleEcoON</definition>
+        <argsstring></argsstring>
+        <name>BleEcoON</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Leaves BLE ECO ON during sleep. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Consumes additional power, enable only when ECO/BLE functionality is needed during sleep </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="564" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1a6d7194467f50d7eca9bedbd4b91fba43" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DebugON</definition>
+        <argsstring></argsstring>
+        <name>DebugON</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Leaves Debug Port active during idle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Consumes additional power, enable only for debugging purposes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="565" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1aaeb404909bd430c6ee64e6fd5e7c70cc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1gaff762a336d05a5043b3199da3d5f53c9" kindref="member">sleepCores_e</ref></type>
+        <definition>sleepCores_e sleepCores</definition>
+        <argsstring></argsstring>
+        <name>sleepCores</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="566" column="13" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1a149d17bfc90a1687770dc3a868e503d4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool saveMAC</definition>
+        <argsstring></argsstring>
+        <name>saveMAC</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="567" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsleep_config__t_1a3e57c2ef1c3ffb36722f000cc1156824" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <bitfield> 31</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="568" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sleep configuration <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Make sure to initialize all members, best practise is to use examples </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>wakeUpPin_t</label>
+        <link refid="structwake_up_pin__t"/>
+      </node>
+      <node id="1">
+        <label>sleepConfig_t</label>
+        <link refid="structsleep_config__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>wakeUpPin</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>wakeUpTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>wakeUpTime_t</label>
+        <link refid="structwake_up_time__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="559" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="560" bodyend="569"/>
+    <listofallmembers>
+      <member refid="structsleep_config__t_1a3e57c2ef1c3ffb36722f000cc1156824" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>__pad0__</name></member>
+      <member refid="structsleep_config__t_1a2849078572f8ab876e22ee4d3b8b543a" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>BleEcoON</name></member>
+      <member refid="structsleep_config__t_1a6d7194467f50d7eca9bedbd4b91fba43" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>DebugON</name></member>
+      <member refid="structsleep_config__t_1a149d17bfc90a1687770dc3a868e503d4" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>saveMAC</name></member>
+      <member refid="structsleep_config__t_1aaeb404909bd430c6ee64e6fd5e7c70cc" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>sleepCores</name></member>
+      <member refid="structsleep_config__t_1a6af23566a00c74b360907334afbe68fa" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>sleepMode</name></member>
+      <member refid="structsleep_config__t_1a9b9bcd82f65cb41b66b6b988538b1fc2" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>wakeUpPin</name></member>
+      <member refid="structsleep_config__t_1a3fc707dd920ffcfe69460f9c08bfcb64" prot="public" virt="non-virtual"><scope>sleepConfig_t</scope><name>wakeUpTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

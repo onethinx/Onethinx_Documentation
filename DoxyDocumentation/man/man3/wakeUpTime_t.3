@@ -1,0 +1,86 @@
+.TH "wakeUpTime_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+wakeUpTime_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "bool \fBenabled\fP: 1"
+.br
+.ti -1c
+.RI "bool \fBisDateTime\fP: 1"
+.br
+.ti -1c
+.RI "uint8_t \fB__pad0__\fP: 6"
+.br
+.ti -1c
+.RI "union {"
+.br
+.ti -1c
+.RI "   \fBdateTime_t\fP \fBdateTime\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      uint8_t \fBdays\fP"
+.br
+.RI "Delay in days\&. "
+.ti -1c
+.RI "      uint8_t \fBhours\fP"
+.br
+.RI "Delay in hours\&. "
+.ti -1c
+.RI "      uint8_t \fBminutes\fP"
+.br
+.RI "Delay in minutes\&. "
+.ti -1c
+.RI "      uint8_t \fBseconds\fP"
+.br
+.RI "Delay in seconds\&. "
+.ti -1c
+.RI "   } "
+.br
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "union { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.SS "\fBdateTime_t\fP dateTime"
+
+.SS "uint8_t days"
+
+.PP
+Delay in days\&. 
+.SS "bool enabled"
+
+.SS "uint8_t hours"
+
+.PP
+Delay in hours\&. 
+.SS "bool isDateTime"
+
+.SS "uint8_t minutes"
+
+.PP
+Delay in minutes\&. 
+.SS "uint8_t seconds"
+
+.PP
+Delay in seconds\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

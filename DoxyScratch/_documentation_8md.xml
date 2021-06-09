@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="_documentation_8md" kind="file" language="Markdown">
+    <compoundname>Documentation.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">\page<sp/>intro<sp/>Introduction</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;table<sp/>set<sp/>border=&quot;0&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>&lt;tr&gt;&lt;td&gt;Onethinx<sp/>LoRaWAN<sp/>module<sp/>is<sp/>a<sp/>purpose-built<sp/>module<sp/>for<sp/>engineers<sp/>and<sp/>companies<sp/>that<sp/>want<sp/>to<sp/>get<sp/>into<sp/>the<sp/>LoRa<sp/>and<sp/>LoRaWAN<sp/>space,<sp/>design<sp/>their<sp/>own<sp/>product<sp/>or<sp/>more<sp/>easily<sp/>design<sp/>products<sp/>for<sp/>their<sp/>clients,<sp/>but<sp/>do<sp/>not<sp/>want<sp/>to<sp/>spend<sp/>their<sp/>time<sp/>developing<sp/>the<sp/>LoRaWAN<sp/>stack,<sp/>hardware,<sp/>RF,<sp/>matching<sp/>network,<sp/>LoRa<sp/>antenna,<sp/>deal<sp/>with<sp/>security<sp/>and<sp/>certifications,<sp/>etc.<sp/>Onethinx<sp/>module,<sp/>with<sp/>its<sp/>dual<sp/>ARM<sp/>Cortex<sp/>M0+<sp/>and<sp/>M4<sp/>core<sp/>offers<sp/>an<sp/>unpresidented<sp/>amount<sp/>of<sp/>security,<sp/>ease<sp/>of<sp/>use<sp/>and<sp/>reliability.<sp/>It<sp/>utilizes<sp/>PSoC6s&apos;<sp/>ARM<sp/>Cortex<sp/>M0+<sp/>core<sp/>to<sp/>securely<sp/>store<sp/>and<sp/>lock<sp/>our<sp/>unique,<sp/>and<sp/>easy<sp/>to<sp/>use<sp/>LoRa/LoRaWAN<sp/>stack,<sp/>while<sp/>it<sp/>allows<sp/>you<sp/>to<sp/>use<sp/>the<sp/>full<sp/>ARM<sp/>Cortex<sp/>M4<sp/>core<sp/>for<sp/>your<sp/>application,<sp/>without<sp/>worry<sp/>that<sp/>it<sp/>will<sp/>negatively<sp/>influence<sp/>the<sp/>operation<sp/>of<sp/>the<sp/>LoRa/LoRaWAN<sp/>stack.<sp/>The<sp/>PSoC<sp/>6<sp/>microcontroller<sp/>also<sp/>integrates<sp/>the<sp/>(in<sp/>silicon)<sp/>Embedded<sp/>Secure<sp/>Element<sp/>and<sp/>Hardware<sp/>Crypto<sp/>Engine<sp/>which<sp/>expands<sp/>its<sp/>security<sp/>capabilities<sp/>without<sp/>compromising<sp/>ease<sp/>of<sp/>use<sp/>(unlinke<sp/>modules<sp/>that<sp/>utilize<sp/>external<sp/>secure<sp/>elements<sp/>or<sp/>none<sp/>at<sp/>all),<sp/>because<sp/>the<sp/>security<sp/>is<sp/>handeled<sp/>automatically<sp/>by<sp/>the<sp/>stack.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Furthermore,<sp/>Onethinx<sp/>module<sp/>uses<sp/>the<sp/>latest<sp/>and<sp/>best<sp/>in<sp/>class<sp/>Semtech<sp/>SX1261<sp/>LoRa<sp/>radio<sp/>chip<sp/>for<sp/>the<sp/>EU<sp/>868<sp/>MHz<sp/>and<sp/>SX1262<sp/>LoRa<sp/>radio<sp/>chip<sp/>for<sp/>US<sp/>915<sp/>MHz<sp/>and<sp/>AU<sp/>923<sp/>MHz<sp/>module<sp/>versions.<sp/>The<sp/>newest<sp/>generation<sp/>of<sp/>Semtech<sp/>SX126X<sp/>radio<sp/>chips<sp/>improoves<sp/>power<sp/>efficiency<sp/>while<sp/>also<sp/>adding<sp/>several<sp/>additional<sp/>features<sp/>like<sp/>SF5,<sp/>higher<sp/>output<sp/>power,<sp/>smaller<sp/>chips<sp/>size,<sp/>lower<sp/>power<sp/>consumption,<sp/>etc.<sp/>Onethinx<sp/>module<sp/>matching<sp/>network<sp/>and<sp/>integrated<sp/>high-efficiency<sp/>omnidirectional<sp/>antenna<sp/>are<sp/>specially<sp/>designed<sp/>and<sp/>matched<sp/>for<sp/>the<sp/>region<sp/>they<sp/>are<sp/>used<sp/>in,<sp/>while<sp/>keeping<sp/>everything<sp/>in<sp/>a<sp/>small<sp/>thumb-sized<sp/>package<sp/>measuring<sp/>only<sp/>24.5<sp/>mm<sp/>x<sp/>20<sp/>mm<sp/>(incl.<sp/>antenna).<sp/>This<sp/>allows<sp/>you,<sp/>not<sp/>only<sp/>to<sp/>integrate<sp/>the<sp/>Onethinx<sp/>LoRaWAN<sp/>module<sp/>in<sp/>small<sp/>sized<sp/>applications,<sp/>but<sp/>also<sp/>allows<sp/>you<sp/>not<sp/>to<sp/>be<sp/>an<sp/>RF<sp/>matching<sp/>and<sp/>RF<sp/>design<sp/>expert<sp/>in<sp/>order<sp/>to<sp/>use<sp/>our<sp/>all-integrated<sp/>LoRaWAN<sp/>module.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Onethinx<sp/>LoRaWAN<sp/>module<sp/>also<sp/>allows<sp/>you<sp/>to<sp/>use<sp/>the<sp/>onboard<sp/>Bluetooth<sp/>5<sp/>(external<sp/>antenna).<sp/>The<sp/>availability<sp/>of<sp/>Bluetooth<sp/>on<sp/>the<sp/>module<sp/>has<sp/>prooven<sp/>most<sp/>useful<sp/>for<sp/>Firmware<sp/>Over<sp/>The<sp/>Air<sp/>updates.<sp/>It<sp/>allows<sp/>the<sp/>end<sp/>user<sp/>to<sp/>use<sp/>a<sp/>smartphone<sp/>with<sp/>an<sp/>application<sp/>to<sp/>upload<sp/>the<sp/>latest<sp/>revision<sp/>of<sp/>your<sp/>M4<sp/>application<sp/>to<sp/>the<sp/>module.<sp/>Using<sp/>the<sp/>end<sp/>users<sp/>phone<sp/>to<sp/>perform<sp/>the<sp/>Bluetooth<sp/>FOTA<sp/>has<sp/>prooven<sp/>to<sp/>be<sp/>most<sp/>viable<sp/>option<sp/>for<sp/>all<sp/>our<sp/>clients<sp/>due<sp/>to<sp/>the<sp/>wide<sp/>use<sp/>of<sp/>smartphones.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Onethinx<sp/>easy-to-use<sp/>LoRaWAN<sp/>API<sp/>consists<sp/>of<sp/>several<sp/>easy-to-use<sp/>functions.<sp/>These<sp/>functions<sp/>are<sp/>called<sp/>from<sp/>the<sp/>Cortex<sp/>M4<sp/>core,<sp/>where<sp/>the<sp/>users<sp/>application<sp/>resides,<sp/>and<sp/>they<sp/>communicate<sp/>the<sp/>necessary<sp/>information<sp/>to<sp/>the<sp/>Cortex<sp/>M0+<sp/>core,<sp/>where<sp/>the<sp/>LoRa/LoRaWAN<sp/>stack<sp/>resides.<sp/>The<sp/>two<sp/>cores<sp/>communicate<sp/>using<sp/>Inter<sp/>Processor<sp/>Communication<sp/>(IPC).<sp/>This<sp/>is<sp/>all<sp/>handeled<sp/>in<sp/>the<sp/>background<sp/>when<sp/>user<sp/>calls<sp/>the<sp/>functions,<sp/>which<sp/>additionaly<sp/>eases<sp/>the<sp/>development.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;td&gt;<sp/>\image<sp/>html<sp/>OTX_render1.png<sp/>width=400px</highlight></codeline>
+<codeline><highlight class="normal">&lt;/table&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Onethinx<sp/>LoRaWAN<sp/>module<sp/>is<sp/>CE,<sp/>FCC<sp/>and<sp/>LoRa<sp/>Alliance<sp/>certified.</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">Additional<sp/>resources:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.onethinx.com/&quot;&gt;Onethinx<sp/>Web&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/&quot;&gt;Forum&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx&quot;&gt;Github&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/Core_Datasheet&quot;&gt;Datasheet&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/CAD_libraries&quot;&gt;Cad<sp/>Libraries&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.facebook.com/Onethinx&quot;&gt;Facebook&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.linkedin.com/company/onethinx&quot;&gt;LinkedIn&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>&lt;a<sp/>href=&quot;https://twitter.com/onethinx&quot;&gt;Twitter&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">\image<sp/>html<sp/>OTX_modulemarketing.png<sp/>width=1000px</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">\page<sp/>getstart<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>ide<sp/>Installing<sp/>the<sp/>IDE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>This<sp/>guide<sp/>will<sp/>show<sp/>you<sp/>how<sp/>to<sp/>setup<sp/>Visual<sp/>Studio<sp/>Code<sp/>with<sp/>the<sp/>Onethinx<sp/>Core<sp/>dependencies<sp/>pack.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>idewindows<sp/>Windows</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>&lt;b&gt;Download<sp/>prerequisites&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://code.visualstudio.com/download&quot;&gt;Download<sp/>Visual<sp/>Studio<sp/>Code&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/VSCode_OnethinxPack_Windows/archive/master.zip&quot;&gt;Download<sp/>the<sp/>Onethinx<sp/>dependencies<sp/>pack<sp/>for<sp/>Windows&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>&lt;b&gt;Install<sp/>VS<sp/>Code<sp/>&amp;<sp/>extensions&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>VS<sp/>Code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>extensions:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>ARM<sp/>Support<sp/>For<sp/>Visual<sp/>Studio<sp/>Code<sp/>(dan-c-underwood)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>C/C++<sp/>IntelliSense,<sp/>debugging<sp/>(microsoft)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>CMake<sp/>language<sp/>support<sp/>(twxs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>CMake<sp/>Tools<sp/>(microsoft)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Cortex-Debug<sp/>GDB<sp/>support<sp/>(marus25)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>LinkerScript<sp/>support<sp/>for<sp/>GNU<sp/>(Zixuan<sp/>Wang)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Open<sp/>in<sp/>Application<sp/>(Fabio<sp/>Spampinato)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Output<sp/>Colorizer<sp/>(IBM)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Tasks<sp/>(actboy168)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>&lt;b&gt;Install<sp/>the<sp/>Onethinx<sp/>Dependencies<sp/>Pack&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Unzip<sp/>the<sp/>pack<sp/>archive<sp/>to<sp/>your<sp/>local<sp/>harddisk<sp/>(eg:<sp/>C:\VSCode_OnethinxPack_Windows).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Open<sp/>your<sp/>command<sp/>prompt<sp/>(cmd).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Drag<sp/>and<sp/>drop<sp/>the<sp/>file<sp/>setVariables.bat<sp/>to<sp/>your<sp/>command<sp/>prompt<sp/>(or<sp/>type<sp/>C:\VSCode_OnethinxPack_Windows\setVariables.bat).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Press<sp/>enter,<sp/>you&apos;ll<sp/>see<sp/>the<sp/>environment<sp/>variables<sp/>and<sp/>the<sp/>path<sp/>being<sp/>set.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Restart<sp/>your<sp/>machine.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4.<sp/>&lt;b&gt;Check&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>If<sp/>CMake,<sp/>Make<sp/>and<sp/>the<sp/>compiler<sp/>is<sp/>correctly<sp/>installed<sp/>by<sp/>typing<sp/>the<sp/>following<sp/>into<sp/>your<sp/>command<sp/>prompt<sp/>or<sp/>terminal<sp/>window<sp/>of<sp/>VS<sp/>Code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;cmake<sp/>-version&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;mingw32-make<sp/>-v&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;arm-none-eabi-gcc<sp/>-v&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5.<sp/>&lt;b&gt;Remind&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>After<sp/>changing<sp/>the<sp/>device<sp/>configuration<sp/>(or<sp/>project<sp/>file<sp/>structure)<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Clean<sp/>Reconfigure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Clean<sp/>Rebuild<sp/>in<sp/>order<sp/>to<sp/>build<sp/>the<sp/>image<sp/>properly</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>To<sp/>delete<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>build<sp/>folder</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>if<sp/>you<sp/>copied<sp/>the<sp/>project<sp/>including<sp/>build<sp/>folder<sp/>from<sp/>another<sp/>location<sp/>/<sp/>machine</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>when<sp/>build<sp/>fails.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>This<sp/>pack<sp/>contains<sp/>the<sp/>64bit<sp/>version<sp/>of<sp/>CMake.<sp/>Replace<sp/>with<sp/>the<sp/>32bit<sp/>version<sp/>if<sp/>you<sp/>run<sp/>on<sp/>a<sp/>32bit<sp/>machine.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Windows&lt;hr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>idemacos<sp/>MacOS</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>&lt;b&gt;Download<sp/>prerequisites&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://code.visualstudio.com/download&quot;&gt;Download<sp/>Visual<sp/>Studio<sp/>Code&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/VSCode_OnethinxPack_macOS/archive/master.zip&quot;&gt;Download<sp/>the<sp/>Onethinx<sp/>dependencies<sp/>pack<sp/>for<sp/>Mac<sp/>OS&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://cmake.org/download/&quot;&gt;Download<sp/>CMake&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>homebrew<sp/>GNU<sp/>by:<sp/>make<sp/>brew<sp/>install<sp/>homebrew/core/make<sp/>as<sp/>&lt;a<sp/>href=&quot;https://apple.stackexchange.com/questions/261918/how-to-upgrade-gnu-make-in-os-x-el-capitan&quot;&gt;explained<sp/>here&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>&lt;b&gt;Install<sp/>VS<sp/>Code<sp/>&amp;<sp/>extensions&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>CMake.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>VS<sp/>Code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>extensions:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>ARM<sp/>Support<sp/>For<sp/>Visual<sp/>Studio<sp/>Code<sp/>(dan-c-underwood)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>C/C++<sp/>IntelliSense,<sp/>debugging<sp/>(microsoft)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>CMake<sp/>language<sp/>support<sp/>(twxs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>CMake<sp/>Tools<sp/>(microsoft)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Cortex-Debug<sp/>GDB<sp/>support<sp/>(marus25)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>LinkerScript<sp/>support<sp/>for<sp/>GNU<sp/>(Zixuan<sp/>Wang)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Open<sp/>in<sp/>Application<sp/>(Fabio<sp/>Spampinato)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Output<sp/>Colorizer<sp/>(IBM)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Tasks<sp/>(actboy168)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Apply<sp/>the<sp/>CMake<sp/>path<sp/>to<sp/>VS<sp/>Settings:<sp/>&quot;cmake.cmakePath&quot;:<sp/>&quot;/Applications/CMake.app/Contents/bin/cmake&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>&lt;b&gt;Install<sp/>the<sp/>Onethinx<sp/>Dependencies<sp/>Pack&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Unzip<sp/>the<sp/>pack<sp/>archive<sp/>to<sp/>your<sp/>local<sp/>harddisk<sp/>(eg:<sp/>/Applications/VSCode_OnethinxPack_macOS).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>If<sp/>the<sp/>file<sp/>~.bash_profile<sp/>doesn&apos;t<sp/>exist,<sp/>create<sp/>it:<sp/>Terminal<sp/>&gt;&gt;<sp/>&lt;span<sp/>style=&quot;background-color:<sp/>#e6e6e6&quot;&gt;cd<sp/>~<sp/>&amp;&amp;<sp/>touch<sp/>.bash_profile&lt;/span&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Open<sp/>~.bash_profile:<sp/>Terminal<sp/>&gt;&gt;<sp/>cd<sp/>~<sp/>&amp;&amp;<sp/>open<sp/>-e<sp/>.bash_profile</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Add<sp/>this<sp/>to<sp/>the<sp/>end<sp/>of<sp/>the<sp/>file<sp/>(make<sp/>sure<sp/>you<sp/>enter<sp/>the<sp/>correct<sp/>path)<sp/>and<sp/>save:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>#<sp/>Loading<sp/>environment<sp/>variables<sp/>for<sp/>the<sp/>Onethinx<sp/>Pack</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>source<sp/>/locationOfYour/VSCode_OnethinxPack_macOS/variables.env</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Set<sp/>the<sp/>correct<sp/>path<sp/>in<sp/>this<sp/>pack&apos;s<sp/>variables.env<sp/>file.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Restart<sp/>your<sp/>machine<sp/>(or<sp/>log-out<sp/>and<sp/>log-in)<sp/>to<sp/>reload<sp/>the<sp/>environment<sp/>variables.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4.<sp/>&lt;b&gt;Check&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>If<sp/>CMake,<sp/>Make<sp/>and<sp/>the<sp/>compiler<sp/>is<sp/>correctly<sp/>installed<sp/>by<sp/>typing<sp/>the<sp/>following<sp/>into<sp/>your<sp/>command<sp/>prompt<sp/>or<sp/>terminal<sp/>window<sp/>of<sp/>VS<sp/>Code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;cmake<sp/>-version&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;mingw32-make<sp/>-v&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;arm-none-eabi-gcc<sp/>-v&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5.<sp/>&lt;b&gt;Remind&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>After<sp/>changing<sp/>the<sp/>device<sp/>configuration<sp/>(or<sp/>project<sp/>file<sp/>structure)<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Clean<sp/>Reconfigure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Clean<sp/>Rebuild<sp/>in<sp/>order<sp/>to<sp/>build<sp/>the<sp/>image<sp/>properly</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>To<sp/>delete<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>build<sp/>folder</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>if<sp/>you<sp/>copied<sp/>the<sp/>project<sp/>including<sp/>build<sp/>folder<sp/>from<sp/>another<sp/>location<sp/>/<sp/>machine</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>when<sp/>build<sp/>fails.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>This<sp/>pack<sp/>contains<sp/>the<sp/>64bit<sp/>version<sp/>of<sp/>CMake.<sp/>Replace<sp/>with<sp/>the<sp/>32bit<sp/>version<sp/>if<sp/>you<sp/>run<sp/>on<sp/>a<sp/>32bit<sp/>machine.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MacOS&lt;hr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>idelinux<sp/>Linux</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>&lt;b&gt;Download<sp/>prerequisites&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://code.visualstudio.com/download&quot;&gt;Download<sp/>Visual<sp/>Studio<sp/>Code&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/VSCode_OnethinxPack_Linux/archive/master.zip&quot;&gt;Download<sp/>Onethinx<sp/>Dependencies<sp/>Pack&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>CMake:<sp/>&lt;tt&gt;sudo<sp/>apt<sp/>install<sp/>cmake&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>&lt;b&gt;Install<sp/>VS<sp/>Code<sp/>&amp;<sp/>extensions&lt;/b&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>VS<sp/>Code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Install<sp/>extensions:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>ARM<sp/>Support<sp/>For<sp/>Visual<sp/>Studio<sp/>Code<sp/>(dan-c-underwood)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>C/C++<sp/>IntelliSense,<sp/>debugging<sp/>(microsoft)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>CMake<sp/>language<sp/>support<sp/>(twxs)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>CMake<sp/>Tools<sp/>(microsoft)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Cortex-Debug<sp/>GDB<sp/>support<sp/>(marus25)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>LinkerScript<sp/>support<sp/>for<sp/>GNU<sp/>(Zixuan<sp/>Wang)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Open<sp/>in<sp/>Application<sp/>(Fabio<sp/>Spampinato)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Output<sp/>Colorizer<sp/>(IBM)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Tasks<sp/>(actboy168)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Apply<sp/>the<sp/>OpenOCD<sp/>USB<sp/>rules<sp/>by<sp/>running</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tt&gt;yourpath\VSCode_OnethinxPack_Linux/tools_2.0/linux/openocd/udev_rules/install_rules.sh&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.<sp/>Install<sp/>the<sp/>Onethinx<sp/>Dependencies<sp/>Pack</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Unzip<sp/>the<sp/>pack<sp/>archive<sp/>to<sp/>your<sp/>local<sp/>harddisk<sp/>(eg:<sp/>/Applications/VSCode_OnethinxPack_Linux).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Open<sp/>~.profile:<sp/>Terminal<sp/>&gt;&gt;<sp/>&lt;tt&gt;cd<sp/>~<sp/>&amp;&amp;<sp/>sudo<sp/>nano<sp/>.profile&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Add<sp/>this<sp/>to<sp/>the<sp/>end<sp/>of<sp/>the<sp/>file<sp/>(make<sp/>sure<sp/>you<sp/>enter<sp/>the<sp/>correct<sp/>path)<sp/>and<sp/>save:&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;span<sp/>style=&quot;background-color:<sp/>#e6e6e6&quot;&gt;#<sp/>Loading<sp/>environment<sp/>variables<sp/>for<sp/>the<sp/>Onethinx<sp/>Pack&lt;/span&gt;&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;span<sp/>style=&quot;background-color:<sp/>#e6e6e6&quot;&gt;source<sp/>/locationOfYour/VSCode_OnethinxPack_macOS/variables.env&lt;/span&gt;&lt;br&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Set<sp/>the<sp/>correct<sp/>path<sp/>in<sp/>this<sp/>pack&apos;s<sp/>&lt;span<sp/>style=&quot;background-color:<sp/>#e6e6e6&quot;&gt;variables.env&lt;/span&gt;<sp/>file.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Restart<sp/>your<sp/>machine<sp/>(or<sp/>log-out<sp/>and<sp/>log-in)<sp/>to<sp/>reload<sp/>the<sp/>environment<sp/>variables.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4.<sp/>Check</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>If<sp/>CMake,<sp/>Make<sp/>and<sp/>the<sp/>compiler<sp/>is<sp/>correctly<sp/>installed<sp/>by<sp/>typing<sp/>the<sp/>following<sp/>into<sp/>your<sp/>terminal<sp/>or<sp/>terminal<sp/>window<sp/>of<sp/>VS<sp/>Code.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;cmake<sp/>-version&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;make<sp/>-v&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;tt&gt;arm-none-eabi-gcc<sp/>-v&lt;/tt&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5.<sp/>Remind</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>After<sp/>changing<sp/>the<sp/>device<sp/>configuration<sp/>(or<sp/>project<sp/>file<sp/>structure)<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Clean<sp/>Reconfigure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Clean<sp/>Rebuild<sp/>in<sp/>order<sp/>to<sp/>build<sp/>the<sp/>image<sp/>properly</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>To<sp/>delete<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>build<sp/>folder</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>if<sp/>you<sp/>copied<sp/>the<sp/>project<sp/>including<sp/>build<sp/>folder<sp/>from<sp/>another<sp/>location<sp/>/<sp/>machine</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>when<sp/>build<sp/>fails.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Linux&lt;hr&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>programmer<sp/>Programmer/Debugger</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>In<sp/>order<sp/>to<sp/>program<sp/>a<sp/>Onethinx<sp/>LoRaWAN<sp/>module,<sp/>you<sp/>need<sp/>a<sp/>programmer.<sp/>You<sp/>can<sp/>also<sp/>find<sp/>our<sp/>recomendations<sp/>on<sp/>our<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/which-programmers-debuggers-are-compatible/216&quot;&gt;&lt;b&gt;forum&lt;/b&gt;&lt;/a&gt;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:white_check_mark:<sp/>MiniProg<sp/>4<sp/>&lt;<sp/>recommended</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/cy8ckit-005-miniprog4-program-and-debug-kit&quot;&gt;CY8CKIT-005<sp/>-<sp/>$99.00&lt;/a&gt;<sp/>For<sp/>our<sp/>dev.kit,<sp/>use<sp/>an<sp/>extension<sp/>header,<sp/>eg.<sp/>&lt;a<sp/>href=&quot;https://www.samtec.com/products/ssq-105-03-f-s&quot;&gt;Samtec<sp/>SSQ-105-03-F-S&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:white_check_mark:<sp/>KitProg<sp/>2<sp/>(&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376&quot;&gt;fter<sp/>voltage<sp/>upgrade&lt;/a&gt;!!<sp/>and<sp/>&lt;a<sp/>href=&quot;https://community.cypress.com/t5/ModusToolbox-General/KitProg-firmware-out-of-date-message/td-p/72805&quot;&gt;upgrading<sp/>to<sp/>KitProg<sp/>3&lt;/a&gt;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/cy8ckit-147-psoc-4100ps-prototyping-kit&quot;&gt;CY8CKIT-147<sp/>-<sp/>$10.00&lt;/a&gt;<sp/>(needs<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376&quot;&gt;upgrade&lt;/a&gt;!!)<sp/>&lt;<sp/>budgetary<sp/>recommended</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/cy8ckit-145-40xx-psoc-4000s-capsense-prototyping-kit&quot;&gt;CY8CKIT-145<sp/>-<sp/>$15.00&lt;/a&gt;<sp/>(needs<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376&quot;&gt;upgrade&lt;/a&gt;!!)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-146-4xxx-prototyping-kits&quot;&gt;CY8CKIT-146<sp/>-<sp/>$15.00&lt;/a&gt;<sp/>(needs<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376&quot;&gt;upgrade&lt;/a&gt;!!)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/psoc-6-ble-prototyping-kit-cy8cproto-063-ble&quot;&gt;CY8CPROTO-063-BLE<sp/>-<sp/>$20.00&lt;/a&gt;<sp/>(needs<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/kitprog-2-voltage-upgrade/376&quot;&gt;upgrade&lt;/a&gt;!!)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:grey_question:<sp/>KitProg<sp/>3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/psoc-6-wi-fi-bt-prototyping-kit-cy8cproto-062-4343w&quot;&gt;CY8CPROTO-062-4343W<sp/>-<sp/>$30.00&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:white_check_mark:<sp/>Segger<sp/>J-Link</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.segger.com/products/debug-probes/j-link/models/j-link-edu/&quot;&gt;J-Link<sp/>EDU<sp/>-<sp/>$60.00&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.segger.com/products/debug-probes/j-link/models/j-link-pro/&quot;&gt;J-Link<sp/>PRO<sp/>-<sp/>$800.00&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:x:<sp/>KitProg<sp/>1<sp/>Doesn’t<sp/>work!<sp/>(&lt;strike&gt;should<sp/>work<sp/>according<sp/>to<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/error-on-uploading-the-code-solved/118/5&quot;&gt;this<sp/>topic&lt;/a&gt;&lt;/strike&gt;,<sp/>however<sp/>not<sp/>advised)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;strike&gt;&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/cy8ckit-043-psoc-4-m-series-prototyping-kit&quot;&gt;CY8CKIT-043<sp/>-<sp/>$10.00&lt;/a&gt;&lt;/strike&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;strike&gt;&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/cy8ckit-059-psoc-5lp-prototyping-kit-onboard-programmer-and&quot;&gt;CY8CKIT-059<sp/>-<sp/>$10.00&lt;/a&gt;&lt;/strike&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:grey_question:<sp/>ST<sp/>Link<sp/>(after<sp/>&lt;a<sp/>href=&quot;https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/&quot;&gt;converting<sp/>to<sp/>J-Link?&lt;/a&gt;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-nucleo-boards/nucleo-f030r8.html&quot;&gt;NUCLEO-F030R8&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\emoji<sp/>:x:<sp/>MiniProg<sp/>3<sp/>(Not<sp/>working)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://www.cypress.com/documentation/development-kitsboards/cy8ckit-002-psoc-miniprog3-program-and-debug-kit&quot;&gt;CY8CKIT-002&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;b&gt;NOTE&lt;/b&gt;:<sp/>If<sp/>you<sp/>find<sp/>that<sp/>a<sp/>programmer<sp/>that<sp/>is<sp/>not<sp/>listed<sp/>here<sp/>either<sp/>works<sp/>or<sp/>does<sp/>not<sp/>work<sp/>with<sp/>our<sp/>module,<sp/>please<sp/>let<sp/>us<sp/>know<sp/>on<sp/>the<sp/>&lt;a<sp/>href=&quot;https://forum.onethinx.com/t/which-programmers-debuggers-are-compatible/216&quot;&gt;&lt;b&gt;forum&lt;/b&gt;&lt;/a&gt;.&lt;hr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>examples<sp/>Downloading<sp/>the<sp/>examples</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Onethinx<sp/>examples<sp/>can<sp/>be<sp/>found<sp/>on<sp/>our<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/Onethinx_Creator_Examples&quot;&gt;&lt;b&gt;Github&lt;/b&gt;&lt;/a&gt;<sp/>page.<sp/>For<sp/>detailed<sp/>explanation<sp/>of<sp/>the<sp/>examples<sp/>please<sp/>see<sp/>the<sp/>\ref<sp/>ex_examples<sp/>&quot;Examples&quot;<sp/>page<sp/>of<sp/>this<sp/>document.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;hr&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>apiLibs<sp/>Using<sp/>the<sp/>correct<sp/>API<sp/>libraries</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>As<sp/>we<sp/>update<sp/>our<sp/>Onethinx<sp/>module,<sp/>newer<sp/>versions<sp/>of<sp/>the<sp/>Onethinx<sp/>API<sp/>and<sp/>stack<sp/>come<sp/>out.<sp/>Onethinx<sp/>stack<sp/>is<sp/>programmed<sp/>on<sp/>the<sp/>modules<sp/>ARM<sp/>Cortex<sp/>M0+<sp/>core,<sp/>while<sp/>your<sp/>application,<sp/>which<sp/>you<sp/>will<sp/>program<sp/>on<sp/>the<sp/>ARM<sp/>Cortex<sp/>M4<sp/>core<sp/>uses<sp/>the<sp/>Onethinx<sp/>API<sp/>to<sp/>communicate<sp/>with<sp/>the<sp/>stack.<sp/>Not<sp/>all<sp/>stack<sp/>versions<sp/>support<sp/>the<sp/>same<sp/>API<sp/>version<sp/>(there<sp/>are<sp/>versions<sp/>of<sp/>the<sp/>stack<sp/>that<sp/>do<sp/>support<sp/>same<sp/>API).<sp/>Although<sp/>we<sp/>strive<sp/>to<sp/>have<sp/>one<sp/>single<sp/>API<sp/>version<sp/>for<sp/>all<sp/>future<sp/>stacks,<sp/>updates<sp/>are<sp/>inevitable.<sp/>Examples<sp/>found<sp/>on<sp/>our<sp/>Github,<sp/>are<sp/>usually<sp/>updated<sp/>to<sp/>the<sp/>latest<sp/>API<sp/>version.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Onethinx<sp/>API<sp/>can<sp/>be<sp/>found<sp/>on<sp/>our<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx&quot;&gt;Github&lt;/a&gt;<sp/>page:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/OnethinxCoreAPI&quot;&gt;&lt;b&gt;LoRaWAN<sp/>API&lt;/b&gt;&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/OnethinxCoreAPI_Extended&quot;&gt;&lt;b&gt;LoRa<sp/>API&lt;/b&gt;&lt;/a&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>The<sp/>API<sp/>version<sp/>you<sp/>are<sp/>using<sp/>should<sp/>always<sp/>match<sp/>the<sp/>Stack<sp/>version<sp/>that<sp/>is<sp/>on<sp/>the<sp/>module<sp/>according<sp/>to<sp/>this<sp/>table:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;table&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;caption<sp/>id=&quot;multi_row&quot;&gt;Onethinx<sp/>API<sp/>Versions&lt;/caption&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;th&gt;Stack<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;LoRaWAN<sp/>API<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;LoRa<sp/>API<sp/>Version</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xAE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xAD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>public<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>public<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>available</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xB9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xBA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xBB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xBB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xBC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xBB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xB8</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xBD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>public<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>public</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xBE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xBE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xBE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xBF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xBE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xBE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xC0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>public<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;not<sp/>public</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;&lt;td&gt;0xC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;td&gt;0xC1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/table&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>If<sp/>the<sp/>tables<sp/>in<sp/>this<sp/>document<sp/>are<sp/>not<sp/>up<sp/>to<sp/>date,<sp/>please<sp/>consult<sp/>the<sp/>tables<sp/>found<sp/>in<sp/>the<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/OnethinxCoreAPI&quot;&gt;LoRaWAN<sp/>API&lt;/a&gt;<sp/>and<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/OnethinxCoreAPI_Extended&quot;&gt;LoRa<sp/>API&lt;/a&gt;<sp/>pages<sp/>on<sp/>our<sp/>Github.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;b&gt;Dont<sp/>know<sp/>which<sp/>stack<sp/>version<sp/>your<sp/>module<sp/>has?&lt;/b&gt;<sp/>In<sp/>order<sp/>to<sp/>find<sp/>out<sp/>which<sp/>version<sp/>of<sp/>the<sp/>stack<sp/>your<sp/>module<sp/>has,<sp/>you<sp/>can<sp/>copy<sp/>and<sp/>run<sp/>a<sp/>piece<sp/>of<sp/>code<sp/>found<sp/><sp/>here:<sp/>\ref<sp/>ex_deveui<sp/>&quot;Stack<sp/>Version<sp/>Code&quot;.<sp/>Similar<sp/>code<sp/>can<sp/>also<sp/>be<sp/>found<sp/>on<sp/>the<sp/>bottom<sp/>of<sp/>this<sp/>&lt;a<sp/>href=&quot;https://github.com/onethinx/OnethinxCoreAPI&quot;&gt;Github<sp/>page&lt;/a&gt;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;b&gt;NOTE&lt;/b&gt;:<sp/>Once<sp/>you<sp/>find<sp/>a<sp/>stable<sp/>version<sp/>that<sp/>suits<sp/>you,<sp/>you<sp/>tested<sp/>your<sp/>device<sp/>with<sp/>it<sp/>and<sp/>you<sp/>plan<sp/>to<sp/>go<sp/>to<sp/>mass<sp/>production,<sp/>we<sp/>recommend<sp/>to<sp/>stick<sp/>to<sp/>that<sp/>version<sp/>when<sp/>ordering<sp/>modules.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;hr&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>lwkeys<sp/>LoRaWAN<sp/>Keys<sp/>and<sp/>Connection</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>In<sp/>order<sp/>to<sp/>connect<sp/>to<sp/>a<sp/>LoRaWAN<sp/>network,<sp/>you<sp/>need<sp/>a<sp/>LoRaWAN<sp/>gateway<sp/>and<sp/>LoRaWAN<sp/>keys.<sp/>Keys<sp/>are<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>If<sp/>you<sp/>are<sp/>using<sp/>The<sp/>Things<sp/>Network<sp/>(or<sp/>some<sp/>other<sp/>public<sp/>network),<sp/>you<sp/>may<sp/>not<sp/>need<sp/>a<sp/>gateway<sp/>to<sp/>test<sp/>your<sp/>LoRaWAN<sp/>device<sp/>because<sp/>there<sp/>may<sp/>already<sp/>be<sp/>coverage<sp/>in<sp/>your<sp/>area<sp/>by<sp/>a<sp/>gateway<sp/>somebody<sp/>else<sp/>has<sp/>placed.<sp/>Although<sp/>this<sp/>saves<sp/>you<sp/>some<sp/>money<sp/>not<sp/>needing<sp/>to<sp/>put<sp/>up<sp/>your<sp/>own<sp/>gateway,<sp/>we<sp/>still<sp/>recommend<sp/>that<sp/>you<sp/>get<sp/>your<sp/>own<sp/>gateway<sp/>as<sp/>this<sp/>will<sp/>save<sp/>you<sp/>a<sp/>lot<sp/>of<sp/>time<sp/>during<sp/>development<sp/>of<sp/>your<sp/>product<sp/>as<sp/>there<sp/>are<sp/>many<sp/>things<sp/>that<sp/>can<sp/>influence<sp/>the<sp/>connection.<sp/>It<sp/>is<sp/>acceptable<sp/>to<sp/>use<sp/>public<sp/>gateways<sp/>for<sp/>prototyping.<sp/>The<sp/>public<sp/>gateway<sp/>may<sp/>be<sp/>far<sp/>and<sp/>the<sp/>network<sp/>conditions<sp/>may<sp/>be<sp/>poor<sp/>on<sp/>a<sp/>certain<sp/>day,<sp/>limiting<sp/>your<sp/>development.<sp/>Also,<sp/>the<sp/>person<sp/>that<sp/>owns<sp/>the<sp/>public<sp/>gateway,<sp/>may<sp/>decide<sp/>they<sp/>will<sp/>unplug<sp/>the<sp/>gateway<sp/>for<sp/>a<sp/>day,<sp/>which<sp/>will<sp/>disable<sp/>your<sp/>connection<sp/>to<sp/>the<sp/>Network<sp/>Server.<sp/>This<sp/>is<sp/>why,<sp/>for<sp/>serious<sp/>development,<sp/>we<sp/>recommend<sp/>having<sp/>your<sp/>own<sp/>gateway.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Onethinx<sp/>LoRaWAN<sp/>module<sp/>supports<sp/>1.0.2<sp/>LoRaWAN<sp/>specification<sp/>and<sp/>is<sp/>LoRa<sp/>Alliance<sp/>Certified<sp/>for<sp/>this<sp/>version.<sp/>In<sp/>order<sp/>to<sp/>connect<sp/>to<sp/>any<sp/>LoRaWAN<sp/>network,<sp/>the<sp/>LoRaWAN<sp/>stack<sp/>needs<sp/>to<sp/>know<sp/>these<sp/>3<sp/>parameters<sp/>(keys):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;b&gt;DevEUI&lt;/b&gt;<sp/>is<sp/>a<sp/>unique<sp/>ID<sp/>in<sp/>the<sp/>IEEE<sp/>EUI64<sp/>address<sp/>space<sp/>used<sp/>to<sp/>identify<sp/>a<sp/>device.<sp/>There<sp/>must<sp/>not<sp/>be<sp/>2<sp/>same<sp/>DevEUIs<sp/>on<sp/>different<sp/>devices!<sp/>DevEUI<sp/>is<sp/>supplied<sp/>by<sp/>the<sp/>device<sp/>manufacturer,<sp/>in<sp/>this<sp/>case,<sp/>each<sp/>Onethinx<sp/>module<sp/>has<sp/>its<sp/>own<sp/>unique<sp/>DevEUI<sp/>which<sp/>can<sp/>be<sp/>used.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;b&gt;AppEUI&lt;/b&gt;<sp/>is<sp/>a<sp/>global<sp/>application<sp/>ID<sp/>in<sp/>the<sp/>IEEE<sp/>EUI64<sp/>address<sp/>space<sp/>identifying<sp/>the<sp/>join<sp/>server<sp/>during<sp/>the<sp/>over<sp/>the<sp/>air<sp/>activation.<sp/>For<sp/>non-private<sp/>networks<sp/>it<sp/>corresponds<sp/>to<sp/>a<sp/>subdomain<sp/>of<sp/>joineuis.lora-alliance.org.<sp/>This<sp/>server<sp/>name<sp/>is<sp/>used<sp/>to<sp/>find<sp/>the<sp/>IP<sp/>address<sp/>of<sp/>the<sp/>join<sp/>server<sp/>via<sp/>DNS.<sp/>The<sp/>AppEUI<sp/>can<sp/>be<sp/>different<sp/>for<sp/>each<sp/>device<sp/>or<sp/>it<sp/>can<sp/>also<sp/>be<sp/>same<sp/>for<sp/>all<sp/>device.<sp/>It<sp/>also<sp/>depends<sp/>on<sp/>what<sp/>kind<sp/>of<sp/>application<sp/>server<sp/>you<sp/>are<sp/>using.<sp/>AppEUI<sp/>identifies<sp/>the<sp/>join<sp/>server<sp/>and<sp/>it<sp/>can<sp/>only<sp/>be<sp/>provided<sp/>by<sp/>the<sp/>owner<sp/>of<sp/>the<sp/>join<sp/>server.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>&lt;b&gt;AppKey&lt;/b&gt;<sp/>is<sp/>an<sp/>encryption<sp/>key<sp/>used<sp/>for<sp/>messages<sp/>during<sp/>every<sp/>Over<sp/>The<sp/>Air<sp/>Activation<sp/>(OTAA).<sp/>After<sp/>the<sp/>activation<sp/>the<sp/>AppSKey<sp/>is<sp/>used.<sp/>A<sp/>listener<sp/>knowing<sp/>the<sp/>AppKey<sp/>can<sp/>derive<sp/>the<sp/>AppSKey.<sp/>So<sp/>you<sp/>want<sp/>to<sp/>keep<sp/>the<sp/>AppKey<sp/>secret.<sp/>Which<sp/>side<sp/>of<sp/>the<sp/>communication<sp/>channel<sp/>creates<sp/>it,<sp/>is<sp/>not<sp/>important.<sp/>You<sp/>simply<sp/>want<sp/>to<sp/>be<sp/>sure<sp/>that<sp/>it<sp/>is<sp/>random<sp/>and<sp/>unique<sp/>for<sp/>each<sp/>device.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>In<sp/>Onethinx<sp/>project,<sp/>the<sp/>LoRaWAN<sp/>keys<sp/>are<sp/>usually<sp/>saved<sp/>in<sp/>LoRaWAN_keys.h<sp/>header<sp/>file.<sp/>This<sp/>header<sp/>file<sp/>is<sp/>located<sp/>in<sp/>the<sp/>project<sp/>source<sp/>folder:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Project<sp/>-&gt;<sp/>source<sp/>-&gt;<sp/>OnethinxCore<sp/>-&gt;<sp/>LoRaWAN_keys.h</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>In<sp/>LoRaWAN_keys.h<sp/>you<sp/>will<sp/>find<sp/>an<sp/>initalization<sp/>structure,<sp/>where<sp/>you<sp/>need<sp/>to<sp/>fill<sp/>in<sp/>the<sp/>DevEUI<sp/>(or<sp/>use<sp/>internal),<sp/>AppEUI<sp/>and<sp/>AppKey.<sp/>You<sp/>can<sp/>replace<sp/>the<sp/>zero<sp/>(0x00)<sp/>values<sp/>in<sp/>the<sp/>structure<sp/>with<sp/>your<sp/>keys.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>You<sp/>can<sp/>use<sp/>a<sp/>different<sp/>DevEUI:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\code</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LoRaWAN_keys_t<sp/>TTN_OTAAkeys<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.KeyType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>OTAA_10x_key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.PublicNetwork<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.DevEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.AppEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.AppKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\endcode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Or<sp/>use<sp/>the<sp/>internal<sp/>unique<sp/>DevEUI<sp/>that<sp/>is<sp/>provided<sp/>with<sp/>every<sp/>module:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\code</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LoRaWAN_keys_t<sp/>TTN_OTAAkeys<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.KeyType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>OTAA_10x_key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.PublicNetwork<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.DevEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>thisDevEUI,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.AppEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.AppKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\endcode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>There<sp/>are<sp/>several<sp/>ways<sp/>to<sp/>read<sp/>out<sp/>or<sp/>to<sp/>extract<sp/>&lt;b&gt;Onethinx<sp/>DevEUI&lt;/b&gt;<sp/>from<sp/>a<sp/>Onethinx<sp/>module:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>&lt;a<sp/>href=&quot;OTX-18-Programmer&quot;&gt;&lt;b&gt;OTX-18-Programmer&lt;/b&gt;&lt;/a&gt;<sp/>-<sp/>This<sp/>program<sp/>(made<sp/>by<sp/>Onethinx)<sp/>allows<sp/>you<sp/>to<sp/>read<sp/>our<sp/>a<sp/>DevEUI,<sp/>but<sp/>also,<sp/>if<sp/>needed,<sp/>to<sp/>program<sp/>a<sp/>hex<sp/>file<sp/>to<sp/>the<sp/>module<sp/>using<sp/>OpenOCD.<sp/>This<sp/>program<sp/>is<sp/>written<sp/>in<sp/>C#<sp/>(Visual<sp/>Studio)<sp/>and<sp/>the<sp/>code<sp/>is<sp/>available<sp/>so<sp/>you<sp/>can<sp/>make<sp/>your<sp/>own<sp/>program<sp/>with<sp/>it<sp/>if<sp/>you<sp/>wish,<sp/>for<sp/>example<sp/>to<sp/>create<sp/>a<sp/>factory<sp/>tester<sp/>that<sp/>reads<sp/>out<sp/>the<sp/>internal<sp/>DevEUI<sp/>and<sp/>writes<sp/>the<sp/>AppEUI<sp/>and<sp/>AppKey<sp/>in.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>Directly<sp/>from<sp/>code<sp/>by<sp/>using<sp/>this<sp/>code<sp/>\ref<sp/>ex_deveui<sp/>&quot;DevEUI<sp/>extraction&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LoRaWAN<sp/>Keys<sp/>and<sp/>Connection&lt;hr&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>builddebug<sp/>Building<sp/>and<sp/>Debugging</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Now<sp/>that<sp/>you<sp/>have<sp/>installed<sp/>Visual<sp/>Studio<sp/>Code,<sp/>gotten<sp/>a<sp/>programmer/debugger,<sp/>downloaded<sp/>the<sp/>examples<sp/>(matched<sp/>the<sp/>API<sp/>if<sp/>needed),<sp/>you<sp/>can<sp/>get<sp/>started<sp/>with<sp/>the<sp/>examples.<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>If<sp/>you<sp/>have<sp/>access<sp/>to<sp/>a<sp/>LoRaWAN<sp/>gateway,<sp/>we<sp/>suggest<sp/>to<sp/>start<sp/>with<sp/>the<sp/>&quot;Hello<sp/>World&quot;<sp/>example.<sp/>If<sp/>you<sp/>do<sp/>not<sp/>have<sp/>access<sp/>to<sp/>a<sp/>LoRaWAN<sp/>gateway<sp/>or<sp/>a<sp/>LoRaWAN<sp/>network<sp/>in<sp/>you<sp/>vicinity,<sp/>you<sp/>can<sp/>get<sp/>started<sp/>with<sp/>the<sp/>Lora2LoRa<sp/>example.<sp/>In<sp/>order<sp/>to<sp/>use<sp/>LoRaWAN<sp/>you<sp/>need<sp/>access<sp/>to<sp/>a<sp/>LoRaWAN<sp/>gateway<sp/>and/or<sp/>network,<sp/>however<sp/>in<sp/>order<sp/>to<sp/>use<sp/>LoRa,<sp/>you<sp/>do<sp/>not<sp/>need<sp/>these<sp/>because<sp/>you<sp/>can<sp/>achieve<sp/>LoRa<sp/>communication<sp/>between<sp/>2<sp/>modules<sp/>(at<sp/>least).<sp/>To<sp/>get<sp/>details<sp/>and<sp/>differences<sp/>between<sp/>LoRa<sp/>and<sp/>LoRaWAN<sp/>I<sp/>suggest<sp/>that<sp/>you<sp/>go<sp/>to<sp/>the<sp/>\ref<sp/>faq_loralorawan<sp/>&quot;LoRa<sp/>vs<sp/>LoRaWAN&quot;<sp/>page.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>To<sp/>run<sp/>the<sp/>example,<sp/>please<sp/>open<sp/>VSCode.<sp/>A<sp/>wellcome<sp/>page<sp/>will<sp/>open<sp/>where<sp/>you<sp/>can<sp/>start.<sp/>Start<sp/>by<sp/>pressing<sp/>&quot;Open<sp/>Folder&quot;<sp/>(Or<sp/>go<sp/>to:<sp/>File-&gt;Open<sp/>Folder)<sp/>and<sp/>select<sp/>the<sp/>folder<sp/>with<sp/>the<sp/>example<sp/>you<sp/>wish<sp/>to<sp/>run.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\image<sp/>html<sp/>openFolderExample.png<sp/>width=600px</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>When<sp/>opening<sp/>the<sp/>example<sp/>for<sp/>the<sp/>first<sp/>time<sp/>(or<sp/>when<sp/>you<sp/>move<sp/>the<sp/>project<sp/>to<sp/>a<sp/>different<sp/>folder),<sp/>you<sp/>will<sp/>be<sp/>asked<sp/>to<sp/>select<sp/>the<sp/>compiler.<sp/>Select<sp/>the<sp/>latest<sp/>GCC<sp/>compiler<sp/>you<sp/>have<sp/>installed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\image<sp/>html<sp/>vscodeCopilerSelect.png<sp/>width=600px</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>In<sp/>order<sp/>to<sp/>build<sp/>the<sp/>code,<sp/>you<sp/>can<sp/>press<sp/>the<sp/>&quot;Build&quot;<sp/>button<sp/>on<sp/>the<sp/>bottom,<sp/>or<sp/>press<sp/>&quot;Build<sp/>and<sp/>Launch&quot;<sp/>to<sp/>Build<sp/>and<sp/>Launch<sp/>debugging.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\image<sp/>html<sp/>vscodeBuild.png<sp/>width=600px</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>In<sp/>the<sp/>Debug<sp/>mode,<sp/>you<sp/>can<sp/>use<sp/>the<sp/>buttons<sp/>on<sp/>the<sp/>top<sp/>to:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-<sp/>Continue/Pause</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-<sp/>Step<sp/>Over</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-<sp/>Step<sp/>Into</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-<sp/>Step<sp/>Out</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-<sp/>Restart</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>-<sp/>Stop<sp/>Debugging<sp/>Session</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\image<sp/>html<sp/>debugButtons.png<sp/>width=400px</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Building<sp/>and<sp/>Debugging&lt;hr&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>gs_psoccreator<sp/>PSoC<sp/>Creator</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO<sp/>&lt;a<sp/>href=&quot;web&quot;&gt;text&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">\page<sp/>FAQ<sp/>Frequently<sp/>Asked<sp/>Questions</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>faq_loralorawan<sp/>LoRa<sp/>vs<sp/>LoRaWAN</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO<sp/>LoRa,<sp/>LoRaWAN,<sp/>1.0.2,<sp/>Regional<sp/>parameters</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>faq_lwgateways<sp/>LoRaWAN<sp/>Gateways</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>faq_vscreator<sp/>VSCode<sp/>+<sp/>PSoC<sp/>Creator</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>faq_nws<sp/>LoRaWAN<sp/>Network<sp/>Servers</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO<sp/>TTN,<sp/>chirpstack,<sp/>etc.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>faq_otaa<sp/>Over-the-Air<sp/>Activation<sp/>(OTAA)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>faq_abp<sp/>Activation<sp/>by<sp/>Personalization<sp/>(ABP)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">\page<sp/>advanced<sp/>Advanced</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>adv_structs<sp/>Structures</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>adv_structs_lorawan_config<sp/><sp/><sp/><sp/><sp/><sp/>LoRaWAN<sp/>configuration</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>adv_structs_lorawan_status<sp/><sp/><sp/><sp/><sp/><sp/>LoRaWAN<sp/>status</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>adv_structs_lora_param<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoRa<sp/>configuration</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>adv_structs_lora_status<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoRa<sp/>status</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>adv_otxversions<sp/>Module<sp/>Versions</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>otxversion_EU868<sp/>EU868</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>otxversion_US915<sp/>US915</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>otxversion_AU923<sp/>AU923</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Not<sp/>yet<sp/>available.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\subsection<sp/>otxversion_IN865<sp/>IN865</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Not<sp/>yet<sp/>available.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>adv_pinout<sp/>Pinout</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>adv_footprint<sp/>Footprint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>adv_internaldeveui<sp/>Internal<sp/>DevEUI</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO<sp/>UART<sp/>OpenOCD<sp/>OTX18-Programmer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>adv_openocd<sp/>OpenOCD<sp/>Programming</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">\page<sp/>ex_examples<sp/>Examples</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>ex_helloworld<sp/><sp/>LoRaWAN<sp/>Hello<sp/>World</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>ex_light<sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoRaWAN<sp/>Analog<sp/>Sensor</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>ex_lora<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoRa<sp/>to<sp/>LoRa</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>ex_capsense<sp/><sp/><sp/><sp/>CapSense<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>TODO</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>\section<sp/>ex_deveui<sp/><sp/><sp/><sp/><sp/><sp/>DevEUI<sp/>and<sp/>Stack<sp/>Version</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\code</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoRaWAN_keys_t<sp/>SomeOTAAkeys<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.KeyType<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>OTAA_10x_key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.PublicNetwork<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.DevEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.AppEui<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.OTAA_10x.AppKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{{<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00,<sp/>0x00<sp/>}}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coreConfiguration_t<sp/>coreConfigMain<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Join.KeysPtr<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;SomeOTAAkeys,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Join.DataRate<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DR_AUTO,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Join.Power<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_MAX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.Join.MAXTries<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>100,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.TX.Confirmed<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>false,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.TX.DataRate<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DR_0,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.TX.Power<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PWR_MAX,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.TX.FPort<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.System.Idle.Mode<sp/>=<sp/><sp/><sp/><sp/><sp/>M0_DeepSleep,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.System.Idle.BleEcoON<sp/>=<sp/>false,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.System.Idle.DebugON<sp/><sp/>=<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.RX.Boost<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>false,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coreStatus_t<sp/>coreStatus;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coreInfo_t<sp/>coreInfo;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>main(void)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CyDelay(2000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>enable<sp/>global<sp/>interrupts<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__enable_irq();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coreStatus<sp/>=<sp/>LoRaWAN_Init(&amp;coreConfigMain);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>coreStatus<sp/>=<sp/>LoRaWAN_GetInfo(&amp;coreInfo);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>&gt;&gt;&gt;<sp/>coreInfo.devEUI[]<sp/>&lt;&lt;&lt;<sp/>Internal<sp/>DevEUI<sp/>here<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>&gt;&gt;&gt;<sp/>coreStatus.system.version<sp/>&lt;&lt;&lt;<sp/>Stack<sp/>Version<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CyDelay(2000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\endcode<sp/></highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/Documentation.md"/>
+  </compounddef>
+</doxygen>

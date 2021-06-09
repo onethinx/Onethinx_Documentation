@@ -1,0 +1,78 @@
+\hypertarget{unionradio_status__t}{}\doxysection{radio\+Status\+\_\+t Union Reference}
+\label{unionradio_status__t}\index{radioStatus\_t@{radioStatus\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\mbox{\hyperlink{group__lorawan__enums_ga059c8ad521b77e896ea7a264b98f3aca}{radioErrors\_e}} \mbox{\hyperlink{unionradio_status__t_a6b6b78765a55d7c55354c524565ce1b5}{errorStatus}}: 8\\
+\>\>{\em Radio Errors. }\\
+\>uint8\_t \mbox{\hyperlink{unionradio_status__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 6\\
+\>\>{\em reserved }\\
+\>bool \mbox{\hyperlink{unionradio_status__t_a2e813ffcb6defeae2490eb1cf6c0418a}{isConfigured}}: 1\\
+\>\>{\em The Radio is configured? (implemented since Stack version 0x000000B5) }\\
+\>bool \mbox{\hyperlink{unionradio_status__t_a099f725f22a344e190121634f53328d8}{isBusy}}: 1\\
+\>\>{\em Radio is busy? }\\
+\}; \\
+
+\end{tabbing}\item 
+uint8\+\_\+t \mbox{\hyperlink{unionradio_status__t_a92a6167e64e6a8206286aa6423a17140}{reserved}} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{unionradio_status__t_ac2ec294ff0e8af767698739c9adeb119}\label{unionradio_status__t_ac2ec294ff0e8af767698739c9adeb119}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \} }
+
+\mbox{\Hypertarget{unionradio_status__t_a8b4eebe79ded0459acec2f4950102ba3}\label{unionradio_status__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{radioStatus\_t@{radioStatus\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!radioStatus\_t@{radioStatus\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+reserved 
+
+\mbox{\Hypertarget{unionradio_status__t_a6b6b78765a55d7c55354c524565ce1b5}\label{unionradio_status__t_a6b6b78765a55d7c55354c524565ce1b5}} 
+\index{radioStatus\_t@{radioStatus\_t}!errorStatus@{errorStatus}}
+\index{errorStatus@{errorStatus}!radioStatus\_t@{radioStatus\_t}}
+\doxysubsubsection{\texorpdfstring{errorStatus}{errorStatus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_ga059c8ad521b77e896ea7a264b98f3aca}{radio\+Errors\+\_\+e}} error\+Status}
+
+
+
+Radio Errors. 
+
+\mbox{\Hypertarget{unionradio_status__t_a099f725f22a344e190121634f53328d8}\label{unionradio_status__t_a099f725f22a344e190121634f53328d8}} 
+\index{radioStatus\_t@{radioStatus\_t}!isBusy@{isBusy}}
+\index{isBusy@{isBusy}!radioStatus\_t@{radioStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isBusy}{isBusy}}
+{\footnotesize\ttfamily bool is\+Busy}
+
+
+
+Radio is busy? 
+
+\mbox{\Hypertarget{unionradio_status__t_a2e813ffcb6defeae2490eb1cf6c0418a}\label{unionradio_status__t_a2e813ffcb6defeae2490eb1cf6c0418a}} 
+\index{radioStatus\_t@{radioStatus\_t}!isConfigured@{isConfigured}}
+\index{isConfigured@{isConfigured}!radioStatus\_t@{radioStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isConfigured}{isConfigured}}
+{\footnotesize\ttfamily bool is\+Configured}
+
+
+
+The Radio is configured? (implemented since Stack version 0x000000\+B5) 
+
+\mbox{\Hypertarget{unionradio_status__t_a92a6167e64e6a8206286aa6423a17140}\label{unionradio_status__t_a92a6167e64e6a8206286aa6423a17140}} 
+\index{radioStatus\_t@{radioStatus\_t}!reserved@{reserved}}
+\index{reserved@{reserved}!radioStatus\_t@{radioStatus\_t}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t reserved\mbox{[}16\mbox{]}}
+

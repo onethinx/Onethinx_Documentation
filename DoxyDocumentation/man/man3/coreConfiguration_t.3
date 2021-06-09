@@ -1,0 +1,165 @@
+.TH "coreConfiguration_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+coreConfiguration_t
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxCore01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      bool \fBConfirmed\fP: 1"
+.br
+.ti -1c
+.RI "      uint8_t \fB__pad0__\fP: 7"
+.br
+.ti -1c
+.RI "      \fBRadio_DataRate_e\fP \fBDataRate\fP: 8"
+.br
+.ti -1c
+.RI "      \fBRadio_TXpower_e\fP \fBPower\fP: 8"
+.br
+.ti -1c
+.RI "      uint8_t \fBFPort\fP: 8"
+.br
+.ti -1c
+.RI "   } \fBTX\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      \fBLoRaWAN_keys_t\fP * \fBKeysPtr\fP"
+.br
+.ti -1c
+.RI "      \fBRadio_DataRate_e\fP \fBDataRate\fP: 8"
+.br
+.RI "Not used for US version (defined by LoRaWAN spec) "
+.ti -1c
+.RI "      \fBRadio_TXpower_e\fP \fBPower\fP: 8"
+.br
+.ti -1c
+.RI "      uint8_t \fBMAXTries\fP: 8"
+.br
+.ti -1c
+.RI "      uint8_t \fBSubBand_1st\fP: 4"
+.br
+.ti -1c
+.RI "      uint8_t \fBSubBand_2nd\fP: 4"
+.br
+.ti -1c
+.RI "   } \fBJoin\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      struct {"
+.br
+.ti -1c
+.RI "         \fBIdleMode_e\fP \fBMode\fP: 2"
+.br
+.RI "Set M0 Idle Mode to M0_Active, M0_Sleep or M0_DeepSleep\&. "
+.ti -1c
+.RI "         bool \fBBleEcoON\fP: 1"
+.br
+.RI "Leaves BLE ECO ON during idle\&. "
+.ti -1c
+.RI "         bool \fBDebugON\fP: 1"
+.br
+.RI "Leaves Debug Port active during idle\&. "
+.ti -1c
+.RI "         uint8_t \fB__pad0__\fP: 4"
+.br
+.RI "Reserved\&. "
+.ti -1c
+.RI "      } \fBIdle\fP"
+.br
+.ti -1c
+.RI "   } \fBSystem\fP"
+.br
+.ti -1c
+.RI "   struct {"
+.br
+.ti -1c
+.RI "      bool \fBBoost\fP: 1"
+.br
+.ti -1c
+.RI "      uint8_t \fB__pad0__\fP: 7"
+.br
+.ti -1c
+.RI "   } \fBRX\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "uint8_t \fBreserved\fP [32]"
+.br
+.in -1c
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "uint8_t __pad0__"
+
+.PP
+Reserved\&. 
+.SS "bool BleEcoON"
+
+.PP
+Leaves BLE ECO ON during idle\&. Consumes additional power, enable only when ECO/BLE functionality is needed 
+.SS "bool Boost"
+
+.SS "bool Confirmed"
+
+.SS "\fBRadio_DataRate_e\fP DataRate"
+
+.PP
+Not used for US version (defined by LoRaWAN spec) 
+.SS "bool DebugON"
+
+.PP
+Leaves Debug Port active during idle\&. Consumes additional power, enable only for debugging purposes 
+.SS "uint8_t FPort"
+
+.SS "struct { \&.\&.\&. }  Idle"
+
+.SS "struct { \&.\&.\&. }  Join"
+
+.SS "\fBLoRaWAN_keys_t\fP* KeysPtr"
+
+.SS "uint8_t MAXTries"
+
+.SS "\fBIdleMode_e\fP Mode"
+
+.PP
+Set M0 Idle Mode to M0_Active, M0_Sleep or M0_DeepSleep\&. 
+.SS "\fBRadio_TXpower_e\fP Power"
+
+.SS "uint8_t reserved[32]"
+
+.SS "struct { \&.\&.\&. }  RX"
+
+.SS "uint8_t SubBand_1st"
+
+.SS "uint8_t SubBand_2nd"
+
+.SS "struct { \&.\&.\&. }  System"
+
+.SS "struct { \&.\&.\&. }  TX"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

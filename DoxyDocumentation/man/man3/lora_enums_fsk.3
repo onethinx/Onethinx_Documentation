@@ -1,0 +1,287 @@
+.TH "lora_enums_fsk" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lora_enums_fsk \- FSK
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBRadioFSKModShapings_e\fP { \fBMOD_SHAPING_OFF\fP = 0x00, \fBMOD_SHAPING_G_BT_03\fP = 0x08, \fBMOD_SHAPING_G_BT_05\fP = 0x09, \fBMOD_SHAPING_G_BT_07\fP = 0x0A, \fBMOD_SHAPING_G_BT_1\fP = 0x0B }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKRxBandwidth_e\fP { \fBRX_BW_4800\fP = 0x1F, \fBRX_BW_5800\fP = 0x17, \fBRX_BW_7300\fP = 0x0F, \fBRX_BW_9700\fP = 0x1E, \fBRX_BW_11700\fP = 0x16, \fBRX_BW_14600\fP = 0x0E, \fBRX_BW_19500\fP = 0x1D, \fBRX_BW_23400\fP = 0x15, \fBRX_BW_29300\fP = 0x0D, \fBRX_BW_39000\fP = 0x1C, \fBRX_BW_46900\fP = 0x14, \fBRX_BW_58600\fP = 0x0C, \fBRX_BW_78200\fP = 0x1B, \fBRX_BW_93800\fP = 0x13, \fBRX_BW_117300\fP = 0x0B, \fBRX_BW_156200\fP = 0x1A, \fBRX_BW_187200\fP = 0x12, \fBRX_BW_234300\fP = 0x0A, \fBRX_BW_312000\fP = 0x19, \fBRX_BW_373600\fP = 0x11, \fBRX_BW_467000\fP = 0x09 }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKRBitrate_e\fP { \fBBITRATE_25K\fP = 40960, \fBBITRATE_50K\fP = 20480, \fBBITRATE_100K\fP = 10240, \fBINTERNAL_BR_MAX\fP = 0xFFFFFF }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKRDeviation_e\fP { \fBFDEV_SSB_25K\fP = 26214, \fBFDEV_DSB_50K\fP = 26214, \fBFDEV_SSB_30K\fP = 31457, \fBFDEV_DSB_60K\fP = 31457, \fBFDEV_SSB_50K\fP = 52429, \fBFDEV_DSB_100K\fP = 52429, \fBINTERNAL_DEV_MAX\fP = 0xFFFFFF }"
+.br
+.RI "Represents the modulation shaping parameter\&. "
+.ti -1c
+.RI "enum \fBRadioFSKPreambleDetection_e\fP { \fBRADIO_PREAMBLE_DETECTOR_OFF\fP = 0x00, \fBRADIO_PREAMBLE_DETECTOR_08_BITS\fP = 0x04, \fBRADIO_PREAMBLE_DETECTOR_16_BITS\fP = 0x05, \fBRADIO_PREAMBLE_DETECTOR_24_BITS\fP = 0x06, \fBRADIO_PREAMBLE_DETECTOR_32_BITS\fP = 0x07 }"
+.br
+.RI "Represents the preamble length used to detect the packet on Rx side\&. "
+.ti -1c
+.RI "enum \fBRadioFSKAddressComp_e\fP { \fBRADIO_ADDRESSCOMP_FILT_OFF\fP = 0x00, \fBRADIO_ADDRESSCOMP_FILT_NODE\fP = 0x01, \fBRADIO_ADDRESSCOMP_FILT_NODE_BROAD\fP = 0x02 }"
+.br
+.RI "Represents the possible combinations of SyncWord correlators activated\&. "
+.ti -1c
+.RI "enum \fBRadioFSKPacketLengthModes_e\fP { \fBRADIO_PACKET_FIXED_LENGTH\fP = 0x00, \fBRADIO_PACKET_VARIABLE_LENGTH\fP = 0x01 }"
+.br
+.RI "Radio GFSK packet length mode\&. "
+.ti -1c
+.RI "enum \fBRadioFSKWhiteningSeed_e\fP { \fBRADIO_WHITENINGSEED\fP = 0x01FF }"
+.br
+.RI "Radio whitening initial seed value\&. "
+.ti -1c
+.RI "enum \fBRadioFSKDcFree_e\fP { \fBRADIO_DC_FREE_OFF\fP = 0x00, \fBRADIO_DC_FREEWHITENING\fP = 0x01 }"
+.br
+.RI "Radio whitening mode activated or deactivated\&. "
+.ti -1c
+.RI "enum \fBRadioFSKCrcTypes_e\fP { \fBRADIO_CRC_OFF\fP = 0x01, \fBRADIO_CRC_1_BYTES\fP = 0x00, \fBRADIO_CRC_2_BYTES\fP = 0x02, \fBRADIO_CRC_1_BYTES_INV\fP = 0x04, \fBRADIO_CRC_2_BYTES_INV\fP = 0x06, \fBRADIO_CRC_2_BYTES_IBM\fP = RADIO_CRC_2_BYTES, \fBRADIO_CRC_2_BYTES_CCIT\fP = RADIO_CRC_2_BYTES_INV }"
+.br
+.RI "Represents the CRC length\&. "
+.ti -1c
+.RI "enum \fBRadioFSKCrcSeed_e\fP { \fBRADIO_CRC_IBM_SEED\fP = 0xFFFF, \fBRADIO_CRC_CCITT_SEED\fP = 0x1D0F }"
+.br
+.RI "LFSR initial value to compute the FSK CRC\&. "
+.ti -1c
+.RI "enum \fBRadioFSKCrcPolynomial_e\fP { \fBRADIO_CRC_POLYNOMIAL_IBM\fP = 0x8005, \fBRADIO_CRC_POLYNOMIAL_CCITT\fP = 0x1021 }"
+.br
+.RI "Polynomial used to compute the FSK CRC\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBRadioFSKAddressComp_e\fP"
+
+.PP
+Represents the possible combinations of SyncWord correlators activated\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_ADDRESSCOMP_FILT_OFF \fP\fP
+No correlator turned on, i\&.e\&. do not search for SyncWord\&. 
+.TP
+\fB\fIRADIO_ADDRESSCOMP_FILT_NODE \fP\fP
+.TP
+\fB\fIRADIO_ADDRESSCOMP_FILT_NODE_BROAD \fP\fP
+.SS "enum \fBRadioFSKCrcPolynomial_e\fP"
+
+.PP
+Polynomial used to compute the FSK CRC\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_CRC_POLYNOMIAL_IBM \fP\fP
+Polynomial to compute IBM type CRC\&. 
+.TP
+\fB\fIRADIO_CRC_POLYNOMIAL_CCITT \fP\fP
+Polynomial value to compute CCIT type CRC\&. 
+.SS "enum \fBRadioFSKCrcSeed_e\fP"
+
+.PP
+LFSR initial value to compute the FSK CRC\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_CRC_IBM_SEED \fP\fP
+FSR initial value to compute IBM type CRC\&. 
+.TP
+\fB\fIRADIO_CRC_CCITT_SEED \fP\fP
+FSR initial value to compute CCIT type CRC\&. 
+.SS "enum \fBRadioFSKCrcTypes_e\fP"
+
+.PP
+Represents the CRC length\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_CRC_OFF \fP\fP
+No CRC in use\&. 
+.TP
+\fB\fIRADIO_CRC_1_BYTES \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES \fP\fP
+.TP
+\fB\fIRADIO_CRC_1_BYTES_INV \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES_INV \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES_IBM \fP\fP
+.TP
+\fB\fIRADIO_CRC_2_BYTES_CCIT \fP\fP
+.SS "enum \fBRadioFSKDcFree_e\fP"
+
+.PP
+Radio whitening mode activated or deactivated\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_DC_FREE_OFF \fP\fP
+.TP
+\fB\fIRADIO_DC_FREEWHITENING \fP\fP
+.SS "enum \fBRadioFSKModShapings_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIMOD_SHAPING_OFF \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_03 \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_05 \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_07 \fP\fP
+.TP
+\fB\fIMOD_SHAPING_G_BT_1 \fP\fP
+.SS "enum \fBRadioFSKPacketLengthModes_e\fP"
+
+.PP
+Radio GFSK packet length mode\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_PACKET_FIXED_LENGTH \fP\fP
+The packet is known on both sides, no header included in the packet\&. 
+.TP
+\fB\fIRADIO_PACKET_VARIABLE_LENGTH \fP\fP
+The packet is on variable size, header included\&. 
+.SS "enum \fBRadioFSKPreambleDetection_e\fP"
+
+.PP
+Represents the preamble length used to detect the packet on Rx side\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_OFF \fP\fP
+Preamble detection length off\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_08_BITS \fP\fP
+Preamble detection length 8 bits\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_16_BITS \fP\fP
+Preamble detection length 16 bits\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_24_BITS \fP\fP
+Preamble detection length 24 bits\&. 
+.TP
+\fB\fIRADIO_PREAMBLE_DETECTOR_32_BITS \fP\fP
+Preamble detection length 32 bit\&. 
+.SS "enum \fBRadioFSKRBitrate_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBITRATE_25K \fP\fP
+.TP
+\fB\fIBITRATE_50K \fP\fP
+.TP
+\fB\fIBITRATE_100K \fP\fP
+.TP
+\fB\fIINTERNAL_BR_MAX \fP\fP
+.SS "enum \fBRadioFSKRDeviation_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFDEV_SSB_25K \fP\fP
+.TP
+\fB\fIFDEV_DSB_50K \fP\fP
+.TP
+\fB\fIFDEV_SSB_30K \fP\fP
+.TP
+\fB\fIFDEV_DSB_60K \fP\fP
+.TP
+\fB\fIFDEV_SSB_50K \fP\fP
+.TP
+\fB\fIFDEV_DSB_100K \fP\fP
+.TP
+\fB\fIINTERNAL_DEV_MAX \fP\fP
+.SS "enum \fBRadioFSKRxBandwidth_e\fP"
+
+.PP
+Represents the modulation shaping parameter\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRX_BW_4800 \fP\fP
+.TP
+\fB\fIRX_BW_5800 \fP\fP
+.TP
+\fB\fIRX_BW_7300 \fP\fP
+.TP
+\fB\fIRX_BW_9700 \fP\fP
+.TP
+\fB\fIRX_BW_11700 \fP\fP
+.TP
+\fB\fIRX_BW_14600 \fP\fP
+.TP
+\fB\fIRX_BW_19500 \fP\fP
+.TP
+\fB\fIRX_BW_23400 \fP\fP
+.TP
+\fB\fIRX_BW_29300 \fP\fP
+.TP
+\fB\fIRX_BW_39000 \fP\fP
+.TP
+\fB\fIRX_BW_46900 \fP\fP
+.TP
+\fB\fIRX_BW_58600 \fP\fP
+.TP
+\fB\fIRX_BW_78200 \fP\fP
+.TP
+\fB\fIRX_BW_93800 \fP\fP
+.TP
+\fB\fIRX_BW_117300 \fP\fP
+.TP
+\fB\fIRX_BW_156200 \fP\fP
+.TP
+\fB\fIRX_BW_187200 \fP\fP
+.TP
+\fB\fIRX_BW_234300 \fP\fP
+.TP
+\fB\fIRX_BW_312000 \fP\fP
+.TP
+\fB\fIRX_BW_373600 \fP\fP
+.TP
+\fB\fIRX_BW_467000 \fP\fP
+.SS "enum \fBRadioFSKWhiteningSeed_e\fP"
+
+.PP
+Radio whitening initial seed value\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRADIO_WHITENINGSEED \fP\fP
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

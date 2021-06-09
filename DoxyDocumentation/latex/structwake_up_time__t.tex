@@ -1,0 +1,103 @@
+\hypertarget{structwake_up_time__t}{}\doxysection{wake\+Up\+Time\+\_\+t Struct Reference}
+\label{structwake_up_time__t}\index{wakeUpTime\_t@{wakeUpTime\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structwake_up_time__t_a8740ba80e30dd75e71d09fa1dcf04f3d}{enabled}}\+: 1
+\item 
+bool \mbox{\hyperlink{structwake_up_time__t_a0bf61e2054d327e232006c6885769436}{is\+Date\+Time}}\+: 1
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structwake_up_time__t_a8b4eebe79ded0459acec2f4950102ba3}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}\+: 6
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{uniondate_time__t}{dateTime\_t}} \mbox{\hyperlink{structwake_up_time__t_ae9862f9f6e5f681ddc64d8da0ef821fb}{dateTime}}\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structwake_up_time__t_aa569a2d29184e1609102fabf121f373e}{days}}\\
+\>\>\>{\em Delay in days. }\\
+\>\>uint8\_t \mbox{\hyperlink{structwake_up_time__t_a00a531a34a1d603329df5778f1203ab6}{hours}}\\
+\>\>\>{\em Delay in hours. }\\
+\>\>uint8\_t \mbox{\hyperlink{structwake_up_time__t_a7acca8be0094a19be6e308ac05924c4f}{minutes}}\\
+\>\>\>{\em Delay in minutes. }\\
+\>\>uint8\_t \mbox{\hyperlink{structwake_up_time__t_a46729a903be1a03cdb248fb48d84d4f5}{seconds}}\\
+\>\>\>{\em Delay in seconds. }\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structwake_up_time__t_a3468ea281d1873cee9f6c85344a81ced}\label{structwake_up_time__t_a3468ea281d1873cee9f6c85344a81ced}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structwake_up_time__t_a8b4eebe79ded0459acec2f4950102ba3}\label{structwake_up_time__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{structwake_up_time__t_ae9862f9f6e5f681ddc64d8da0ef821fb}\label{structwake_up_time__t_ae9862f9f6e5f681ddc64d8da0ef821fb}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!dateTime@{dateTime}}
+\index{dateTime@{dateTime}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{dateTime}{dateTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{uniondate_time__t}{date\+Time\+\_\+t}} date\+Time}
+
+\mbox{\Hypertarget{structwake_up_time__t_aa569a2d29184e1609102fabf121f373e}\label{structwake_up_time__t_aa569a2d29184e1609102fabf121f373e}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!days@{days}}
+\index{days@{days}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{days}{days}}
+{\footnotesize\ttfamily uint8\+\_\+t days}
+
+
+
+Delay in days. 
+
+\mbox{\Hypertarget{structwake_up_time__t_a8740ba80e30dd75e71d09fa1dcf04f3d}\label{structwake_up_time__t_a8740ba80e30dd75e71d09fa1dcf04f3d}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!enabled@{enabled}}
+\index{enabled@{enabled}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily bool enabled}
+
+\mbox{\Hypertarget{structwake_up_time__t_a00a531a34a1d603329df5778f1203ab6}\label{structwake_up_time__t_a00a531a34a1d603329df5778f1203ab6}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!hours@{hours}}
+\index{hours@{hours}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{hours}{hours}}
+{\footnotesize\ttfamily uint8\+\_\+t hours}
+
+
+
+Delay in hours. 
+
+\mbox{\Hypertarget{structwake_up_time__t_a0bf61e2054d327e232006c6885769436}\label{structwake_up_time__t_a0bf61e2054d327e232006c6885769436}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!isDateTime@{isDateTime}}
+\index{isDateTime@{isDateTime}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{isDateTime}{isDateTime}}
+{\footnotesize\ttfamily bool is\+Date\+Time}
+
+\mbox{\Hypertarget{structwake_up_time__t_a7acca8be0094a19be6e308ac05924c4f}\label{structwake_up_time__t_a7acca8be0094a19be6e308ac05924c4f}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!minutes@{minutes}}
+\index{minutes@{minutes}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily uint8\+\_\+t minutes}
+
+
+
+Delay in minutes. 
+
+\mbox{\Hypertarget{structwake_up_time__t_a46729a903be1a03cdb248fb48d84d4f5}\label{structwake_up_time__t_a46729a903be1a03cdb248fb48d84d4f5}} 
+\index{wakeUpTime\_t@{wakeUpTime\_t}!seconds@{seconds}}
+\index{seconds@{seconds}!wakeUpTime\_t@{wakeUpTime\_t}}
+\doxysubsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily uint8\+\_\+t seconds}
+
+
+
+Delay in seconds. 
+

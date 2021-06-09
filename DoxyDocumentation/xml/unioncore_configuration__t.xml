@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unioncore_configuration__t" kind="union" language="C++" prot="public">
+    <compoundname>coreConfiguration_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unioncore_configuration__t_1a75b2efb60e15430b9b6b04f510edd9a4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Confirmed</definition>
+        <argsstring></argsstring>
+        <name>Confirmed</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Conformation of the uplink message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="287" column="5" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1acb7bc06bed6f6408d719334fc41698c7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+<para>Reserved, do not use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="288" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a0c1177e7e72717895f4e9be1559735fb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga446653b10978880583589e822ebdd6c1" kindref="member">Radio_DataRate_e</ref></type>
+        <definition>Radio_DataRate_e DataRate</definition>
+        <argsstring></argsstring>
+        <name>DataRate</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>LoRaWAN Send data rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoRaWAN Join Data Rate. Not used for US version (defined by LoRaWAN spec) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="289" column="17" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a9422e9861f230bc0e447bba26f253bee" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga8c75f11ec2550a083e5a2a39cb030fc3" kindref="member">Radio_TXpower_e</ref></type>
+        <definition>Radio_TXpower_e Power</definition>
+        <argsstring></argsstring>
+        <name>Power</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>LoRaWAN Send output power. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoRaWAN Join output power. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="290" column="16" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1aaf6bacaccee2f7d7968a0a4ca2cae74b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t FPort</definition>
+        <argsstring></argsstring>
+        <name>FPort</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Port Field for distinguishing different messages (0 = reserved for MAC commands) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="291" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1aadf76e3091f071ad79f827488a3ada41" prot="public" static="no" mutable="no">
+        <type>struct coreConfiguration_t::@2::@4</type>
+        <definition>struct coreConfiguration_t::@2::@4 TX</definition>
+        <argsstring></argsstring>
+        <name>TX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="292" column="4"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1ac0da556dd561dd6761eec003b7b42409" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_lo_ra_w_a_n__keys__t" kindref="compound">LoRaWAN_keys_t</ref> *</type>
+        <definition>LoRaWAN_keys_t* KeysPtr</definition>
+        <argsstring></argsstring>
+        <name>KeysPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="297" column="16" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a8b3829ff051e7199fac18ed11199d30f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t MAXTries</definition>
+        <argsstring></argsstring>
+        <name>MAXTries</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+<para>Maximum tries before Join fails. Join requests are spaced out according to the LoRaWAN specification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="300" column="8" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1ae1793fe6ee0f7addc79ba85560bdd910" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SubBand_1st</definition>
+        <argsstring></argsstring>
+        <name>SubBand_1st</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+<para>LoRaWAN First Sub-Band. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="301" column="20" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a064025acabfe1b67fa5bb10c4df7aa0e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SubBand_2nd</definition>
+        <argsstring></argsstring>
+        <name>SubBand_2nd</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+<para>LoRaWAN Second Sub-Band. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="302" column="20" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a710fac55b0f2242f4ae35dc7028c58a9" prot="public" static="no" mutable="no">
+        <type>struct coreConfiguration_t::@2::@5</type>
+        <definition>struct coreConfiguration_t::@2::@5 Join</definition>
+        <argsstring></argsstring>
+        <name>Join</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="303" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a4eb11eff816d76978fa4911f2605e170" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga323240888cac3e1210f2afa8cdd8b3f9" kindref="member">IdleMode_e</ref></type>
+        <definition>IdleMode_e Mode</definition>
+        <argsstring></argsstring>
+        <name>Mode</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+<para>Set Idle Mode to idleActive, idleSleep or idleDeepSleep. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="312" column="11" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a2849078572f8ab876e22ee4d3b8b543a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BleEcoON</definition>
+        <argsstring></argsstring>
+        <name>BleEcoON</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Leaves BLE ECO ON during idle. Consumes additional power, enable only when ECO/BLE functionality is needed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="313" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a6d7194467f50d7eca9bedbd4b91fba43" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DebugON</definition>
+        <argsstring></argsstring>
+        <name>DebugON</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>Leaves Debug Port active during idle. Consumes additional power, enable only for debugging purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="314" column="6" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1abceffa0edcdd0b86f2e534f85a8de302" prot="public" static="no" mutable="no">
+        <type>struct coreConfiguration_t::@2::@6::@7</type>
+        <definition>struct coreConfiguration_t::@2::@6::@7 Idle</definition>
+        <argsstring></argsstring>
+        <name>Idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="316" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1afa65e25d3d92f5c8af9b44b8643f4ff2" prot="public" static="no" mutable="no">
+        <type>struct coreConfiguration_t::@2::@6</type>
+        <definition>struct coreConfiguration_t::@2::@6 System</definition>
+        <argsstring></argsstring>
+        <name>System</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="317" column="8"/>
+      </memberdef>
+      <memberdef kind="variable" id="unioncore_configuration__t_1a2bc994df49462093e53fb43217f9d67f" prot="public" static="no" mutable="no">
+        <type>struct coreConfiguration_t::@2</type>
+        <definition>struct coreConfiguration_t::@2 @3</definition>
+        <argsstring></argsstring>
+        <name>@3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="318" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The main LoRaWAN configuration structure, the location of which is forwarded to the stack. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Parameters can be changed without the need to re-initialize. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>OTAA_10x_t</label>
+        <link refid="struct_o_t_a_a__10x__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>AppEui</edgelabel>
+          <edgelabel>DevEui</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>AppKey</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ABP_10x_t</label>
+        <link refid="struct_a_b_p__10x__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>DevEui</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>AppSkey</edgelabel>
+          <edgelabel>NwkSkey</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>arr8b_t</label>
+        <link refid="structarr8b__t"/>
+      </node>
+      <node id="5">
+        <label>arr16b_t</label>
+        <link refid="structarr16b__t"/>
+      </node>
+      <node id="6">
+        <label>OTAA_11x_t</label>
+        <link refid="struct_o_t_a_a__11x__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>DevEui</edgelabel>
+          <edgelabel>JoinEui</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>AppKey</edgelabel>
+          <edgelabel>NwkKey</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>coreConfiguration_t</label>
+        <link refid="unioncore_configuration__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>KeysPtr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>StoredKeys_t</label>
+        <link refid="struct_stored_keys__t"/>
+      </node>
+      <node id="2">
+        <label>LoRaWAN_keys_t</label>
+        <link refid="struct_lo_ra_w_a_n__keys__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ABP_10x</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>OTAA_11x</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>OTAA_10x</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>StoredKeys</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="278" column="1"/>
+    <listofallmembers>
+      <member refid="unioncore_configuration__t_1a2849078572f8ab876e22ee4d3b8b543a" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>BleEcoON</name></member>
+      <member refid="unioncore_configuration__t_1a75b2efb60e15430b9b6b04f510edd9a4" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>Confirmed</name></member>
+      <member refid="unioncore_configuration__t_1a0c1177e7e72717895f4e9be1559735fb" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>DataRate</name></member>
+      <member refid="unioncore_configuration__t_1a6d7194467f50d7eca9bedbd4b91fba43" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>DebugON</name></member>
+      <member refid="unioncore_configuration__t_1aaf6bacaccee2f7d7968a0a4ca2cae74b" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>FPort</name></member>
+      <member refid="unioncore_configuration__t_1abceffa0edcdd0b86f2e534f85a8de302" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>Idle</name></member>
+      <member refid="unioncore_configuration__t_1a710fac55b0f2242f4ae35dc7028c58a9" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>Join</name></member>
+      <member refid="unioncore_configuration__t_1ac0da556dd561dd6761eec003b7b42409" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>KeysPtr</name></member>
+      <member refid="unioncore_configuration__t_1a8b3829ff051e7199fac18ed11199d30f" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>MAXTries</name></member>
+      <member refid="unioncore_configuration__t_1a4eb11eff816d76978fa4911f2605e170" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>Mode</name></member>
+      <member refid="unioncore_configuration__t_1a9422e9861f230bc0e447bba26f253bee" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>Power</name></member>
+      <member refid="unioncore_configuration__t_1acb7bc06bed6f6408d719334fc41698c7" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>reserved</name></member>
+      <member refid="unioncore_configuration__t_1ae1793fe6ee0f7addc79ba85560bdd910" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>SubBand_1st</name></member>
+      <member refid="unioncore_configuration__t_1a064025acabfe1b67fa5bb10c4df7aa0e" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>SubBand_2nd</name></member>
+      <member refid="unioncore_configuration__t_1afa65e25d3d92f5c8af9b44b8643f4ff2" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>System</name></member>
+      <member refid="unioncore_configuration__t_1aadf76e3091f071ad79f827488a3ada41" prot="public" virt="non-virtual"><scope>coreConfiguration_t</scope><name>TX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

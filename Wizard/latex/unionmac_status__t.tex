@@ -1,0 +1,48 @@
+\hypertarget{unionmac_status__t}{}\doxysection{mac\+Status\+\_\+t Union Reference}
+\label{unionmac_status__t}\index{macStatus\_t@{macStatus\_t}}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{unionmac_status__t_a46113fcfe57269cf17fd5de5a03d2c7b}\label{unionmac_status__t_a46113fcfe57269cf17fd5de5a03d2c7b}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>macErrors\_e \mbox{\hyperlink{unionmac_status__t_ab8184c726fdf324b82b66bc37cf93c03}{errorStatus}}: 8\\
+\>\>{\em MAC Errors. }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_a906315abc56bb7718e216206c3213d6d}{bytesToRead}}: 8\\
+\>\>{\em Total bytes in Receive buffer. }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_a942ef29aeae093860f8ff792769a63c1}{\_\_pad0\_\_}}: 1\\
+\>\>{\em reserved }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_aec442b9ed115e351438efca6d59db3c4}{MACcmdReceived}}: 1\\
+\>\>{\em The MAC received a MAC command (implemented since Stack version 0x000000BC) }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a8878c1f262d55b058cba51beae9d3bbc}{confDown}}: 1\\
+\>\>{\em Is a confirmed downlink received? (implemented since Stack version 0x000000B5) }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a5ba3920beb8edc227a7ba5eab2a32bda}{isConfigured}}: 1\\
+\>\>{\em The MAC is configured? }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_a072673d398ca207434978ada31c94bc6}{messageReceived}}: 1\\
+\>\>{\em The MAC received a message. }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_af8639675c348fa098c911bbe587cb143}{isJoined}}: 1\\
+\>\>{\em Is Device Joined? }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_aa9889353a0dee4d6519cd9c4487413f0}{isBusy}}: 1\\
+\>\>{\em Is the MAC busy? }\\
+\>bool \mbox{\hyperlink{unionmac_status__t_abb824feda956b007ab233ddce9eda4d8}{isPublicNetwork}}: 1\\
+\>\>{\em True for LoRaWAN Public Network. }\\
+\>uint32\_t \mbox{\hyperlink{unionmac_status__t_a9348c527b8ded91aa3b764eb63c4e711}{devAddr}}\\
+\>\>{\em The Device address received when joining the network. }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_ad7310711a7c6dbd6810003b0cc521faf}{Margin}}\\
+\>\>{\em The Demodulation Margin (in dB above the demodulation floor) for last LinkCheckReq command (implemented since Stack version 0x000000BC) }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_a3a8df6135794e96d50b8b971c6a6f546}{GwCnt}}\\
+\>\>{\em The number of gateways that successfully received the last LinkCheckReq command (implemented since Stack version 0x000000BC) }\\
+\>uint8\_t \mbox{\hyperlink{unionmac_status__t_a34dcc0d2d980b8347037b2b4c71f4e5e}{fPort}}\\
+\>\>{\em The port number of the last received packet (implemented since Stack version 0x000000BC) }\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\Hypertarget{unionmac_status__t_afd151332d2e22a9b3bb23f69c165ccf8}\label{unionmac_status__t_afd151332d2e22a9b3bb23f69c165ccf8}} 
+uint8\+\_\+t {\bfseries reserved} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+C1\+\_\+\+API/Onethinx\+Core01.\+h\end{DoxyCompactItemize}

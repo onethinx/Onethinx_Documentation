@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="_f_a_q" kind="page">
+    <compoundname>FAQ</compoundname>
+    <title>Frequently Asked Questions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="_f_a_q_1faq_loralorawan">
+<title>LoRa vs LoRaWAN</title>
+<para>TODO LoRa, LoRaWAN, 1.0.2, Regional parameters </para>
+</sect1>
+<sect1 id="_f_a_q_1faq_lwgateways">
+<title>LoRaWAN Gateways</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="_f_a_q_1faq_vscreator">
+<title>VSCode + PSoC Creator</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="_f_a_q_1faq_nws">
+<title>LoRaWAN Network Servers</title>
+<para>TODO TTN, chirpstack, etc. </para>
+</sect1>
+<sect1 id="_f_a_q_1faq_otaa">
+<title>Over-the-Air Activation (OTAA)</title>
+<para>TODO </para>
+</sect1>
+<sect1 id="_f_a_q_1faq_abp">
+<title>Activation by Personalization (ABP)</title>
+<para>TODO </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

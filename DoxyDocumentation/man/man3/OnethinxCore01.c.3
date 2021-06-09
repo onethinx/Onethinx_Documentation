@@ -1,0 +1,153 @@
+.TH "C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.c" 3 "Fri Jan 8 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'OnethinxCore01\&.h'\fP
+.br
+\fC#include 'cy_ipc_pipe\&.h'\fP
+.br
+\fC#include 'cy_syspm\&.h'\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCY_IPC_CYPIPE_CHAN_MASK_EP0\fP   (uint32_t)(0x0001ul << CY_IPC_CHAN_CYPIPE_EP0)"
+.br
+.ti -1c
+.RI "#define \fBCY_IPC_CYPIPE_CHAN_MASK_EP1\fP   (uint32_t)(0x0001ul << CY_IPC_CHAN_CYPIPE_EP1)"
+.br
+.ti -1c
+.RI "#define \fBCY_IPC_CYPIPE_INTR_MASK\fP   (uint32_t)( \fBCY_IPC_CYPIPE_CHAN_MASK_EP0\fP | \fBCY_IPC_CYPIPE_CHAN_MASK_EP1\fP )"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBCM4_MessageCallback\fP (uint32_t *msg)"
+.br
+.ti -1c
+.RI "void \fBCM4_ReleaseCallback\fP (void)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBcoreComm\fP (\fBcoreFunctions_e\fP function, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Init\fP (\fBcoreConfiguration_t\fP *coreConfigurationPtr)"
+.br
+.RI "Initializes the LoRaWAN stack with the\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Reset\fP (void)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Join\fP (\fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetInfo\fP (\fBcoreInfo_t\fP *coreInfo)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Send\fP (uint8_t *bufferPtr, uint8_t length, \fBWaitMode_e\fP waitMode)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_SendMac\fP (uint8_t *bufferPtr, uint8_t length, \fBWaitMode_e\fP waitMode, \fBMACcmd_e\fP MACcmd)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetRXdata\fP (uint8_t *RXdata, uint8_t length)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_GetStatus\fP ()"
+.br
+.ti -1c
+.RI "\fBerrorStatus_t\fP \fBLoRaWAN_GetError\fP ()"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_Sleep\fP (\fBsleepConfig_t\fP *sleepConfig)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_MacSave\fP ()"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_FlashRead\fP (uint8_t *buffer, uint8_t block, uint8_t length)"
+.br
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRaWAN_FlashWrite\fP (uint8_t *buffer, uint8_t block, uint8_t length)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile \fBcoreArguments_t\fP \fBcoreArguments\fP"
+.br
+.ti -1c
+.RI "\fBipc_msgs_t\fP \fBipcMsgs\fP"
+.br
+.ti -1c
+.RI "volatile uint32_t \fBcallBackDone\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CY_IPC_CYPIPE_CHAN_MASK_EP0   (uint32_t)(0x0001ul << CY_IPC_CHAN_CYPIPE_EP0)"
+
+.SS "#define CY_IPC_CYPIPE_CHAN_MASK_EP1   (uint32_t)(0x0001ul << CY_IPC_CHAN_CYPIPE_EP1)"
+
+.SS "#define CY_IPC_CYPIPE_INTR_MASK   (uint32_t)( \fBCY_IPC_CYPIPE_CHAN_MASK_EP0\fP | \fBCY_IPC_CYPIPE_CHAN_MASK_EP1\fP )"
+
+.SH "Function Documentation"
+.PP 
+.SS "void CM4_MessageCallback (uint32_t * msg)"
+
+.SS "void CM4_ReleaseCallback (void)"
+
+.SS "\fBcoreStatus_t\fP coreComm (\fBcoreFunctions_e\fP function, \fBWaitMode_e\fP waitMode)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "volatile uint32_t callBackDone"
+
+.SS "volatile \fBcoreArguments_t\fP coreArguments"
+\fBInitial value:\fP
+.PP
+.nf
+= {
+    \&.configurationPtr = 0
+}
+.fi
+.SS "\fBipc_msgs_t\fP ipcMsgs"
+\fBInitial value:\fP
+.PP
+.nf
+=
+{
+    {
+        
+        \&.clientId = 1,  
+        \&.userCode = 0,
+        \&.intrMask = CY_IPC_CYPIPE_INTR_MASK,
+        \&.coreArgumentsPtr = &coreArguments
+    },
+    {
+        
+        \&.clientId = 0,  
+        \&.userCode = 0,
+        \&.intrMask = CY_IPC_CYPIPE_INTR_MASK,
+        \&.coreArgumentsPtr = &coreArguments
+    }
+ }
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

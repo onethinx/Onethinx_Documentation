@@ -1,0 +1,101 @@
+\hypertarget{group__lora__functions}{}\doxysection{Functions}
+\label{group__lora__functions}\index{Functions@{Functions}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lora__functions_ga50e656cf395118e0c0aa35cc8ef8e4c7}{Lo\+Ra\+\_\+\+RX}} (\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$Radio\+Params, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$Radio\+Status, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+Size, uint16\+\_\+t time\+Out\+MS, \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{group__lora__functions_gae91649711b993d3e9ba56805ddc598e5}{Lo\+Ra\+\_\+\+TX}} (\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$Radio\+Params, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$Radio\+Status, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+Size, uint16\+\_\+t time\+Out\+MS, \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+void \mbox{\hyperlink{group__lora__functions_gafddff51e54e43c9310e1185ea8a79a08}{Lo\+Ra\+WAN\+\_\+\+Debug}} (bool debug\+Leds\+On, uint32\+\_\+t $\ast$core\+State\+PNT)
+\item 
+void \mbox{\hyperlink{group__lora__functions_ga6c5c729a3095fafed9bcf6fc6d0b5fa8}{Lo\+Ra\+WAN\+\_\+\+Unlock}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Onethinx Lo\+Ra Functions. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__lora__functions_ga50e656cf395118e0c0aa35cc8ef8e4c7}\label{group__lora__functions_ga50e656cf395118e0c0aa35cc8ef8e4c7}} 
+\index{Functions@{Functions}!LoRa\_RX@{LoRa\_RX}}
+\index{LoRa\_RX@{LoRa\_RX}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRa\_RX()}{LoRa\_RX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+\_\+\+RX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$}]{Radio\+Params,  }\item[{\mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$}]{Radio\+Status,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+Size,  }\item[{uint16\+\_\+t}]{time\+Out\+MS,  }\item[{\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+This functions waits for a Lo\+Ra transmition with given parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Radio\+Params} & Pointer to the \mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} structure where Lo\+Ra parameters are set. \\
+\hline
+{\em Radio\+Status} & Pointer to the \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} structure where the stack returns statuses. \\
+\hline
+{\em payload} & Pointer to the buffer where the receiving payload is saved. \\
+\hline
+{\em payload\+Size} & Size of the payload that is to be received. \\
+\hline
+{\em time\+Out\+MS} & Timeout in milliseconds. Will exit the function if timeout is reached. If zero, there is no timeout. \\
+\hline
+{\em wait\+Mode} & Type of wait mode in which the M4 core waits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}}, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}}, \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}, \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} and \mbox{\hyperlink{group__lora__functions_gae91649711b993d3e9ba56805ddc598e5}{Lo\+Ra\+\_\+\+TX}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lora__functions_gae91649711b993d3e9ba56805ddc598e5}\label{group__lora__functions_gae91649711b993d3e9ba56805ddc598e5}} 
+\index{Functions@{Functions}!LoRa\_TX@{LoRa\_TX}}
+\index{LoRa\_TX@{LoRa\_TX}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRa\_TX()}{LoRa\_TX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+\_\+\+TX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$}]{Radio\+Params,  }\item[{\mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$}]{Radio\+Status,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+Size,  }\item[{uint16\+\_\+t}]{time\+Out\+MS,  }\item[{\mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+This functions does the Lo\+Ra transmission with given parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em Radio\+Params} & Pointer to the \mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} structure where Lo\+Ra parameters are set. \\
+\hline
+{\em Radio\+Status} & Pointer to the \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} structure where the stack returns statuses. \\
+\hline
+{\em payload} & Pointer to the buffer where the receiving payload is saved. \\
+\hline
+{\em payload\+Size} & Size of the payload that is to be received. \\
+\hline
+{\em time\+Out\+MS} & Timeout in milliseconds. Will exit the function if timeout is reached. If zero, there is no timeout. \\
+\hline
+{\em wait\+Mode} & Type of wait mode in which the M4 core waits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns error / status code. (\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}}) 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}}, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}}, \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}, \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} and \mbox{\hyperlink{group__lora__functions_ga50e656cf395118e0c0aa35cc8ef8e4c7}{Lo\+Ra\+\_\+\+RX}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__lora__functions_gafddff51e54e43c9310e1185ea8a79a08}\label{group__lora__functions_gafddff51e54e43c9310e1185ea8a79a08}} 
+\index{Functions@{Functions}!LoRaWAN\_Debug@{LoRaWAN\_Debug}}
+\index{LoRaWAN\_Debug@{LoRaWAN\_Debug}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Debug()}{LoRaWAN\_Debug()}}
+{\footnotesize\ttfamily void Lo\+Ra\+WAN\+\_\+\+Debug (\begin{DoxyParamCaption}\item[{bool}]{debug\+Leds\+On,  }\item[{uint32\+\_\+t $\ast$}]{core\+State\+PNT }\end{DoxyParamCaption})}
+
+Uses the Dev\+Kit red LED to signal if stack is operating normally or is hanging.
+
+
+\begin{DoxyParams}{Parameters}
+{\em debug\+Leds\+On} & Red LED on Onethinx Dev\+Kit will flash at 2 Hz in normal operation. \\
+\hline
+{\em core\+State\+PNT} & Pointer to the stack\+State. Returns the tate the stack is currently in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__lora__functions_ga6c5c729a3095fafed9bcf6fc6d0b5fa8}\label{group__lora__functions_ga6c5c729a3095fafed9bcf6fc6d0b5fa8}} 
+\index{Functions@{Functions}!LoRaWAN\_Unlock@{LoRaWAN\_Unlock}}
+\index{LoRaWAN\_Unlock@{LoRaWAN\_Unlock}!Functions@{Functions}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Unlock()}{LoRaWAN\_Unlock()}}
+{\footnotesize\ttfamily void Lo\+Ra\+WAN\+\_\+\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Use the Unlock function before using any other extended functions. Enables the use of Lo\+Ra/\+FSK, Cap\+Sense. Unlocks Port 7.
+
+Unlocking may void Lo\+Ra Alliance Certification by Similarity. 

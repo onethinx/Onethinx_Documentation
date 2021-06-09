@@ -1,0 +1,118 @@
+\hypertarget{struct_radio_params__t}{}\doxysection{Radio\+Params\+\_\+t Struct Reference}
+\label{struct_radio_params__t}\index{RadioParams\_t@{RadioParams\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Ext01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_radio_params__t_ade3d190636488dad9a89b19446b7acf1}{Frequency}}
+\item 
+\mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\+\_\+\+TXpower\+\_\+e}} \mbox{\hyperlink{struct_radio_params__t_ae80612a907947f7f6f693e4dcd8b87b7}{TXpower}}
+\begin{DoxyCompactList}\small\item\em TXpower (PWR = MAX -\/ (2 $\ast$ value)), not used in receive mode. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{struct_lo_ra_modulation_params__t}{LoRaModulationParams\_t}} \mbox{\hyperlink{struct_radio_params__t_ae84be969eecfad1fa005af82957bb692}{Modulation}}\\
+\>\>\mbox{\hyperlink{struct_lo_ra_packet_params__t}{LoRaPacketParams\_t}} \mbox{\hyperlink{struct_radio_params__t_a69f4464886d8f37926d7fa5a9e385bfb}{Packet}}\\
+\>\} \mbox{\hyperlink{struct_radio_params__t_a8d983d684f24c5ec4e8734cf30215e63}{LoRa}}\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{struct_f_s_k_modulation_params__t}{FSKModulationParams\_t}} \mbox{\hyperlink{struct_radio_params__t_aee93bcd65ad90e3dfe4ffabc1a9e706f}{Modulation}}\\
+\>\>\mbox{\hyperlink{struct_f_s_k_packet_params__t}{FSKPacketParams\_t}} \mbox{\hyperlink{struct_radio_params__t_a2f6620693001708170ea118bfeb8aba7}{Packet}}\\
+\>\} \mbox{\hyperlink{struct_radio_params__t_a583cc6ab482117cf22fee37cb4e82eed}{FSK}}\\
+\}; \\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{group__lora__enums__general_gac345bddf7c620d03ecd1753dab7f1434}{Radio\+Packet\+Types\+\_\+e}} \mbox{\hyperlink{struct_radio_params__t_a4f8f260ed67c9f95ac1b721f6d13ea57}{Packet\+Type}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_radio_params__t_a20cfac0ab9594814256ae555aa833feb}{RXboost}}\+: 1
+\begin{DoxyCompactList}\small\item\em RX Boost mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_radio_params__t_a8b4eebe79ded0459acec2f4950102ba3}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}\+: 7
+\begin{DoxyCompactList}\small\item\em Reserved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_radio_params__t_ab37bcb7ae91845a274cf951233ea5bfd}\label{struct_radio_params__t_ab37bcb7ae91845a274cf951233ea5bfd}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_radio_params__t_a8b4eebe79ded0459acec2f4950102ba3}\label{struct_radio_params__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{RadioParams\_t@{RadioParams\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+Reserved. 
+
+\mbox{\Hypertarget{struct_radio_params__t_ade3d190636488dad9a89b19446b7acf1}\label{struct_radio_params__t_ade3d190636488dad9a89b19446b7acf1}} 
+\index{RadioParams\_t@{RadioParams\_t}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{Frequency}{Frequency}}
+{\footnotesize\ttfamily uint32\+\_\+t Frequency}
+
+\mbox{\Hypertarget{struct_radio_params__t_a583cc6ab482117cf22fee37cb4e82eed}\label{struct_radio_params__t_a583cc6ab482117cf22fee37cb4e82eed}} 
+\index{RadioParams\_t@{RadioParams\_t}!FSK@{FSK}}
+\index{FSK@{FSK}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  FSK}
+
+\mbox{\Hypertarget{struct_radio_params__t_a8d983d684f24c5ec4e8734cf30215e63}\label{struct_radio_params__t_a8d983d684f24c5ec4e8734cf30215e63}} 
+\index{RadioParams\_t@{RadioParams\_t}!LoRa@{LoRa}}
+\index{LoRa@{LoRa}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \}  Lo\+Ra}
+
+\mbox{\Hypertarget{struct_radio_params__t_ae84be969eecfad1fa005af82957bb692}\label{struct_radio_params__t_ae84be969eecfad1fa005af82957bb692}} 
+\index{RadioParams\_t@{RadioParams\_t}!Modulation@{Modulation}}
+\index{Modulation@{Modulation}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{Modulation}{Modulation}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lo_ra_modulation_params__t}{Lo\+Ra\+Modulation\+Params\+\_\+t}} Modulation}
+
+\mbox{\Hypertarget{struct_radio_params__t_aee93bcd65ad90e3dfe4ffabc1a9e706f}\label{struct_radio_params__t_aee93bcd65ad90e3dfe4ffabc1a9e706f}} 
+\index{RadioParams\_t@{RadioParams\_t}!Modulation@{Modulation}}
+\index{Modulation@{Modulation}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{Modulation}{Modulation}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_s_k_modulation_params__t}{FSKModulation\+Params\+\_\+t}} Modulation}
+
+\mbox{\Hypertarget{struct_radio_params__t_a69f4464886d8f37926d7fa5a9e385bfb}\label{struct_radio_params__t_a69f4464886d8f37926d7fa5a9e385bfb}} 
+\index{RadioParams\_t@{RadioParams\_t}!Packet@{Packet}}
+\index{Packet@{Packet}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{Packet}{Packet}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lo_ra_packet_params__t}{Lo\+Ra\+Packet\+Params\+\_\+t}} Packet}
+
+\mbox{\Hypertarget{struct_radio_params__t_a2f6620693001708170ea118bfeb8aba7}\label{struct_radio_params__t_a2f6620693001708170ea118bfeb8aba7}} 
+\index{RadioParams\_t@{RadioParams\_t}!Packet@{Packet}}
+\index{Packet@{Packet}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{Packet}{Packet}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_s_k_packet_params__t}{FSKPacket\+Params\+\_\+t}} Packet}
+
+\mbox{\Hypertarget{struct_radio_params__t_a4f8f260ed67c9f95ac1b721f6d13ea57}\label{struct_radio_params__t_a4f8f260ed67c9f95ac1b721f6d13ea57}} 
+\index{RadioParams\_t@{RadioParams\_t}!PacketType@{PacketType}}
+\index{PacketType@{PacketType}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{PacketType}{PacketType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lora__enums__general_gac345bddf7c620d03ecd1753dab7f1434}{Radio\+Packet\+Types\+\_\+e}} Packet\+Type}
+
+\mbox{\Hypertarget{struct_radio_params__t_a20cfac0ab9594814256ae555aa833feb}\label{struct_radio_params__t_a20cfac0ab9594814256ae555aa833feb}} 
+\index{RadioParams\_t@{RadioParams\_t}!RXboost@{RXboost}}
+\index{RXboost@{RXboost}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{RXboost}{RXboost}}
+{\footnotesize\ttfamily uint8\+\_\+t RXboost}
+
+
+
+RX Boost mode. 
+
+\mbox{\Hypertarget{struct_radio_params__t_ae80612a907947f7f6f693e4dcd8b87b7}\label{struct_radio_params__t_ae80612a907947f7f6f693e4dcd8b87b7}} 
+\index{RadioParams\_t@{RadioParams\_t}!TXpower@{TXpower}}
+\index{TXpower@{TXpower}!RadioParams\_t@{RadioParams\_t}}
+\doxysubsubsection{\texorpdfstring{TXpower}{TXpower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\+\_\+\+TXpower\+\_\+e}} TXpower}
+
+
+
+TXpower (PWR = MAX -\/ (2 $\ast$ value)), not used in receive mode. 
+

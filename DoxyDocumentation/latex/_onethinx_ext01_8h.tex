@@ -1,0 +1,900 @@
+\hypertarget{_onethinx_ext01_8h}{}\doxysection{C\+:/\+Onethinx\+\_\+\+Tomislav/\+Core\+Module\+Files/\+Documentation/\+BE API/\+Onethinx\+Ext01.h File Reference}
+\label{_onethinx_ext01_8h}\index{C:/Onethinx\_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h@{C:/Onethinx\_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lo_ra_modulation_params__t}{Lo\+Ra\+Modulation\+Params\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_lo_ra_packet_params__t}{Lo\+Ra\+Packet\+Params\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_f_s_k_modulation_params__t}{FSKModulation\+Params\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_f_s_k_packet_params__t}{FSKPacket\+Params\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}}
+\item 
+union \mbox{\hyperlink{unionchip_status__t}{chip\+Status\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represents the possible device error states. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_i_r_qstatus__t}{IRQstatus\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represents the possible IRQ states. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{uniondevice_errors__t}{device\+Errors\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represents the possible device error states. \end{DoxyCompactList}\item 
+union \mbox{\hyperlink{union_lo_ra_packet_status__t}{Lo\+Ra\+Packet\+Status\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represents the packet status for every packet type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_lo_ra_stats__t}{Lo\+Ra\+Stats\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Represents the Lo\+Ra Packet statistics. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65}{core\+Functions\+Ext\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65aa7e06b3164612336b3ef44d82bfe96e9}{core\+Function\+\_\+\+L\+\_\+\+RX}} = 0x80
+, \mbox{\hyperlink{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a788b21f9ded03b26a856d458ebf119fc}{core\+Function\+\_\+\+L\+\_\+\+TX}} = 0x81
+, \mbox{\hyperlink{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a0107f6dc53a3b0cf1676a7df8378a653}{core\+Function\+\_\+\+Debug}} = 0x\+A3
+, \mbox{\hyperlink{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a7c9b6b9a865ded109ddc60e925a49118}{core\+Function\+\_\+\+Unlock}} = 0x\+A4
+ \}
+\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434}{Radio\+Packet\+Types\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434ab8c7c692a4a9cc7e0ee7c2ac6f21e60a}{PACKET\+\_\+\+TYPE\+\_\+\+GFSK}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434ab905caebfa612d206efcc6bccbc6811c}{PACKET\+\_\+\+TYPE\+\_\+\+LORA}} = 0x01
+, \mbox{\hyperlink{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434a7bc0b281e9e7e0ef0dfb2ffb37655333}{PACKET\+\_\+\+TYPE\+\_\+\+NONE}} = 0x0F
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the possible packet type (i.\+e. modem) used. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eab}{Radio\+Lo\+Ra\+Spreading\+Factors\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba94fa32c51693607d6f7ce2b8c5d7c76f}{LORA\+\_\+\+SF5}} = 0x05
+, \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba3460e11edb4af3d15e2fb7d3823d1114}{LORA\+\_\+\+SF6}} = 0x06
+, \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba252967b1109a2820337ae52698bd38bd}{LORA\+\_\+\+SF7}} = 0x07
+, \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba70d0b72617d730a266e1fa69d2bb77d6}{LORA\+\_\+\+SF8}} = 0x08
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eabaa5e8e668ce8c14a85c99f04fd9c9c2b4}{LORA\+\_\+\+SF9}} = 0x09
+, \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba4fa2cb57b3c09a7ba48fae7fa764cfc8}{LORA\+\_\+\+SF10}} = 0x0A
+, \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba6a8704a080ddc948acd2f78038ac3c90}{LORA\+\_\+\+SF11}} = 0x0B
+, \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba5b2451cb3fae097662e1f72b2562c517}{LORA\+\_\+\+SF12}} = 0x0C
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the possible spreading factor values in Lo\+Ra packet types. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9d}{Radio\+Lo\+Ra\+Bandwidths\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da92c2fa284b2f779dea7bed7f6bbb9789}{LORA\+\_\+\+BW\+\_\+500}} = 6
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da236a61112ab3aff9b1586cff9b986e9a}{LORA\+\_\+\+BW\+\_\+250}} = 5
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9daae61cc4f4fd10adcca3ef4681fa6a1c5}{LORA\+\_\+\+BW\+\_\+125}} = 4
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da2ee5dda7b2c56278bb959b47fe675718}{LORA\+\_\+\+BW\+\_\+062}} = 3
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da4fb3617ac95535274f8a0d47f8c98717}{LORA\+\_\+\+BW\+\_\+041}} = 10
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da1821e57183e61dd9375c805dcae422ac}{LORA\+\_\+\+BW\+\_\+031}} = 2
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9dad847c1650ec8366cb4c86d586e801117}{LORA\+\_\+\+BW\+\_\+020}} = 9
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da2c3928bc40410591d17e97c8a0cc77ae}{LORA\+\_\+\+BW\+\_\+015}} = 1
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da710e85446b999c221d833f271deb8ea5}{LORA\+\_\+\+BW\+\_\+010}} = 8
+, \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da0e017392e26b3cbe1d8398f44cdef4ca}{LORA\+\_\+\+BW\+\_\+007}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the bandwidth values for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ff}{Radio\+Lo\+Ra\+Coding\+Rates\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa916cb1c30262177cf11791adf3c6c976}{LORA\+\_\+\+CR\+\_\+4\+\_\+5}} = 0x01
+, \mbox{\hyperlink{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa3d26c19984df0202c58dbab57042fd76}{LORA\+\_\+\+CR\+\_\+4\+\_\+6}} = 0x02
+, \mbox{\hyperlink{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa900fdaffc679facfc7551607c7f9e1d2}{LORA\+\_\+\+CR\+\_\+4\+\_\+7}} = 0x03
+, \mbox{\hyperlink{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffaca861f0c081d4b2e0fd1ae609ce593a8}{LORA\+\_\+\+CR\+\_\+4\+\_\+8}} = 0x04
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the coding rate values for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7}{Radio\+Lora\+Low\+Data\+Rate\+Optimize\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7a76432af1c2107c7ac65519a660087d86}{LORA\+\_\+\+LOWDATARATEOPTIMIZE\+\_\+\+OFF}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7a98375d2e24de4b08ed04f53b5dac390b}{LORA\+\_\+\+LOWDATARATEOPTIMIZE\+\_\+\+ON}} = 0x01
+ \}
+\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54e}{Radio\+Lo\+Ra\+Header\+Type\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92}{LORA\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb}{LORA\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH}} = 0x01
+, \mbox{\hyperlink{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca}{LORA\+\_\+\+PACKET\+\_\+\+EXPLICIT}} = LORA\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH
+, \mbox{\hyperlink{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a}{LORA\+\_\+\+PACKET\+\_\+\+IMPLICIT}} = LORA\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH
+ \}
+\begin{DoxyCompactList}\small\item\em Holds the Radio lengths mode for the Lo\+Ra packet type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81c}{Radio\+Lo\+Ra\+Crc\+Mode\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba}{LORA\+\_\+\+CRC\+\_\+\+ON}} = 0x01
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599}{LORA\+\_\+\+CRC\+\_\+\+OFF}} = 0x00
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the CRC mode for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184}{Radio\+Lo\+Ra\+IQMode\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184a6b5adfb3c66ba8a3c8f9bc9d5c8bce1f}{LORA\+\_\+\+IQ\+\_\+\+NORMAL}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184a273f00ac155214f0be6de3f015078311}{LORA\+\_\+\+IQ\+\_\+\+INVERTED}} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the IQ mode for Lo\+Ra packet type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498}{Lo\+Ra\+Sync\+Word\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498a29afb28571c1e2357084636600cb4a87}{LORA\+\_\+\+MAC\+\_\+\+PRIVATE\+\_\+\+SYNCWORD}} = 0x1424
+, \mbox{\hyperlink{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498a37014be1aca9682d5b87b1285f266560}{LORA\+\_\+\+MAC\+\_\+\+PUBLIC\+\_\+\+SYNCWORD}} = 0x3444
+ \}
+\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743}{Radio\+FSKMod\+Shapings\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a4458432cc4eb84cc77d7dc9f3879c439}{MOD\+\_\+\+SHAPING\+\_\+\+OFF}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a79b104423386571a46ae3586c76f3d6a}{MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+03}} = 0x08
+, \mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a6f5d041ff974e952155a82e16d124a5d}{MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+05}} = 0x09
+, \mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743aef26fd93f4f4e0f7a8f06929a8a3ba63}{MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+07}} = 0x0A
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743ae7348a8993f2f37a3d456b7ef5f0ebdc}{MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+1}} = 0x0B
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the modulation shaping parameter. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90}{Radio\+FSKRx\+Bandwidth\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a00b8727f44bda240916133b921bbd223}{RX\+\_\+\+BW\+\_\+4800}} = 0x1F
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a8b98dd7c570e9097aa69cec12715478d}{RX\+\_\+\+BW\+\_\+5800}} = 0x17
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ac733d998032fc13b5c4e89eae9299997}{RX\+\_\+\+BW\+\_\+7300}} = 0x0F
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aa961f60128234219616561605a4aae9e}{RX\+\_\+\+BW\+\_\+9700}} = 0x1E
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90afbfcd56dad77870ce2261fc5381e7f59}{RX\+\_\+\+BW\+\_\+11700}} = 0x16
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aae1097cb9e729172902230e14065b813}{RX\+\_\+\+BW\+\_\+14600}} = 0x0E
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ad571d5c87a8c961fca9256e9469ed95a}{RX\+\_\+\+BW\+\_\+19500}} = 0x1D
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a7a5ac7c1bb53401304708553a3bedb43}{RX\+\_\+\+BW\+\_\+23400}} = 0x15
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ae66ed7397e83b585a97f3debcb1dd550}{RX\+\_\+\+BW\+\_\+29300}} = 0x0D
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90afae8858a4be09cf25290b51d9fab30cf}{RX\+\_\+\+BW\+\_\+39000}} = 0x1C
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a2cbbcfa8e9dccff44f41c59ab97c08ed}{RX\+\_\+\+BW\+\_\+46900}} = 0x14
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a03af5d2937f21e8b7737b810880d12b2}{RX\+\_\+\+BW\+\_\+58600}} = 0x0C
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90adb66eb7b195707a2641915bbfb0ff5bb}{RX\+\_\+\+BW\+\_\+78200}} = 0x1B
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a8e08937ef44723b2925aa8a69bfcf7b7}{RX\+\_\+\+BW\+\_\+93800}} = 0x13
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a9ce48129db2f160159864131ac02b533}{RX\+\_\+\+BW\+\_\+117300}} = 0x0B
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aa3a53701671be56fcd2d995030a85662}{RX\+\_\+\+BW\+\_\+156200}} = 0x1A
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90adc8914362ea750307d89a3b6278343dc}{RX\+\_\+\+BW\+\_\+187200}} = 0x12
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90af0f0e201f31ec53af7e81ab1d1a74f2b}{RX\+\_\+\+BW\+\_\+234300}} = 0x0A
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ac237a23a90b6c939f4b67f56bf1e25b1}{RX\+\_\+\+BW\+\_\+312000}} = 0x19
+, \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a16086b68260ff15c37f5a5c349d55746}{RX\+\_\+\+BW\+\_\+373600}} = 0x11
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90af10532e849b0da92931315dc86d67be6}{RX\+\_\+\+BW\+\_\+467000}} = 0x09
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the modulation shaping parameter. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9}{Radio\+FSKRBitrate\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a8d58be78324cada5ea334bda988df3a3}{BITRATE\+\_\+25K}} = 40960
+, \mbox{\hyperlink{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a725b5b8347dbbd4c89ecf092f8d40d60}{BITRATE\+\_\+50K}} = 20480
+, \mbox{\hyperlink{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a6d0c542d4806c88dd10d659b2096fdd1}{BITRATE\+\_\+100K}} = 10240
+, \mbox{\hyperlink{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a230d6ac5cadc2769e2c7964565d6f5c6}{INTERNAL\+\_\+\+BR\+\_\+\+MAX}} = 0x\+FFFFFF
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the modulation shaping parameter. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705c}{Radio\+FSKRDeviation\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1af63bf13e5933bf60b9f28367a97156}{FDEV\+\_\+\+SSB\+\_\+25K}} = 26214
+, \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1163572ead609dd40a5634a69ea77e56}{FDEV\+\_\+\+DSB\+\_\+50K}} = 26214
+, \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705cade2f730798137e74aec026a1470af1bd}{FDEV\+\_\+\+SSB\+\_\+30K}} = 31457
+, \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca364040678563bba9db3ba503c14f287b}{FDEV\+\_\+\+DSB\+\_\+60K}} = 31457
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705cabd4b3cf4a097f9c6f11035f1ef126745}{FDEV\+\_\+\+SSB\+\_\+50K}} = 52429
+, \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1307fab10bf8395f1c2898b0a089c47a}{FDEV\+\_\+\+DSB\+\_\+100K}} = 52429
+, \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca32a8239325acbc7e29f9ee71e6382c00}{INTERNAL\+\_\+\+DEV\+\_\+\+MAX}} = 0x\+FFFFFF
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the modulation shaping parameter. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076}{Radio\+FSKPreamble\+Detection\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a1ee68869d57c8c9a74628d1fa2af28ed}{RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+\+OFF}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a9e1e546432b5b4651f14b1f369f54aca}{RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+08\+\_\+\+BITS}} = 0x04
+, \mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a6a75f8512d0c7c8f06f3c154401f48e8}{RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+16\+\_\+\+BITS}} = 0x05
+, \mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076afee01071c2f859c3ca50b882c47849d5}{RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+24\+\_\+\+BITS}} = 0x06
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a5c7fa66971804639c2d976a1ef2f33c2}{RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+32\+\_\+\+BITS}} = 0x07
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the preamble length used to detect the packet on Rx side. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4}{Radio\+FSKAddress\+Comp\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4aa9e41c4533d2c6eab6af48af507ce6c7}{RADIO\+\_\+\+ADDRESSCOMP\+\_\+\+FILT\+\_\+\+OFF}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4a3d5fe95f8d5749dfc752cde869c3168c}{RADIO\+\_\+\+ADDRESSCOMP\+\_\+\+FILT\+\_\+\+NODE}} = 0x01
+, \mbox{\hyperlink{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4a84f4f8a0575c92b1ee5d114b78db5875}{RADIO\+\_\+\+ADDRESSCOMP\+\_\+\+FILT\+\_\+\+NODE\+\_\+\+BROAD}} = 0x02
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the possible combinations of Sync\+Word correlators activated. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8f}{Radio\+FSKPacket\+Length\+Modes\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8faad7bf546a6d287d025a16a742e6f2bcd}{RADIO\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8fa902ce14d15f16ba1b3bea47fe9d88fd4}{RADIO\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH}} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em Radio GFSK packet length mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2}{Radio\+FSKWhitening\+Seed\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2a475cb761e9be91cd3195d3c8f269319f}{RADIO\+\_\+\+WHITENINGSEED}} = 0x01\+FF
+ \}
+\begin{DoxyCompactList}\small\item\em Radio whitening initial seed value. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbd}{Radio\+FSKDc\+Free\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbda94f6bdd31f5e8c05eef97ff2a1cb0460}{RADIO\+\_\+\+DC\+\_\+\+FREE\+\_\+\+OFF}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbda192c4af007ad26316300e2ed38155bfc}{RADIO\+\_\+\+DC\+\_\+\+FREEWHITENING}} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em Radio whitening mode activated or deactivated. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ce}{Radio\+FSKCrc\+Types\+\_\+e}} \{ \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea666010fadd8a56cb44bd8b6b4a326fd5}{RADIO\+\_\+\+CRC\+\_\+\+OFF}} = 0x01
+, \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ceab6855363ce701460d7fac8d3687d0fd5}{RADIO\+\_\+\+CRC\+\_\+1\+\_\+\+BYTES}} = 0x00
+, \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea0701118195ea48074f34e34bd536183b}{RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES}} = 0x02
+, \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea2e3735cba5b3c084d744f2c2d0cb6702}{RADIO\+\_\+\+CRC\+\_\+1\+\_\+\+BYTES\+\_\+\+INV}} = 0x04
+, \newline
+\mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ceabe6874cb789264008f612ad822eae50e}{RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+INV}} = 0x06
+, \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea4eeda78212de0a36a2cb747206bc0ed8}{RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+IBM}} = RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES
+, \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea861e75b7e83e7d2086c01882e3b0d6b5}{RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+CCIT}} = RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+INV
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the CRC length. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5}{Radio\+FSKCrc\+Seed\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5ab081dc893daa620f1ede740d48f3a960}{RADIO\+\_\+\+CRC\+\_\+\+IBM\+\_\+\+SEED}} = 0x\+FFFF
+, \mbox{\hyperlink{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5afea287662683fdf71ad3fa12761fb6ed}{RADIO\+\_\+\+CRC\+\_\+\+CCITT\+\_\+\+SEED}} = 0x1\+D0F
+ \}
+\begin{DoxyCompactList}\small\item\em LFSR initial value to compute the FSK CRC. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133}{Radio\+FSKCrc\+Polynomial\+\_\+e}} \{ \mbox{\hyperlink{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133a3a19156114e9968f88db511e2890d801}{RADIO\+\_\+\+CRC\+\_\+\+POLYNOMIAL\+\_\+\+IBM}} = 0x8005
+, \mbox{\hyperlink{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133a588c08aa419cdeed7ee6c9f879233812}{RADIO\+\_\+\+CRC\+\_\+\+POLYNOMIAL\+\_\+\+CCITT}} = 0x1021
+ \}
+\begin{DoxyCompactList}\small\item\em Polynomial used to compute the FSK CRC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{_onethinx_ext01_8h_a50e656cf395118e0c0aa35cc8ef8e4c7}{Lo\+Ra\+\_\+\+RX}} (\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$Radio\+Params, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$Radio\+Status, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+Size, uint16\+\_\+t time\+Out\+MS, \mbox{\hyperlink{group__enums__lorawan_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+\mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} \mbox{\hyperlink{_onethinx_ext01_8h_ae91649711b993d3e9ba56805ddc598e5}{Lo\+Ra\+\_\+\+TX}} (\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$Radio\+Params, \mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$Radio\+Status, uint8\+\_\+t $\ast$payload, uint8\+\_\+t payload\+Size, uint16\+\_\+t time\+Out\+MS, \mbox{\hyperlink{group__enums__lorawan_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} wait\+Mode)
+\item 
+void \mbox{\hyperlink{_onethinx_ext01_8h_afddff51e54e43c9310e1185ea8a79a08}{Lo\+Ra\+WAN\+\_\+\+Debug}} (bool debug\+Leds\+On, uint32\+\_\+t $\ast$core\+State\+PNT)
+\item 
+void \mbox{\hyperlink{_onethinx_ext01_8h_a6c5c729a3095fafed9bcf6fc6d0b5fa8}{Lo\+Ra\+WAN\+\_\+\+Unlock}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65}\label{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!coreFunctionsExt\_e@{coreFunctionsExt\_e}}
+\index{coreFunctionsExt\_e@{coreFunctionsExt\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{coreFunctionsExt\_e}{coreFunctionsExt\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65}{core\+Functions\+Ext\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coreFunction\_L\_RX@{coreFunction\_L\_RX}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!coreFunction\_L\_RX@{coreFunction\_L\_RX}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65aa7e06b3164612336b3ef44d82bfe96e9}\label{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65aa7e06b3164612336b3ef44d82bfe96e9}} 
+core\+Function\+\_\+\+L\+\_\+\+RX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coreFunction\_L\_TX@{coreFunction\_L\_TX}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!coreFunction\_L\_TX@{coreFunction\_L\_TX}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a788b21f9ded03b26a856d458ebf119fc}\label{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a788b21f9ded03b26a856d458ebf119fc}} 
+core\+Function\+\_\+\+L\+\_\+\+TX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coreFunction\_Debug@{coreFunction\_Debug}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!coreFunction\_Debug@{coreFunction\_Debug}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a0107f6dc53a3b0cf1676a7df8378a653}\label{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a0107f6dc53a3b0cf1676a7df8378a653}} 
+core\+Function\+\_\+\+Debug&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coreFunction\_Unlock@{coreFunction\_Unlock}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!coreFunction\_Unlock@{coreFunction\_Unlock}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a7c9b6b9a865ded109ddc60e925a49118}\label{_onethinx_ext01_8h_aca0436f97cf8ddcb0bf06ed69b95ce65a7c9b6b9a865ded109ddc60e925a49118}} 
+core\+Function\+\_\+\+Unlock&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498}\label{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!LoRaSyncWord\_e@{LoRaSyncWord\_e}}
+\index{LoRaSyncWord\_e@{LoRaSyncWord\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{LoRaSyncWord\_e}{LoRaSyncWord\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498}{Lo\+Ra\+Sync\+Word\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_MAC\_PRIVATE\_SYNCWORD@{LORA\_MAC\_PRIVATE\_SYNCWORD}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_MAC\_PRIVATE\_SYNCWORD@{LORA\_MAC\_PRIVATE\_SYNCWORD}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498a29afb28571c1e2357084636600cb4a87}\label{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498a29afb28571c1e2357084636600cb4a87}} 
+LORA\+\_\+\+MAC\+\_\+\+PRIVATE\+\_\+\+SYNCWORD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_MAC\_PUBLIC\_SYNCWORD@{LORA\_MAC\_PUBLIC\_SYNCWORD}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_MAC\_PUBLIC\_SYNCWORD@{LORA\_MAC\_PUBLIC\_SYNCWORD}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498a37014be1aca9682d5b87b1285f266560}\label{_onethinx_ext01_8h_a5609de14c7dc3e15a3943130acee8498a37014be1aca9682d5b87b1285f266560}} 
+LORA\+\_\+\+MAC\+\_\+\+PUBLIC\+\_\+\+SYNCWORD&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4}\label{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKAddressComp\_e@{RadioFSKAddressComp\_e}}
+\index{RadioFSKAddressComp\_e@{RadioFSKAddressComp\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKAddressComp\_e}{RadioFSKAddressComp\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4}{Radio\+FSKAddress\+Comp\+\_\+e}}}
+
+
+
+Represents the possible combinations of Sync\+Word correlators activated. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_ADDRESSCOMP\_FILT\_OFF@{RADIO\_ADDRESSCOMP\_FILT\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_ADDRESSCOMP\_FILT\_OFF@{RADIO\_ADDRESSCOMP\_FILT\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4aa9e41c4533d2c6eab6af48af507ce6c7}\label{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4aa9e41c4533d2c6eab6af48af507ce6c7}} 
+RADIO\+\_\+\+ADDRESSCOMP\+\_\+\+FILT\+\_\+\+OFF&No correlator turned on, i.\+e. do not search for Sync\+Word. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_ADDRESSCOMP\_FILT\_NODE@{RADIO\_ADDRESSCOMP\_FILT\_NODE}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_ADDRESSCOMP\_FILT\_NODE@{RADIO\_ADDRESSCOMP\_FILT\_NODE}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4a3d5fe95f8d5749dfc752cde869c3168c}\label{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4a3d5fe95f8d5749dfc752cde869c3168c}} 
+RADIO\+\_\+\+ADDRESSCOMP\+\_\+\+FILT\+\_\+\+NODE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_ADDRESSCOMP\_FILT\_NODE\_BROAD@{RADIO\_ADDRESSCOMP\_FILT\_NODE\_BROAD}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_ADDRESSCOMP\_FILT\_NODE\_BROAD@{RADIO\_ADDRESSCOMP\_FILT\_NODE\_BROAD}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4a84f4f8a0575c92b1ee5d114b78db5875}\label{_onethinx_ext01_8h_ad49ee94d689e9f2aa8db66bea5f613f4a84f4f8a0575c92b1ee5d114b78db5875}} 
+RADIO\+\_\+\+ADDRESSCOMP\+\_\+\+FILT\+\_\+\+NODE\+\_\+\+BROAD&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133}\label{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKCrcPolynomial\_e@{RadioFSKCrcPolynomial\_e}}
+\index{RadioFSKCrcPolynomial\_e@{RadioFSKCrcPolynomial\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKCrcPolynomial\_e}{RadioFSKCrcPolynomial\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133}{Radio\+FSKCrc\+Polynomial\+\_\+e}}}
+
+
+
+Polynomial used to compute the FSK CRC. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_POLYNOMIAL\_IBM@{RADIO\_CRC\_POLYNOMIAL\_IBM}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_POLYNOMIAL\_IBM@{RADIO\_CRC\_POLYNOMIAL\_IBM}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133a3a19156114e9968f88db511e2890d801}\label{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133a3a19156114e9968f88db511e2890d801}} 
+RADIO\+\_\+\+CRC\+\_\+\+POLYNOMIAL\+\_\+\+IBM&Polynomial to compute IBM type CRC. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_POLYNOMIAL\_CCITT@{RADIO\_CRC\_POLYNOMIAL\_CCITT}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_POLYNOMIAL\_CCITT@{RADIO\_CRC\_POLYNOMIAL\_CCITT}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133a588c08aa419cdeed7ee6c9f879233812}\label{_onethinx_ext01_8h_a6f7985e1ec3a7b28a9d610eaccbdc133a588c08aa419cdeed7ee6c9f879233812}} 
+RADIO\+\_\+\+CRC\+\_\+\+POLYNOMIAL\+\_\+\+CCITT&Polynomial value to compute CCIT type CRC. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5}\label{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKCrcSeed\_e@{RadioFSKCrcSeed\_e}}
+\index{RadioFSKCrcSeed\_e@{RadioFSKCrcSeed\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKCrcSeed\_e}{RadioFSKCrcSeed\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5}{Radio\+FSKCrc\+Seed\+\_\+e}}}
+
+
+
+LFSR initial value to compute the FSK CRC. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_IBM\_SEED@{RADIO\_CRC\_IBM\_SEED}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_IBM\_SEED@{RADIO\_CRC\_IBM\_SEED}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5ab081dc893daa620f1ede740d48f3a960}\label{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5ab081dc893daa620f1ede740d48f3a960}} 
+RADIO\+\_\+\+CRC\+\_\+\+IBM\+\_\+\+SEED&FSR initial value to compute IBM type CRC. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_CCITT\_SEED@{RADIO\_CRC\_CCITT\_SEED}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_CCITT\_SEED@{RADIO\_CRC\_CCITT\_SEED}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5afea287662683fdf71ad3fa12761fb6ed}\label{_onethinx_ext01_8h_a26510fbdaa5ca896b33b1be89193cbf5afea287662683fdf71ad3fa12761fb6ed}} 
+RADIO\+\_\+\+CRC\+\_\+\+CCITT\+\_\+\+SEED&FSR initial value to compute CCIT type CRC. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ce}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ce}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKCrcTypes\_e@{RadioFSKCrcTypes\_e}}
+\index{RadioFSKCrcTypes\_e@{RadioFSKCrcTypes\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKCrcTypes\_e}{RadioFSKCrcTypes\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ce}{Radio\+FSKCrc\+Types\+\_\+e}}}
+
+
+
+Represents the CRC length. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_OFF@{RADIO\_CRC\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_OFF@{RADIO\_CRC\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea666010fadd8a56cb44bd8b6b4a326fd5}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea666010fadd8a56cb44bd8b6b4a326fd5}} 
+RADIO\+\_\+\+CRC\+\_\+\+OFF&No CRC in use. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_1\_BYTES@{RADIO\_CRC\_1\_BYTES}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_1\_BYTES@{RADIO\_CRC\_1\_BYTES}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ceab6855363ce701460d7fac8d3687d0fd5}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ceab6855363ce701460d7fac8d3687d0fd5}} 
+RADIO\+\_\+\+CRC\+\_\+1\+\_\+\+BYTES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_2\_BYTES@{RADIO\_CRC\_2\_BYTES}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_2\_BYTES@{RADIO\_CRC\_2\_BYTES}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea0701118195ea48074f34e34bd536183b}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea0701118195ea48074f34e34bd536183b}} 
+RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_1\_BYTES\_INV@{RADIO\_CRC\_1\_BYTES\_INV}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_1\_BYTES\_INV@{RADIO\_CRC\_1\_BYTES\_INV}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea2e3735cba5b3c084d744f2c2d0cb6702}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea2e3735cba5b3c084d744f2c2d0cb6702}} 
+RADIO\+\_\+\+CRC\+\_\+1\+\_\+\+BYTES\+\_\+\+INV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_2\_BYTES\_INV@{RADIO\_CRC\_2\_BYTES\_INV}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_2\_BYTES\_INV@{RADIO\_CRC\_2\_BYTES\_INV}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ceabe6874cb789264008f612ad822eae50e}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893ceabe6874cb789264008f612ad822eae50e}} 
+RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+INV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_2\_BYTES\_IBM@{RADIO\_CRC\_2\_BYTES\_IBM}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_2\_BYTES\_IBM@{RADIO\_CRC\_2\_BYTES\_IBM}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea4eeda78212de0a36a2cb747206bc0ed8}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea4eeda78212de0a36a2cb747206bc0ed8}} 
+RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+IBM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_CRC\_2\_BYTES\_CCIT@{RADIO\_CRC\_2\_BYTES\_CCIT}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_CRC\_2\_BYTES\_CCIT@{RADIO\_CRC\_2\_BYTES\_CCIT}}}\mbox{\Hypertarget{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea861e75b7e83e7d2086c01882e3b0d6b5}\label{_onethinx_ext01_8h_adc3ded6ecf370fa91fae7bddea9893cea861e75b7e83e7d2086c01882e3b0d6b5}} 
+RADIO\+\_\+\+CRC\+\_\+2\+\_\+\+BYTES\+\_\+\+CCIT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbd}\label{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbd}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKDcFree\_e@{RadioFSKDcFree\_e}}
+\index{RadioFSKDcFree\_e@{RadioFSKDcFree\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKDcFree\_e}{RadioFSKDcFree\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbd}{Radio\+FSKDc\+Free\+\_\+e}}}
+
+
+
+Radio whitening mode activated or deactivated. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_DC\_FREE\_OFF@{RADIO\_DC\_FREE\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_DC\_FREE\_OFF@{RADIO\_DC\_FREE\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbda94f6bdd31f5e8c05eef97ff2a1cb0460}\label{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbda94f6bdd31f5e8c05eef97ff2a1cb0460}} 
+RADIO\+\_\+\+DC\+\_\+\+FREE\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_DC\_FREEWHITENING@{RADIO\_DC\_FREEWHITENING}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_DC\_FREEWHITENING@{RADIO\_DC\_FREEWHITENING}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbda192c4af007ad26316300e2ed38155bfc}\label{_onethinx_ext01_8h_aa1330983f33479746092e7f7c7ba7dbda192c4af007ad26316300e2ed38155bfc}} 
+RADIO\+\_\+\+DC\+\_\+\+FREEWHITENING&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743}\label{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKModShapings\_e@{RadioFSKModShapings\_e}}
+\index{RadioFSKModShapings\_e@{RadioFSKModShapings\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKModShapings\_e}{RadioFSKModShapings\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743}{Radio\+FSKMod\+Shapings\+\_\+e}}}
+
+
+
+Represents the modulation shaping parameter. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_SHAPING\_OFF@{MOD\_SHAPING\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!MOD\_SHAPING\_OFF@{MOD\_SHAPING\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a4458432cc4eb84cc77d7dc9f3879c439}\label{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a4458432cc4eb84cc77d7dc9f3879c439}} 
+MOD\+\_\+\+SHAPING\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_SHAPING\_G\_BT\_03@{MOD\_SHAPING\_G\_BT\_03}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!MOD\_SHAPING\_G\_BT\_03@{MOD\_SHAPING\_G\_BT\_03}}}\mbox{\Hypertarget{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a79b104423386571a46ae3586c76f3d6a}\label{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a79b104423386571a46ae3586c76f3d6a}} 
+MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+03&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_SHAPING\_G\_BT\_05@{MOD\_SHAPING\_G\_BT\_05}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!MOD\_SHAPING\_G\_BT\_05@{MOD\_SHAPING\_G\_BT\_05}}}\mbox{\Hypertarget{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a6f5d041ff974e952155a82e16d124a5d}\label{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743a6f5d041ff974e952155a82e16d124a5d}} 
+MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+05&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_SHAPING\_G\_BT\_07@{MOD\_SHAPING\_G\_BT\_07}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!MOD\_SHAPING\_G\_BT\_07@{MOD\_SHAPING\_G\_BT\_07}}}\mbox{\Hypertarget{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743aef26fd93f4f4e0f7a8f06929a8a3ba63}\label{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743aef26fd93f4f4e0f7a8f06929a8a3ba63}} 
+MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+07&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOD\_SHAPING\_G\_BT\_1@{MOD\_SHAPING\_G\_BT\_1}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!MOD\_SHAPING\_G\_BT\_1@{MOD\_SHAPING\_G\_BT\_1}}}\mbox{\Hypertarget{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743ae7348a8993f2f37a3d456b7ef5f0ebdc}\label{_onethinx_ext01_8h_abbe986916a54d576176083330a5ac743ae7348a8993f2f37a3d456b7ef5f0ebdc}} 
+MOD\+\_\+\+SHAPING\+\_\+\+G\+\_\+\+BT\+\_\+1&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8f}\label{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8f}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKPacketLengthModes\_e@{RadioFSKPacketLengthModes\_e}}
+\index{RadioFSKPacketLengthModes\_e@{RadioFSKPacketLengthModes\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKPacketLengthModes\_e}{RadioFSKPacketLengthModes\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8f}{Radio\+FSKPacket\+Length\+Modes\+\_\+e}}}
+
+
+
+Radio GFSK packet length mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PACKET\_FIXED\_LENGTH@{RADIO\_PACKET\_FIXED\_LENGTH}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PACKET\_FIXED\_LENGTH@{RADIO\_PACKET\_FIXED\_LENGTH}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8faad7bf546a6d287d025a16a742e6f2bcd}\label{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8faad7bf546a6d287d025a16a742e6f2bcd}} 
+RADIO\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH&The packet is known on both sides, no header included in the packet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PACKET\_VARIABLE\_LENGTH@{RADIO\_PACKET\_VARIABLE\_LENGTH}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PACKET\_VARIABLE\_LENGTH@{RADIO\_PACKET\_VARIABLE\_LENGTH}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8fa902ce14d15f16ba1b3bea47fe9d88fd4}\label{_onethinx_ext01_8h_a59623091bbba00d9dc60b7a7eacf7d8fa902ce14d15f16ba1b3bea47fe9d88fd4}} 
+RADIO\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH&The packet is on variable size, header included. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076}\label{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKPreambleDetection\_e@{RadioFSKPreambleDetection\_e}}
+\index{RadioFSKPreambleDetection\_e@{RadioFSKPreambleDetection\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKPreambleDetection\_e}{RadioFSKPreambleDetection\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076}{Radio\+FSKPreamble\+Detection\+\_\+e}}}
+
+
+
+Represents the preamble length used to detect the packet on Rx side. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PREAMBLE\_DETECTOR\_OFF@{RADIO\_PREAMBLE\_DETECTOR\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PREAMBLE\_DETECTOR\_OFF@{RADIO\_PREAMBLE\_DETECTOR\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a1ee68869d57c8c9a74628d1fa2af28ed}\label{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a1ee68869d57c8c9a74628d1fa2af28ed}} 
+RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+\+OFF&Preamble detection length off. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PREAMBLE\_DETECTOR\_08\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_08\_BITS}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PREAMBLE\_DETECTOR\_08\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_08\_BITS}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a9e1e546432b5b4651f14b1f369f54aca}\label{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a9e1e546432b5b4651f14b1f369f54aca}} 
+RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+08\+\_\+\+BITS&Preamble detection length 8 bits. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PREAMBLE\_DETECTOR\_16\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_16\_BITS}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PREAMBLE\_DETECTOR\_16\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_16\_BITS}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a6a75f8512d0c7c8f06f3c154401f48e8}\label{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a6a75f8512d0c7c8f06f3c154401f48e8}} 
+RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+16\+\_\+\+BITS&Preamble detection length 16 bits. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PREAMBLE\_DETECTOR\_24\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_24\_BITS}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PREAMBLE\_DETECTOR\_24\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_24\_BITS}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076afee01071c2f859c3ca50b882c47849d5}\label{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076afee01071c2f859c3ca50b882c47849d5}} 
+RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+24\+\_\+\+BITS&Preamble detection length 24 bits. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_PREAMBLE\_DETECTOR\_32\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_32\_BITS}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_PREAMBLE\_DETECTOR\_32\_BITS@{RADIO\_PREAMBLE\_DETECTOR\_32\_BITS}}}\mbox{\Hypertarget{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a5c7fa66971804639c2d976a1ef2f33c2}\label{_onethinx_ext01_8h_aac75549a1c04810216f4a1b52a08a076a5c7fa66971804639c2d976a1ef2f33c2}} 
+RADIO\+\_\+\+PREAMBLE\+\_\+\+DETECTOR\+\_\+32\+\_\+\+BITS&Preamble detection length 32 bit. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9}\label{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKRBitrate\_e@{RadioFSKRBitrate\_e}}
+\index{RadioFSKRBitrate\_e@{RadioFSKRBitrate\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKRBitrate\_e}{RadioFSKRBitrate\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9}{Radio\+FSKRBitrate\+\_\+e}}}
+
+
+
+Represents the modulation shaping parameter. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BITRATE\_25K@{BITRATE\_25K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!BITRATE\_25K@{BITRATE\_25K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a8d58be78324cada5ea334bda988df3a3}\label{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a8d58be78324cada5ea334bda988df3a3}} 
+BITRATE\+\_\+25K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BITRATE\_50K@{BITRATE\_50K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!BITRATE\_50K@{BITRATE\_50K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a725b5b8347dbbd4c89ecf092f8d40d60}\label{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a725b5b8347dbbd4c89ecf092f8d40d60}} 
+BITRATE\+\_\+50K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BITRATE\_100K@{BITRATE\_100K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!BITRATE\_100K@{BITRATE\_100K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a6d0c542d4806c88dd10d659b2096fdd1}\label{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a6d0c542d4806c88dd10d659b2096fdd1}} 
+BITRATE\+\_\+100K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_BR\_MAX@{INTERNAL\_BR\_MAX}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!INTERNAL\_BR\_MAX@{INTERNAL\_BR\_MAX}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a230d6ac5cadc2769e2c7964565d6f5c6}\label{_onethinx_ext01_8h_a92ea6ee7973d64d0acdd5450e0ea46d9a230d6ac5cadc2769e2c7964565d6f5c6}} 
+INTERNAL\+\_\+\+BR\+\_\+\+MAX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705c}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705c}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKRDeviation\_e@{RadioFSKRDeviation\_e}}
+\index{RadioFSKRDeviation\_e@{RadioFSKRDeviation\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKRDeviation\_e}{RadioFSKRDeviation\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705c}{Radio\+FSKRDeviation\+\_\+e}}}
+
+
+
+Represents the modulation shaping parameter. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDEV\_SSB\_25K@{FDEV\_SSB\_25K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!FDEV\_SSB\_25K@{FDEV\_SSB\_25K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1af63bf13e5933bf60b9f28367a97156}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1af63bf13e5933bf60b9f28367a97156}} 
+FDEV\+\_\+\+SSB\+\_\+25K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDEV\_DSB\_50K@{FDEV\_DSB\_50K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!FDEV\_DSB\_50K@{FDEV\_DSB\_50K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1163572ead609dd40a5634a69ea77e56}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1163572ead609dd40a5634a69ea77e56}} 
+FDEV\+\_\+\+DSB\+\_\+50K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDEV\_SSB\_30K@{FDEV\_SSB\_30K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!FDEV\_SSB\_30K@{FDEV\_SSB\_30K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705cade2f730798137e74aec026a1470af1bd}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705cade2f730798137e74aec026a1470af1bd}} 
+FDEV\+\_\+\+SSB\+\_\+30K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDEV\_DSB\_60K@{FDEV\_DSB\_60K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!FDEV\_DSB\_60K@{FDEV\_DSB\_60K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca364040678563bba9db3ba503c14f287b}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca364040678563bba9db3ba503c14f287b}} 
+FDEV\+\_\+\+DSB\+\_\+60K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDEV\_SSB\_50K@{FDEV\_SSB\_50K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!FDEV\_SSB\_50K@{FDEV\_SSB\_50K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705cabd4b3cf4a097f9c6f11035f1ef126745}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705cabd4b3cf4a097f9c6f11035f1ef126745}} 
+FDEV\+\_\+\+SSB\+\_\+50K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDEV\_DSB\_100K@{FDEV\_DSB\_100K}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!FDEV\_DSB\_100K@{FDEV\_DSB\_100K}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1307fab10bf8395f1c2898b0a089c47a}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca1307fab10bf8395f1c2898b0a089c47a}} 
+FDEV\+\_\+\+DSB\+\_\+100K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_DEV\_MAX@{INTERNAL\_DEV\_MAX}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!INTERNAL\_DEV\_MAX@{INTERNAL\_DEV\_MAX}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca32a8239325acbc7e29f9ee71e6382c00}\label{_onethinx_ext01_8h_afac9c93dc5b6e0979d5529591803705ca32a8239325acbc7e29f9ee71e6382c00}} 
+INTERNAL\+\_\+\+DEV\+\_\+\+MAX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKRxBandwidth\_e@{RadioFSKRxBandwidth\_e}}
+\index{RadioFSKRxBandwidth\_e@{RadioFSKRxBandwidth\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKRxBandwidth\_e}{RadioFSKRxBandwidth\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90}{Radio\+FSKRx\+Bandwidth\+\_\+e}}}
+
+
+
+Represents the modulation shaping parameter. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_4800@{RX\_BW\_4800}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_4800@{RX\_BW\_4800}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a00b8727f44bda240916133b921bbd223}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a00b8727f44bda240916133b921bbd223}} 
+RX\+\_\+\+BW\+\_\+4800&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_5800@{RX\_BW\_5800}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_5800@{RX\_BW\_5800}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a8b98dd7c570e9097aa69cec12715478d}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a8b98dd7c570e9097aa69cec12715478d}} 
+RX\+\_\+\+BW\+\_\+5800&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_7300@{RX\_BW\_7300}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_7300@{RX\_BW\_7300}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ac733d998032fc13b5c4e89eae9299997}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ac733d998032fc13b5c4e89eae9299997}} 
+RX\+\_\+\+BW\+\_\+7300&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_9700@{RX\_BW\_9700}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_9700@{RX\_BW\_9700}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aa961f60128234219616561605a4aae9e}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aa961f60128234219616561605a4aae9e}} 
+RX\+\_\+\+BW\+\_\+9700&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_11700@{RX\_BW\_11700}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_11700@{RX\_BW\_11700}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90afbfcd56dad77870ce2261fc5381e7f59}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90afbfcd56dad77870ce2261fc5381e7f59}} 
+RX\+\_\+\+BW\+\_\+11700&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_14600@{RX\_BW\_14600}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_14600@{RX\_BW\_14600}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aae1097cb9e729172902230e14065b813}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aae1097cb9e729172902230e14065b813}} 
+RX\+\_\+\+BW\+\_\+14600&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_19500@{RX\_BW\_19500}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_19500@{RX\_BW\_19500}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ad571d5c87a8c961fca9256e9469ed95a}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ad571d5c87a8c961fca9256e9469ed95a}} 
+RX\+\_\+\+BW\+\_\+19500&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_23400@{RX\_BW\_23400}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_23400@{RX\_BW\_23400}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a7a5ac7c1bb53401304708553a3bedb43}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a7a5ac7c1bb53401304708553a3bedb43}} 
+RX\+\_\+\+BW\+\_\+23400&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_29300@{RX\_BW\_29300}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_29300@{RX\_BW\_29300}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ae66ed7397e83b585a97f3debcb1dd550}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ae66ed7397e83b585a97f3debcb1dd550}} 
+RX\+\_\+\+BW\+\_\+29300&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_39000@{RX\_BW\_39000}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_39000@{RX\_BW\_39000}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90afae8858a4be09cf25290b51d9fab30cf}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90afae8858a4be09cf25290b51d9fab30cf}} 
+RX\+\_\+\+BW\+\_\+39000&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_46900@{RX\_BW\_46900}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_46900@{RX\_BW\_46900}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a2cbbcfa8e9dccff44f41c59ab97c08ed}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a2cbbcfa8e9dccff44f41c59ab97c08ed}} 
+RX\+\_\+\+BW\+\_\+46900&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_58600@{RX\_BW\_58600}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_58600@{RX\_BW\_58600}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a03af5d2937f21e8b7737b810880d12b2}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a03af5d2937f21e8b7737b810880d12b2}} 
+RX\+\_\+\+BW\+\_\+58600&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_78200@{RX\_BW\_78200}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_78200@{RX\_BW\_78200}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90adb66eb7b195707a2641915bbfb0ff5bb}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90adb66eb7b195707a2641915bbfb0ff5bb}} 
+RX\+\_\+\+BW\+\_\+78200&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_93800@{RX\_BW\_93800}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_93800@{RX\_BW\_93800}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a8e08937ef44723b2925aa8a69bfcf7b7}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a8e08937ef44723b2925aa8a69bfcf7b7}} 
+RX\+\_\+\+BW\+\_\+93800&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_117300@{RX\_BW\_117300}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_117300@{RX\_BW\_117300}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a9ce48129db2f160159864131ac02b533}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a9ce48129db2f160159864131ac02b533}} 
+RX\+\_\+\+BW\+\_\+117300&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_156200@{RX\_BW\_156200}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_156200@{RX\_BW\_156200}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aa3a53701671be56fcd2d995030a85662}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90aa3a53701671be56fcd2d995030a85662}} 
+RX\+\_\+\+BW\+\_\+156200&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_187200@{RX\_BW\_187200}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_187200@{RX\_BW\_187200}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90adc8914362ea750307d89a3b6278343dc}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90adc8914362ea750307d89a3b6278343dc}} 
+RX\+\_\+\+BW\+\_\+187200&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_234300@{RX\_BW\_234300}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_234300@{RX\_BW\_234300}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90af0f0e201f31ec53af7e81ab1d1a74f2b}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90af0f0e201f31ec53af7e81ab1d1a74f2b}} 
+RX\+\_\+\+BW\+\_\+234300&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_312000@{RX\_BW\_312000}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_312000@{RX\_BW\_312000}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ac237a23a90b6c939f4b67f56bf1e25b1}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90ac237a23a90b6c939f4b67f56bf1e25b1}} 
+RX\+\_\+\+BW\+\_\+312000&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_373600@{RX\_BW\_373600}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_373600@{RX\_BW\_373600}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a16086b68260ff15c37f5a5c349d55746}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90a16086b68260ff15c37f5a5c349d55746}} 
+RX\+\_\+\+BW\+\_\+373600&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RX\_BW\_467000@{RX\_BW\_467000}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RX\_BW\_467000@{RX\_BW\_467000}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90af10532e849b0da92931315dc86d67be6}\label{_onethinx_ext01_8h_ae09eefbe3ba7d6ab0b2266571a5ecf90af10532e849b0da92931315dc86d67be6}} 
+RX\+\_\+\+BW\+\_\+467000&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2}\label{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioFSKWhiteningSeed\_e@{RadioFSKWhiteningSeed\_e}}
+\index{RadioFSKWhiteningSeed\_e@{RadioFSKWhiteningSeed\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioFSKWhiteningSeed\_e}{RadioFSKWhiteningSeed\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2}{Radio\+FSKWhitening\+Seed\+\_\+e}}}
+
+
+
+Radio whitening initial seed value. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RADIO\_WHITENINGSEED@{RADIO\_WHITENINGSEED}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!RADIO\_WHITENINGSEED@{RADIO\_WHITENINGSEED}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2a475cb761e9be91cd3195d3c8f269319f}\label{_onethinx_ext01_8h_a4407ecfe61476c956b059f33de1637d2a475cb761e9be91cd3195d3c8f269319f}} 
+RADIO\+\_\+\+WHITENINGSEED&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9d}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9d}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoRaBandwidths\_e@{RadioLoRaBandwidths\_e}}
+\index{RadioLoRaBandwidths\_e@{RadioLoRaBandwidths\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaBandwidths\_e}{RadioLoRaBandwidths\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9d}{Radio\+Lo\+Ra\+Bandwidths\+\_\+e}}}
+
+
+
+Represents the bandwidth values for Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_500@{LORA\_BW\_500}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_500@{LORA\_BW\_500}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da92c2fa284b2f779dea7bed7f6bbb9789}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da92c2fa284b2f779dea7bed7f6bbb9789}} 
+LORA\+\_\+\+BW\+\_\+500&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_250@{LORA\_BW\_250}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_250@{LORA\_BW\_250}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da236a61112ab3aff9b1586cff9b986e9a}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da236a61112ab3aff9b1586cff9b986e9a}} 
+LORA\+\_\+\+BW\+\_\+250&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_125@{LORA\_BW\_125}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_125@{LORA\_BW\_125}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9daae61cc4f4fd10adcca3ef4681fa6a1c5}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9daae61cc4f4fd10adcca3ef4681fa6a1c5}} 
+LORA\+\_\+\+BW\+\_\+125&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_062@{LORA\_BW\_062}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_062@{LORA\_BW\_062}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da2ee5dda7b2c56278bb959b47fe675718}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da2ee5dda7b2c56278bb959b47fe675718}} 
+LORA\+\_\+\+BW\+\_\+062&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_041@{LORA\_BW\_041}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_041@{LORA\_BW\_041}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da4fb3617ac95535274f8a0d47f8c98717}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da4fb3617ac95535274f8a0d47f8c98717}} 
+LORA\+\_\+\+BW\+\_\+041&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_031@{LORA\_BW\_031}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_031@{LORA\_BW\_031}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da1821e57183e61dd9375c805dcae422ac}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da1821e57183e61dd9375c805dcae422ac}} 
+LORA\+\_\+\+BW\+\_\+031&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_020@{LORA\_BW\_020}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_020@{LORA\_BW\_020}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9dad847c1650ec8366cb4c86d586e801117}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9dad847c1650ec8366cb4c86d586e801117}} 
+LORA\+\_\+\+BW\+\_\+020&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_015@{LORA\_BW\_015}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_015@{LORA\_BW\_015}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da2c3928bc40410591d17e97c8a0cc77ae}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da2c3928bc40410591d17e97c8a0cc77ae}} 
+LORA\+\_\+\+BW\+\_\+015&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_010@{LORA\_BW\_010}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_010@{LORA\_BW\_010}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da710e85446b999c221d833f271deb8ea5}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da710e85446b999c221d833f271deb8ea5}} 
+LORA\+\_\+\+BW\+\_\+010&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_BW\_007@{LORA\_BW\_007}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_BW\_007@{LORA\_BW\_007}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da0e017392e26b3cbe1d8398f44cdef4ca}\label{_onethinx_ext01_8h_a4276056194a6469e782bc72f7ed1fc9da0e017392e26b3cbe1d8398f44cdef4ca}} 
+LORA\+\_\+\+BW\+\_\+007&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ff}\label{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ff}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoRaCodingRates\_e@{RadioLoRaCodingRates\_e}}
+\index{RadioLoRaCodingRates\_e@{RadioLoRaCodingRates\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaCodingRates\_e}{RadioLoRaCodingRates\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ff}{Radio\+Lo\+Ra\+Coding\+Rates\+\_\+e}}}
+
+
+
+Represents the coding rate values for Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CR\_4\_5@{LORA\_CR\_4\_5}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_CR\_4\_5@{LORA\_CR\_4\_5}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa916cb1c30262177cf11791adf3c6c976}\label{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa916cb1c30262177cf11791adf3c6c976}} 
+LORA\+\_\+\+CR\+\_\+4\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CR\_4\_6@{LORA\_CR\_4\_6}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_CR\_4\_6@{LORA\_CR\_4\_6}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa3d26c19984df0202c58dbab57042fd76}\label{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa3d26c19984df0202c58dbab57042fd76}} 
+LORA\+\_\+\+CR\+\_\+4\+\_\+6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CR\_4\_7@{LORA\_CR\_4\_7}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_CR\_4\_7@{LORA\_CR\_4\_7}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa900fdaffc679facfc7551607c7f9e1d2}\label{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffa900fdaffc679facfc7551607c7f9e1d2}} 
+LORA\+\_\+\+CR\+\_\+4\+\_\+7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CR\_4\_8@{LORA\_CR\_4\_8}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_CR\_4\_8@{LORA\_CR\_4\_8}}}\mbox{\Hypertarget{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffaca861f0c081d4b2e0fd1ae609ce593a8}\label{_onethinx_ext01_8h_afd556eb66388736375143794a99d18ffaca861f0c081d4b2e0fd1ae609ce593a8}} 
+LORA\+\_\+\+CR\+\_\+4\+\_\+8&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81c}\label{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81c}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoRaCrcMode\_e@{RadioLoRaCrcMode\_e}}
+\index{RadioLoRaCrcMode\_e@{RadioLoRaCrcMode\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaCrcMode\_e}{RadioLoRaCrcMode\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81c}{Radio\+Lo\+Ra\+Crc\+Mode\+\_\+e}}}
+
+
+
+Represents the CRC mode for Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CRC\_ON@{LORA\_CRC\_ON}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_CRC\_ON@{LORA\_CRC\_ON}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba}\label{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81caeb5e5a62d316d3369287957a8b1f22ba}} 
+LORA\+\_\+\+CRC\+\_\+\+ON&CRC activated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_CRC\_OFF@{LORA\_CRC\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_CRC\_OFF@{LORA\_CRC\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599}\label{_onethinx_ext01_8h_ae5f60a2d6228652cbfa3383464f2b81ca6149f95e72f0874115f47cfc729f0599}} 
+LORA\+\_\+\+CRC\+\_\+\+OFF&CRC not used. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54e}\label{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54e}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoRaHeaderType\_e@{RadioLoRaHeaderType\_e}}
+\index{RadioLoRaHeaderType\_e@{RadioLoRaHeaderType\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaHeaderType\_e}{RadioLoRaHeaderType\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54e}{Radio\+Lo\+Ra\+Header\+Type\+\_\+e}}}
+
+
+
+Holds the Radio lengths mode for the Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_VARIABLE\_LENGTH@{LORA\_PACKET\_VARIABLE\_LENGTH}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_PACKET\_VARIABLE\_LENGTH@{LORA\_PACKET\_VARIABLE\_LENGTH}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92}\label{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ead152eaad9d30522916a44076b83ffe92}} 
+LORA\+\_\+\+PACKET\+\_\+\+VARIABLE\+\_\+\+LENGTH&The packet is on variable size, header included. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_FIXED\_LENGTH@{LORA\_PACKET\_FIXED\_LENGTH}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_PACKET\_FIXED\_LENGTH@{LORA\_PACKET\_FIXED\_LENGTH}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb}\label{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ea954ba80eba09e82c7578776985ae64cb}} 
+LORA\+\_\+\+PACKET\+\_\+\+FIXED\+\_\+\+LENGTH&The packet is known on both sides, no header included in the packet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_EXPLICIT@{LORA\_PACKET\_EXPLICIT}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_PACKET\_EXPLICIT@{LORA\_PACKET\_EXPLICIT}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca}\label{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54eae68661df52892ea0708a648914a135ca}} 
+LORA\+\_\+\+PACKET\+\_\+\+EXPLICIT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_PACKET\_IMPLICIT@{LORA\_PACKET\_IMPLICIT}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_PACKET\_IMPLICIT@{LORA\_PACKET\_IMPLICIT}}}\mbox{\Hypertarget{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a}\label{_onethinx_ext01_8h_a17b12bbe1bb4560f4332736c46a8d54ea3aa0cb2152d21f5bea4b0c305a40258a}} 
+LORA\+\_\+\+PACKET\+\_\+\+IMPLICIT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184}\label{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoRaIQMode\_e@{RadioLoRaIQMode\_e}}
+\index{RadioLoRaIQMode\_e@{RadioLoRaIQMode\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaIQMode\_e}{RadioLoRaIQMode\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184}{Radio\+Lo\+Ra\+IQMode\+\_\+e}}}
+
+
+
+Represents the IQ mode for Lo\+Ra packet type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_IQ\_NORMAL@{LORA\_IQ\_NORMAL}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_IQ\_NORMAL@{LORA\_IQ\_NORMAL}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184a6b5adfb3c66ba8a3c8f9bc9d5c8bce1f}\label{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184a6b5adfb3c66ba8a3c8f9bc9d5c8bce1f}} 
+LORA\+\_\+\+IQ\+\_\+\+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_IQ\_INVERTED@{LORA\_IQ\_INVERTED}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_IQ\_INVERTED@{LORA\_IQ\_INVERTED}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184a273f00ac155214f0be6de3f015078311}\label{_onethinx_ext01_8h_ac6eb2960ab8586432bcc1694d4d11184a273f00ac155214f0be6de3f015078311}} 
+LORA\+\_\+\+IQ\+\_\+\+INVERTED&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7}\label{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoraLowDataRateOptimize\_e@{RadioLoraLowDataRateOptimize\_e}}
+\index{RadioLoraLowDataRateOptimize\_e@{RadioLoraLowDataRateOptimize\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoraLowDataRateOptimize\_e}{RadioLoraLowDataRateOptimize\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7}{Radio\+Lora\+Low\+Data\+Rate\+Optimize\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_LOWDATARATEOPTIMIZE\_OFF@{LORA\_LOWDATARATEOPTIMIZE\_OFF}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_LOWDATARATEOPTIMIZE\_OFF@{LORA\_LOWDATARATEOPTIMIZE\_OFF}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7a76432af1c2107c7ac65519a660087d86}\label{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7a76432af1c2107c7ac65519a660087d86}} 
+LORA\+\_\+\+LOWDATARATEOPTIMIZE\+\_\+\+OFF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_LOWDATARATEOPTIMIZE\_ON@{LORA\_LOWDATARATEOPTIMIZE\_ON}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_LOWDATARATEOPTIMIZE\_ON@{LORA\_LOWDATARATEOPTIMIZE\_ON}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7a98375d2e24de4b08ed04f53b5dac390b}\label{_onethinx_ext01_8h_ae65853c42a7967e938cb959ffb2b6af7a98375d2e24de4b08ed04f53b5dac390b}} 
+LORA\+\_\+\+LOWDATARATEOPTIMIZE\+\_\+\+ON&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eab}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eab}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioLoRaSpreadingFactors\_e@{RadioLoRaSpreadingFactors\_e}}
+\index{RadioLoRaSpreadingFactors\_e@{RadioLoRaSpreadingFactors\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioLoRaSpreadingFactors\_e}{RadioLoRaSpreadingFactors\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eab}{Radio\+Lo\+Ra\+Spreading\+Factors\+\_\+e}}}
+
+
+
+Represents the possible spreading factor values in Lo\+Ra packet types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF5@{LORA\_SF5}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF5@{LORA\_SF5}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba94fa32c51693607d6f7ce2b8c5d7c76f}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba94fa32c51693607d6f7ce2b8c5d7c76f}} 
+LORA\+\_\+\+SF5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF6@{LORA\_SF6}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF6@{LORA\_SF6}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba3460e11edb4af3d15e2fb7d3823d1114}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba3460e11edb4af3d15e2fb7d3823d1114}} 
+LORA\+\_\+\+SF6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF7@{LORA\_SF7}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF7@{LORA\_SF7}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba252967b1109a2820337ae52698bd38bd}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba252967b1109a2820337ae52698bd38bd}} 
+LORA\+\_\+\+SF7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF8@{LORA\_SF8}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF8@{LORA\_SF8}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba70d0b72617d730a266e1fa69d2bb77d6}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba70d0b72617d730a266e1fa69d2bb77d6}} 
+LORA\+\_\+\+SF8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF9@{LORA\_SF9}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF9@{LORA\_SF9}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eabaa5e8e668ce8c14a85c99f04fd9c9c2b4}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eabaa5e8e668ce8c14a85c99f04fd9c9c2b4}} 
+LORA\+\_\+\+SF9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF10@{LORA\_SF10}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF10@{LORA\_SF10}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba4fa2cb57b3c09a7ba48fae7fa764cfc8}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba4fa2cb57b3c09a7ba48fae7fa764cfc8}} 
+LORA\+\_\+\+SF10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF11@{LORA\_SF11}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF11@{LORA\_SF11}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba6a8704a080ddc948acd2f78038ac3c90}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba6a8704a080ddc948acd2f78038ac3c90}} 
+LORA\+\_\+\+SF11&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LORA\_SF12@{LORA\_SF12}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!LORA\_SF12@{LORA\_SF12}}}\mbox{\Hypertarget{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba5b2451cb3fae097662e1f72b2562c517}\label{_onethinx_ext01_8h_af5e2e1e9f1dbf849ff021caf3f6e2eaba5b2451cb3fae097662e1f72b2562c517}} 
+LORA\+\_\+\+SF12&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434}\label{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!RadioPacketTypes\_e@{RadioPacketTypes\_e}}
+\index{RadioPacketTypes\_e@{RadioPacketTypes\_e}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{RadioPacketTypes\_e}{RadioPacketTypes\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434}{Radio\+Packet\+Types\+\_\+e}}}
+
+
+
+Represents the possible packet type (i.\+e. modem) used. 
+
+\DoxyHorRuler{0}
+ \hypertarget{_onethinx_ext01_8h_autotoc_md1}{}\doxysubsection{Public Radio Settings}\label{_onethinx_ext01_8h_autotoc_md1}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PACKET\_TYPE\_GFSK@{PACKET\_TYPE\_GFSK}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!PACKET\_TYPE\_GFSK@{PACKET\_TYPE\_GFSK}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434ab8c7c692a4a9cc7e0ee7c2ac6f21e60a}\label{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434ab8c7c692a4a9cc7e0ee7c2ac6f21e60a}} 
+PACKET\+\_\+\+TYPE\+\_\+\+GFSK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PACKET\_TYPE\_LORA@{PACKET\_TYPE\_LORA}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!PACKET\_TYPE\_LORA@{PACKET\_TYPE\_LORA}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434ab905caebfa612d206efcc6bccbc6811c}\label{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434ab905caebfa612d206efcc6bccbc6811c}} 
+PACKET\+\_\+\+TYPE\+\_\+\+LORA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PACKET\_TYPE\_NONE@{PACKET\_TYPE\_NONE}!OnethinxExt01.h@{OnethinxExt01.h}}\index{OnethinxExt01.h@{OnethinxExt01.h}!PACKET\_TYPE\_NONE@{PACKET\_TYPE\_NONE}}}\mbox{\Hypertarget{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434a7bc0b281e9e7e0ef0dfb2ffb37655333}\label{_onethinx_ext01_8h_ac345bddf7c620d03ecd1753dab7f1434a7bc0b281e9e7e0ef0dfb2ffb37655333}} 
+PACKET\+\_\+\+TYPE\+\_\+\+NONE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_onethinx_ext01_8h_a50e656cf395118e0c0aa35cc8ef8e4c7}\label{_onethinx_ext01_8h_a50e656cf395118e0c0aa35cc8ef8e4c7}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!LoRa\_RX@{LoRa\_RX}}
+\index{LoRa\_RX@{LoRa\_RX}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{LoRa\_RX()}{LoRa\_RX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+\_\+\+RX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$}]{Radio\+Params,  }\item[{\mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$}]{Radio\+Status,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+Size,  }\item[{uint16\+\_\+t}]{time\+Out\+MS,  }\item[{\mbox{\hyperlink{group__enums__lorawan_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8h_ae91649711b993d3e9ba56805ddc598e5}\label{_onethinx_ext01_8h_ae91649711b993d3e9ba56805ddc598e5}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!LoRa\_TX@{LoRa\_TX}}
+\index{LoRa\_TX@{LoRa\_TX}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{LoRa\_TX()}{LoRa\_TX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structcore_status__t}{core\+Status\+\_\+t}} Lo\+Ra\+\_\+\+TX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_radio_params__t}{Radio\+Params\+\_\+t}} $\ast$}]{Radio\+Params,  }\item[{\mbox{\hyperlink{struct_radio_status__t}{Radio\+Status\+\_\+t}} $\ast$}]{Radio\+Status,  }\item[{uint8\+\_\+t $\ast$}]{payload,  }\item[{uint8\+\_\+t}]{payload\+Size,  }\item[{uint16\+\_\+t}]{time\+Out\+MS,  }\item[{\mbox{\hyperlink{group__enums__lorawan_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}]{wait\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8h_afddff51e54e43c9310e1185ea8a79a08}\label{_onethinx_ext01_8h_afddff51e54e43c9310e1185ea8a79a08}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!LoRaWAN\_Debug@{LoRaWAN\_Debug}}
+\index{LoRaWAN\_Debug@{LoRaWAN\_Debug}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Debug()}{LoRaWAN\_Debug()}}
+{\footnotesize\ttfamily void Lo\+Ra\+WAN\+\_\+\+Debug (\begin{DoxyParamCaption}\item[{bool}]{debug\+Leds\+On,  }\item[{uint32\+\_\+t $\ast$}]{core\+State\+PNT }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_onethinx_ext01_8h_a6c5c729a3095fafed9bcf6fc6d0b5fa8}\label{_onethinx_ext01_8h_a6c5c729a3095fafed9bcf6fc6d0b5fa8}} 
+\index{OnethinxExt01.h@{OnethinxExt01.h}!LoRaWAN\_Unlock@{LoRaWAN\_Unlock}}
+\index{LoRaWAN\_Unlock@{LoRaWAN\_Unlock}!OnethinxExt01.h@{OnethinxExt01.h}}
+\doxysubsubsection{\texorpdfstring{LoRaWAN\_Unlock()}{LoRaWAN\_Unlock()}}
+{\footnotesize\ttfamily void Lo\+Ra\+WAN\+\_\+\+Unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

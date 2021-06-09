@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__functions" kind="group">
+    <compoundname>lora_functions</compoundname>
+    <title>Functions</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__lora__functions_1ga50e656cf395118e0c0aa35cc8ef8e4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRa_RX</definition>
+        <argsstring>(RadioParams_t *RadioParams, RadioStatus_t *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, WaitMode_e waitMode)</argsstring>
+        <name>LoRa_RX</name>
+        <param>
+          <type><ref refid="struct_radio_params__t" kindref="compound">RadioParams_t</ref> *</type>
+          <declname>RadioParams</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_radio_status__t" kindref="compound">RadioStatus_t</ref> *</type>
+          <declname>RadioStatus</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>payloadSize</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeOutMS</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref></type>
+          <declname>waitMode</declname>
+        </param>
+        <briefdescription>
+<para>This functions waits for a LoRa transmition with given parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RadioParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="struct_radio_params__t" kindref="compound">RadioParams_t</ref> structure where LoRa parameters are set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RadioStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="struct_radio_status__t" kindref="compound">RadioStatus_t</ref> structure where the stack returns statuses. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer where the receiving payload is saved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payloadSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the payload that is to be received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeOutMS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout in milliseconds. Will exit the function if timeout is reached. If zero, there is no timeout. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of wait mode in which the M4 core waits. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_radio_params__t" kindref="compound">RadioParams_t</ref>, <ref refid="struct_radio_status__t" kindref="compound">RadioStatus_t</ref>, <ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref>, <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> and <ref refid="group__lora__functions_1gae91649711b993d3e9ba56805ddc598e5" kindref="member">LoRa_TX</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="553" column="21" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" declline="553" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lora__functions_1gae91649711b993d3e9ba56805ddc598e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref></type>
+        <definition>coreStatus_t LoRa_TX</definition>
+        <argsstring>(RadioParams_t *RadioParams, RadioStatus_t *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, WaitMode_e waitMode)</argsstring>
+        <name>LoRa_TX</name>
+        <param>
+          <type><ref refid="struct_radio_params__t" kindref="compound">RadioParams_t</ref> *</type>
+          <declname>RadioParams</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_radio_status__t" kindref="compound">RadioStatus_t</ref> *</type>
+          <declname>RadioStatus</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>payloadSize</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeOutMS</declname>
+        </param>
+        <param>
+          <type><ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref></type>
+          <declname>waitMode</declname>
+        </param>
+        <briefdescription>
+<para>This functions does the LoRa transmission with given parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RadioParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="struct_radio_params__t" kindref="compound">RadioParams_t</ref> structure where LoRa parameters are set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RadioStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="struct_radio_status__t" kindref="compound">RadioStatus_t</ref> structure where the stack returns statuses. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer where the receiving payload is saved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>payloadSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the payload that is to be received. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeOutMS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Timeout in milliseconds. Will exit the function if timeout is reached. If zero, there is no timeout. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of wait mode in which the M4 core waits. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns error / status code. (<ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref>) </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_radio_params__t" kindref="compound">RadioParams_t</ref>, <ref refid="struct_radio_status__t" kindref="compound">RadioStatus_t</ref>, <ref refid="group__lorawan__enums_1ga882bb3b14bb6e2505038fb393880ea59" kindref="member">WaitMode_e</ref>, <ref refid="structcore_status__t" kindref="compound">coreStatus_t</ref> and <ref refid="group__lora__functions_1ga50e656cf395118e0c0aa35cc8ef8e4c7" kindref="member">LoRa_RX</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="569" column="21" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" declline="569" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lora__functions_1gafddff51e54e43c9310e1185ea8a79a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoRaWAN_Debug</definition>
+        <argsstring>(bool debugLedsOn, uint32_t *coreStatePNT)</argsstring>
+        <name>LoRaWAN_Debug</name>
+        <param>
+          <type>bool</type>
+          <declname>debugLedsOn</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>coreStatePNT</declname>
+        </param>
+        <briefdescription>
+<para>Uses the DevKit red LED to signal if stack is operating normally or is hanging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>debugLedsOn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Red LED on Onethinx DevKit will flash at 2 Hz in normal operation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coreStatePNT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the stackState. Returns the tate the stack is currently in. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="581" column="21" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" declline="581" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lora__functions_1ga6c5c729a3095fafed9bcf6fc6d0b5fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoRaWAN_Unlock</definition>
+        <argsstring>()</argsstring>
+        <name>LoRaWAN_Unlock</name>
+        <briefdescription>
+<para>Use the Unlock function before using any other extended functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the use of LoRa/FSK, CapSense. Unlocks Port 7.</para>
+<para>Unlocking may void LoRa Alliance Certification by Similarity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="591" column="21" declfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" declline="591" declcolumn="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Onethinx LoRa Functions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

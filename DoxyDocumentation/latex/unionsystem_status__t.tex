@@ -1,0 +1,126 @@
+\hypertarget{unionsystem_status__t}{}\doxysection{system\+Status\+\_\+t Union Reference}
+\label{unionsystem_status__t}\index{systemStatus\_t@{systemStatus\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{unionsystem_status__t_acd99bb05ca015e7d74448acb1deba7ca}{version}}\\
+\>\>{\em The version of the stack. }\\
+\>\mbox{\hyperlink{group__lorawan__enums_ga9660163b15da218c7be89c824c39b356}{systemErrors\_e}} \mbox{\hyperlink{unionsystem_status__t_a1edf480c617ff15b5f27f3ba54b030fe}{errorStatus}}: 8\\
+\>\>{\em System Errors. }\\
+\>uint8\_t \mbox{\hyperlink{unionsystem_status__t_aae94655bc5288ef5ba6bb913fc78f00c}{batteryLevel}}\\
+\>\>{\em The battery level for the DevStatusAns command (network check on battery level) to be set optionally by the user (0 = external, 1 = minimum battery, 254 = maximum battery, 255 = not implemented) }\\
+\>uint8\_t \mbox{\hyperlink{unionsystem_status__t_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}: 5\\
+\>\>{\em reserved }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_ac9e1d776f4ccbcc0673e1cfeb67f7cd6}{breakCurrentFunction}}: 1\\
+\>\>{\em Break current execution. }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a969b5d5c8b20e5076bc0a885f1152dd8}{isStarted}}: 1\\
+\>\>{\em System is started? }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a099f725f22a344e190121634f53328d8}{isBusy}}: 1\\
+\>\>{\em System is busy? }\\
+\>bool \mbox{\hyperlink{unionsystem_status__t_a0107cad432bc7adb4365aae01585ec08}{isSleeping}}: 1\\
+\>\>{\em System is sleeping? }\\
+\}; \\
+
+\end{tabbing}\item 
+uint8\+\_\+t \mbox{\hyperlink{unionsystem_status__t_a92a6167e64e6a8206286aa6423a17140}{reserved}} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{unionsystem_status__t_abf74ed7fd0aa0ea8259654c6566eb3dc}\label{unionsystem_status__t_abf74ed7fd0aa0ea8259654c6566eb3dc}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily struct \{ ... \} }
+
+\mbox{\Hypertarget{unionsystem_status__t_a8b4eebe79ded0459acec2f4950102ba3}\label{unionsystem_status__t_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{systemStatus\_t@{systemStatus\_t}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+
+
+reserved 
+
+\mbox{\Hypertarget{unionsystem_status__t_aae94655bc5288ef5ba6bb913fc78f00c}\label{unionsystem_status__t_aae94655bc5288ef5ba6bb913fc78f00c}} 
+\index{systemStatus\_t@{systemStatus\_t}!batteryLevel@{batteryLevel}}
+\index{batteryLevel@{batteryLevel}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{batteryLevel}{batteryLevel}}
+{\footnotesize\ttfamily uint8\+\_\+t battery\+Level}
+
+
+
+The battery level for the Dev\+Status\+Ans command (network check on battery level) to be set optionally by the user (0 = external, 1 = minimum battery, 254 = maximum battery, 255 = not implemented) 
+
+\mbox{\Hypertarget{unionsystem_status__t_ac9e1d776f4ccbcc0673e1cfeb67f7cd6}\label{unionsystem_status__t_ac9e1d776f4ccbcc0673e1cfeb67f7cd6}} 
+\index{systemStatus\_t@{systemStatus\_t}!breakCurrentFunction@{breakCurrentFunction}}
+\index{breakCurrentFunction@{breakCurrentFunction}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{breakCurrentFunction}{breakCurrentFunction}}
+{\footnotesize\ttfamily bool break\+Current\+Function}
+
+
+
+Break current execution. 
+
+\mbox{\Hypertarget{unionsystem_status__t_a1edf480c617ff15b5f27f3ba54b030fe}\label{unionsystem_status__t_a1edf480c617ff15b5f27f3ba54b030fe}} 
+\index{systemStatus\_t@{systemStatus\_t}!errorStatus@{errorStatus}}
+\index{errorStatus@{errorStatus}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{errorStatus}{errorStatus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_ga9660163b15da218c7be89c824c39b356}{system\+Errors\+\_\+e}} error\+Status}
+
+
+
+System Errors. 
+
+\mbox{\Hypertarget{unionsystem_status__t_a099f725f22a344e190121634f53328d8}\label{unionsystem_status__t_a099f725f22a344e190121634f53328d8}} 
+\index{systemStatus\_t@{systemStatus\_t}!isBusy@{isBusy}}
+\index{isBusy@{isBusy}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isBusy}{isBusy}}
+{\footnotesize\ttfamily bool is\+Busy}
+
+
+
+System is busy? 
+
+\mbox{\Hypertarget{unionsystem_status__t_a0107cad432bc7adb4365aae01585ec08}\label{unionsystem_status__t_a0107cad432bc7adb4365aae01585ec08}} 
+\index{systemStatus\_t@{systemStatus\_t}!isSleeping@{isSleeping}}
+\index{isSleeping@{isSleeping}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isSleeping}{isSleeping}}
+{\footnotesize\ttfamily bool is\+Sleeping}
+
+
+
+System is sleeping? 
+
+\mbox{\Hypertarget{unionsystem_status__t_a969b5d5c8b20e5076bc0a885f1152dd8}\label{unionsystem_status__t_a969b5d5c8b20e5076bc0a885f1152dd8}} 
+\index{systemStatus\_t@{systemStatus\_t}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{isStarted}{isStarted}}
+{\footnotesize\ttfamily bool is\+Started}
+
+
+
+System is started? 
+
+\mbox{\Hypertarget{unionsystem_status__t_a92a6167e64e6a8206286aa6423a17140}\label{unionsystem_status__t_a92a6167e64e6a8206286aa6423a17140}} 
+\index{systemStatus\_t@{systemStatus\_t}!reserved@{reserved}}
+\index{reserved@{reserved}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t reserved\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{unionsystem_status__t_acd99bb05ca015e7d74448acb1deba7ca}\label{unionsystem_status__t_acd99bb05ca015e7d74448acb1deba7ca}} 
+\index{systemStatus\_t@{systemStatus\_t}!version@{version}}
+\index{version@{version}!systemStatus\_t@{systemStatus\_t}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily uint32\+\_\+t version}
+
+
+
+The version of the stack. 
+

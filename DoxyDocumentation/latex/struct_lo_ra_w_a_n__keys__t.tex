@@ -1,0 +1,81 @@
+\hypertarget{struct_lo_ra_w_a_n__keys__t}{}\doxysection{Lo\+Ra\+WAN\+\_\+keys\+\_\+t Struct Reference}
+\label{struct_lo_ra_w_a_n__keys__t}\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+
+
+{\ttfamily \#include $<$Onethinx\+Core01.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__lorawan__enums_gaea59b3ad47895313a826e87e0bb6ce9d}{key\+Type\+\_\+e}} \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_aa2d5497915ed04a66246379ae2ccac1d}{Key\+Type}}\+: 8
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_acb7bc06bed6f6408d719334fc41698c7}{reserved}}\+: 7
+\item 
+bool \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_ad5c7c76904042bd86508425be3b91a05}{Public\+Network}}\+: 1
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_aed058e14a1b4464bfb3ebecab6e8ba2d}{totalbytes}} \mbox{[}64\mbox{]}\\
+\>\mbox{\hyperlink{struct_stored_keys__t}{StoredKeys\_t}} \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_add6b08bfb5c74b8894eb682498b37cb5}{StoredKeys}}\\
+\>\mbox{\hyperlink{struct_o_t_a_a__10x__t}{OTAA\_10x\_t}} \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_aaa4cbf54c986ae45444ee9b24c38a1de}{OTAA\_10x}}\\
+\>\mbox{\hyperlink{struct_o_t_a_a__11x__t}{OTAA\_11x\_t}} \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_a40d5e78791f58b4ff8d60b0fbc4612e5}{OTAA\_11x}}\\
+\>\mbox{\hyperlink{struct_a_b_p__10x__t}{ABP\_10x\_t}} \mbox{\hyperlink{struct_lo_ra_w_a_n__keys__t_a733fdea63de5fbf72860be497c83d7c6}{ABP\_10x}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_a5a556ff071b9c9fc2e4f3e9df898fabb}\label{struct_lo_ra_w_a_n__keys__t_a5a556ff071b9c9fc2e4f3e9df898fabb}} 
+\doxysubsubsection{\texorpdfstring{}{}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_a733fdea63de5fbf72860be497c83d7c6}\label{struct_lo_ra_w_a_n__keys__t_a733fdea63de5fbf72860be497c83d7c6}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!ABP\_10x@{ABP\_10x}}
+\index{ABP\_10x@{ABP\_10x}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{ABP\_10x}{ABP\_10x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_a_b_p__10x__t}{ABP\+\_\+10x\+\_\+t}} ABP\+\_\+10x}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_aa2d5497915ed04a66246379ae2ccac1d}\label{struct_lo_ra_w_a_n__keys__t_aa2d5497915ed04a66246379ae2ccac1d}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!KeyType@{KeyType}}
+\index{KeyType@{KeyType}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{KeyType}{KeyType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__lorawan__enums_gaea59b3ad47895313a826e87e0bb6ce9d}{key\+Type\+\_\+e}} Key\+Type}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_aaa4cbf54c986ae45444ee9b24c38a1de}\label{struct_lo_ra_w_a_n__keys__t_aaa4cbf54c986ae45444ee9b24c38a1de}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!OTAA\_10x@{OTAA\_10x}}
+\index{OTAA\_10x@{OTAA\_10x}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{OTAA\_10x}{OTAA\_10x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_o_t_a_a__10x__t}{OTAA\+\_\+10x\+\_\+t}} OTAA\+\_\+10x}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_a40d5e78791f58b4ff8d60b0fbc4612e5}\label{struct_lo_ra_w_a_n__keys__t_a40d5e78791f58b4ff8d60b0fbc4612e5}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!OTAA\_11x@{OTAA\_11x}}
+\index{OTAA\_11x@{OTAA\_11x}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{OTAA\_11x}{OTAA\_11x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_o_t_a_a__11x__t}{OTAA\+\_\+11x\+\_\+t}} OTAA\+\_\+11x}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_ad5c7c76904042bd86508425be3b91a05}\label{struct_lo_ra_w_a_n__keys__t_ad5c7c76904042bd86508425be3b91a05}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!PublicNetwork@{PublicNetwork}}
+\index{PublicNetwork@{PublicNetwork}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{PublicNetwork}{PublicNetwork}}
+{\footnotesize\ttfamily bool Public\+Network}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_acb7bc06bed6f6408d719334fc41698c7}\label{struct_lo_ra_w_a_n__keys__t_acb7bc06bed6f6408d719334fc41698c7}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!reserved@{reserved}}
+\index{reserved@{reserved}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t reserved}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_add6b08bfb5c74b8894eb682498b37cb5}\label{struct_lo_ra_w_a_n__keys__t_add6b08bfb5c74b8894eb682498b37cb5}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!StoredKeys@{StoredKeys}}
+\index{StoredKeys@{StoredKeys}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{StoredKeys}{StoredKeys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_stored_keys__t}{Stored\+Keys\+\_\+t}} Stored\+Keys}
+
+\mbox{\Hypertarget{struct_lo_ra_w_a_n__keys__t_aed058e14a1b4464bfb3ebecab6e8ba2d}\label{struct_lo_ra_w_a_n__keys__t_aed058e14a1b4464bfb3ebecab6e8ba2d}} 
+\index{LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}!totalbytes@{totalbytes}}
+\index{totalbytes@{totalbytes}!LoRaWAN\_keys\_t@{LoRaWAN\_keys\_t}}
+\doxysubsubsection{\texorpdfstring{totalbytes}{totalbytes}}
+{\footnotesize\ttfamily uint8\+\_\+t totalbytes\mbox{[}64\mbox{]}}
+

@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="group__lora__enums__fsk" kind="group">
+    <compoundname>lora_enums_fsk</compoundname>
+    <title>FSK</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gabbe986916a54d576176083330a5ac743" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKModShapings_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggabbe986916a54d576176083330a5ac743a4458432cc4eb84cc77d7dc9f3879c439" prot="public">
+          <name>MOD_SHAPING_OFF</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggabbe986916a54d576176083330a5ac743a79b104423386571a46ae3586c76f3d6a" prot="public">
+          <name>MOD_SHAPING_G_BT_03</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggabbe986916a54d576176083330a5ac743a6f5d041ff974e952155a82e16d124a5d" prot="public">
+          <name>MOD_SHAPING_G_BT_05</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggabbe986916a54d576176083330a5ac743aef26fd93f4f4e0f7a8f06929a8a3ba63" prot="public">
+          <name>MOD_SHAPING_G_BT_07</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggabbe986916a54d576176083330a5ac743ae7348a8993f2f37a3d456b7ef5f0ebdc" prot="public">
+          <name>MOD_SHAPING_G_BT_1</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the modulation shaping parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="215" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="216" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gae09eefbe3ba7d6ab0b2266571a5ecf90" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKRxBandwidth_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a00b8727f44bda240916133b921bbd223" prot="public">
+          <name>RX_BW_4800</name>
+          <initializer>= 0x1F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a8b98dd7c570e9097aa69cec12715478d" prot="public">
+          <name>RX_BW_5800</name>
+          <initializer>= 0x17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90ac733d998032fc13b5c4e89eae9299997" prot="public">
+          <name>RX_BW_7300</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90aa961f60128234219616561605a4aae9e" prot="public">
+          <name>RX_BW_9700</name>
+          <initializer>= 0x1E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90afbfcd56dad77870ce2261fc5381e7f59" prot="public">
+          <name>RX_BW_11700</name>
+          <initializer>= 0x16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90aae1097cb9e729172902230e14065b813" prot="public">
+          <name>RX_BW_14600</name>
+          <initializer>= 0x0E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90ad571d5c87a8c961fca9256e9469ed95a" prot="public">
+          <name>RX_BW_19500</name>
+          <initializer>= 0x1D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a7a5ac7c1bb53401304708553a3bedb43" prot="public">
+          <name>RX_BW_23400</name>
+          <initializer>= 0x15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90ae66ed7397e83b585a97f3debcb1dd550" prot="public">
+          <name>RX_BW_29300</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90afae8858a4be09cf25290b51d9fab30cf" prot="public">
+          <name>RX_BW_39000</name>
+          <initializer>= 0x1C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a2cbbcfa8e9dccff44f41c59ab97c08ed" prot="public">
+          <name>RX_BW_46900</name>
+          <initializer>= 0x14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a03af5d2937f21e8b7737b810880d12b2" prot="public">
+          <name>RX_BW_58600</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90adb66eb7b195707a2641915bbfb0ff5bb" prot="public">
+          <name>RX_BW_78200</name>
+          <initializer>= 0x1B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a8e08937ef44723b2925aa8a69bfcf7b7" prot="public">
+          <name>RX_BW_93800</name>
+          <initializer>= 0x13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a9ce48129db2f160159864131ac02b533" prot="public">
+          <name>RX_BW_117300</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90aa3a53701671be56fcd2d995030a85662" prot="public">
+          <name>RX_BW_156200</name>
+          <initializer>= 0x1A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90adc8914362ea750307d89a3b6278343dc" prot="public">
+          <name>RX_BW_187200</name>
+          <initializer>= 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90af0f0e201f31ec53af7e81ab1d1a74f2b" prot="public">
+          <name>RX_BW_234300</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90ac237a23a90b6c939f4b67f56bf1e25b1" prot="public">
+          <name>RX_BW_312000</name>
+          <initializer>= 0x19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90a16086b68260ff15c37f5a5c349d55746" prot="public">
+          <name>RX_BW_373600</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggae09eefbe3ba7d6ab0b2266571a5ecf90af10532e849b0da92931315dc86d67be6" prot="public">
+          <name>RX_BW_467000</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the modulation shaping parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="227" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="228" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1ga92ea6ee7973d64d0acdd5450e0ea46d9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKRBitrate_e</name>
+        <enumvalue id="group__lora__enums__fsk_1gga92ea6ee7973d64d0acdd5450e0ea46d9a8d58be78324cada5ea334bda988df3a3" prot="public">
+          <name>BITRATE_25K</name>
+          <initializer>= 40960</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1gga92ea6ee7973d64d0acdd5450e0ea46d9a725b5b8347dbbd4c89ecf092f8d40d60" prot="public">
+          <name>BITRATE_50K</name>
+          <initializer>= 20480</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1gga92ea6ee7973d64d0acdd5450e0ea46d9a6d0c542d4806c88dd10d659b2096fdd1" prot="public">
+          <name>BITRATE_100K</name>
+          <initializer>= 10240</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1gga92ea6ee7973d64d0acdd5450e0ea46d9a230d6ac5cadc2769e2c7964565d6f5c6" prot="public">
+          <name>INTERNAL_BR_MAX</name>
+          <initializer>= 0xFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the modulation shaping parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="256" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="257" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gafac9c93dc5b6e0979d5529591803705c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKRDeviation_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705ca1af63bf13e5933bf60b9f28367a97156" prot="public">
+          <name>FDEV_SSB_25K</name>
+          <initializer>= 26214</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705ca1163572ead609dd40a5634a69ea77e56" prot="public">
+          <name>FDEV_DSB_50K</name>
+          <initializer>= 26214</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705cade2f730798137e74aec026a1470af1bd" prot="public">
+          <name>FDEV_SSB_30K</name>
+          <initializer>= 31457</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705ca364040678563bba9db3ba503c14f287b" prot="public">
+          <name>FDEV_DSB_60K</name>
+          <initializer>= 31457</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705cabd4b3cf4a097f9c6f11035f1ef126745" prot="public">
+          <name>FDEV_SSB_50K</name>
+          <initializer>= 52429</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705ca1307fab10bf8395f1c2898b0a089c47a" prot="public">
+          <name>FDEV_DSB_100K</name>
+          <initializer>= 52429</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggafac9c93dc5b6e0979d5529591803705ca32a8239325acbc7e29f9ee71e6382c00" prot="public">
+          <name>INTERNAL_DEV_MAX</name>
+          <initializer>= 0xFFFFFF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the modulation shaping parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="268" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="269" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gaac75549a1c04810216f4a1b52a08a076" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKPreambleDetection_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggaac75549a1c04810216f4a1b52a08a076a1ee68869d57c8c9a74628d1fa2af28ed" prot="public">
+          <name>RADIO_PREAMBLE_DETECTOR_OFF</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>Preamble detection length off. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggaac75549a1c04810216f4a1b52a08a076a9e1e546432b5b4651f14b1f369f54aca" prot="public">
+          <name>RADIO_PREAMBLE_DETECTOR_08_BITS</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>Preamble detection length 8 bits. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggaac75549a1c04810216f4a1b52a08a076a6a75f8512d0c7c8f06f3c154401f48e8" prot="public">
+          <name>RADIO_PREAMBLE_DETECTOR_16_BITS</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+<para>Preamble detection length 16 bits. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggaac75549a1c04810216f4a1b52a08a076afee01071c2f859c3ca50b882c47849d5" prot="public">
+          <name>RADIO_PREAMBLE_DETECTOR_24_BITS</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+<para>Preamble detection length 24 bits. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggaac75549a1c04810216f4a1b52a08a076a5c7fa66971804639c2d976a1ef2f33c2" prot="public">
+          <name>RADIO_PREAMBLE_DETECTOR_32_BITS</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>Preamble detection length 32 bit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the preamble length used to detect the packet on Rx side. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="283" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="284" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gad49ee94d689e9f2aa8db66bea5f613f4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKAddressComp_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggad49ee94d689e9f2aa8db66bea5f613f4aa9e41c4533d2c6eab6af48af507ce6c7" prot="public">
+          <name>RADIO_ADDRESSCOMP_FILT_OFF</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>No correlator turned on, i.e. do not search for SyncWord. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggad49ee94d689e9f2aa8db66bea5f613f4a3d5fe95f8d5749dfc752cde869c3168c" prot="public">
+          <name>RADIO_ADDRESSCOMP_FILT_NODE</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggad49ee94d689e9f2aa8db66bea5f613f4a84f4f8a0575c92b1ee5d114b78db5875" prot="public">
+          <name>RADIO_ADDRESSCOMP_FILT_NODE_BROAD</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the possible combinations of SyncWord correlators activated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="295" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="296" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1ga59623091bbba00d9dc60b7a7eacf7d8f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKPacketLengthModes_e</name>
+        <enumvalue id="group__lora__enums__fsk_1gga59623091bbba00d9dc60b7a7eacf7d8faad7bf546a6d287d025a16a742e6f2bcd" prot="public">
+          <name>RADIO_PACKET_FIXED_LENGTH</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>The packet is known on both sides, no header included in the packet. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1gga59623091bbba00d9dc60b7a7eacf7d8fa902ce14d15f16ba1b3bea47fe9d88fd4" prot="public">
+          <name>RADIO_PACKET_VARIABLE_LENGTH</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>The packet is on variable size, header included. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Radio GFSK packet length mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="305" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1ga4407ecfe61476c956b059f33de1637d2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKWhiteningSeed_e</name>
+        <enumvalue id="group__lora__enums__fsk_1gga4407ecfe61476c956b059f33de1637d2a475cb761e9be91cd3195d3c8f269319f" prot="public">
+          <name>RADIO_WHITENINGSEED</name>
+          <initializer>= 0x01FF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Radio whitening initial seed value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="314" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="315" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gaa1330983f33479746092e7f7c7ba7dbd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKDcFree_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggaa1330983f33479746092e7f7c7ba7dbda94f6bdd31f5e8c05eef97ff2a1cb0460" prot="public">
+          <name>RADIO_DC_FREE_OFF</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggaa1330983f33479746092e7f7c7ba7dbda192c4af007ad26316300e2ed38155bfc" prot="public">
+          <name>RADIO_DC_FREEWHITENING</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Radio whitening mode activated or deactivated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="322" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1gadc3ded6ecf370fa91fae7bddea9893ce" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKCrcTypes_e</name>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893cea666010fadd8a56cb44bd8b6b4a326fd5" prot="public">
+          <name>RADIO_CRC_OFF</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>No CRC in use. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893ceab6855363ce701460d7fac8d3687d0fd5" prot="public">
+          <name>RADIO_CRC_1_BYTES</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893cea0701118195ea48074f34e34bd536183b" prot="public">
+          <name>RADIO_CRC_2_BYTES</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893cea2e3735cba5b3c084d744f2c2d0cb6702" prot="public">
+          <name>RADIO_CRC_1_BYTES_INV</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893ceabe6874cb789264008f612ad822eae50e" prot="public">
+          <name>RADIO_CRC_2_BYTES_INV</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893cea4eeda78212de0a36a2cb747206bc0ed8" prot="public">
+          <name>RADIO_CRC_2_BYTES_IBM</name>
+          <initializer>= RADIO_CRC_2_BYTES</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1ggadc3ded6ecf370fa91fae7bddea9893cea861e75b7e83e7d2086c01882e3b0d6b5" prot="public">
+          <name>RADIO_CRC_2_BYTES_CCIT</name>
+          <initializer>= RADIO_CRC_2_BYTES_INV</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Represents the CRC length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="331" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="332" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1ga26510fbdaa5ca896b33b1be89193cbf5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKCrcSeed_e</name>
+        <enumvalue id="group__lora__enums__fsk_1gga26510fbdaa5ca896b33b1be89193cbf5ab081dc893daa620f1ede740d48f3a960" prot="public">
+          <name>RADIO_CRC_IBM_SEED</name>
+          <initializer>= 0xFFFF</initializer>
+          <briefdescription>
+<para>FSR initial value to compute IBM type CRC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1gga26510fbdaa5ca896b33b1be89193cbf5afea287662683fdf71ad3fa12761fb6ed" prot="public">
+          <name>RADIO_CRC_CCITT_SEED</name>
+          <initializer>= 0x1D0F</initializer>
+          <briefdescription>
+<para>FSR initial value to compute CCIT type CRC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LFSR initial value to compute the FSK CRC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="345" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="346" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__lora__enums__fsk_1ga6f7985e1ec3a7b28a9d610eaccbdc133" prot="public" static="no" strong="no">
+        <type></type>
+        <name>RadioFSKCrcPolynomial_e</name>
+        <enumvalue id="group__lora__enums__fsk_1gga6f7985e1ec3a7b28a9d610eaccbdc133a3a19156114e9968f88db511e2890d801" prot="public">
+          <name>RADIO_CRC_POLYNOMIAL_IBM</name>
+          <initializer>= 0x8005</initializer>
+          <briefdescription>
+<para>Polynomial to compute IBM type CRC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__lora__enums__fsk_1gga6f7985e1ec3a7b28a9d610eaccbdc133a588c08aa419cdeed7ee6c9f879233812" prot="public">
+          <name>RADIO_CRC_POLYNOMIAL_CCITT</name>
+          <initializer>= 0x1021</initializer>
+          <briefdescription>
+<para>Polynomial value to compute CCIT type CRC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Polynomial used to compute the FSK CRC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" line="354" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/C1_API/OnethinxExt01.h" bodystart="355" bodyend="358"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,122 @@
+.TH "lora_functions" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lora_functions \- Functions
+.PP
+ \- Onethinx LoRa Functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRa_RX\fP (\fBRadioParams_t\fP *RadioParams, \fBRadioStatus_t\fP *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+.br
+.RI "This functions waits for a LoRa transmition with given parameters\&. "
+.ti -1c
+.RI "\fBcoreStatus_t\fP \fBLoRa_TX\fP (\fBRadioParams_t\fP *RadioParams, \fBRadioStatus_t\fP *RadioStatus, uint8_t *payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+.br
+.RI "This functions does the LoRa transmission with given parameters\&. "
+.ti -1c
+.RI "void \fBLoRaWAN_Debug\fP (bool debugLedsOn, uint32_t *coreStatePNT)"
+.br
+.RI "Uses the DevKit red LED to signal if stack is operating normally or is hanging\&. "
+.ti -1c
+.RI "void \fBLoRaWAN_Unlock\fP ()"
+.br
+.RI "Use the Unlock function before using any other extended functions\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Onethinx LoRa Functions\&. 
+
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBcoreStatus_t\fP LoRa_RX (\fBRadioParams_t\fP * RadioParams, \fBRadioStatus_t\fP * RadioStatus, uint8_t * payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+
+.PP
+This functions waits for a LoRa transmition with given parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIRadioParams\fP Pointer to the \fBRadioParams_t\fP structure where LoRa parameters are set\&. 
+.br
+\fIRadioStatus\fP Pointer to the \fBRadioStatus_t\fP structure where the stack returns statuses\&. 
+.br
+\fIpayload\fP Pointer to the buffer where the receiving payload is saved\&. 
+.br
+\fIpayloadSize\fP Size of the payload that is to be received\&. 
+.br
+\fItimeOutMS\fP Timeout in milliseconds\&. Will exit the function if timeout is reached\&. If zero, there is no timeout\&. 
+.br
+\fIwaitMode\fP Type of wait mode in which the M4 core waits\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBRadioParams_t\fP, \fBRadioStatus_t\fP, \fBWaitMode_e\fP, \fBcoreStatus_t\fP and \fBLoRa_TX\fP 
+.RE
+.PP
+
+.SS "\fBcoreStatus_t\fP LoRa_TX (\fBRadioParams_t\fP * RadioParams, \fBRadioStatus_t\fP * RadioStatus, uint8_t * payload, uint8_t payloadSize, uint16_t timeOutMS, \fBWaitMode_e\fP waitMode)"
+
+.PP
+This functions does the LoRa transmission with given parameters\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIRadioParams\fP Pointer to the \fBRadioParams_t\fP structure where LoRa parameters are set\&. 
+.br
+\fIRadioStatus\fP Pointer to the \fBRadioStatus_t\fP structure where the stack returns statuses\&. 
+.br
+\fIpayload\fP Pointer to the buffer where the receiving payload is saved\&. 
+.br
+\fIpayloadSize\fP Size of the payload that is to be received\&. 
+.br
+\fItimeOutMS\fP Timeout in milliseconds\&. Will exit the function if timeout is reached\&. If zero, there is no timeout\&. 
+.br
+\fIwaitMode\fP Type of wait mode in which the M4 core waits\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns error / status code\&. (\fBcoreStatus_t\fP) 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBRadioParams_t\fP, \fBRadioStatus_t\fP, \fBWaitMode_e\fP, \fBcoreStatus_t\fP and \fBLoRa_RX\fP 
+.RE
+.PP
+
+.SS "void LoRaWAN_Debug (bool debugLedsOn, uint32_t * coreStatePNT)"
+
+.PP
+Uses the DevKit red LED to signal if stack is operating normally or is hanging\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdebugLedsOn\fP Red LED on Onethinx DevKit will flash at 2 Hz in normal operation\&. 
+.br
+\fIcoreStatePNT\fP Pointer to the stackState\&. Returns the tate the stack is currently in\&. 
+.RE
+.PP
+
+.SS "void LoRaWAN_Unlock ()"
+
+.PP
+Use the Unlock function before using any other extended functions\&. Enables the use of LoRa/FSK, CapSense\&. Unlocks Port 7\&.
+.PP
+Unlocking may void LoRa Alliance Certification by Similarity\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.

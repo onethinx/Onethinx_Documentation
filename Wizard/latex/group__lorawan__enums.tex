@@ -1,0 +1,662 @@
+\hypertarget{group__lorawan__enums}{}\doxysection{Enumerated Types}
+\label{group__lorawan__enums}\index{Enumerated Types@{Enumerated Types}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__lorawan__enums_gaea59b3ad47895313a826e87e0bb6ce9d}{key\+Type\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da4212c3f7eaae834dd55c73f5da6e98df}{ABP\+\_\+10x\+\_\+key}} = 0x01
+, \mbox{\hyperlink{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9dab500d39a3ecda3d713f67019d6102533}{OTAA\+\_\+10x\+\_\+key}} = 0x02
+, \mbox{\hyperlink{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9daf5ff53d8e86ee7413f6feb7bacdc2722}{OTAA\+\_\+11x\+\_\+key}} = 0x03
+, \mbox{\hyperlink{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da3de66f44b20cdbc6b8cae70bab641ed8}{Pre\+Stored\+\_\+key}} = 0x\+F0
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da668753566d35f447412554a92e68fbc2}{User\+Stored\+\_\+key}} = 0x\+F1
+ \}
+\begin{DoxyCompactList}\small\item\em Lo\+Ra\+WAN Activation Type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}{Radio\+\_\+\+Data\+Rate\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a322c54b75b5d189e75a4e75cfc524202}{DR\+\_\+0}} = 0x00
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a3e430e7fab785bca8adcfe960653042a}{DR\+\_\+1}} = 0x01
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1adf859878ab5b6ba677cb273d65e63bdc}{DR\+\_\+2}} = 0x02
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1af75cdd2fd3db176fd9fd9e37175a4eb5}{DR\+\_\+3}} = 0x03
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a724b61b313f7e8a13cb652d7720b546d}{DR\+\_\+4}} = 0x04
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a867bb224b02dfc56d38c4d402ee3c713}{DR\+\_\+5}} = 0x05
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a0f77c366c8780c691f7d4606940ab9d3}{DR\+\_\+6}} = 0x06
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a99ebed4d1b8f8e5d59a0001912ded04f}{DR\+\_\+7}} = 0x07
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a7e09580a42fee231bdaf0f9a2038939c}{DR\+\_\+8}} = 0x08
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1ac097927272ba4c4ca661845bc0119a05}{DR\+\_\+9}} = 0x09
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1ad993e9cf00e33d5b3243e33f3ca9aa29}{DR\+\_\+10}} = 0x0A
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a28d6e9803bec15df748afe73942d8672}{DR\+\_\+11}} = 0x0B
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a6c639ae07f5596ae68a226fdc600a7e5}{DR\+\_\+12}} = 0x0C
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1afd5a41d3e3a253652cdf99ced3144a72}{DR\+\_\+13}} = 0x0D
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a2a3ec1bd9b0b732abc1b02dd352d2ed2}{DR\+\_\+\+ADR}} = 0x\+F0
+, \mbox{\hyperlink{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a9b91d826f5aa5c81330ee4bdc5fe8093}{DR\+\_\+\+AUTO}} = 0x\+F1
+ \}
+\begin{DoxyCompactList}\small\item\em Lo\+Ra\+WAN Data Rates. Consult Lo\+Ra\+WAN Specification 1.\+0.\+2 for more details. Note that Data Rates are different depending on the region version of the module. RFU = Reserved for Future Use (reserved by Lo\+Ra Alliance) \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\+\_\+\+TXpower\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3afe65edd43a2db67e1959bf05190069d0}{PWR\+\_\+\+ADR}} = 0x\+F0
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a2c4d538f91768ce0fba1e546d6e7f647}{PWR\+\_\+\+MAX}} = 0x00
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a94720a372a2b46bf0590cace18c98c67}{PWR\+\_\+\+ATT\+\_\+2dB}} = 0x01
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3ace5e1db94341502897fbd98c6f1e9bc2}{PWR\+\_\+\+ATT\+\_\+4dB}} = 0x02
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a38c528f8ee745ac48c93c353ec8e5783}{PWR\+\_\+\+ATT\+\_\+6dB}} = 0x03
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a65a8fcfe04999c4414eec712b10f17e3}{PWR\+\_\+\+ATT\+\_\+8dB}} = 0x04
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a23337474088ffa94d73e84e542573238}{PWR\+\_\+\+ATT\+\_\+10dB}} = 0x05
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a55f9012626a36775e97ac022d732156d}{PWR\+\_\+\+ATT\+\_\+12dB}} = 0x06
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a5dbcd91a5b6c3f9bdc9ab42e0473e840}{PWR\+\_\+\+ATT\+\_\+14dB}} = 0x07
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3adb51d665a08e89fda43067c57fa030e4}{PWR\+\_\+\+ATT\+\_\+16dB}} = 0x08
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3ac10505e52a53c776bec90e521c2e631e}{PWR\+\_\+\+ATT\+\_\+18dB}} = 0x09
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a9af6df96733fd1717e7f8afb82218f99}{PWR\+\_\+\+ATT\+\_\+20dB}} = 0x0A
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a710962fc5693c48611bf970e5e7ea232}{PWR\+\_\+\+ATT\+\_\+22dB}} = 0x0B
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a1607a4f39eea76f3018c5358b63fcbef}{PWR\+\_\+\+ATT\+\_\+24dB}} = 0x0C
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a0c8acd454a0cbd2ddd31fb229f171668}{PWR\+\_\+\+ATT\+\_\+26dB}} = 0x0D
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a4f864f92f2b0cc062fd64785ffe832c2}{PWR\+\_\+\+ATT\+\_\+28dB}} = 0x0E
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3aaefbfc2ad30ea946a82a56f9825e1714}{PWR\+\_\+\+ATT\+\_\+30dB}} = 0x0F
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a340d52cbc4f90736993c824ab68d62e0}{PWR\+\_\+\+ATT\+\_\+32dB}} = 0x10
+, \mbox{\hyperlink{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a49e2ec870950817a6f12c93b21aed225}{PWR\+\_\+\+MIN}} = 0x11
+ \}
+\begin{DoxyCompactList}\small\item\em Output power levels. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga1b2b45cb23e8b347f921f12d7010d1e8}{Radio\+\_\+\+Sub\+Bands\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a2920178bfb7e40e496a5be3b739e9642}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+1}} = 0
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a39d13d4cd7f1ca2f43fff5a70583bb36}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+2}} = 1
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a1351a26110e6e5047dc96287caca2242}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+3}} = 2
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8ad077eacf945f9584c53f3257892739d3}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+4}} = 3
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8aadbea70a0b710c7ca95fe405c85b9a79}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+5}} = 4
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8af998227427b6c0649db53c4d13206be6}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+6}} = 5
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8ae44b561b4a28c6e802b6a8e87de62bc6}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+7}} = 6
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a78a448dc2c18247b7df9e3d7a0eff125}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+8}} = 7
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a6a2bc45fe2cd88d82864d5b8eaacf36f}{US\+\_\+\+SUB\+\_\+\+BAND\+\_\+\+NONE}} = 14
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a9635910cf83bfe46af1a7026ad406c5a}{US\+\_\+\+SUB\+\_\+\+BANDS\+\_\+\+ALL}} = 15
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8afb3a2ebc36f4e37d20dd8f6f858cc341}{EU\+\_\+\+SUB\+\_\+\+BANDS\+\_\+\+DEFAULT}} = 0
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a9e28a3e86e56d8109e9eef81a31eff47}{EU\+\_\+\+SUB\+\_\+\+BAND1\+\_\+\+ON}} = 1
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a84dd268ca5819adf8f954db7721dc1c2}{EU\+\_\+\+SUB\+\_\+\+BAND1\+\_\+\+OFF}} = 2
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8aedf5ab1957fc0c73940d999c1dd81165}{EU\+\_\+\+SUB\+\_\+\+BAND2\+\_\+\+ON}} = 3
+, \mbox{\hyperlink{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a65cb0ff2d7a7e3d229d3f9bff0c716da}{EU\+\_\+\+SUB\+\_\+\+BAND2\+\_\+\+OFF}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Lo\+Ra\+WAN Subbands. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga323240888cac3e1210f2afa8cdd8b3f9}{Idle\+Mode\+\_\+e}} \{ \mbox{\hyperlink{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a37977294a9eeff1d3540f5cf30a54de8}{M0\+\_\+\+Active}} = 0x0
+, \mbox{\hyperlink{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a9257448c14e6da628a35020593fbe85f}{M0\+\_\+\+Sleep}} = 0x1
+, \mbox{\hyperlink{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a4472b2a529981f03616dfd36ee741458}{M0\+\_\+\+Deep\+Sleep}} = 0x2
+ \}
+\begin{DoxyCompactList}\small\item\em M0+ Idle modes. Defines the mode that M0+ is in while M4 is working. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}} \{ \mbox{\hyperlink{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a0910770075bd2667ed0bcc4219968b00}{M4\+\_\+\+No\+Wait}} = 0x0
+, \mbox{\hyperlink{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a7889178752f78f035e15821a593e3c6b}{M4\+\_\+\+Wait\+Active}} = 0x1
+, \mbox{\hyperlink{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a41f8c61d0ce1b62e7d371ab1c8e1f651}{M4\+\_\+\+Wait\+Sleep}} = 0x2
+, \mbox{\hyperlink{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59afcf9a510516a11f1506467d64db5577e}{M4\+\_\+\+Wait\+Deep\+Sleep}} = 0x3
+ \}
+\begin{DoxyCompactList}\small\item\em M4 Wait modes. Defines the mode that M4 is in while M0+ is working. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_gab6b0609d5e1bb7369e244aad6c5de87d}{sleep\+Mode\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87dacde3b8c080e6bdbe2c14bb01603fcf75}{mode\+Sleep}} = 0x1
+, \mbox{\hyperlink{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87dacc7fbd501647cf541496e1f97f8610ae}{mode\+Deep\+Sleep}} = 0x2
+, \mbox{\hyperlink{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87da07db8a6c6f3fc27ff61d04641219fd6f}{mode\+Hibernate}} = 0x3
+, \mbox{\hyperlink{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87daa8ace6c3b95d2c0132c4095e6518c446}{mode\+Hibernate\+\_\+\+Rtc\+On}} = 0x4
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87da7cde89b0f76bc46f96f84d76fb832b9d}{mode\+Hibernate\+\_\+\+MACsave}} = 0x5
+ \}
+\begin{DoxyCompactList}\small\item\em Onethinx module sleep modes. For current consumption please consult the datasheet found on our Github page. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_gaff762a336d05a5043b3199da3d5f53c9}{sleep\+Cores\+\_\+e}} \{ \mbox{\hyperlink{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9af209127afcc5c5763a9bce3413857e44}{cores\+M0p}} = 1
+, \mbox{\hyperlink{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9a9a97ba6caf97a933983788edb43d8150}{cores\+M4}} = 2
+, \mbox{\hyperlink{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9aef2317a4b910707cbc60ce68d8a71a98}{cores\+Both}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Specifies the cores that go to sleep. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}{MACcmd\+\_\+e}} \{ \mbox{\hyperlink{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a27fb03043b72131cb87db472c71b6528}{MACcmd\+\_\+\+None}} = 0
+, \mbox{\hyperlink{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a41c494495b72c13e41a1930af14cbf16}{Link\+Check\+Req}} = 1
+, \mbox{\hyperlink{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a9b9dbd3c7e850db7c117408cc7cf7ba9}{Device\+Time\+Req}} = 2
+, \mbox{\hyperlink{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569af429d8fc354fd9b3331794653ea429b7}{Link\+Check\+\_\+\+Device\+Time\+Req}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Lo\+Ra\+WAN MAC commands. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__lorawan__enums_ga288bc59a2996be3d2d0507c911c110eb}{stack\+Region\+\_\+e}} \{ \newline
+\mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaab6316eefc4f7ab4e00f5f51fdb949c9}{stack\+\_\+\+AS}} = 1
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaab51d357f8300514ec84422cd50f2f5a}{stack\+\_\+\+AU}} = 2
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaba3ef9c32015bcd1abd1544702626a1c}{stack\+\_\+\+CN\+\_\+L}} = 3
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba2668a10e21f9788d6ae4f81b22771a53}{stack\+\_\+\+CN\+\_\+H}} = 4
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba3e62920d947a13aee432c9d879e8bea7}{stack\+\_\+\+EU\+\_\+L}} = 5
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebad2e0ae1d441de8ca1b4526d7f265fd44}{stack\+\_\+\+EU\+\_\+H}} = 6
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba132b63539dc0bb17248e5dfc375d139e}{stack\+\_\+\+IN}} = 7
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebadcbc6ba88b5b8a1a7085e2eba6d2810d}{stack\+\_\+\+KR}} = 8
+, \newline
+\mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba63f5149f36e0377c2865bfd689e0e6f9}{stack\+\_\+\+US}} = 9
+, \mbox{\hyperlink{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba60862018c6a7636b35137df6daf5b5a9}{stack\+\_\+\+RU}} = 10
+ \}
+\begin{DoxyCompactList}\small\item\em Lo\+Ra\+WAN stack used on the module. Returned in core\+Info\+\_\+t structure when Lo\+Ra\+WAN\+\_\+\+Get\+Info function is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__lorawan__enums_gae580edc7d795c978aeb9344494604bbf}\label{group__lorawan__enums_gae580edc7d795c978aeb9344494604bbf}} 
+{\bfseries param\+Errors\+\_\+e}
+\item 
+\mbox{\Hypertarget{group__lorawan__enums_ga059c8ad521b77e896ea7a264b98f3aca}\label{group__lorawan__enums_ga059c8ad521b77e896ea7a264b98f3aca}} 
+{\bfseries radio\+Errors\+\_\+e}
+\item 
+\mbox{\Hypertarget{group__lorawan__enums_gaabb9d4b1e41b33a28ad84076f7776013}\label{group__lorawan__enums_gaabb9d4b1e41b33a28ad84076f7776013}} 
+{\bfseries mac\+Errors\+\_\+e}
+\item 
+\mbox{\Hypertarget{group__lorawan__enums_ga9660163b15da218c7be89c824c39b356}\label{group__lorawan__enums_ga9660163b15da218c7be89c824c39b356}} 
+{\bfseries system\+Errors\+\_\+e}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Onethinx Lo\+Ra\+WAN API Enumerated Types 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__lorawan__enums_ga323240888cac3e1210f2afa8cdd8b3f9}\label{group__lorawan__enums_ga323240888cac3e1210f2afa8cdd8b3f9}} 
+\index{Enumerated Types@{Enumerated Types}!IdleMode\_e@{IdleMode\_e}}
+\index{IdleMode\_e@{IdleMode\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{IdleMode\_e}{IdleMode\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga323240888cac3e1210f2afa8cdd8b3f9}{Idle\+Mode\+\_\+e}}}
+
+
+
+M0+ Idle modes. Defines the mode that M0+ is in while M4 is working. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M0\_Active@{M0\_Active}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M0\_Active@{M0\_Active}}}\mbox{\Hypertarget{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a37977294a9eeff1d3540f5cf30a54de8}\label{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a37977294a9eeff1d3540f5cf30a54de8}} 
+M0\+\_\+\+Active&Keep M0+ active during system idle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M0\_Sleep@{M0\_Sleep}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M0\_Sleep@{M0\_Sleep}}}\mbox{\Hypertarget{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a9257448c14e6da628a35020593fbe85f}\label{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a9257448c14e6da628a35020593fbe85f}} 
+M0\+\_\+\+Sleep&Put M0+ in Sleep mode during system idle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M0\_DeepSleep@{M0\_DeepSleep}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M0\_DeepSleep@{M0\_DeepSleep}}}\mbox{\Hypertarget{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a4472b2a529981f03616dfd36ee741458}\label{group__lorawan__enums_gga323240888cac3e1210f2afa8cdd8b3f9a4472b2a529981f03616dfd36ee741458}} 
+M0\+\_\+\+Deep\+Sleep&Put M0+ in Deep\+Sleep mode during system idle. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_gaea59b3ad47895313a826e87e0bb6ce9d}\label{group__lorawan__enums_gaea59b3ad47895313a826e87e0bb6ce9d}} 
+\index{Enumerated Types@{Enumerated Types}!keyType\_e@{keyType\_e}}
+\index{keyType\_e@{keyType\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{keyType\_e}{keyType\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_gaea59b3ad47895313a826e87e0bb6ce9d}{key\+Type\+\_\+e}}}
+
+
+
+Lo\+Ra\+WAN Activation Type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ABP\_10x\_key@{ABP\_10x\_key}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!ABP\_10x\_key@{ABP\_10x\_key}}}\mbox{\Hypertarget{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da4212c3f7eaae834dd55c73f5da6e98df}\label{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da4212c3f7eaae834dd55c73f5da6e98df}} 
+ABP\+\_\+10x\+\_\+key&Activation by Personalization (ABP) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OTAA\_10x\_key@{OTAA\_10x\_key}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!OTAA\_10x\_key@{OTAA\_10x\_key}}}\mbox{\Hypertarget{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9dab500d39a3ecda3d713f67019d6102533}\label{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9dab500d39a3ecda3d713f67019d6102533}} 
+OTAA\+\_\+10x\+\_\+key&Over the air activation (OTAA) for versions 1.\+0.\+x \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OTAA\_11x\_key@{OTAA\_11x\_key}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!OTAA\_11x\_key@{OTAA\_11x\_key}}}\mbox{\Hypertarget{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9daf5ff53d8e86ee7413f6feb7bacdc2722}\label{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9daf5ff53d8e86ee7413f6feb7bacdc2722}} 
+OTAA\+\_\+11x\+\_\+key&Over the air activation (OTAA) for versions 1.\+1.\+x \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PreStored\_key@{PreStored\_key}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PreStored\_key@{PreStored\_key}}}\mbox{\Hypertarget{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da3de66f44b20cdbc6b8cae70bab641ed8}\label{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da3de66f44b20cdbc6b8cae70bab641ed8}} 
+Pre\+Stored\+\_\+key&Pre-\/\+Stored Key \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UserStored\_key@{UserStored\_key}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!UserStored\_key@{UserStored\_key}}}\mbox{\Hypertarget{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da668753566d35f447412554a92e68fbc2}\label{group__lorawan__enums_ggaea59b3ad47895313a826e87e0bb6ce9da668753566d35f447412554a92e68fbc2}} 
+User\+Stored\+\_\+key&User Stored Key \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}\label{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}} 
+\index{Enumerated Types@{Enumerated Types}!MACcmd\_e@{MACcmd\_e}}
+\index{MACcmd\_e@{MACcmd\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{MACcmd\_e}{MACcmd\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga6393fcb2900b24fa2a580ebfc66fc569}{MACcmd\+\_\+e}}}
+
+
+
+Lo\+Ra\+WAN MAC commands. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MACcmd\_None@{MACcmd\_None}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!MACcmd\_None@{MACcmd\_None}}}\mbox{\Hypertarget{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a27fb03043b72131cb87db472c71b6528}\label{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a27fb03043b72131cb87db472c71b6528}} 
+MACcmd\+\_\+\+None&No command. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LinkCheckReq@{LinkCheckReq}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!LinkCheckReq@{LinkCheckReq}}}\mbox{\Hypertarget{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a41c494495b72c13e41a1930af14cbf16}\label{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a41c494495b72c13e41a1930af14cbf16}} 
+Link\+Check\+Req&Link Check Request MAC Command \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DeviceTimeReq@{DeviceTimeReq}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DeviceTimeReq@{DeviceTimeReq}}}\mbox{\Hypertarget{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a9b9dbd3c7e850db7c117408cc7cf7ba9}\label{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569a9b9dbd3c7e850db7c117408cc7cf7ba9}} 
+Device\+Time\+Req&Device Time Request MAC Command \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LinkCheck\_DeviceTimeReq@{LinkCheck\_DeviceTimeReq}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!LinkCheck\_DeviceTimeReq@{LinkCheck\_DeviceTimeReq}}}\mbox{\Hypertarget{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569af429d8fc354fd9b3331794653ea429b7}\label{group__lorawan__enums_gga6393fcb2900b24fa2a580ebfc66fc569af429d8fc354fd9b3331794653ea429b7}} 
+Link\+Check\+\_\+\+Device\+Time\+Req&Both Link Check and Device Time Request MAC Commands \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}\label{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}} 
+\index{Enumerated Types@{Enumerated Types}!Radio\_DataRate\_e@{Radio\_DataRate\_e}}
+\index{Radio\_DataRate\_e@{Radio\_DataRate\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{Radio\_DataRate\_e}{Radio\_DataRate\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga446653b10978880583589e822ebdd6c1}{Radio\+\_\+\+Data\+Rate\+\_\+e}}}
+
+
+
+Lo\+Ra\+WAN Data Rates. Consult Lo\+Ra\+WAN Specification 1.\+0.\+2 for more details. Note that Data Rates are different depending on the region version of the module. RFU = Reserved for Future Use (reserved by Lo\+Ra Alliance) 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_0@{DR\_0}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_0@{DR\_0}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a322c54b75b5d189e75a4e75cfc524202}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a322c54b75b5d189e75a4e75cfc524202}} 
+DR\+\_\+0&EU\+: SF12 125KHz, 
+
+US\+: SF10 125KHz, 
+
+AU\+: SF12 125KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_1@{DR\_1}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_1@{DR\_1}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a3e430e7fab785bca8adcfe960653042a}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a3e430e7fab785bca8adcfe960653042a}} 
+DR\+\_\+1&EU\+: SF11 125KHz, 
+
+US\+: SF9 125KHz, 
+
+AU\+: SF11 125KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_2@{DR\_2}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_2@{DR\_2}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1adf859878ab5b6ba677cb273d65e63bdc}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1adf859878ab5b6ba677cb273d65e63bdc}} 
+DR\+\_\+2&EU\+: SF10 125KHz, 
+
+US\+: SF8 125KHz, 
+
+AU\+: SF10 125KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_3@{DR\_3}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_3@{DR\_3}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1af75cdd2fd3db176fd9fd9e37175a4eb5}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1af75cdd2fd3db176fd9fd9e37175a4eb5}} 
+DR\+\_\+3&EU\+: SF9 125KHz, 
+
+US\+: SF7 125KHz, 
+
+AU\+: SF9 125KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_4@{DR\_4}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_4@{DR\_4}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a724b61b313f7e8a13cb652d7720b546d}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a724b61b313f7e8a13cb652d7720b546d}} 
+DR\+\_\+4&EU\+: SF8 125KHz, 
+
+US\+: SF8 500KHz, 
+
+AU\+: SF8 125KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_5@{DR\_5}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_5@{DR\_5}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a867bb224b02dfc56d38c4d402ee3c713}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a867bb224b02dfc56d38c4d402ee3c713}} 
+DR\+\_\+5&EU\+: SF7 125KHz, 
+
+US\+: RFU 
+
+AU\+: SF7 125KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_6@{DR\_6}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_6@{DR\_6}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a0f77c366c8780c691f7d4606940ab9d3}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a0f77c366c8780c691f7d4606940ab9d3}} 
+DR\+\_\+6&EU\+: SF7 250KHz, 
+
+US\+: RFU 
+
+AU\+: SF8 500KHz, \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_7@{DR\_7}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_7@{DR\_7}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a99ebed4d1b8f8e5d59a0001912ded04f}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a99ebed4d1b8f8e5d59a0001912ded04f}} 
+DR\+\_\+7&EU\+: FSK 50kbps, 
+
+US\+: RFU 
+
+AU\+: RFU \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_8@{DR\_8}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_8@{DR\_8}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a7e09580a42fee231bdaf0f9a2038939c}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a7e09580a42fee231bdaf0f9a2038939c}} 
+DR\+\_\+8&EU\+: RFU, 
+
+US\+: SF12 500KHz (downlinks only), 
+
+AU\+: SF12 500KHz (downlinks only), \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_9@{DR\_9}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_9@{DR\_9}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1ac097927272ba4c4ca661845bc0119a05}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1ac097927272ba4c4ca661845bc0119a05}} 
+DR\+\_\+9&EU\+: RFU, 
+
+US\+: SF11 500KHz (downlinks only), 
+
+AU\+: SF11 500KHz (downlinks only), \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_10@{DR\_10}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_10@{DR\_10}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1ad993e9cf00e33d5b3243e33f3ca9aa29}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1ad993e9cf00e33d5b3243e33f3ca9aa29}} 
+DR\+\_\+10&EU\+: RFU, 
+
+US\+: SF10 500KHz (downlinks only), 
+
+AU\+: SF10 500KHz (downlinks only), \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_11@{DR\_11}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_11@{DR\_11}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a28d6e9803bec15df748afe73942d8672}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a28d6e9803bec15df748afe73942d8672}} 
+DR\+\_\+11&EU\+: RFU, 
+
+US\+: SF9 500KHz (downlinks only), 
+
+AU\+: SF9 500KHz (downlinks only), \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_12@{DR\_12}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_12@{DR\_12}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a6c639ae07f5596ae68a226fdc600a7e5}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a6c639ae07f5596ae68a226fdc600a7e5}} 
+DR\+\_\+12&EU\+: RFU, 
+
+US\+: SF8 500KHz (downlinks only), 
+
+AU\+: SF8 500KHz (downlinks only), \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_13@{DR\_13}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_13@{DR\_13}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1afd5a41d3e3a253652cdf99ced3144a72}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1afd5a41d3e3a253652cdf99ced3144a72}} 
+DR\+\_\+13&EU\+: RFU, 
+
+US\+: SF7 500KHz (downlinks only), 
+
+AU\+: SF7 500KHz (downlinks only), \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_ADR@{DR\_ADR}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_ADR@{DR\_ADR}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a2a3ec1bd9b0b732abc1b02dd352d2ed2}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a2a3ec1bd9b0b732abc1b02dd352d2ed2}} 
+DR\+\_\+\+ADR&ADR (Adaptive Data\+Rate and Power Setting by Lo\+Ra\+WAN network) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DR\_AUTO@{DR\_AUTO}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!DR\_AUTO@{DR\_AUTO}}}\mbox{\Hypertarget{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a9b91d826f5aa5c81330ee4bdc5fe8093}\label{group__lorawan__enums_gga446653b10978880583589e822ebdd6c1a9b91d826f5aa5c81330ee4bdc5fe8093}} 
+DR\+\_\+\+AUTO&Automatic Data\+Rate (during joining) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_ga1b2b45cb23e8b347f921f12d7010d1e8}\label{group__lorawan__enums_ga1b2b45cb23e8b347f921f12d7010d1e8}} 
+\index{Enumerated Types@{Enumerated Types}!Radio\_SubBands\_e@{Radio\_SubBands\_e}}
+\index{Radio\_SubBands\_e@{Radio\_SubBands\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{Radio\_SubBands\_e}{Radio\_SubBands\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga1b2b45cb23e8b347f921f12d7010d1e8}{Radio\+\_\+\+Sub\+Bands\+\_\+e}}}
+
+
+
+Lo\+Ra\+WAN Subbands. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_1@{US\_SUB\_BAND\_1}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_1@{US\_SUB\_BAND\_1}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a2920178bfb7e40e496a5be3b739e9642}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a2920178bfb7e40e496a5be3b739e9642}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+1&US 902-\/928 Sub-\/\+Band 1, uplink channels 0 to 7 (902.\+3 MHz to 903.\+7\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (923.\+3 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_2@{US\_SUB\_BAND\_2}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_2@{US\_SUB\_BAND\_2}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a39d13d4cd7f1ca2f43fff5a70583bb36}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a39d13d4cd7f1ca2f43fff5a70583bb36}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+2&US 902-\/928 Sub-\/\+Band 2, uplink channels 8 to 15 (903.\+9 MHz to 905.\+3\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (923.\+9 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_3@{US\_SUB\_BAND\_3}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_3@{US\_SUB\_BAND\_3}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a1351a26110e6e5047dc96287caca2242}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a1351a26110e6e5047dc96287caca2242}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+3&US 902-\/928 Sub-\/\+Band 3, uplink channels 16 to 23 (905.\+5 MHz to 906.\+9\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (924.\+5 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_4@{US\_SUB\_BAND\_4}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_4@{US\_SUB\_BAND\_4}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8ad077eacf945f9584c53f3257892739d3}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8ad077eacf945f9584c53f3257892739d3}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+4&US 902-\/928 Sub-\/\+Band 4, uplink channels 24 to 31 (907.\+1 MHz to 908.\+5\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (925.\+1 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_5@{US\_SUB\_BAND\_5}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_5@{US\_SUB\_BAND\_5}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8aadbea70a0b710c7ca95fe405c85b9a79}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8aadbea70a0b710c7ca95fe405c85b9a79}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+5&US 902-\/928 Sub-\/\+Band 5, uplink channels 32 to 39 (908.\+7 MHz to 910.\+1\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (925.\+7 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_6@{US\_SUB\_BAND\_6}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_6@{US\_SUB\_BAND\_6}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8af998227427b6c0649db53c4d13206be6}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8af998227427b6c0649db53c4d13206be6}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+6&US 902-\/928 Sub-\/\+Band 6, uplink channels 40 to 47 (910.\+3 MHz to 911.\+7\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (926.\+3 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_7@{US\_SUB\_BAND\_7}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_7@{US\_SUB\_BAND\_7}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8ae44b561b4a28c6e802b6a8e87de62bc6}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8ae44b561b4a28c6e802b6a8e87de62bc6}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+7&US 902-\/928 Sub-\/\+Band 7, uplink channels 48 to 55 (911.\+9 MHz to 913.\+3\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (926.\+9 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_8@{US\_SUB\_BAND\_8}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_8@{US\_SUB\_BAND\_8}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a78a448dc2c18247b7df9e3d7a0eff125}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a78a448dc2c18247b7df9e3d7a0eff125}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+8&US 902-\/928 Sub-\/\+Band 8, uplink channels 56 to 63 (913.\+5 MHz to 914.\+9\+Mhz, 0.\+2\+MHz steps) and 1 downlink channel (927.\+5 MHz) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BAND\_NONE@{US\_SUB\_BAND\_NONE}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BAND\_NONE@{US\_SUB\_BAND\_NONE}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a6a2bc45fe2cd88d82864d5b8eaacf36f}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a6a2bc45fe2cd88d82864d5b8eaacf36f}} 
+US\+\_\+\+SUB\+\_\+\+BAND\+\_\+\+NONE&US 902-\/928 No Sub-\/\+Band Selected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{US\_SUB\_BANDS\_ALL@{US\_SUB\_BANDS\_ALL}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!US\_SUB\_BANDS\_ALL@{US\_SUB\_BANDS\_ALL}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a9635910cf83bfe46af1a7026ad406c5a}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a9635910cf83bfe46af1a7026ad406c5a}} 
+US\+\_\+\+SUB\+\_\+\+BANDS\+\_\+\+ALL&US 902-\/928 All Sub-\/\+Bands Selected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EU\_SUB\_BANDS\_DEFAULT@{EU\_SUB\_BANDS\_DEFAULT}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!EU\_SUB\_BANDS\_DEFAULT@{EU\_SUB\_BANDS\_DEFAULT}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8afb3a2ebc36f4e37d20dd8f6f858cc341}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8afb3a2ebc36f4e37d20dd8f6f858cc341}} 
+EU\+\_\+\+SUB\+\_\+\+BANDS\+\_\+\+DEFAULT&EU 863-\/870 Default Sub-\/\+Bands. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EU\_SUB\_BAND1\_ON@{EU\_SUB\_BAND1\_ON}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!EU\_SUB\_BAND1\_ON@{EU\_SUB\_BAND1\_ON}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a9e28a3e86e56d8109e9eef81a31eff47}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a9e28a3e86e56d8109e9eef81a31eff47}} 
+EU\+\_\+\+SUB\+\_\+\+BAND1\+\_\+\+ON&No Longer Used, DEPRECIATED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EU\_SUB\_BAND1\_OFF@{EU\_SUB\_BAND1\_OFF}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!EU\_SUB\_BAND1\_OFF@{EU\_SUB\_BAND1\_OFF}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a84dd268ca5819adf8f954db7721dc1c2}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a84dd268ca5819adf8f954db7721dc1c2}} 
+EU\+\_\+\+SUB\+\_\+\+BAND1\+\_\+\+OFF&No Longer Used, DEPRECIATED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EU\_SUB\_BAND2\_ON@{EU\_SUB\_BAND2\_ON}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!EU\_SUB\_BAND2\_ON@{EU\_SUB\_BAND2\_ON}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8aedf5ab1957fc0c73940d999c1dd81165}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8aedf5ab1957fc0c73940d999c1dd81165}} 
+EU\+\_\+\+SUB\+\_\+\+BAND2\+\_\+\+ON&No Longer Used, DEPRECIATED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EU\_SUB\_BAND2\_OFF@{EU\_SUB\_BAND2\_OFF}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!EU\_SUB\_BAND2\_OFF@{EU\_SUB\_BAND2\_OFF}}}\mbox{\Hypertarget{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a65cb0ff2d7a7e3d229d3f9bff0c716da}\label{group__lorawan__enums_gga1b2b45cb23e8b347f921f12d7010d1e8a65cb0ff2d7a7e3d229d3f9bff0c716da}} 
+EU\+\_\+\+SUB\+\_\+\+BAND2\+\_\+\+OFF&No Longer Used, DEPRECIATED. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}\label{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}} 
+\index{Enumerated Types@{Enumerated Types}!Radio\_TXpower\_e@{Radio\_TXpower\_e}}
+\index{Radio\_TXpower\_e@{Radio\_TXpower\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{Radio\_TXpower\_e}{Radio\_TXpower\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga8c75f11ec2550a083e5a2a39cb030fc3}{Radio\+\_\+\+TXpower\+\_\+e}}}
+
+
+
+Output power levels. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ADR@{PWR\_ADR}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ADR@{PWR\_ADR}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3afe65edd43a2db67e1959bf05190069d0}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3afe65edd43a2db67e1959bf05190069d0}} 
+PWR\+\_\+\+ADR&ADR (ADR MAX PWR, same as PWR\+\_\+\+MAX) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_MAX@{PWR\_MAX}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_MAX@{PWR\_MAX}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a2c4d538f91768ce0fba1e546d6e7f647}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a2c4d538f91768ce0fba1e546d6e7f647}} 
+PWR\+\_\+\+MAX&15d\+Bm for SX1261, 22d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_2dB@{PWR\_ATT\_2dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_2dB@{PWR\_ATT\_2dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a94720a372a2b46bf0590cace18c98c67}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a94720a372a2b46bf0590cace18c98c67}} 
+PWR\+\_\+\+ATT\+\_\+2dB&14d\+Bm for SX1261, 20d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_4dB@{PWR\_ATT\_4dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_4dB@{PWR\_ATT\_4dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3ace5e1db94341502897fbd98c6f1e9bc2}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3ace5e1db94341502897fbd98c6f1e9bc2}} 
+PWR\+\_\+\+ATT\+\_\+4dB&12d\+Bm for SX1261, 18d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_6dB@{PWR\_ATT\_6dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_6dB@{PWR\_ATT\_6dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a38c528f8ee745ac48c93c353ec8e5783}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a38c528f8ee745ac48c93c353ec8e5783}} 
+PWR\+\_\+\+ATT\+\_\+6dB&10d\+Bm for SX1261, 16d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_8dB@{PWR\_ATT\_8dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_8dB@{PWR\_ATT\_8dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a65a8fcfe04999c4414eec712b10f17e3}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a65a8fcfe04999c4414eec712b10f17e3}} 
+PWR\+\_\+\+ATT\+\_\+8dB&8d\+Bm for SX1261, 14d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_10dB@{PWR\_ATT\_10dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_10dB@{PWR\_ATT\_10dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a23337474088ffa94d73e84e542573238}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a23337474088ffa94d73e84e542573238}} 
+PWR\+\_\+\+ATT\+\_\+10dB&6d\+Bm for SX1261, 12d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_12dB@{PWR\_ATT\_12dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_12dB@{PWR\_ATT\_12dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a55f9012626a36775e97ac022d732156d}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a55f9012626a36775e97ac022d732156d}} 
+PWR\+\_\+\+ATT\+\_\+12dB&4d\+Bm for SX1261, 10d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_14dB@{PWR\_ATT\_14dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_14dB@{PWR\_ATT\_14dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a5dbcd91a5b6c3f9bdc9ab42e0473e840}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a5dbcd91a5b6c3f9bdc9ab42e0473e840}} 
+PWR\+\_\+\+ATT\+\_\+14dB&2d\+Bm for SX1261, 8d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_16dB@{PWR\_ATT\_16dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_16dB@{PWR\_ATT\_16dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3adb51d665a08e89fda43067c57fa030e4}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3adb51d665a08e89fda43067c57fa030e4}} 
+PWR\+\_\+\+ATT\+\_\+16dB&0d\+Bm for SX1261, 6d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_18dB@{PWR\_ATT\_18dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_18dB@{PWR\_ATT\_18dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3ac10505e52a53c776bec90e521c2e631e}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3ac10505e52a53c776bec90e521c2e631e}} 
+PWR\+\_\+\+ATT\+\_\+18dB&-\/2d\+Bm for SX1261, 4d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_20dB@{PWR\_ATT\_20dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_20dB@{PWR\_ATT\_20dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a9af6df96733fd1717e7f8afb82218f99}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a9af6df96733fd1717e7f8afb82218f99}} 
+PWR\+\_\+\+ATT\+\_\+20dB&-\/4d\+Bm for SX1261, 2d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_22dB@{PWR\_ATT\_22dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_22dB@{PWR\_ATT\_22dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a710962fc5693c48611bf970e5e7ea232}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a710962fc5693c48611bf970e5e7ea232}} 
+PWR\+\_\+\+ATT\+\_\+22dB&-\/6d\+Bm for SX1261, 0d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_24dB@{PWR\_ATT\_24dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_24dB@{PWR\_ATT\_24dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a1607a4f39eea76f3018c5358b63fcbef}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a1607a4f39eea76f3018c5358b63fcbef}} 
+PWR\+\_\+\+ATT\+\_\+24dB&-\/8d\+Bm for SX1261, -\/2d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_26dB@{PWR\_ATT\_26dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_26dB@{PWR\_ATT\_26dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a0c8acd454a0cbd2ddd31fb229f171668}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a0c8acd454a0cbd2ddd31fb229f171668}} 
+PWR\+\_\+\+ATT\+\_\+26dB&-\/10d\+Bm for SX1261, -\/4d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_28dB@{PWR\_ATT\_28dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_28dB@{PWR\_ATT\_28dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a4f864f92f2b0cc062fd64785ffe832c2}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a4f864f92f2b0cc062fd64785ffe832c2}} 
+PWR\+\_\+\+ATT\+\_\+28dB&-\/12d\+Bm for SX1261, -\/6d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_30dB@{PWR\_ATT\_30dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_30dB@{PWR\_ATT\_30dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3aaefbfc2ad30ea946a82a56f9825e1714}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3aaefbfc2ad30ea946a82a56f9825e1714}} 
+PWR\+\_\+\+ATT\+\_\+30dB&-\/14d\+Bm for SX1261, -\/8d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_ATT\_32dB@{PWR\_ATT\_32dB}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_ATT\_32dB@{PWR\_ATT\_32dB}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a340d52cbc4f90736993c824ab68d62e0}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a340d52cbc4f90736993c824ab68d62e0}} 
+PWR\+\_\+\+ATT\+\_\+32dB&-\/16d\+Bm for SX1261, -\/9d\+Bm for SX1262 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PWR\_MIN@{PWR\_MIN}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!PWR\_MIN@{PWR\_MIN}}}\mbox{\Hypertarget{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a49e2ec870950817a6f12c93b21aed225}\label{group__lorawan__enums_gga8c75f11ec2550a083e5a2a39cb030fc3a49e2ec870950817a6f12c93b21aed225}} 
+PWR\+\_\+\+MIN&-\/17d\+Bm for SX1261, -\/9d\+Bm for SX1262 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_gaff762a336d05a5043b3199da3d5f53c9}\label{group__lorawan__enums_gaff762a336d05a5043b3199da3d5f53c9}} 
+\index{Enumerated Types@{Enumerated Types}!sleepCores\_e@{sleepCores\_e}}
+\index{sleepCores\_e@{sleepCores\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{sleepCores\_e}{sleepCores\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_gaff762a336d05a5043b3199da3d5f53c9}{sleep\+Cores\+\_\+e}}}
+
+
+
+Specifies the cores that go to sleep. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coresM0p@{coresM0p}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!coresM0p@{coresM0p}}}\mbox{\Hypertarget{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9af209127afcc5c5763a9bce3413857e44}\label{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9af209127afcc5c5763a9bce3413857e44}} 
+cores\+M0p&Only ARM Cortex M0+ goes to sleep \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coresM4@{coresM4}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!coresM4@{coresM4}}}\mbox{\Hypertarget{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9a9a97ba6caf97a933983788edb43d8150}\label{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9a9a97ba6caf97a933983788edb43d8150}} 
+cores\+M4&Only ARM Cortex M4 goes to sleep \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coresBoth@{coresBoth}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!coresBoth@{coresBoth}}}\mbox{\Hypertarget{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9aef2317a4b910707cbc60ce68d8a71a98}\label{group__lorawan__enums_ggaff762a336d05a5043b3199da3d5f53c9aef2317a4b910707cbc60ce68d8a71a98}} 
+cores\+Both&Only ARM Cortex M4 and M0+ goes to sleep \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_gab6b0609d5e1bb7369e244aad6c5de87d}\label{group__lorawan__enums_gab6b0609d5e1bb7369e244aad6c5de87d}} 
+\index{Enumerated Types@{Enumerated Types}!sleepMode\_e@{sleepMode\_e}}
+\index{sleepMode\_e@{sleepMode\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{sleepMode\_e}{sleepMode\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_gab6b0609d5e1bb7369e244aad6c5de87d}{sleep\+Mode\+\_\+e}}}
+
+
+
+Onethinx module sleep modes. For current consumption please consult the datasheet found on our Github page. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{modeSleep@{modeSleep}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!modeSleep@{modeSleep}}}\mbox{\Hypertarget{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87dacde3b8c080e6bdbe2c14bb01603fcf75}\label{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87dacde3b8c080e6bdbe2c14bb01603fcf75}} 
+mode\+Sleep&Sleep Mode, Fastest wake up, Highest consumption of all sleep modes. After wake up from this mode, the code continues normally from where it went to sleep. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{modeDeepSleep@{modeDeepSleep}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!modeDeepSleep@{modeDeepSleep}}}\mbox{\Hypertarget{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87dacc7fbd501647cf541496e1f97f8610ae}\label{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87dacc7fbd501647cf541496e1f97f8610ae}} 
+mode\+Deep\+Sleep&Deep Sleep Mode, Lower power consumption than Sleep Mode, Best ration between power and ease of use. After wake up from this mode, the code continues normally from where it went to sleep. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{modeHibernate@{modeHibernate}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!modeHibernate@{modeHibernate}}}\mbox{\Hypertarget{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87da07db8a6c6f3fc27ff61d04641219fd6f}\label{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87da07db8a6c6f3fc27ff61d04641219fd6f}} 
+mode\+Hibernate&Hibernates, WCO \& RTC are shut down. After the module is woken up from Hibernate, it resets. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{modeHibernate\_RtcOn@{modeHibernate\_RtcOn}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!modeHibernate\_RtcOn@{modeHibernate\_RtcOn}}}\mbox{\Hypertarget{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87daa8ace6c3b95d2c0132c4095e6518c446}\label{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87daa8ace6c3b95d2c0132c4095e6518c446}} 
+mode\+Hibernate\+\_\+\+Rtc\+On&Hibernates, RTC will keep running. After the module is woken up from Hibernate, it resets. (RTC consumes approx. an additional .7uA) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{modeHibernate\_MACsave@{modeHibernate\_MACsave}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!modeHibernate\_MACsave@{modeHibernate\_MACsave}}}\mbox{\Hypertarget{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87da7cde89b0f76bc46f96f84d76fb832b9d}\label{group__lorawan__enums_ggab6b0609d5e1bb7369e244aad6c5de87da7cde89b0f76bc46f96f84d76fb832b9d}} 
+mode\+Hibernate\+\_\+\+MACsave&Hibernates, RTC on, Lo\+Ra\+WAN MAC is saved to EEPROM and restored at wakeup. EEPROM USAGE = 0x1400.\+7800 -\/ 0x1400.\+7\+FFF. After the module is woken up from Hibernate, it resets. (RTC consumes approx. an additional .7uA) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_ga288bc59a2996be3d2d0507c911c110eb}\label{group__lorawan__enums_ga288bc59a2996be3d2d0507c911c110eb}} 
+\index{Enumerated Types@{Enumerated Types}!stackRegion\_e@{stackRegion\_e}}
+\index{stackRegion\_e@{stackRegion\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{stackRegion\_e}{stackRegion\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga288bc59a2996be3d2d0507c911c110eb}{stack\+Region\+\_\+e}}}
+
+
+
+Lo\+Ra\+WAN stack used on the module. Returned in core\+Info\+\_\+t structure when Lo\+Ra\+WAN\+\_\+\+Get\+Info function is called. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_AS@{stack\_AS}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_AS@{stack\_AS}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaab6316eefc4f7ab4e00f5f51fdb949c9}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaab6316eefc4f7ab4e00f5f51fdb949c9}} 
+stack\+\_\+\+AS&Region Australia 923 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_AU@{stack\_AU}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_AU@{stack\_AU}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaab51d357f8300514ec84422cd50f2f5a}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaab51d357f8300514ec84422cd50f2f5a}} 
+stack\+\_\+\+AU&Region Japan 915-\/928 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_CN\_L@{stack\_CN\_L}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_CN\_L@{stack\_CN\_L}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaba3ef9c32015bcd1abd1544702626a1c}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebaba3ef9c32015bcd1abd1544702626a1c}} 
+stack\+\_\+\+CN\+\_\+L&Region China 470-\/510 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_CN\_H@{stack\_CN\_H}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_CN\_H@{stack\_CN\_H}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba2668a10e21f9788d6ae4f81b22771a53}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba2668a10e21f9788d6ae4f81b22771a53}} 
+stack\+\_\+\+CN\+\_\+H&Region China 779-\/787 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_EU\_L@{stack\_EU\_L}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_EU\_L@{stack\_EU\_L}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba3e62920d947a13aee432c9d879e8bea7}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba3e62920d947a13aee432c9d879e8bea7}} 
+stack\+\_\+\+EU\+\_\+L&Region Europe 433 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_EU\_H@{stack\_EU\_H}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_EU\_H@{stack\_EU\_H}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebad2e0ae1d441de8ca1b4526d7f265fd44}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebad2e0ae1d441de8ca1b4526d7f265fd44}} 
+stack\+\_\+\+EU\+\_\+H&Region Europe 863-\/870 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_IN@{stack\_IN}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_IN@{stack\_IN}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba132b63539dc0bb17248e5dfc375d139e}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba132b63539dc0bb17248e5dfc375d139e}} 
+stack\+\_\+\+IN&Region India 865-\/867 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_KR@{stack\_KR}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_KR@{stack\_KR}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebadcbc6ba88b5b8a1a7085e2eba6d2810d}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110ebadcbc6ba88b5b8a1a7085e2eba6d2810d}} 
+stack\+\_\+\+KR&Region Korea 920-\/923 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_US@{stack\_US}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_US@{stack\_US}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba63f5149f36e0377c2865bfd689e0e6f9}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba63f5149f36e0377c2865bfd689e0e6f9}} 
+stack\+\_\+\+US&Region North America 902-\/928 MHz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stack\_RU@{stack\_RU}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!stack\_RU@{stack\_RU}}}\mbox{\Hypertarget{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba60862018c6a7636b35137df6daf5b5a9}\label{group__lorawan__enums_gga288bc59a2996be3d2d0507c911c110eba60862018c6a7636b35137df6daf5b5a9}} 
+stack\+\_\+\+RU&Region Russia 864-\/870 MHz \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}\label{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}} 
+\index{Enumerated Types@{Enumerated Types}!WaitMode\_e@{WaitMode\_e}}
+\index{WaitMode\_e@{WaitMode\_e}!Enumerated Types@{Enumerated Types}}
+\doxysubsubsection{\texorpdfstring{WaitMode\_e}{WaitMode\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__lorawan__enums_ga882bb3b14bb6e2505038fb393880ea59}{Wait\+Mode\+\_\+e}}}
+
+
+
+M4 Wait modes. Defines the mode that M4 is in while M0+ is working. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M4\_NoWait@{M4\_NoWait}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M4\_NoWait@{M4\_NoWait}}}\mbox{\Hypertarget{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a0910770075bd2667ed0bcc4219968b00}\label{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a0910770075bd2667ed0bcc4219968b00}} 
+M4\+\_\+\+No\+Wait&Do not wait till stack finished. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M4\_WaitActive@{M4\_WaitActive}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M4\_WaitActive@{M4\_WaitActive}}}\mbox{\Hypertarget{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a7889178752f78f035e15821a593e3c6b}\label{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a7889178752f78f035e15821a593e3c6b}} 
+M4\+\_\+\+Wait\+Active&Wait while stack busy, M4 stays in Active mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M4\_WaitSleep@{M4\_WaitSleep}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M4\_WaitSleep@{M4\_WaitSleep}}}\mbox{\Hypertarget{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a41f8c61d0ce1b62e7d371ab1c8e1f651}\label{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59a41f8c61d0ce1b62e7d371ab1c8e1f651}} 
+M4\+\_\+\+Wait\+Sleep&M4 goes into Sleep while is stack busy. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M4\_WaitDeepSleep@{M4\_WaitDeepSleep}!Enumerated Types@{Enumerated Types}}\index{Enumerated Types@{Enumerated Types}!M4\_WaitDeepSleep@{M4\_WaitDeepSleep}}}\mbox{\Hypertarget{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59afcf9a510516a11f1506467d64db5577e}\label{group__lorawan__enums_gga882bb3b14bb6e2505038fb393880ea59afcf9a510516a11f1506467d64db5577e}} 
+M4\+\_\+\+Wait\+Deep\+Sleep&M4 goes into Deep\+Sleep while is stack busy. \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_lo_ra_stats__t" kind="struct" language="C++" prot="public">
+    <compoundname>LoRaStats_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_lo_ra_stats__t_1a6ca75783f5f46a2cc66378ef5c1dc3b4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t NbPktReceived</definition>
+        <argsstring></argsstring>
+        <name>NbPktReceived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="402" column="10" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lo_ra_stats__t_1aafe409e5c0d7991af5307272b2b8f76c" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t NbPktCrcErr</definition>
+        <argsstring></argsstring>
+        <name>NbPktCrcErr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="403" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_lo_ra_stats__t_1adbf59557dc1ef8da50ef31ac30ead301" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t NbPktHeaderErr</definition>
+        <argsstring></argsstring>
+        <name>NbPktHeaderErr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="404" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the LoRa Packet statistics. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="400" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="401" bodyend="405"/>
+    <listofallmembers>
+      <member refid="struct_lo_ra_stats__t_1aafe409e5c0d7991af5307272b2b8f76c" prot="public" virt="non-virtual"><scope>LoRaStats_t</scope><name>NbPktCrcErr</name></member>
+      <member refid="struct_lo_ra_stats__t_1adbf59557dc1ef8da50ef31ac30ead301" prot="public" virt="non-virtual"><scope>LoRaStats_t</scope><name>NbPktHeaderErr</name></member>
+      <member refid="struct_lo_ra_stats__t_1a6ca75783f5f46a2cc66378ef5c1dc3b4" prot="public" virt="non-virtual"><scope>LoRaStats_t</scope><name>NbPktReceived</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

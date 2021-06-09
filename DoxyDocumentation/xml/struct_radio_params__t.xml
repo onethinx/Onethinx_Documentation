@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="struct_radio_params__t" kind="struct" language="C++" prot="public">
+    <compoundname>RadioParams_t</compoundname>
+    <includes refid="_onethinx_ext01_8h" local="no">OnethinxExt01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_radio_params__t_1ade3d190636488dad9a89b19446b7acf1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Frequency</definition>
+        <argsstring></argsstring>
+        <name>Frequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="308" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1ae80612a907947f7f6f693e4dcd8b87b7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga8c75f11ec2550a083e5a2a39cb030fc3" kindref="member">Radio_TXpower_e</ref></type>
+        <definition>Radio_TXpower_e TXpower</definition>
+        <argsstring></argsstring>
+        <name>TXpower</name>
+        <briefdescription>
+<para>TXpower, not used in receive mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="309" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1ae84be969eecfad1fa005af82957bb692" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_lo_ra_modulation_params__t" kindref="compound">LoRaModulationParams_t</ref></type>
+        <definition>LoRaModulationParams_t Modulation</definition>
+        <argsstring></argsstring>
+        <name>Modulation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="314" column="49" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1a69f4464886d8f37926d7fa5a9e385bfb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_lo_ra_packet_params__t" kindref="compound">LoRaPacketParams_t</ref></type>
+        <definition>LoRaPacketParams_t Packet</definition>
+        <argsstring></argsstring>
+        <name>Packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="315" column="49" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1ab3a4569f681b32e58cf6b4829283b2ca" prot="public" static="no" mutable="no">
+        <type>struct RadioParams_t::@22::@24</type>
+        <definition>struct RadioParams_t::@22::@24 LoRa</definition>
+        <argsstring></argsstring>
+        <name>LoRa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="316" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1aee93bcd65ad90e3dfe4ffabc1a9e706f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_k_modulation_params__t" kindref="compound">FSKModulationParams_t</ref></type>
+        <definition>FSKModulationParams_t Modulation</definition>
+        <argsstring></argsstring>
+        <name>Modulation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="319" column="48" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1a2f6620693001708170ea118bfeb8aba7" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_s_k_packet_params__t" kindref="compound">FSKPacketParams_t</ref></type>
+        <definition>FSKPacketParams_t Packet</definition>
+        <argsstring></argsstring>
+        <name>Packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="320" column="48" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1a33e016e1f20e8aa028ea5078588e2226" prot="public" static="no" mutable="no">
+        <type>struct RadioParams_t::@22::@25</type>
+        <definition>struct RadioParams_t::@22::@25 FSK</definition>
+        <argsstring></argsstring>
+        <name>FSK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="321" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1a2f2d705f5ae7fa4eb340c0bdd631bd12" prot="public" static="no" mutable="no">
+        <type>union RadioParams_t::@22</type>
+        <definition>union RadioParams_t::@22 @23</definition>
+        <argsstring></argsstring>
+        <name>@23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="322" column="5"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_radio_params__t_1a4f8f260ed67c9f95ac1b721f6d13ea57" prot="public" static="no" mutable="no">
+        <type><ref refid="_onethinx_ext01_8h_1ac345bddf7c620d03ecd1753dab7f1434" kindref="member">RadioPacketTypes_e</ref></type>
+        <definition>RadioPacketTypes_e PacketType</definition>
+        <argsstring></argsstring>
+        <name>PacketType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="323" column="41" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>arr8b_t</label>
+        <link refid="structarr8b__t"/>
+      </node>
+      <node id="2">
+        <label>LoRaModulationParams_t</label>
+        <link refid="struct_lo_ra_modulation_params__t"/>
+      </node>
+      <node id="6">
+        <label>LoRaPacketParams_t</label>
+        <link refid="struct_lo_ra_packet_params__t"/>
+      </node>
+      <node id="1">
+        <label>RadioParams_t</label>
+        <link refid="struct_radio_params__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Modulation</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Packet</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Modulation</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Packet</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FSKModulationParams_t</label>
+        <link refid="struct_f_s_k_modulation_params__t"/>
+      </node>
+      <node id="3">
+        <label>FSKPacketParams_t</label>
+        <link refid="struct_f_s_k_packet_params__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SyncWord</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" line="307" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxExt01.h" bodystart="307" bodyend="324"/>
+    <listofallmembers>
+      <member refid="struct_radio_params__t_1ade3d190636488dad9a89b19446b7acf1" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>Frequency</name></member>
+      <member refid="struct_radio_params__t_1a33e016e1f20e8aa028ea5078588e2226" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>FSK</name></member>
+      <member refid="struct_radio_params__t_1ab3a4569f681b32e58cf6b4829283b2ca" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>LoRa</name></member>
+      <member refid="struct_radio_params__t_1ae84be969eecfad1fa005af82957bb692" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>Modulation</name></member>
+      <member refid="struct_radio_params__t_1aee93bcd65ad90e3dfe4ffabc1a9e706f" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>Modulation</name></member>
+      <member refid="struct_radio_params__t_1a69f4464886d8f37926d7fa5a9e385bfb" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>Packet</name></member>
+      <member refid="struct_radio_params__t_1a2f6620693001708170ea118bfeb8aba7" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>Packet</name></member>
+      <member refid="struct_radio_params__t_1a4f8f260ed67c9f95ac1b721f6d13ea57" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>PacketType</name></member>
+      <member refid="struct_radio_params__t_1ae80612a907947f7f6f693e4dcd8b87b7" prot="public" virt="non-virtual"><scope>RadioParams_t</scope><name>TXpower</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

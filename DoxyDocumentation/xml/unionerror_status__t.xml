@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.0" xml:lang="en-US">
+  <compounddef id="unionerror_status__t" kind="union" language="C++" prot="public">
+    <compoundname>errorStatus_t</compoundname>
+    <includes refid="_onethinx_core01_8h" local="no">OnethinxCore01.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionerror_status__t_1aec8f045ff764f296cd19e3b1f6ad7ca8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t errorValue</definition>
+        <argsstring></argsstring>
+        <name>errorValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="465" column="9" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionerror_status__t_1aaea54e76717aa455039572eb1f667bda" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1gae580edc7d795c978aeb9344494604bbf" kindref="member">paramErrors_e</ref></type>
+        <definition>paramErrors_e paramErrors</definition>
+        <argsstring></argsstring>
+        <name>paramErrors</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="467" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionerror_status__t_1a6cf9fcd4dba447dcb07880119fb798a4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga059c8ad521b77e896ea7a264b98f3aca" kindref="member">radioErrors_e</ref></type>
+        <definition>radioErrors_e radioErrors</definition>
+        <argsstring></argsstring>
+        <name>radioErrors</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="468" column="14" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionerror_status__t_1a192a64d95ac7e80939c757bea9007703" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1gaabb9d4b1e41b33a28ad84076f7776013" kindref="member">macErrors_e</ref></type>
+        <definition>macErrors_e macErrors</definition>
+        <argsstring></argsstring>
+        <name>macErrors</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="469" column="12" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionerror_status__t_1a8ba518d249813063d7e70fe9c04deb98" prot="public" static="no" mutable="no">
+        <type><ref refid="group__enums__lorawan_1ga9660163b15da218c7be89c824c39b356" kindref="member">systemErrors_e</ref></type>
+        <definition>systemErrors_e systemErrors</definition>
+        <argsstring></argsstring>
+        <name>systemErrors</name>
+        <bitfield> 8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="470" column="15" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionerror_status__t_1a468338a572932b6dad7c683395b3ef66" prot="public" static="no" mutable="no">
+        <type>struct errorStatus_t::@16</type>
+        <definition>struct errorStatus_t::@16 @17</definition>
+        <argsstring></argsstring>
+        <name>@17</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="471" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" line="464" column="1" bodyfile="C:/Onethinx_Tomislav/CoreModuleFiles/Documentation/BE API/OnethinxCore01.h" bodystart="464" bodyend="472"/>
+    <listofallmembers>
+      <member refid="unionerror_status__t_1aec8f045ff764f296cd19e3b1f6ad7ca8" prot="public" virt="non-virtual"><scope>errorStatus_t</scope><name>errorValue</name></member>
+      <member refid="unionerror_status__t_1a192a64d95ac7e80939c757bea9007703" prot="public" virt="non-virtual"><scope>errorStatus_t</scope><name>macErrors</name></member>
+      <member refid="unionerror_status__t_1aaea54e76717aa455039572eb1f667bda" prot="public" virt="non-virtual"><scope>errorStatus_t</scope><name>paramErrors</name></member>
+      <member refid="unionerror_status__t_1a6cf9fcd4dba447dcb07880119fb798a4" prot="public" virt="non-virtual"><scope>errorStatus_t</scope><name>radioErrors</name></member>
+      <member refid="unionerror_status__t_1a8ba518d249813063d7e70fe9c04deb98" prot="public" virt="non-virtual"><scope>errorStatus_t</scope><name>systemErrors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

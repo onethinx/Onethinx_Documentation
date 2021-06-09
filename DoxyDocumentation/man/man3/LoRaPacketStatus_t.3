@@ -1,0 +1,61 @@
+.TH "LoRaPacketStatus_t" 3 "Wed Jun 9 2021" "Onethinx LoRaWAN module" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LoRaPacketStatus_t \- Represents the packet status for every packet type\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OnethinxExt01\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "uint32_t \fBvalue\fP"
+.br
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   int8_t \fBRssiPkt\fP"
+.br
+.RI "The RSSI of the last packet\&. "
+.ti -1c
+.RI "   int8_t \fBSnrPkt\fP"
+.br
+.RI "The SNR of the last packet multiplied by 4\&. "
+.ti -1c
+.RI "   int8_t \fBSignalRssiPkt\fP"
+.br
+.RI "The RSSI of the LoRa signal of the last packet\&. "
+.ti -1c
+.RI "}; "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents the packet status for every packet type\&. 
+.SH "Field Documentation"
+.PP 
+.SS "struct { \&.\&.\&. } "
+
+.SS "int8_t RssiPkt"
+
+.PP
+The RSSI of the last packet\&. 
+.SS "int8_t SignalRssiPkt"
+
+.PP
+The RSSI of the LoRa signal of the last packet\&. 
+.SS "int8_t SnrPkt"
+
+.PP
+The SNR of the last packet multiplied by 4\&. 
+.SS "uint32_t value"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Onethinx LoRaWAN module from the source code\&.
