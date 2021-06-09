@@ -73,7 +73,6 @@ var NAVTREE =
       [ "CapSense Example", "ex_examples.html#ex_capsense", null ],
       [ "DevEUI and Stack Version", "ex_examples.html#ex_deveui", null ]
     ] ],
-    [ "Onethinx_Documentation", "md__c___onethinx__tomislav__core_module_files__documentation__onethinx__documentation__r_e_a_d_m_e.html", null ],
     [ "Onethinx API", "modules.html", "modules" ]
   ] ]
 ];
@@ -82,7 +81,7 @@ var NAVTREEINDEX =
 [
 "_f_a_q.html",
 "group__lorawan__enums.html#gga6393fcb2900b24fa2a580ebfc66fc569af429d8fc354fd9b3331794653ea429b7",
-"unioncore_configuration__t.html#aaf6bacaccee2f7d7968a0a4ca2cae74b"
+"unioncore_configuration__t.html#abe002724bbb096ded12305068af4790c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

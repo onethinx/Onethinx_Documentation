@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "iklmprsw",
   5: "abcdefilmoprsu",
   6: "defglm",
-  7: "efgio"
+  7: "efgi"
 };
 
 var indexSectionNames =
